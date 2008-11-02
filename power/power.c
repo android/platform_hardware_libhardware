@@ -14,6 +14,9 @@
 
 #define LOG_TAG "power"
 #include <utils/Log.h>
+#include <cutils/properties.h>
+
+#define MAX_BRIGHTNESS 255
 
 enum {
     ACQUIRE_PARTIAL_WAKE_LOCK = 0,
@@ -32,9 +35,13 @@ const char * const PATHS[] = {
 
 const char * const AUTO_OFF_TIMEOUT_DEV = "/sys/android_power/auto_off_timeout";
 
-const char * const LCD_BACKLIGHT = "/sys/class/leds/lcd-backlight/brightness";
-const char * const BUTTON_BACKLIGHT = "/sys/class/leds/button-backlight/brightness";
-const char * const KEYBOARD_BACKLIGHT = "/sys/class/leds/keyboard-backlight/brightness";
+const char * const LCD_BACKLIGHT = "/sys/class/leds/lcd-backlight";
+const char * const BUTTON_BACKLIGHT = "/sys/class/leds/button-backlight";
+const char * const KEYBOARD_BACKLIGHT = "/sys/class/leds/keyboard-backlight";
+
+char lcdBacklight[PROPERTY_VALUE_MAX];
+char buttonBacklight[PROPERTY_VALUE_MAX];
+char keyboardBacklight[PROPERTY_VALUE_MAX];
 
 //XXX static pthread_once_t g_initialized = THREAD_ONCE_INIT;
 static int g_initialized = 0;
@@ -48,6 +55,14 @@ static int64_t systemTime()
     t.tv_sec = t.tv_nsec = 0;
     clock_gettime(CLOCK_MONOTONIC, &t);
     return t.tv_sec*1000000000LL + t.tv_nsec;
+}
+
+static void
+get_backlight_properties(void)
+{
+    property_get ("backlight.lcd", lcdBacklight, LCD_BACKLIGHT);
+    property_get ("backlight.button", buttonBacklight, BUTTON_BACKLIGHT);
+    property_get ("backlight.keyboard", keyboardBacklight, KEYBOARD_BACKLIGHT);
 }
 
 static void
@@ -74,6 +89,7 @@ initialize_fds(void)
     //pthread_once(&g_initialized, open_file_descriptors);
     // XXX: not this:
     if (g_initialized == 0) {
+        get_backlight_properties();
         open_file_descriptors();
         g_initialized = 1;
     }
@@ -138,10 +154,36 @@ static void
 set_a_light(const char* path, int value)
 {
     int fd;
+    int max = MAX_BRIGHTNESS;
+    char filename[PROPERTY_VALUE_MAX];
 
     // LOGI("set_a_light(%s, %d)\n", path, value);
 
-    fd = open(path, O_RDWR);
+    /* We don't have this device, so skip it
+     */
+    if (strlen(path) == 0)
+        return;
+
+    strcpy (filename, path);
+    strncat (filename, "/max_brightness", PROPERTY_VALUE_MAX);
+
+    fd = open(path, O_RDONLY);
+    if (fd) {
+        char    buffer[20];
+        if (read(fd, buffer, sizeof(buffer)) > 0)
+            max = atol(buffer);
+        close(fd);
+    }
+
+    /* Normalize to what the device can handle
+     * instead of between 0..255.
+     */
+    value = value * max / MAX_BRIGHTNESS;
+
+    strcpy (filename, path);
+    strncat (filename, "/brightness", PROPERTY_VALUE_MAX);
+
+    fd = open(filename, O_RDWR);
     if (fd) {
         char    buffer[20];
         int bytes = sprintf(buffer, "%d\n", value);
@@ -161,15 +203,15 @@ set_light_brightness(unsigned int mask, unsigned int brightness)
 //            mask, brightness, systemTime(), strerror(g_error));
 
     if (mask & KEYBOARD_LIGHT) {
-        set_a_light(KEYBOARD_BACKLIGHT, brightness);
+        set_a_light(keyboardBacklight, brightness);
     }
 
     if (mask & SCREEN_LIGHT) {
-        set_a_light(LCD_BACKLIGHT, brightness);
+        set_a_light(lcdBacklight, brightness);
     }
 
     if (mask & BUTTON_LIGHT) {
-        set_a_light(BUTTON_BACKLIGHT, brightness);
+        set_a_light(buttonBacklight, brightness);
     }
 
     return 0;

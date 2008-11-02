@@ -12,8 +12,8 @@ gps_find_hardware( void )
 #ifdef HAVE_QEMU_GPS_HARDWARE
     char  propBuf[PROPERTY_VALUE_MAX];
 
-    property_get("ro.kernel.qemu", propBuf, "");
-    if (propBuf[0] == '1') {
+    property_get("ro.kernel.android.gps", propBuf, "");
+    if (propBuf[0] != '\0') {
         sGpsInterface = gps_get_qemu_interface();
         if (sGpsInterface) {
             LOGD("using QEMU GPS Hardware emulation\n");

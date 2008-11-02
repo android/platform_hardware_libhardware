@@ -794,7 +794,7 @@ gps_state_init( GpsState*  state )
     D("gps emulation will read from %s", device);
 
     // disable echo on serial lines
-    if ( !memcmp( device, "/dev/ttyS", 9 ) ) {
+    if ( isatty( state->fd ) ) {
         struct termios  ios;
         tcgetattr( state->fd, &ios );
         ios.c_lflag = 0;  /* disable ECHO, ICANON, etc... */

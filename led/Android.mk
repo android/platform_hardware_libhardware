@@ -1,12 +1,16 @@
 # Copyright 2006 The Android Open Source Project
 
+ifeq ($(USE_LED_TYPE),)
+USE_LED_TYPE := stub
+endif
+
 ifeq ($(TARGET_PRODUCT),sooner)
-LOCAL_SRC_FILES += led/led_sardine.c
-else
+USE_LED_TYPE := sardine
+endif
+
 ifeq ($(TARGET_PRODUCT),dream)
-LOCAL_SRC_FILES += led/led_trout.c
-else
-LOCAL_SRC_FILES += led/led_stub.c
+USE_LED_TYPE := trout
 endif
-endif
+
+LOCAL_SRC_FILES += led/led_$(USE_LED_TYPE).c
 

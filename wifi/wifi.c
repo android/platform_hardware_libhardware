@@ -47,11 +47,12 @@ static char iface[PROPERTY_VALUE_MAX];
 static const char IFACE_DIR[]           = "/data/system/wpa_supplicant";
 static const char DRIVER_MODULE_NAME[]  = "wlan";
 static const char DRIVER_MODULE_TAG[]   = "wlan ";
-static const char DRIVER_MODULE_PATH[]  = "/system/lib/modules/wlan.ko";
+static const char DRIVER_MODULE_PATH[]  = "/system/lib/modules/%s.ko";
 static const char FIRMWARE_LOADER[]     = "wlan_loader";
 static const char DRIVER_PROP_NAME[]    = "wlan.driver.status";
 static const char SUPPLICANT_NAME[]     = "wpa_supplicant";
 static const char SUPP_PROP_NAME[]      = "init.svc.wpa_supplicant";
+static const char MODULE_IN_KERNEL[]    = "N/A";
 static const char SUPP_CONFIG_TEMPLATE[]= "/system/etc/wifi/wpa_supplicant.conf";
 static const char SUPP_CONFIG_FILE[]    = "/data/misc/wifi/wpa_supplicant.conf";
 static const char MODULE_FILE[]         = "/proc/modules";
@@ -116,8 +117,15 @@ const char *get_dhcp_error_string() {
 
 static int check_driver_loaded() {
     char driver_status[PROPERTY_VALUE_MAX];
+    char module_name[PROPERTY_VALUE_MAX];
     FILE *proc;
     char line[sizeof(DRIVER_MODULE_TAG)+10];
+
+    property_get("wifi.module_name", module_name, DRIVER_MODULE_TAG);
+
+    if (strcmp (module_name, MODULE_IN_KERNEL) == 0) {
+        return 1;  /* driver isn't a module. Say it is loaded */
+    }
 
     if (!property_get(DRIVER_PROP_NAME, driver_status, NULL)
             || strcmp(driver_status, "ok") != 0) {
@@ -131,10 +139,11 @@ static int check_driver_loaded() {
      */
     if ((proc = fopen(MODULE_FILE, "r")) == NULL) {
         LOGW("Could not open %s: %s", MODULE_FILE, strerror(errno));
+	property_set(DRIVER_PROP_NAME, "unloaded");	
         return 0;
     }
     while ((fgets(line, sizeof(line), proc)) != NULL) {
-        if (strncmp(line, DRIVER_MODULE_TAG, strlen(DRIVER_MODULE_TAG)) == 0) {
+        if (strncmp(line, module_name, strlen(module_name)) == 0) {
             fclose(proc);
             return 1;
         }
@@ -146,16 +155,20 @@ static int check_driver_loaded() {
 
 int wifi_load_driver()
 {
+    char module_name[PROPERTY_VALUE_MAX];
+    char module_path[PROPERTY_VALUE_MAX];
     char driver_status[PROPERTY_VALUE_MAX];
-    int count = 40; /* wait at most 20 seconds for completion */
+    int count = 100; /* wait at most 20 seconds for completion */
 
     if (check_driver_loaded()) {
         return 0;
     }
-    insmod(DRIVER_MODULE_PATH);
+    property_get("wifi.module_name", module_name, DRIVER_MODULE_NAME);
+    snprintf(module_path, sizeof(module_path), DRIVER_MODULE_PATH, module_name);
+    insmod(module_path);
     property_set("ctl.start", FIRMWARE_LOADER);
     while (count-- > 0) {
-        usleep(500000);
+        usleep(200000);
         if (property_get(DRIVER_PROP_NAME, driver_status, NULL)) {
             if (strcmp(driver_status, "ok") == 0)
                 return 0;
@@ -169,10 +182,24 @@ int wifi_load_driver()
 
 int wifi_unload_driver()
 {
-    if (rmmod(DRIVER_MODULE_NAME) == 0) {
-        usleep(1000000);
-        property_set(DRIVER_PROP_NAME, "unloaded");
-        return 0;
+    char module_name[PROPERTY_VALUE_MAX];
+    property_get("wifi.module_name", module_name, DRIVER_MODULE_NAME);
+    int count = 20; /* wait at most 10 seconds for completion */
+
+    if (strcmp (module_name, MODULE_IN_KERNEL) == 0) {
+        return 0;  /* driver is not a module */
+    }
+
+    if (rmmod(module_name) == 0) {
+	while (count-- > 0) {
+	    if (!check_driver_loaded())
+		break;
+    	    usleep(500000);
+	}
+	if (count) {
+    	    return 0;
+	}
+	return -1;
     } else
         return -1;
 }
@@ -182,7 +209,7 @@ static int control_supplicant(int startIt)
     char supp_status[PROPERTY_VALUE_MAX] = {'\0'};
     const char *ctrl_prop = (startIt ? "ctl.start" : "ctl.stop");
     const char *desired_status = (startIt ? "running" : "stopped");
-    int count = 20; /* wait at most 20 seconds for completion */
+    int count = 200; /* wait at most 20 seconds for completion */
 
     if (property_get(SUPP_PROP_NAME, supp_status, NULL)
         && strcmp(supp_status, desired_status) == 0) {
@@ -191,7 +218,7 @@ static int control_supplicant(int startIt)
     property_set(ctrl_prop, SUPPLICANT_NAME);
 
     while (count-- > 0) {
-        usleep(1000000);
+        usleep(100000);
         if (property_get(SUPP_PROP_NAME, supp_status, NULL)) {
             if (strcmp(supp_status, desired_status) == 0)
                 return 0;
