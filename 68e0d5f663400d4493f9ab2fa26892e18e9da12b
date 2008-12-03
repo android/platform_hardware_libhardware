@@ -1,0 +1,106 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "z1d054945ae1b2a21cc1a9022c0aa7653",
+        "filename": "gps/gps.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1000411
+      },
+      "writtenOn": "2008-12-03T16:11:35Z",
+      "side": 1,
+      "message": "this is not correct. ro.kernel.android.gps might not be set on all runs of the emulator (it\u0027s only set when the emulator connects an external GPS device through the -gps-nmea option)\n",
+      "revId": "68e0d5f663400d4493f9ab2fa26892e18e9da12b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "z6374c3128af827ab0f5acb259ce9a739",
+        "filename": "gps/gps_qemu.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 797,
+      "author": {
+        "id": 1000411
+      },
+      "writtenOn": "2008-12-03T16:11:35Z",
+      "side": 1,
+      "message": "looks good :)",
+      "revId": "68e0d5f663400d4493f9ab2fa26892e18e9da12b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "zcb62ec53c2c88b74bbc403a5af92b41e",
+        "filename": "power/power.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 167,
+      "author": {
+        "id": 1000411
+      },
+      "writtenOn": "2008-12-03T16:11:35Z",
+      "side": 1,
+      "message": "please do not use strcpy/strncat *ever*",
+      "revId": "68e0d5f663400d4493f9ab2fa26892e18e9da12b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "z99da48619bf6e824738e8ec3ff4dfb8c",
+        "filename": "power/power.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 183,
+      "author": {
+        "id": 1000411
+      },
+      "writtenOn": "2008-12-03T16:11:35Z",
+      "side": 1,
+      "message": "please do not use strcpy/strncat *ever*",
+      "revId": "68e0d5f663400d4493f9ab2fa26892e18e9da12b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "z898d049cf2efd7a503fd4adf508ee10c",
+        "filename": "sensors/sensors_moko.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 82,
+      "author": {
+        "id": 1000411
+      },
+      "writtenOn": "2008-12-03T16:11:35Z",
+      "side": 1,
+      "message": "strcpy is not allowed",
+      "revId": "68e0d5f663400d4493f9ab2fa26892e18e9da12b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "zaf60b316ba982364e7fe9def6ab4030c",
+        "filename": "sensors/sensors_moko.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 91,
+      "author": {
+        "id": 1000411
+      },
+      "writtenOn": "2008-12-03T16:11:35Z",
+      "side": 1,
+      "message": "strcpy is not allowed",
+      "revId": "68e0d5f663400d4493f9ab2fa26892e18e9da12b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
