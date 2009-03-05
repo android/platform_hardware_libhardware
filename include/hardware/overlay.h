@@ -57,6 +57,8 @@ enum {
     OVERLAY_TRANSFORM_FLIP_H    = 0x01,
     /* flip source image vertically */
     OVERLAY_TRANSFORM_FLIP_V    = 0x02,
+    /* rotate source image 0 degrees */
+    OVERLAY_TRANSFORM_ROT_0    = 0x00,
     /* rotate source image 90 degrees */
     OVERLAY_TRANSFORM_ROT_90    = 0x04,
     /* rotate source image 180 degrees */
