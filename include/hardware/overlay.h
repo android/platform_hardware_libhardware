@@ -181,6 +181,13 @@ struct overlay_data_device_t {
      * overlay data module to its control module */
     int (*initialize)(struct overlay_data_device_t *dev,
             overlay_handle_t handle);
+
+    int (*setCrop)(struct overlay_data_device_t *dev,
+            uint32_t x, uint32_t y, uint32_t w, uint32_t h) ;
+
+    int (*getCrop)(struct overlay_data_device_t *dev,
+       uint32_t* x, uint32_t* y, uint32_t* w, uint32_t* h) ;
+
     
     /* blocks until an overlay buffer is available and return that buffer. */
     int (*dequeueBuffer)(struct overlay_data_device_t *dev,
