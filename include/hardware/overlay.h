@@ -188,6 +188,9 @@ struct overlay_data_device_t {
     int (*initialize)(struct overlay_data_device_t *dev,
             overlay_handle_t handle);
 
+    int (*resizeInput)(struct overlay_data_device_t *dev, 
+            uint32_t w, uint32_t h);
+
     int (*setCrop)(struct overlay_data_device_t *dev,
             uint32_t x, uint32_t y, uint32_t w, uint32_t h) ;
 
