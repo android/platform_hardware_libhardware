@@ -169,6 +169,12 @@ struct overlay_control_device_t {
      * supported. */
     int (*setParameter)(struct overlay_control_device_t *dev,
             overlay_t* overlay, int param, int value);
+
+    /* must be called after setPosition/setParameter for the changes to
+     * take effect */
+    int (*commitUpdates)(struct overlay_control_device_t *dev,
+            overlay_t* overlay);
+
 };
 
 
@@ -179,7 +185,14 @@ struct overlay_data_device_t {
      * overlay data module to its control module */
     int (*initialize)(struct overlay_data_device_t *dev,
             overlay_handle_t handle);
-    
+
+    /* can be called to change the width and height of the overlay. */
+    int (*resizeInput)(struct overlay_data_device_t *dev,
+            uint32_t w, uint32_t h);
+
+    int (*setCrop)(struct overlay_data_device_t *dev,
+            uint32_t left, uint32_t top, uint32_t right, uint32_t bottom);
+
     /* blocks until an overlay buffer is available and return that buffer. */
     int (*dequeueBuffer)(struct overlay_data_device_t *dev,
 		         overlay_buffer_t *buf);
