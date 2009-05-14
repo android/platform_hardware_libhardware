@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAARn////g\u003d",
+        "filename": "include/hardware/overlay.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 194,
+      "author": {
+        "id": 1001056
+      },
+      "writtenOn": "2009-05-14T05:42:42Z",
+      "side": 1,
+      "message": "I don\u0027t think getCrop() is needed. Whoever set the crop should be able to remember it.\n\nWhat\u0027s the use case?",
+      "revId": "fd387cb3d1d7c710f619c4c272f54cb31a73033d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
