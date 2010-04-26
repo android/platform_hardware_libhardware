@@ -247,6 +247,7 @@ static int gralloc_alloc_buffer(alloc_device_t* dev,
     
 #if HAVE_ANDROID_OS // should probably define HAVE_PMEM somewhere
 
+#ifndef HAVE_NO_PMEM
     if (usage & GRALLOC_USAGE_HW_TEXTURE) {
         // enable pmem in that case, so our software GL can fallback to
         // the copybit module.
@@ -256,6 +257,12 @@ static int gralloc_alloc_buffer(alloc_device_t* dev,
     if (usage & GRALLOC_USAGE_HW_2D) {
         flags |= private_handle_t::PRIV_FLAGS_USES_PMEM;
     }
+#else
+    /*
+     * In the case of x86, there is no '/dev/pmem'.
+     */
+    flags &= ~private_handle_t::PRIV_FLAGS_USES_PMEM;
+#endif
 
     if ((flags & private_handle_t::PRIV_FLAGS_USES_PMEM) == 0) {
 try_ashmem:
