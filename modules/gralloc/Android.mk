@@ -30,4 +30,7 @@ LOCAL_SRC_FILES := 	\
 	
 LOCAL_MODULE := gralloc.default
 LOCAL_CFLAGS:= -DLOG_TAG=\"gralloc\"
+ifeq ($(TARGET_ARCH), x86)
+LOCAL_CFLAGS+= -DHAVE_NO_PMEM
+endif
 include $(BUILD_SHARED_LIBRARY)
