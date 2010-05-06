@@ -16,6 +16,24 @@
       "revId": "78967225018c4dace2d9b5c9c0179fcf948677c4",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAyX///yE\u003d",
+        "filename": "modules/gralloc/Android.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 1003360
+      },
+      "writtenOn": "2010-05-06T14:55:53Z",
+      "side": 1,
+      "message": "My understanding is that the /dev/pmem device only exists with one chipset (was it qualcomm?). Wouldn\u0027t it be better to have a positive test and only enable it if the chipset is there?",
+      "parentUuid": "AAAAyX///yY\u003d",
+      "revId": "78967225018c4dace2d9b5c9c0179fcf948677c4",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
