@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAyX///yY\u003d",
+        "filename": "modules/gralloc/Android.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 1000411
+      },
+      "writtenOn": "2010-05-06T14:34:31Z",
+      "side": 1,
+      "message": "I think I would prefer a feature-based test and macro instead, with something like:\n\nifeq (,$(BOARD_HAVE_PMEM))\nLOCAL_CFLAGS +\u003d -DHAVE_PMEM\nendif\n\nwhere BOARD_HAVE_PMEM would be defined in your of the vendor configuration files. However, this would probably modifying all other board config files at this point.\n\nCan you use a negative feature test instead then, e.g.:\n\nifneq ($(BOARD_HAVE_NO_PMEM),)\nLOCAL_CFLAGS +\u003d -DHAVE_NO_PMEM\nendif\n\nand then define BOARD_HAVE_NO_PMEM in one of the generic_x86 config files.\n\nMathias will probably have more to say about this.",
+      "revId": "78967225018c4dace2d9b5c9c0179fcf948677c4",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
