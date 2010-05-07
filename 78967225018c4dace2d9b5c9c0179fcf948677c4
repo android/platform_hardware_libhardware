@@ -34,6 +34,24 @@
       "revId": "78967225018c4dace2d9b5c9c0179fcf948677c4",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAyX///r4\u003d",
+        "filename": "modules/gralloc/Android.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 1000411
+      },
+      "writtenOn": "2010-05-07T18:32:44Z",
+      "side": 1,
+      "message": "yes, a positive test would be better, but would require changing stuff in vendor-specific config files, which may be problematic for some of the people working with their own fork of the source tree (I can only assume there are many).\n\nthat is, unless there is already a PMEM-specific feature macro somewhere we could leverage. If this is not the case, a negative test is more conservative.",
+      "parentUuid": "AAAAyX///yE\u003d",
+      "revId": "78967225018c4dace2d9b5c9c0179fcf948677c4",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
