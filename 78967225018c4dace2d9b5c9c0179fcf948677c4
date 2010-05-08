@@ -52,6 +52,24 @@
       "revId": "78967225018c4dace2d9b5c9c0179fcf948677c4",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAyX///l4\u003d",
+        "filename": "modules/gralloc/Android.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 1000888
+      },
+      "writtenOn": "2010-05-08T01:21:34Z",
+      "side": 1,
+      "message": "lets just add a BOARD_HAVE_NO_PMEM  to the generic_x86 BoardConfig.mk \n\nthen change the if($(TARGET_ARC),x86) to ifeq (,$(BOARD_HAVE_NO_PMEM),) LOCAL_CFLAGS +\u003d -DHAVE_NO_PMEM endif\n\nand be done with this.\n\nOther architectures than x86 also have no pmem too.",
+      "parentUuid": "AAAAyX///yE\u003d",
+      "revId": "78967225018c4dace2d9b5c9c0179fcf948677c4",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
