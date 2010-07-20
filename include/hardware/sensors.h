@@ -59,6 +59,9 @@ __BEGIN_DECLS
 #define SENSOR_TYPE_PRESSURE            6
 #define SENSOR_TYPE_TEMPERATURE         7
 #define SENSOR_TYPE_PROXIMITY           8
+#define SENSOR_TYPE_ROTATION_MATRIX     9
+#define SENSOR_TYPE_GRAVITY             10
+#define SENSOR_TYPE_LINEAR_ACCELERATION 11
 
 /**
  * Values returned by the accelerometer in various locations in the universe.
@@ -202,7 +205,25 @@ __BEGIN_DECLS
  *
  * The light sensor value is returned in SI lux units.
  *
+ * Rotation Matrix
+ * ---------------
+ * A rotation matrix is a matrix that performs a rotation in Euclidean space.  Given a
+ * 3x3 rotation matrix A and a 3 dimensional vector V, then let V' = A V.  V' has the same
+ * magnitude as V, but has been rotated around some combination of the X, Y, and Z axes.
+ * Multiplication of rotation matrices corresponds to composition of rotations.  The elements
+ * of the rotation matrix are unitless.
+ *
+ * Gravity
+ * -------
+ * A gravity output indicates the direction of gravity in the devices's coordinates.  Direction
+ * is indicated by a three dimensional vector of magnitude 1g.
+ *
+ * Linear Acceleration
+ * -------------------
+ * Indicates the linear acceleration of the device in device coordinates, not including gravity.
+ * This output is essentially Acceleration - Gravity.  Units are m/s^2.
  */
+
 typedef struct {
     union {
         float v[3];
@@ -220,6 +241,12 @@ typedef struct {
     int8_t status;
     uint8_t reserved[3];
 } sensors_vec_t;
+
+typedef struct {
+    float m[9];
+    int8_t status;
+    uint8_t reserved[3];
+} sensors_mat_t;
 
 /**
  * Union of the various types of sensor data
@@ -250,6 +277,10 @@ typedef struct {
 
         /* light in SI lux units */
         float           light;
+
+        /* rotation matrix values are unitless */
+        sensors_mat_t   rotationMatrix;
+
     };
 
     /* time is in nanosecond */
