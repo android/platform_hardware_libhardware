@@ -59,6 +59,10 @@ __BEGIN_DECLS
 #define SENSOR_TYPE_PRESSURE            6
 #define SENSOR_TYPE_TEMPERATURE         7
 #define SENSOR_TYPE_PROXIMITY           8
+#define SENSOR_TYPE_ROTATION_MATRIX     9
+#define SENSOR_TYPE_GRAVITY             10
+#define SENSOR_TYPE_LINEAR_ACCELERATION 11
+#define SENSOR_TYPE_ROTATION_VECTOR     12
 
 /**
  * Values returned by the accelerometer in various locations in the universe.
@@ -189,6 +193,11 @@ __BEGIN_DECLS
  *  All values are in micro-Tesla (uT) and measure the ambient magnetic
  *  field in the X, Y and Z axis.
  *
+ * Gyroscope
+ * ---------
+ *  All values are in degrees/second and measure the rate of rotation
+ *  around the X, Y and Z axis.
+ *
  * Proximity
  * ---------
  *
@@ -202,7 +211,36 @@ __BEGIN_DECLS
  *
  * The light sensor value is returned in SI lux units.
  *
+ * Rotation Matrix
+ * ---------------
+ * A rotation matrix is a matrix that performs a rotation in Euclidean space.  Given a
+ * 3x3 rotation matrix A and a 3 dimensional vector V, then let V' = A V.  V' has the same
+ * magnitude as V, but has been rotated around some combination of the X, Y, and Z axes.
+ * Multiplication of rotation matrices corresponds to composition of rotations.  The elements
+ * of the rotation matrix are unitless.
+ *
+ * Gravity
+ * -------
+ * A gravity output indicates the direction of and magnitude of gravity in the devices's 
+ * coordinates.  On Earth, the magnitude is 9.8.  Units are m/s^2.
+ *
+ * Linear Acceleration
+ * -------------------
+ * Indicates the linear acceleration of the device in device coordinates, not including gravity.
+ * This output is essentially Acceleration - Gravity.  Units are m/s^2.
+ *
+ * Rotation Vector
+ * ---------------
+ * A rotation vector represents the orientation of the device as a combination
+ * of an angle and an axis, in which the device has rotated through an angle
+ * theta around an axis <x, y, z>. The three elements of the rotation vector
+ * are <x*sin(theta/2), y*sin(theta/2), z*sin(theta/2)>, such that the magnitude
+ * of the rotation vector is equal to sin(theta/2), and the direction of the
+ * rotation vector is equal to the direction of the axis of rotation. The three
+ * elements of the rotation vector are equal to the last three components of a
+ * unit quaternion <cos(theta/2), x*sin(theta/2), y*sin(theta/2), z*sin(theta/2)>.
  */
+
 typedef struct {
     union {
         float v[3];
