@@ -2,6 +2,40 @@
   "comments": [
     {
       "key": {
+        "uuid": "AAAA3H///kI\u003d",
+        "filename": "include/hardware/sensors.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 1001056
+      },
+      "writtenOn": "2010-07-22T22:18:00Z",
+      "side": 1,
+      "message": "since we have this \"raw\" gyro sensor constant, which I think we should keep, we need to define what it returns below.",
+      "revId": "13387f443e61ab21507df40a7add886edcd28c63",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAA3H///kE\u003d",
+        "filename": "include/hardware/sensors.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 207,
+      "author": {
+        "id": 1001056
+      },
+      "writtenOn": "2010-07-22T22:18:00Z",
+      "side": 1,
+      "message": "Definition for the \"raw\" gyro data needed.",
+      "revId": "13387f443e61ab21507df40a7add886edcd28c63",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAA3H///lI\u003d",
         "filename": "include/hardware/sensors.h",
         "patchSetId": 1
