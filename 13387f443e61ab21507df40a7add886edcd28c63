@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAA3H///lI\u003d",
+        "filename": "include/hardware/sensors.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 219,
+      "author": {
+        "id": 1001056
+      },
+      "writtenOn": "2010-07-22T22:02:20Z",
+      "side": 1,
+      "message": "I don\u0027t think we should limit the size of the gravity vector to 1g -- it would be kind of cool if this stuff worked on the moon too.\n\nLet\u0027s just say that the gravity sensor indicates the direction and magnitude of gravity. The value is 9.8 m/s^2 on earth.\n\nNote: the value returned by this sensor is different from the value returned from the accelerometer. ie: when the device is flat on a table, the value is \u003c 0, 0, -9.81 \u003e (as opposed to \u003c 0, 0, +9.81 \u003e from the accelerometer).\nQuestion: is that desirable?",
+      "revId": "13387f443e61ab21507df40a7add886edcd28c63",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAA3H///k4\u003d",
+        "filename": "include/hardware/sensors.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 224,
+      "author": {
+        "id": 1001056
+      },
+      "writtenOn": "2010-07-22T22:02:20Z",
+      "side": 1,
+      "message": "Just to be clear. When the device is pushed on its left side, toward the right, the value is \u003c +|a|, 0, 0 \u003e (value positive). Correct?\n\nQuestion: If this sensor return Acceleration - Gravity, do we really need it? It seems trivial for the user to calculate this value from acceleration and gravity.",
+      "revId": "13387f443e61ab21507df40a7add886edcd28c63",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAA3H///k0\u003d",
+        "filename": "include/hardware/sensors.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 250,
+      "author": {
+        "id": 1001056
+      },
+      "writtenOn": "2010-07-22T22:02:20Z",
+      "side": 1,
+      "message": "unfortunately, it wouldn\u0027t be backward compatible to change the size of the sensors_data_t.\n\nI have made changes on our internal tree that will accommodate up to 4x4 matrices.  For now let\u0027s just not define this new type here. I understand that it prevents people from implementing the new orientation sensor until we release our internal changes, but there is no way around it.",
+      "revId": "13387f443e61ab21507df40a7add886edcd28c63",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAA3H///kw\u003d",
+        "filename": "include/hardware/sensors.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 283,
+      "author": {
+        "id": 1001056
+      },
+      "writtenOn": "2010-07-22T22:02:20Z",
+      "side": 1,
+      "message": "backward compatibility issue. see above.",
+      "revId": "13387f443e61ab21507df40a7add886edcd28c63",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
