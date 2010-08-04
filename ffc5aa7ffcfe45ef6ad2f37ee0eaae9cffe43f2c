@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAA33///U4\u003d",
+        "filename": "include/hardware/sensors.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 1001056
+      },
+      "writtenOn": "2010-08-04T22:05:00Z",
+      "side": 1,
+      "message": "I think we should get rid of the ROTATION_MATRIX sensor type, since it doesn\u0027t carry more information than the ROTATION_VECTOR sensor type. correct?",
+      "revId": "ffc5aa7ffcfe45ef6ad2f37ee0eaae9cffe43f2c",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
