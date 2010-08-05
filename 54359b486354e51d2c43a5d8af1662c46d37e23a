@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAA4H///9M\u003d",
+        "filename": "include/hardware/sensors.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 213,
+      "author": {
+        "id": 1001056
+      },
+      "writtenOn": "2010-08-05T03:11:46Z",
+      "side": 1,
+      "message": "The description is not clear about the direction of the axes. I think it should uses the same axes and conventions than the accelerometer.",
+      "revId": "54359b486354e51d2c43a5d8af1662c46d37e23a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAA4H///9I\u003d",
+        "filename": "include/hardware/sensors.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 218,
+      "author": {
+        "id": 1001056
+      },
+      "writtenOn": "2010-08-05T03:11:46Z",
+      "side": 1,
+      "message": "Same here. More precision about the coordinate system needed (I think it should be the same than for the accelerometer).",
+      "revId": "54359b486354e51d2c43a5d8af1662c46d37e23a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAA4H///9E\u003d",
+        "filename": "include/hardware/sensors.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 223,
+      "author": {
+        "id": 1001056
+      },
+      "writtenOn": "2010-08-05T03:11:46Z",
+      "side": 1,
+      "message": "Do the values have a unit? (I guess not?).",
+      "revId": "54359b486354e51d2c43a5d8af1662c46d37e23a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAA4H///9A\u003d",
+        "filename": "include/hardware/sensors.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 234,
+      "author": {
+        "id": 1001056
+      },
+      "writtenOn": "2010-08-05T03:11:46Z",
+      "side": 1,
+      "message": "Documentation for Gyros is missing. Please be precise about the units (rad/s) and coordinate system (should use the same than other sensors) and direction (which direction is positive).",
+      "revId": "54359b486354e51d2c43a5d8af1662c46d37e23a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
