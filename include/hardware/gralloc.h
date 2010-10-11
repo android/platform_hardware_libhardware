@@ -81,6 +81,10 @@ enum {
      * you know what you're doing.
      */
     GRALLOC_MODULE_PERFORM_CREATE_HANDLE_FROM_BUFFER = 0x080000001,
+
+    GRALLOC_MODULE_PERFORM_GET_DRM_FD                = 0x080000002,
+    GRALLOC_MODULE_PERFORM_GET_DRM_MAGIC             = 0x080000003,
+    GRALLOC_MODULE_PERFORM_AUTH_DRM_MAGIC            = 0x080000004,
 };
 
 /**
