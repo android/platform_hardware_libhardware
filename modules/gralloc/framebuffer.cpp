@@ -265,8 +265,6 @@ int mapFrameBufferLocked(struct private_module_t* module)
         return -errno;
 
 
-    module->flags = flags;
-    module->info = info;
     module->finfo = finfo;
     module->xdpi = xdpi;
     module->ydpi = ydpi;
@@ -276,21 +274,32 @@ int mapFrameBufferLocked(struct private_module_t* module)
      * map the framebuffer
      */
 
-    int err;
-    size_t fbSize = roundUpToPageSize(finfo.line_length * info.yres_virtual);
-    module->framebuffer = new private_handle_t(dup(fd), fbSize, 0);
+    while (info.yres_virtual > 0) {
+        size_t fbSize = roundUpToPageSize(finfo.line_length * info.yres_virtual);
+        module->numBuffers = info.yres_virtual / info.yres;
+        void* vaddr = mmap(0, fbSize, PROT_READ|PROT_WRITE, MAP_SHARED, fd, 0);
+        if (vaddr != MAP_FAILED) {
+            module->info = info;
+            module->flags = flags;
+            module->bufferMask = 0;
+            module->framebuffer = new private_handle_t(dup(fd), fbSize, 0);
+            module->framebuffer->base = intptr_t(vaddr);
+            memset(vaddr, 0, fbSize);
+            return 0;
+        }
 
-    module->numBuffers = info.yres_virtual / info.yres;
-    module->bufferMask = 0;
-
-    void* vaddr = mmap(0, fbSize, PROT_READ|PROT_WRITE, MAP_SHARED, fd, 0);
-    if (vaddr == MAP_FAILED) {
         LOGE("Error mapping the framebuffer (%s)", strerror(errno));
-        return -errno;
+
+        info.yres_virtual -= info.yres;
+        LOGW("Fallback to use fewer buffer: %d", info.yres_virtual / info.yres);
+        if (ioctl(fd, FBIOPUT_VSCREENINFO, &info) == -1)
+            break;
+
+        if (info.yres_virtual <= info.yres)
+            flags &= ~PAGE_FLIP;
     }
-    module->framebuffer->base = intptr_t(vaddr);
-    memset(vaddr, 0, fbSize);
-    return 0;
+
+    return -errno;
 }
 
 static int mapFrameBuffer(struct private_module_t* module)
