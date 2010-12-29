@@ -61,6 +61,7 @@ __BEGIN_DECLS
 #define SENSOR_TYPE_GRAVITY             9
 #define SENSOR_TYPE_LINEAR_ACCELERATION 10
 #define SENSOR_TYPE_ROTATION_VECTOR     11
+#define SENSOR_TYPE_HUMIDITY            12
 
 /**
  * Values returned by the accelerometer in various locations in the universe.
@@ -318,6 +319,9 @@ typedef struct sensors_event_t {
 
         /* pressure in hectopascal (hPa) */
         float           pressure;
+
+        /* relative humidity in percent */
+        float           humidity;
     };
     uint32_t        reserved1[4];
 } sensors_event_t;
