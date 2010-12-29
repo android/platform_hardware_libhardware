@@ -61,6 +61,7 @@ __BEGIN_DECLS
 #define SENSOR_TYPE_GRAVITY             9
 #define SENSOR_TYPE_LINEAR_ACCELERATION 10
 #define SENSOR_TYPE_ROTATION_VECTOR     11
+#define SENSOR_TYPE_HUMIDITY            12
 
 /**
  * Values returned by the accelerometer in various locations in the universe.
@@ -252,6 +253,16 @@ __BEGIN_DECLS
  * unit quaternion <cos(theta/2), x*sin(theta/2), y*sin(theta/2), z*sin(theta/2)>.
  * Elements of the rotation vector are unitless.  The x, y, and z axis are defined
  * in the same was as for the acceleration sensor.
+ *
+ * Humidity
+ * --------
+ *
+ * A humidity sensor measures relative ambient air humidity and returns a
+ * value in percent.
+ *
+ * Humidity sensors report a value only when it changes and each time the
+ * sensor is enabled. setDelay() is used to set the interval for internal
+ * polling of the sensor measurement value.
  */
 
 typedef struct {
@@ -318,6 +329,9 @@ typedef struct sensors_event_t {
 
         /* pressure in hectopascal (hPa) */
         float           pressure;
+
+        /* relative humidity in percent */
+        float           humidity;
     };
     uint32_t        reserved1[4];
 } sensors_event_t;
