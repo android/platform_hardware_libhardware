@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAA+3//7+E\u003d",
+        "filename": "include/hardware/sensors.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 1001056
+      },
+      "writtenOn": "2011-01-20T06:02:56Z",
+      "side": 1,
+      "message": "rename to SENSOR_TYPE_RELATIVE_HUMIDITY",
+      "revId": "bc8cf1eca73f72ac903272248f5a6cf8f9b9217d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAA+3//7+A\u003d",
+        "filename": "include/hardware/sensors.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 257,
+      "author": {
+        "id": 1001056
+      },
+      "writtenOn": "2011-01-20T06:02:56Z",
+      "side": 1,
+      "message": "Relative Humidity",
+      "revId": "bc8cf1eca73f72ac903272248f5a6cf8f9b9217d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAA+3//798\u003d",
+        "filename": "include/hardware/sensors.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 264,
+      "author": {
+        "id": 1001056
+      },
+      "writtenOn": "2011-01-20T06:02:56Z",
+      "side": 1,
+      "message": "remove the comment about setDelay(). setDelay() is ignored for sensors that return a value only when it changes.",
+      "revId": "bc8cf1eca73f72ac903272248f5a6cf8f9b9217d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAA+3//794\u003d",
+        "filename": "include/hardware/sensors.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 334,
+      "author": {
+        "id": 1001056
+      },
+      "writtenOn": "2011-01-20T06:02:56Z",
+      "side": 1,
+      "message": "rename to relative_humidity",
+      "revId": "bc8cf1eca73f72ac903272248f5a6cf8f9b9217d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
