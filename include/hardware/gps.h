@@ -467,6 +467,7 @@ typedef struct {
 
     AGpsType        type;
     AGpsStatusValue status;
+    int             ipaddr;
 } AGpsStatus;
 
 /** Callback with AGPS status information.
