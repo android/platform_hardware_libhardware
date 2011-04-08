@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAA/n///Q0\u003d",
+        "filename": "include/hardware/fmradio.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 130,
+      "author": {
+        "id": 1006036
+      },
+      "writtenOn": "2011-04-08T09:17:12Z",
+      "side": 1,
+      "message": "What is the point of having double pointer to session data in all methods, and not only rx_start and tx_start? Do you want the library to have the option to change it in every call?",
+      "revId": "f783d0a6d2fb539d0da1ff18bec68f218fc4f008",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
