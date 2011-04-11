@@ -123,6 +123,7 @@ typedef uint16_t GpsAidingData;
 
 /** AGPS type */
 typedef uint16_t AGpsType;
+#define AGPS_TYPE_ANY           0
 #define AGPS_TYPE_SUPL          1
 #define AGPS_TYPE_C2K           2
 
@@ -467,7 +468,8 @@ typedef struct {
 
     AGpsType        type;
     AGpsStatusValue status;
-    int             ipaddr;
+    int             ipv4_addr;
+    char            ipv6_addr[16];
 } AGpsStatus;
 
 /** Callback with AGPS status information.
