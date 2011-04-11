@@ -16,6 +16,24 @@
       "revId": "f783d0a6d2fb539d0da1ff18bec68f218fc4f008",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAA/n///Fk\u003d",
+        "filename": "include/hardware/fmradio.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 130,
+      "author": {
+        "id": 1006170
+      },
+      "writtenOn": "2011-04-11T06:17:31Z",
+      "side": 1,
+      "message": "There are two reasons of having the double pointer in all of the calls and not the ones we think might reorganize the memory, which are rx_start, tx_start, reset, pause and resume.\n\nMostly we want the library to be fully in charge of the memory used, not being limited by our views and how we do it in our own library, but we also wanted the interface to be easier, with all methods starting with the same parameter.",
+      "parentUuid": "AAAA/n///Q0\u003d",
+      "revId": "f783d0a6d2fb539d0da1ff18bec68f218fc4f008",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
