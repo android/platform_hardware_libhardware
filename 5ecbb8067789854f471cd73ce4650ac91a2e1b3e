@@ -1,0 +1,6 @@
+Change-Id: I5ecbb8067789854f471cd73ce4650ac91a2e1b3e
+Code-Review+2: Brian Swetland <swetland@google.com>
+Verified+1: Brian Swetland <swetland@google.com>
+Reviewed-on: https://review.source.android.com/1606
+Project: platform/hardware/libhardware
+Branch: refs/heads/master

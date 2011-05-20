@@ -1,0 +1,8 @@
+Change-Id: Ie97d33d5ee914244d6c69789f4f7bbe3ebac1102
+Code-Review+2: Mathias Agopian <pixelflinger@gmail.com>
+Verified+1: Rebecca Schultz Zavin <rebecca@android.com>
+Submitted-by: Rebecca Schultz Zavin <rebecca@android.com>
+Submitted-at: Fri, 13 Feb 2009 19:39:00 -0700
+Reviewed-on: https://review.source.android.com/8890
+Project: platform/hardware/libhardware
+Branch: refs/heads/master
