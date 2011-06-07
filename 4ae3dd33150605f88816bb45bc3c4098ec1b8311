@@ -1,0 +1,208 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAABB3///K4\u003d",
+        "filename": "modules/fmradio/v4l2_fm.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 1006170
+      },
+      "writtenOn": "2011-06-07T11:18:09Z",
+      "side": 1,
+      "message": "General comment: Lots of trailing spaces and tabs that should be removed, easy to spot here in this review page since they are marked with red.",
+      "revId": "4ae3dd33150605f88816bb45bc3c4098ec1b8311",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAABB3///KY\u003d",
+        "filename": "modules/fmradio/v4l2_fm.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 90,
+      "author": {
+        "id": 1006170
+      },
+      "writtenOn": "2011-06-07T11:18:09Z",
+      "side": 1,
+      "message": "Not really an error, but since this is an RX-only devices (as indicated in it\u0027s library name with a _rx.so ending), it is ok and might be clearer not implement tx-start at all but rather set it functional pointer as NULL in the registration method.\n\nreturning 0 would otherwise signal device started correctly, -1 is preferred if not implemented/not supported.",
+      "revId": "4ae3dd33150605f88816bb45bc3c4098ec1b8311",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAABB3///JA\u003d",
+        "filename": "modules/fmradio/v4l2_fm.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 100,
+      "author": {
+        "id": 1006170
+      },
+      "writtenOn": "2011-06-07T11:18:09Z",
+      "side": 1,
+      "message": "general: do not end log strings with \\n, it is don automatically in LOGx methods.",
+      "revId": "4ae3dd33150605f88816bb45bc3c4098ec1b8311",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAABB3///KU\u003d",
+        "filename": "modules/fmradio/v4l2_fm.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 171,
+      "author": {
+        "id": 1006170
+      },
+      "writtenOn": "2011-06-07T11:18:09Z",
+      "side": 1,
+      "message": "shouldn\u0027t the device session-\u003efd be closed here?\nWe know the rds thread is ended since it is joined in kill_rds_thread, nothing else should be able to access device after a reset.\n\nNot closing the radio device might both result in resource leaks and problems opening it again.",
+      "revId": "4ae3dd33150605f88816bb45bc3c4098ec1b8311",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAABB3///J8\u003d",
+        "filename": "modules/fmradio/v4l2_fm.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 221,
+      "author": {
+        "id": 1006170
+      },
+      "writtenOn": "2011-06-07T11:18:09Z",
+      "side": 1,
+      "message": "Here we are using some kind of cached value. Even though AF and TA are not implemented, making the frequency not being the last set quite unlikely, some devices might not return error when setting out of range or not alligned to grid but rather set to MIN/MAX or round down/up them self.\n\nTo be real sure to return correct frequency I think the device should be queried with an ioctl VIDIOC_G_FREQUENCY. There seems to be an unused method get_freq in v4l2_ioctl.c that could be used.",
+      "revId": "4ae3dd33150605f88816bb45bc3c4098ec1b8311",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAABB3///Kc\u003d",
+        "filename": "modules/fmradio/v4l2_fm.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 578,
+      "author": {
+        "id": 1006170
+      },
+      "writtenOn": "2011-06-07T11:18:09Z",
+      "side": 1,
+      "message": "It might be good to memset vendor_methods to NULL to make sure any future added methods will be set as \"not implemented\" .\n\nEspecially\nvendor_methods-\u003esend_extra_command is not implemented here but since it is not set as null the framework will not detect it as \u0027not implemented\u0027, and a call to it will trigger a crash.\n\nOn the other hand, maybe the framework should memset the vendor_methods_t struct before calling, but in the current upload it doesn\u0027t..",
+      "revId": "4ae3dd33150605f88816bb45bc3c4098ec1b8311",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAABB3///JI\u003d",
+        "filename": "modules/fmradio/v4l2_fm.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 591,
+      "author": {
+        "id": 1006170
+      },
+      "writtenOn": "2011-06-07T11:18:09Z",
+      "side": 1,
+      "message": "as written previously, set tx_start to NULL for a rx-only driver.",
+      "revId": "4ae3dd33150605f88816bb45bc3c4098ec1b8311",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAABB3///JQ\u003d",
+        "filename": "modules/fmradio/v4l2_ioctl.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 1006170
+      },
+      "writtenOn": "2011-06-07T11:18:09Z",
+      "side": 1,
+      "message": "General: lots of trailing spaces and tabs that should be removed and are easy to spot in this review tool as they are marked in red.",
+      "revId": "4ae3dd33150605f88816bb45bc3c4098ec1b8311",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAABB3///JE\u003d",
+        "filename": "modules/fmradio/v4l2_ioctl.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 1006170
+      },
+      "writtenOn": "2011-06-07T11:18:09Z",
+      "side": 1,
+      "message": "general: should not be \\n in end of log strings, eol is added automatically.",
+      "revId": "4ae3dd33150605f88816bb45bc3c4098ec1b8311",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAABB3///I0\u003d",
+        "filename": "modules/fmradio/v4l2_ioctl.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 1006170
+      },
+      "writtenOn": "2011-06-07T11:18:09Z",
+      "side": 1,
+      "message": "I think it should be 0.016 here.\n\nFrom V4L2 spec: \"The lowest tunable frequency in units of 62.5 kHz, or if the capability flag V4L2_TUNER_CAP_LOW is set, in units of 62.5 Hz.\" \n\nSince input is in kHz, if V4L2_TUNER_CAP_LOW is set the returned factor should be 1000/62.5\u003d16 as it correctly is on line 71, but here it should be 1000/62500 \u003d  0.016.",
+      "revId": "4ae3dd33150605f88816bb45bc3c4098ec1b8311",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAABB3///J4\u003d",
+        "filename": "modules/fmradio/v4l2_ioctl.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 195,
+      "author": {
+        "id": 1006170
+      },
+      "writtenOn": "2011-06-07T11:18:09Z",
+      "side": 1,
+      "message": "Why do we need multiple reads here? I can see the code calculates the mean value, but why can\u0027t we just use the first read?",
+      "revId": "4ae3dd33150605f88816bb45bc3c4098ec1b8311",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAABB3///K8\u003d",
+        "filename": "modules/fmradio/videodev2.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1006170
+      },
+      "writtenOn": "2011-06-07T11:18:09Z",
+      "side": 1,
+      "message": "General question: Shouldn\u0027t videodev2.h in bionic/libc/kernel/common/linux/ be used instead (and get added includ path in Android.mk)?\n\nOtherwise we end up using three different videodev2.h giving problems when files are updated.",
+      "revId": "4ae3dd33150605f88816bb45bc3c4098ec1b8311",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
