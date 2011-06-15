@@ -107,6 +107,24 @@
     },
     {
       "key": {
+        "uuid": "AAABCX///2U\u003d",
+        "filename": "modules/fmradio/v4l2_fm.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 100,
+      "author": {
+        "id": 1006170
+      },
+      "writtenOn": "2011-06-15T15:58:58Z",
+      "side": 1,
+      "message": "Then it is a little harder. You can implement a function using reading vargs and call vprintf with those args before calling printf(\"\\n\"), but on the other hand it isn\u0027t that important...",
+      "parentUuid": "AAABCH///N4\u003d",
+      "revId": "4ae3dd33150605f88816bb45bc3c4098ec1b8311",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAABB3///KU\u003d",
         "filename": "modules/fmradio/v4l2_fm.c",
         "patchSetId": 1
@@ -317,6 +335,24 @@
     },
     {
       "key": {
+        "uuid": "AAABCX///2Q\u003d",
+        "filename": "modules/fmradio/v4l2_ioctl.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 1006170
+      },
+      "writtenOn": "2011-06-15T15:58:58Z",
+      "side": 1,
+      "message": "see my other comment on this one",
+      "parentUuid": "AAABCH///Nk\u003d",
+      "revId": "4ae3dd33150605f88816bb45bc3c4098ec1b8311",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAABB3///I0\u003d",
         "filename": "modules/fmradio/v4l2_ioctl.c",
         "patchSetId": 1
@@ -381,6 +417,24 @@
       "side": 1,
       "message": "TRIES is, for default, \u003d1. If someone wants to read the value several times, to get a better indication,  the code allows it.",
       "parentUuid": "AAABB3///J4\u003d",
+      "revId": "4ae3dd33150605f88816bb45bc3c4098ec1b8311",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAABCX///2M\u003d",
+        "filename": "modules/fmradio/v4l2_ioctl.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 195,
+      "author": {
+        "id": 1006170
+      },
+      "writtenOn": "2011-06-15T15:58:58Z",
+      "side": 1,
+      "message": "OK.",
+      "parentUuid": "AAABCH///Ns\u003d",
       "revId": "4ae3dd33150605f88816bb45bc3c4098ec1b8311",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
