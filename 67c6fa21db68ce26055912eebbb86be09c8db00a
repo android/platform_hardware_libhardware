@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAABCX///2k\u003d",
+        "filename": "modules/fmradio/v4l2_fm.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 580,
+      "author": {
+        "id": 1006170
+      },
+      "writtenOn": "2011-06-15T16:03:44Z",
+      "side": 1,
+      "message": "vendor_methods is a pointer and just 4 bytes making sizeof(vendor_methods) returning 4 (on a 32 bit architechture like arm) \n\nshould be sizeof (dereferenced pointer), like this:\n\nmemset(vendor_methods, 0, sizeof(*vendor_methods));",
+      "revId": "67c6fa21db68ce26055912eebbb86be09c8db00a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
