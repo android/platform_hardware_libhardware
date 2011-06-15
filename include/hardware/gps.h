@@ -134,15 +134,23 @@ typedef uint32_t GpsAidingData;
 #define GPS_DELETE_ALL                           0xFFFFFFFF
 
 /** AGPS type */
-typedef uint16_t AGpsType;
+typedef int16_t AGpsType;
+#define AGPS_TYPE_INVALID       -1
 #define AGPS_TYPE_ANY           0
 #define AGPS_TYPE_SUPL          1
 #define AGPS_TYPE_C2K           2
+#define AGPS_TYPE_WWAN_ANY      3
 
 typedef uint16_t AGpsSetIDType;
 #define AGPS_SETID_TYPE_NONE    0
 #define AGPS_SETID_TYPE_IMSI    1
 #define AGPS_SETID_TYPE_MSISDN  2
+
+typedef int16_t AGpsBearerType;
+#define AGPS_APN_BEARER_INVALID    -1
+#define AGPS_APN_BEARER_IPV4        0
+#define AGPS_APN_BEARER_IPV6        1
+#define AGPS_APN_BEARER_IPV4V6      2
 
 /**
  * String length constants
@@ -511,18 +519,19 @@ typedef struct {
      */
     void  (*init)( AGpsCallbacks* callbacks );
     /**
-     * Notifies that a data connection is available and sets 
+     * Notifies that a data connection is available and sets
      * the name of the APN to be used for SUPL.
      */
-    int  (*data_conn_open)( const char* apn );
+    int  (*data_conn_open)( AGpsType agpsType,
+                            const char* apn, AGpsBearerType bearerType );
     /**
      * Notifies that the AGPS data connection has been closed.
      */
-    int  (*data_conn_closed)();
+    int  (*data_conn_closed)( AGpsType agpsType );
     /**
-     * Notifies that a data connection is not available for AGPS. 
+     * Notifies that a data connection is not available for AGPS.
      */
-    int  (*data_conn_failed)();
+    int  (*data_conn_failed)(AGpsType  agpsType );
     /**
      * Sets the hostname and port for the AGPS server.
      */
