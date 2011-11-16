@@ -135,6 +135,16 @@ typedef uint16_t AGpsSetIDType;
 #define AGPS_SETID_TYPE_IMSI    1
 #define AGPS_SETID_TYPE_MSISDN  2
 
+typedef uint16_t AGpsBearerType;
+#define AGPS_APN_BEARER_INVALID     -1
+#define AGPS_APN_BEARER_IPV4        0
+#define AGPS_APN_BEARER_IPV6        1
+#define AGPS_APN_BEARER_IPV4V6      2
+
+typedef uint16_t AGpsIpVersion;
+#define AGPS_IPV4        0
+#define AGPS_IPV6        1
+
 /**
  * String length constants
  */
@@ -476,13 +486,26 @@ typedef struct {
 
 /** Represents the status of AGPS. */
 typedef struct {
-    /** set to sizeof(AGpsStatus) */
+    /** set to sizeof(AGpsStatus_v1) */
     size_t          size;
 
     AGpsType        type;
     AGpsStatusValue status;
     uint32_t        ipaddr;
-} AGpsStatus;
+} AGpsStatus_v1;
+
+/** Represents the status of AGPS. */
+typedef struct {
+    /** set to sizeof(AGpsStatus_v2) */
+    size_t          size;
+
+    AGpsType        type;
+    AGpsStatusValue status;
+    AGpsIpVersion   ipVersion;
+    char            ipaddr[16];
+} AGpsStatus_v2;
+
+typedef AGpsStatus_v2 AGpsStatus;
 
 /** Callback with AGPS status information.
  *  Can only be called from a thread created by create_thread_cb.
@@ -510,7 +533,7 @@ typedef struct {
      * Notifies that a data connection is available and sets 
      * the name of the APN to be used for SUPL.
      */
-    int  (*data_conn_open)( const char* apn );
+    int  (*data_conn_open)( const char* apn, AGpsBearerType bearerType );
     /**
      * Notifies that the AGPS data connection has been closed.
      */
