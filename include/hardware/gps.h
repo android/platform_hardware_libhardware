@@ -135,6 +135,12 @@ typedef uint16_t AGpsSetIDType;
 #define AGPS_SETID_TYPE_IMSI    1
 #define AGPS_SETID_TYPE_MSISDN  2
 
+typedef uint16_t AGpsBearerType;
+#define AGPS_APN_BEARER_INVALID     -1
+#define AGPS_APN_BEARER_IPV4        0
+#define AGPS_APN_BEARER_IPV6        1
+#define AGPS_APN_BEARER_IPV4V6      2
+
 /**
  * String length constants
  */
@@ -481,7 +487,8 @@ typedef struct {
 
     AGpsType        type;
     AGpsStatusValue status;
-    uint32_t        ipaddr;
+    uint32_t        ipv4_addr;
+    char            ipv6_addr[16];
 } AGpsStatus;
 
 /** Callback with AGPS status information.
@@ -510,7 +517,7 @@ typedef struct {
      * Notifies that a data connection is available and sets 
      * the name of the APN to be used for SUPL.
      */
-    int  (*data_conn_open)( const char* apn );
+    int  (*data_conn_open)( const char* apn, AGpsBearerType bearerType );
     /**
      * Notifies that the AGPS data connection has been closed.
      */
