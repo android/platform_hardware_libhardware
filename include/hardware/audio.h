@@ -78,6 +78,11 @@ __BEGIN_DECLS
  *  audio device parameters
  */
 
+/* BT chip state */
+#define AUDIO_PARAMETER_KEY_BLUETOOTH_STATE "bluetooth_enabled"
+#define AUDIO_PARAMETER_VALUE_BLUETOOTH_STATE_ON "true"
+#define AUDIO_PARAMETER_VALUE_BLUETOOTH_STATE_OFF "false"
+
 /* BT SCO Noise Reduction + Echo Cancellation parameters */
 #define AUDIO_PARAMETER_KEY_BT_NREC "bt_headset_nrec"
 #define AUDIO_PARAMETER_VALUE_ON "on"
@@ -89,6 +94,11 @@ __BEGIN_DECLS
 #define AUDIO_PARAMETER_VALUE_TTY_VCO "tty_vco"
 #define AUDIO_PARAMETER_VALUE_TTY_HCO "tty_hco"
 #define AUDIO_PARAMETER_VALUE_TTY_FULL "tty_full"
+
+/* HAC device selection */
+#define AUDIO_PARAMETER_KEY_HAC_SETTING "HACSetting"
+#define AUDIO_PARAMETER_VALUE_HAC_ON "ON"
+#define AUDIO_PARAMETER_VALUE_HAC_OFF "OFF"
 
 /* A2DP sink address set by framework */
 #define AUDIO_PARAMETER_A2DP_SINK_ADDRESS "a2dp_sink_address"
