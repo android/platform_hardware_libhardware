@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAIrn///U4\u003d",
+        "filename": "include/hardware/fb.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 70,
+      "author": {
+        "id": 1000660
+      },
+      "writtenOn": "2012-08-20T22:05:56Z",
+      "side": 1,
+      "message": "The change I see internally suggests that this should be decremented to take into account the size of the new variable.",
+      "revId": "5c89ccde5231feff669ac50fc55c404ea64dbc40",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
