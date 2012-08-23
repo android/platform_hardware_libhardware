@@ -105,6 +105,9 @@ struct audio_policy {
     void (*set_ringer_mode)(struct audio_policy *pol, uint32_t mode,
                             uint32_t mask);
 
+    /* indicate a change in fm radio mode */
+    void (*set_fm_mode)(struct audio_policy *pol, uint32_t mode);
+
     /* force using a specific device category for the specified usage */
     void (*set_force_use)(struct audio_policy *pol,
                           audio_policy_force_use_t usage,
