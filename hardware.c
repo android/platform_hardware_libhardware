@@ -122,9 +122,8 @@ int hw_get_module_by_class(const char *class_id, const char *inst,
 {
     int status;
     int i;
-    const struct hw_module_t *hmi = NULL;
-    char prop[PATH_MAX];
-    char path[PATH_MAX];
+    char prop[PROPERTY_VALUE_MAX];
+    char path[PATH_MAX] = "";
     char name[PATH_MAX];
 
     if (inst)
