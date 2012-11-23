@@ -96,6 +96,9 @@ __BEGIN_DECLS
 /* Screen state */
 #define AUDIO_PARAMETER_KEY_SCREEN_STATE "screen_state"
 
+/* Stream Flags */
+#define AUDIO_PARAMETER_KEY_STREAM_FLAGS "stream_flags"
+
 /**
  *  audio stream parameters
  */
