@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "M73AySfE",
+        "filename": "include/hardware/audio_policy.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 109,
+      "author": {
+        "id": 1000413
+      },
+      "writtenOn": "2012-12-13T17:41:15Z",
+      "side": 1,
+      "message": "this is not really audio related. you\u0027ll have to find a different way to plum your fm receiver.\n\nwe need a real FM/DAB API (and associated HAL perhaps) to expose proper radio tuning. That\u0027s not currently on the roadmap.",
+      "revId": "31a50c00858843a9d6935616f26eb5133841f5a8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
