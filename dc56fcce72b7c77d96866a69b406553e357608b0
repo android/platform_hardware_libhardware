@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "M7-BFeUU",
+        "filename": "include/hardware/audio.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 82,
+      "author": {
+        "id": 1000413
+      },
+      "writtenOn": "2012-12-13T17:38:40Z",
+      "side": 1,
+      "message": "why is bluetooth state being added to audio hal? that doesn\u0027t make sense to me.",
+      "revId": "dc56fcce72b7c77d96866a69b406553e357608b0",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "M79BAfTg",
+        "filename": "include/hardware/audio.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 384,
+      "author": {
+        "id": 1000413
+      },
+      "writtenOn": "2012-12-13T17:38:40Z",
+      "side": 1,
+      "message": "this doesn\u0027t belong here. what does FM have to do with audio?",
+      "revId": "dc56fcce72b7c77d96866a69b406553e357608b0",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
