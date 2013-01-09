@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "N8hOJLi4",
+        "filename": "hardware.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 1000413
+      },
+      "writtenOn": "2013-01-09T01:06:08Z",
+      "side": 1,
+      "message": "this is silly. handle is modified as the first executing statement on line 74.",
+      "revId": "4155d4d8730a9b8528ede6f049cd077c8af7712a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "N8rlnY7E",
+        "filename": "hardware.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 125,
+      "author": {
+        "id": 1000413
+      },
+      "writtenOn": "2013-01-09T01:06:08Z",
+      "side": 1,
+      "message": "PROPERTY_VALUE_MAX if you are going to fix it.",
+      "revId": "4155d4d8730a9b8528ede6f049cd077c8af7712a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "N8jl0U1s",
+        "filename": "hardware.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 126,
+      "author": {
+        "id": 1000413
+      },
+      "writtenOn": "2013-01-09T01:06:08Z",
+      "side": 1,
+      "message": "all of these really don\u0027t need to be memset to 0 as doing this will force the compiler to memset them all to 0. They just need the first character to be \u0027\\0\u0027. I would just initialize the first member separately in the beginning of the function, the name doesn\u0027t have to be because it can never be unused (i.e. when you reach line 133, name MUST have been assigned to), but I understand if you want to put it there for completeness.",
+      "revId": "4155d4d8730a9b8528ede6f049cd077c8af7712a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
