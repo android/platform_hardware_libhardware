@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "OUTHJcCU",
+        "filename": "hardware.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 126,
+      "author": {
+        "id": 1000413
+      },
+      "writtenOn": "2013-01-16T17:57:18Z",
+      "side": 1,
+      "message": "this still has to effectively do memset(path, 0, ...) and if PATH_MAX is 4096, that\u0027s a lot of pointless cycles.\n\nAfter declarations, insert a new line after line 127 and do\npath[0] \u003d \u0027\\0\u0027;",
+      "revId": "7ba918137d6e798c4f36293e4cf02e00b8c1417a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
