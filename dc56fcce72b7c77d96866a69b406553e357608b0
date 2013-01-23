@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "OtlL-dJ8",
+        "filename": "include/hardware/audio.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 82,
+      "author": {
+        "id": 1012411
+      },
+      "writtenOn": "2013-01-23T20:06:04Z",
+      "side": 1,
+      "message": "On behalf of François Gaffie (the author):\n\nThe Blutooth status has been sent to Audio HAL for a while.\n Until now, nobody would react on such parameter.\n  \n As our HAL has shared route with BT, and in order to enforce robustness of our route manager, we want to\n decrypt this message. (A chip on would make an BT audio route eligible for routing)\n  \n So, adding this formalism here was making sense.",
+      "parentUuid": "M7-BFeUU",
+      "revId": "dc56fcce72b7c77d96866a69b406553e357608b0",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "M79BAfTg",
         "filename": "include/hardware/audio.h",
         "patchSetId": 1
