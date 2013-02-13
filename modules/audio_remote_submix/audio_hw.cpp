@@ -554,7 +554,7 @@ static int adev_open_output_stream(struct audio_hw_device *dev,
     config->channel_mask = AUDIO_CHANNEL_OUT_STEREO;
     rsxadev->config.channel_mask = config->channel_mask;
 
-    if ((config->sample_rate != 48000) || (config->sample_rate != 44100)) {
+    if ((config->sample_rate != 48000) && (config->sample_rate != 44100)) {
         config->sample_rate = DEFAULT_RATE_HZ;
     }
     rsxadev->config.rate = config->sample_rate;
@@ -714,7 +714,7 @@ static int adev_open_input_stream(struct audio_hw_device *dev,
     config->channel_mask = AUDIO_CHANNEL_IN_STEREO;
     rsxadev->config.channel_mask = config->channel_mask;
 
-    if ((config->sample_rate != 48000) || (config->sample_rate != 44100)) {
+    if ((config->sample_rate != 48000) && (config->sample_rate != 44100)) {
         config->sample_rate = DEFAULT_RATE_HZ;
     }
     rsxadev->config.rate = config->sample_rate;
