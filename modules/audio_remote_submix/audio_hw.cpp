@@ -337,7 +337,10 @@ static size_t in_get_buffer_size(const struct audio_stream *stream)
 
 static audio_channel_mask_t in_get_channels(const struct audio_stream *stream)
 {
-    return AUDIO_CHANNEL_IN_STEREO;
+    const struct submix_stream_in *in =
+            reinterpret_cast<const struct submix_stream_in *>(stream);
+    uint32_t channels = in->dev->config.channel_mask;
+    return channels;
 }
 
 static audio_format_t in_get_format(const struct audio_stream *stream)
@@ -671,8 +674,8 @@ static int adev_get_mic_mute(const struct audio_hw_device *dev, bool *state)
 static size_t adev_get_input_buffer_size(const struct audio_hw_device *dev,
                                          const struct audio_config *config)
 {
-    //### TODO correlate this with pipe parameters
-    return 4096;
+    struct submix_audio_device *rsxadev = (struct submix_audio_device *)dev;
+    return rsxadev->config.period_size * popcount(config->channel_mask) * sizeof(int16_t);
 }
 
 static int adev_open_input_stream(struct audio_hw_device *dev,
