@@ -2,6 +2,23 @@
   "comments": [
     {
       "key": {
+        "uuid": "RjvRx2PU",
+        "filename": "include/hardware/vibrator.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000413
+      },
+      "writtenOn": "2013-03-12T20:05:19Z",
+      "side": 1,
+      "message": "This is a good start. Colin and I were just discussing this (regarding exists()) and I realized that this is not done correctly. The vibrator on/off functions should not be methods on the module. The module should just retain an open. You don\u0027t even need your own module definition. What you do need is a device definition for your vibrator device which will be returned by the open call on the module. What you can do then is fail open() (with ENODEV) if the device doesn\u0027t exist. This way the vibrator.default.so will work the same way the current code does and you don\u0027t need a weird \"exists()\" call.\n\nMakes sense?",
+      "revId": "97fa841e2d0975fc279757d7bda1ecb31e693bcd",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "RZOQWLmM",
         "filename": "include/hardware/vibrator.h",
         "patchSetId": 1
@@ -151,6 +168,24 @@
       "side": 1,
       "message": "Do you mean a \"vibrator.qemu.so\" module ?",
       "parentUuid": "RZOckcL8",
+      "revId": "97fa841e2d0975fc279757d7bda1ecb31e693bcd",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "RjtTRPKk",
+        "filename": "modules/vibrator/vibrator.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 1000413
+      },
+      "writtenOn": "2013-03-12T20:05:19Z",
+      "side": 1,
+      "message": "It\u0027d be vibrator.goldfish.so",
+      "parentUuid": "RgSRkvJI",
       "revId": "97fa841e2d0975fc279757d7bda1ecb31e693bcd",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
