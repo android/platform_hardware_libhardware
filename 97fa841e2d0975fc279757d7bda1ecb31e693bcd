@@ -2,6 +2,74 @@
   "comments": [
     {
       "key": {
+        "uuid": "RZOQWLmM",
+        "filename": "include/hardware/vibrator.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 1012391
+      },
+      "writtenOn": "2013-03-12T01:06:15Z",
+      "side": 1,
+      "message": "int (*vibrator_exists)(void);",
+      "revId": "97fa841e2d0975fc279757d7bda1ecb31e693bcd",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "RZIf9bPc",
+        "filename": "include/hardware/vibrator.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 1012391
+      },
+      "writtenOn": "2013-03-12T01:06:15Z",
+      "side": 1,
+      "message": "\"negative if error\", so we can exit codes.",
+      "revId": "97fa841e2d0975fc279757d7bda1ecb31e693bcd",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "RZOcLkC4",
+        "filename": "include/hardware/vibrator.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 1012391
+      },
+      "writtenOn": "2013-03-12T01:06:15Z",
+      "side": 1,
+      "message": "\"negative if error\"",
+      "revId": "97fa841e2d0975fc279757d7bda1ecb31e693bcd",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "RZMQZMpQ",
+        "filename": "include/hardware/vibrator.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 1012391
+      },
+      "writtenOn": "2013-03-12T01:06:15Z",
+      "side": 1,
+      "message": "int (*vibrator_off)(void);",
+      "revId": "97fa841e2d0975fc279757d7bda1ecb31e693bcd",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "RZD4EqV0",
         "filename": "modules/vibrator/vibrator.c",
         "patchSetId": 1
