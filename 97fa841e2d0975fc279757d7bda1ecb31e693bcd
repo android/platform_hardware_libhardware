@@ -36,6 +36,24 @@
     },
     {
       "key": {
+        "uuid": "RgURnwJk",
+        "filename": "include/hardware/vibrator.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 1012411
+      },
+      "writtenOn": "2013-03-12T09:21:07Z",
+      "side": 1,
+      "message": "True. It means that in com_android_server_VibratorService.cpp (https://android-review.googlesource.com/#/c/49230/2/services/jni/com_android_server_VibratorService.cpp), the \u0027vibratorExists\u0027 function should be defined like:\n\nstatic jboolean vibratorExists(JNIEnv *env, jobject clazz)\n{\n    return gVibraModule ? JNI_TRUE : JNI_FALSE;\n}\n\nis that ok for you ?",
+      "parentUuid": "RgeSUlDk",
+      "revId": "97fa841e2d0975fc279757d7bda1ecb31e693bcd",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "RZIf9bPc",
         "filename": "include/hardware/vibrator.h",
         "patchSetId": 1
@@ -121,6 +139,24 @@
     },
     {
       "key": {
+        "uuid": "RgSRkvJI",
+        "filename": "modules/vibrator/vibrator.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 1012411
+      },
+      "writtenOn": "2013-03-12T09:21:07Z",
+      "side": 1,
+      "message": "Do you mean a \"vibrator.qemu.so\" module ?",
+      "parentUuid": "RZOckcL8",
+      "revId": "97fa841e2d0975fc279757d7bda1ecb31e693bcd",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "RZP7wgVs",
         "filename": "modules/vibrator/vibrator.c",
         "patchSetId": 1
@@ -132,6 +168,24 @@
       "writtenOn": "2013-03-11T18:11:27Z",
       "side": 1,
       "message": "This can just be #defined and explained there; we don\u0027t need the arithmetic for this calculation here.",
+      "revId": "97fa841e2d0975fc279757d7bda1ecb31e693bcd",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "RgQSeWEg",
+        "filename": "modules/vibrator/vibrator.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 1012411
+      },
+      "writtenOn": "2013-03-12T09:21:07Z",
+      "side": 1,
+      "message": "ok. There is a \"+1\" missing, as well, for the \u0027\\n\u0027 line 69; we\u0027ll add it.",
+      "parentUuid": "RZP7wgVs",
       "revId": "97fa841e2d0975fc279757d7bda1ecb31e693bcd",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
