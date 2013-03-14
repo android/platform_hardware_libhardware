@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "Rr1Nj5L8",
+        "filename": "include/hardware/vibrator.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1012411
+      },
+      "writtenOn": "2013-03-14T13:05:34Z",
+      "side": 1,
+      "message": "OK, so if we got it right, we will create a new \"vibra_device_t\" struct deriving hw_device_t, looking like:\n\nstruct hw_device_t {\n  hw_device_t common;\n  int (*vibrator_on)(int timeout_ms);\n  int (*vibrator_on)(void);\n}\n\nthe sequence will look like (approximately; I\u0027m not respecting the API here, for simplicity):\n\nmodule \u003d hw_get_module(); // May fail is no vibrator module is compiled\n  where hw_get_module is:\n  device \u003d module.open();\n    where module.open is:\n    return isDevicePresent() ? device : ENODEV;\n\nand later:\n\nmodule.vibrator_on();\n  where module.vibrator_on is:\n  device.vibrator_on()\n\n\nright ?\nWe will submit a new patchset within a week.",
+      "parentUuid": "RjvRx2PU",
+      "revId": "97fa841e2d0975fc279757d7bda1ecb31e693bcd",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "RZOQWLmM",
         "filename": "include/hardware/vibrator.h",
         "patchSetId": 1
