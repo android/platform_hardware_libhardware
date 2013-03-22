@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "SbnodUR8",
+        "filename": "include/hardware/vibrator.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 1002751
+      },
+      "writtenOn": "2013-03-22T22:07:53Z",
+      "side": 1,
+      "message": "pass the vibra_device_t * to vibrator_on and vibrator_off, that way more complicated hals can wrap the vibra_device_t struct in another struct that contains useful state data, such as holding the fd to the vibrator device",
+      "revId": "ff987290a24c4e6ccaa4df9b09c64035b162de70",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "SbloYlTA",
+        "filename": "modules/vibrator/vibrator.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 1002751
+      },
+      "writtenOn": "2013-03-22T22:07:53Z",
+      "side": 1,
+      "message": "make this static",
+      "revId": "ff987290a24c4e6ccaa4df9b09c64035b162de70",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
