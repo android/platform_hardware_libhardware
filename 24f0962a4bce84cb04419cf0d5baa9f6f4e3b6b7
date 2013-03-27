@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "Sk0Onxvo",
+        "filename": "include/hardware/vibrator.h",
+        "patchSetId": 5
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 1000413
+      },
+      "writtenOn": "2013-03-27T07:56:22Z",
+      "side": 1,
+      "message": "should be vibrator_open() to match others",
+      "revId": "24f0962a4bce84cb04419cf0d5baa9f6f4e3b6b7",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "Sk2OayrA",
+        "filename": "include/hardware/vibrator.h",
+        "patchSetId": 5
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 1000413
+      },
+      "writtenOn": "2013-03-27T07:56:22Z",
+      "side": 1,
+      "message": "that\u0027s the module ID, you need a device ID. You can add a \n\n#define VIBRATOR_HARDWARE_VIBRATOR \"vibrator\"\n\nor something like that as this represents the main device vibrator. If we add other vibes in the future (say for haptics), we can add a different device name and extend this interface.",
+      "revId": "24f0962a4bce84cb04419cf0d5baa9f6f4e3b6b7",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
