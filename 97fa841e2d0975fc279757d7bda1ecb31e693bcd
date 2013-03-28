@@ -89,6 +89,24 @@
     },
     {
       "key": {
+        "uuid": "ScFLLNG8",
+        "filename": "include/hardware/vibrator.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 1012411
+      },
+      "writtenOn": "2013-03-28T17:02:57Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "RgeSUlDk",
+      "revId": "97fa841e2d0975fc279757d7bda1ecb31e693bcd",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "RZIf9bPc",
         "filename": "include/hardware/vibrator.h",
         "patchSetId": 1
@@ -100,6 +118,24 @@
       "writtenOn": "2013-03-12T01:06:15Z",
       "side": 1,
       "message": "\"negative if error\", so we can exit codes.",
+      "revId": "97fa841e2d0975fc279757d7bda1ecb31e693bcd",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ScNILpNk",
+        "filename": "include/hardware/vibrator.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 1012411
+      },
+      "writtenOn": "2013-03-28T17:02:57Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "RZIf9bPc",
       "revId": "97fa841e2d0975fc279757d7bda1ecb31e693bcd",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
@@ -123,6 +159,24 @@
     },
     {
       "key": {
+        "uuid": "ScLIOIOs",
+        "filename": "include/hardware/vibrator.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 1012411
+      },
+      "writtenOn": "2013-03-28T17:02:57Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "RZOcLkC4",
+      "revId": "97fa841e2d0975fc279757d7bda1ecb31e693bcd",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "RZMQZMpQ",
         "filename": "include/hardware/vibrator.h",
         "patchSetId": 1
@@ -140,6 +194,24 @@
     },
     {
       "key": {
+        "uuid": "ScJIRHAw",
+        "filename": "include/hardware/vibrator.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 1012411
+      },
+      "writtenOn": "2013-03-28T17:02:57Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "RZMQZMpQ",
+      "revId": "97fa841e2d0975fc279757d7bda1ecb31e693bcd",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "RZD4EqV0",
         "filename": "modules/vibrator/vibrator.c",
         "patchSetId": 1
@@ -151,6 +223,24 @@
       "writtenOn": "2013-03-11T18:11:27Z",
       "side": 1,
       "message": "Is there any other changes to the original vibrator.c code other than changing everything to C++-esque camelCase naming?",
+      "revId": "97fa841e2d0975fc279757d7bda1ecb31e693bcd",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ScPLbSDY",
+        "filename": "modules/vibrator/vibrator.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1012411
+      },
+      "writtenOn": "2013-03-28T17:02:57Z",
+      "side": 1,
+      "message": "we have reverted the camelCase style.  The most significant change is the creation of a vibra_device type deriving hw_device_t",
+      "parentUuid": "RZD4EqV0",
       "revId": "97fa841e2d0975fc279757d7bda1ecb31e693bcd",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
@@ -245,6 +335,24 @@
     },
     {
       "key": {
+        "uuid": "ScFKiVKc",
+        "filename": "modules/vibrator/vibrator.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 1012411
+      },
+      "writtenOn": "2013-03-28T17:02:57Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "RgQSeWEg",
+      "revId": "97fa841e2d0975fc279757d7bda1ecb31e693bcd",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "RZJ4SHaA",
         "filename": "modules/vibrator/vibrator.c",
         "patchSetId": 1
@@ -256,6 +364,24 @@
       "writtenOn": "2013-03-11T18:11:27Z",
       "side": 1,
       "message": "static",
+      "revId": "97fa841e2d0975fc279757d7bda1ecb31e693bcd",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ScHKnWLY",
+        "filename": "modules/vibrator/vibrator.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 1012411
+      },
+      "writtenOn": "2013-03-28T17:02:57Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "RZJ4SHaA",
       "revId": "97fa841e2d0975fc279757d7bda1ecb31e693bcd",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
@@ -279,6 +405,24 @@
     },
     {
       "key": {
+        "uuid": "ScJK73M4",
+        "filename": "modules/vibrator/vibrator.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 83,
+      "author": {
+        "id": 1012411
+      },
+      "writtenOn": "2013-03-28T17:02:57Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "RZH7.MSs",
+      "revId": "97fa841e2d0975fc279757d7bda1ecb31e693bcd",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "RgaSejFM",
         "filename": "modules/vibrator/vibrator.c",
         "patchSetId": 1
@@ -290,6 +434,24 @@
       "writtenOn": "2013-03-12T08:21:09Z",
       "side": 1,
       "message": "use module_api_version and hal_api_version, see hardware.h",
+      "revId": "97fa841e2d0975fc279757d7bda1ecb31e693bcd",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ScLK44NI",
+        "filename": "modules/vibrator/vibrator.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 99,
+      "author": {
+        "id": 1012411
+      },
+      "writtenOn": "2013-03-28T17:02:57Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "RgaSejFM",
       "revId": "97fa841e2d0975fc279757d7bda1ecb31e693bcd",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
