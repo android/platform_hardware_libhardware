@@ -204,6 +204,11 @@ typedef uint16_t AGpsStatusValue;
 #define AGPS_RIL_NETWORK_TTYPE_WIMAX        6
 
 /**
+ * Name for the EXTRA CMD interface.
+ */
+#define GPS_RAW_CMD_INTERFACE      "gps-raw-cmd"
+
+/**
  * Name for the GPS XTRA interface.
  */
 #define GPS_XTRA_INTERFACE      "gps-xtra"
@@ -428,6 +433,14 @@ typedef struct {
     /** Get a pointer to extension information. */
     const void* (*get_extension)(const char* name);
 } GpsInterface;
+
+/** Interface for raw GPS command support. */
+typedef struct {
+    /** set to sizeof(InjectRawCmdInterface) */
+    size_t          size;
+    /** Injects Android extra cmd into GPS HAL */
+    bool  (*inject_raw_cmd)(char* bundle, int bundle_length );
+} InjectRawCmdInterface;
 
 /** Callback to request the client to download XTRA data.
  *  The client should download XTRA data and inject it by calling inject_xtra_data().
