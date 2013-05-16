@@ -464,6 +464,11 @@ typedef struct {
      * implementation wishes to include in a bugreport.
      */
     size_t (*get_internal_state)(char* buffer, size_t bufferSize);
+    /**
+     * This function should inject raw command bytes into GPS HAL
+     * for testing purposes, e.g. injecting position or geofences.
+     */
+    int  (*inject_raw_cmd)(char* bundle, int bundle_length );
 } GpsDebugInterface;
 
 /** Represents the status of AGPS. */
