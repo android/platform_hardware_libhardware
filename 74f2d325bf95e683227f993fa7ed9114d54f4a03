@@ -33,6 +33,23 @@
       "revId": "74f2d325bf95e683227f993fa7ed9114d54f4a03",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b27965b7_77c20a26",
+        "filename": "include/hardware/keymaster.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 143,
+      "author": {
+        "id": 1000413
+      },
+      "writtenOn": "2013-08-29T06:06:38Z",
+      "side": 1,
+      "message": "just noticed from the test, you set this in the implementations? There\u0027s a field in both module and device common structs for the version. Why aren\u0027t you using those? Am I missing something?",
+      "revId": "74f2d325bf95e683227f993fa7ed9114d54f4a03",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
