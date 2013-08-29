@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "b27965b7_97b1e6de",
+        "filename": "include/hardware/keymaster.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 1000413
+      },
+      "writtenOn": "2013-08-29T06:05:00Z",
+      "side": 1,
+      "message": "should convert to major/minor specification. I would just rev the minor version since it seems that we are binary compatible to the previous version.",
+      "revId": "74f2d325bf95e683227f993fa7ed9114d54f4a03",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b27965b7_179e364d",
+        "filename": "include/hardware/keymaster.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 136,
+      "author": {
+        "id": 1000413
+      },
+      "writtenOn": "2013-08-29T06:05:00Z",
+      "side": 1,
+      "message": "spurious newline?",
+      "revId": "74f2d325bf95e683227f993fa7ed9114d54f4a03",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
