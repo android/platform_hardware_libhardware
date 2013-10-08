@@ -33,6 +33,74 @@
       "revId": "8f0301eec93d7acaab3ce30683af93a29fe35892",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e1d30d45_5c40b562",
+        "filename": "modules/vibrator/vibrator.c",
+        "patchSetId": 7
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1003957
+      },
+      "writtenOn": "2013-10-08T17:04:43Z",
+      "side": 1,
+      "message": "This assumes that sizeof(int) \u003d\u003d 4.\n\nWhat\u0027s the +1 for precision?  Do you mean a leading minus?  That shouldn\u0027t happen.  We should check the range of values or use unsigned ints if appropriate.",
+      "revId": "8f0301eec93d7acaab3ce30683af93a29fe35892",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "21ba85ee_81cb8099",
+        "filename": "modules/vibrator/vibrator.c",
+        "patchSetId": 7
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 1003957
+      },
+      "writtenOn": "2013-10-08T17:04:43Z",
+      "side": 1,
+      "message": "return -errno",
+      "revId": "8f0301eec93d7acaab3ce30683af93a29fe35892",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "21ba85ee_21d27448",
+        "filename": "modules/vibrator/vibrator.c",
+        "patchSetId": 7
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 1003957
+      },
+      "writtenOn": "2013-10-08T17:04:43Z",
+      "side": 1,
+      "message": "Technically, both nwr and ret could be -1 since snprintf and write could both fail.  Unlikely though.",
+      "revId": "8f0301eec93d7acaab3ce30683af93a29fe35892",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "21ba85ee_617d0c6d",
+        "filename": "modules/vibrator/vibrator.c",
+        "patchSetId": 7
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 1003957
+      },
+      "writtenOn": "2013-10-08T17:04:43Z",
+      "side": 1,
+      "message": "nit: Can not -\u003e Cannot",
+      "revId": "8f0301eec93d7acaab3ce30683af93a29fe35892",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
