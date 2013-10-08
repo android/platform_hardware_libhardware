@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e1d30d45_fc7c21c0",
+        "filename": "include/hardware/vibrator.h",
+        "patchSetId": 7
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 1003957
+      },
+      "writtenOn": "2013-10-08T16:54:36Z",
+      "side": 1,
+      "message": "Please spell this out.  vibrator_device.",
+      "revId": "8f0301eec93d7acaab3ce30683af93a29fe35892",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "61c0fd68_ce0403e4",
+        "filename": "include/hardware/vibrator.h",
+        "patchSetId": 7
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 1003957
+      },
+      "writtenOn": "2013-10-08T16:54:36Z",
+      "side": 1,
+      "message": "vibrator_device_t.",
+      "revId": "8f0301eec93d7acaab3ce30683af93a29fe35892",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
