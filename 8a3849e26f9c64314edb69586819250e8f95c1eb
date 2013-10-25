@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3e69c4a2_9fb45be8",
+        "filename": "include/hardware/keymaster.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 1003723
+      },
+      "writtenOn": "2013-10-25T20:44:31Z",
+      "side": 1,
+      "message": "is it worth noting somewhere that RSA support is implicit?",
+      "revId": "8a3849e26f9c64314edb69586819250e8f95c1eb",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
