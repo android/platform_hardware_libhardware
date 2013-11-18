@@ -36,7 +36,13 @@ __BEGIN_DECLS
 typedef int64_t GpsUtcTime;
 
 /** Maximum number of SVs for gps_sv_status_callback(). */
-#define GPS_MAX_SVS 32
+#define GNSS_MAX_SVS 138
+/** Maximum number of SVs for each GNSS system. */
+#define GPS_MAX_SVS  32
+#define SBAS_MAX_SVS 32
+#define GLO_MAX_SVS  32
+#define QZSS_MAX_SVS  5
+#define BDS_MAX_SVS  37
 
 /** Requested operational mode for GPS operation. */
 typedef uint32_t GpsPositionMode;
@@ -271,16 +277,18 @@ typedef struct {
     /** set to sizeof(GpsSvInfo) */
     size_t          size;
     /** Pseudo-random number for the SV. */
-    int     prn;
+    int      prn;
     /** Signal to noise ratio. */
-    float   snr;
+    float    snr;
     /** Elevation of SV in degrees. */
-    float   elevation;
+    float    elevation;
     /** Azimuth of SV in degrees. */
-    float   azimuth;
-} GpsSvInfo;
+    float    azimuth;
+} GnssSvInfo;
 
-/** Represents SV status. */
+typedef GnssSvInfo GpsSvInfo;
+
+/** Represents GPS SV status. */
 typedef struct {
     /** set to sizeof(GpsSvStatus) */
     size_t          size;
@@ -289,7 +297,7 @@ typedef struct {
     int         num_svs;
 
     /** Contains an array of SV information. */
-    GpsSvInfo   sv_list[GPS_MAX_SVS];
+    GnssSvInfo   sv_list[GPS_MAX_SVS];
 
     /** Represents a bit mask indicating which SVs
      * have ephemeris data.
@@ -307,6 +315,127 @@ typedef struct {
      */
     uint32_t    used_in_fix_mask;
 } GpsSvStatus;
+
+/** Represents SBAS SV status. */
+typedef struct {
+    /** set to sizeof(SbasSvStatus) */
+    size_t          size;
+
+    /** Number of SVs currently visible. */
+    int         num_svs;
+
+    /** Contains an array of SV information. */
+    GnssSvInfo   sv_list[SBAS_MAX_SVS];
+
+    /** Represents a bit mask indicating which SVs
+     * have ephemeris data.
+     */
+    uint32_t    ephemeris_mask;
+
+    /** Represents a bit mask indicating which SVs
+     * have almanac data.
+     */
+    uint32_t    almanac_mask;
+
+    /**
+     * Represents a bit mask indicating which SVs
+     * were used for computing the most recent position fix.
+     */
+    uint32_t    used_in_fix_mask;
+} SbasSvStatus;
+
+/** Represents GLO SV status. */
+typedef struct {
+    /** set to sizeof(GloSvStatus) */
+    size_t          size;
+
+    /** Number of SVs currently visible. */
+    int         num_svs;
+
+    /** Contains an array of SV information. */
+    GnssSvInfo   sv_list[GLO_MAX_SVS];
+
+    /** Represents a bit mask indicating which SVs
+     * have ephemeris data.
+     */
+    uint32_t    ephemeris_mask;
+
+    /** Represents a bit mask indicating which SVs
+     * have almanac data.
+     */
+    uint32_t    almanac_mask;
+
+    /**
+     * Represents a bit mask indicating which SVs
+     * were used for computing the most recent position fix.
+     */
+    uint32_t    used_in_fix_mask;
+} GloSvStatus;
+
+/** Represents QZSS SV status. */
+typedef struct {
+    /** set to sizeof(QzssSvStatus) */
+    size_t          size;
+
+    /** Number of SVs currently visible. */
+    int         num_svs;
+
+    /** Contains an array of SV information. */
+    GnssSvInfo   sv_list[QZSS_MAX_SVS];
+
+    /** Represents a bit mask indicating which SVs
+     * have ephemeris data.
+     */
+    uint32_t    ephemeris_mask;
+
+    /** Represents a bit mask indicating which SVs
+     * have almanac data.
+     */
+    uint32_t    almanac_mask;
+
+    /**
+     * Represents a bit mask indicating which SVs
+     * were used for computing the most recent position fix.
+     */
+    uint32_t    used_in_fix_mask;
+} QzssSvStatus;
+
+/** Represents BDS SV status. */
+typedef struct {
+    /** set to sizeof(BdsSvStatus) */
+    size_t          size;
+
+    /** Number of SVs currently visible. */
+    int         num_svs;
+
+    /** Contains an array of SV information. */
+    GnssSvInfo   sv_list[BDS_MAX_SVS];
+
+    /** Represents a bit mask indicating which SVs
+     * have ephemeris data.
+     */
+    uint32_t    ephemeris_mask;
+
+    /** Represents a bit mask indicating which SVs
+     * have almanac data.
+     */
+    uint32_t    almanac_mask;
+
+    /**
+     * Represents a bit mask indicating which SVs
+     * were used for computing the most recent position fix.
+     */
+    uint32_t    used_in_fix_mask;
+} BdsSvStatus;
+
+/** Represents overall GNSS SV status. */
+typedef struct {
+    GpsSvStatus  gpsSvStatus;
+    SbasSvStatus sbasSvStatus;
+    GloSvStatus  gloSvStatus;
+    QzssSvStatus qzssSvStatus;
+    BdsSvStatus bdsSvStatus;
+} GnssSvStatus;
 
 /* 2G and 3G */
 /* In 3G lac is discarded */
