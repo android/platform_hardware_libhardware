@@ -35,8 +35,12 @@ __BEGIN_DECLS
 /** Milliseconds since January 1, 1970 */
 typedef int64_t GpsUtcTime;
 
-/** Maximum number of SVs for gps_sv_status_callback(). */
-#define GPS_MAX_SVS 32
+/** Maximum number of SVs for each GNSS system. */
+#define GPS_MAX_SVS  32
+#define SBAS_MAX_SVS 32
+#define GLO_MAX_SVS  32
+#define QZSS_MAX_SVS  5
+#define BDS_MAX_SVS  37
 
 /** Requested operational mode for GPS operation. */
 typedef uint32_t GpsPositionMode;
@@ -108,22 +112,47 @@ typedef uint16_t GpsLocationFlags;
 
 /** Flags used to specify which aiding data to delete
     when calling delete_aiding_data(). */
-typedef uint16_t GpsAidingData;
+typedef uint64_t GpsAidingData;
 // IMPORTANT: Note that the following values must match
 // constants in GpsLocationProvider.java.
-#define GPS_DELETE_EPHEMERIS        0x0001
-#define GPS_DELETE_ALMANAC          0x0002
-#define GPS_DELETE_POSITION         0x0004
-#define GPS_DELETE_TIME             0x0008
-#define GPS_DELETE_IONO             0x0010
-#define GPS_DELETE_UTC              0x0020
-#define GPS_DELETE_HEALTH           0x0040
-#define GPS_DELETE_SVDIR            0x0080
-#define GPS_DELETE_SVSTEER          0x0100
-#define GPS_DELETE_SADATA           0x0200
-#define GPS_DELETE_RTI              0x0400
-#define GPS_DELETE_CELLDB_INFO      0x8000
-#define GPS_DELETE_ALL              0xFFFF
+#define GPS_DELETE_EPHEMERIS         0x0000000000000001
+#define GPS_DELETE_ALMANAC           0x0000000000000002
+#define GNSS_DELETE_POSITION         0x0000000000000004
+#define GPS_DELETE_TIME              0x0000000000000008
+#define GNSS_DELETE_IONO             0x0000000000000010
+#define GNSS_DELETE_UTC              0x0000000000000020
+#define GNSS_DELETE_HEALTH           0x0000000000000040
+#define GPS_DELETE_SVDIR             0x0000000000000080
+#define GPS_DELETE_SVSTEER           0x0000000000000100
+#define GNSS_DELETE_SADATA           0x0000000000000200
+#define GNSS_DELETE_RTI              0x0000000000000400
+#define GPS_DELETE_ALM_CORR          0x0000000000000800
+#define GLO_DELETE_EPHEMERIS         0x0000000000001000
+#define GLO_DELETE_ALMANAC           0x0000000000002000
+#define GLO_DELETE_SVDIR             0x0000000000004000
+#define GNSS_DELETE_CELLDB_INFO      0x0000000000008000
+#define GLO_DELETE_SVSTEER           0x0000000000010000
+#define GLO_DELETE_TIME              0x0000000000020000
+#define GLO_DELETE_ALM_CORR          0x0000000000040000
+#define SBAS_DELETE_EPHEMERIS        0x0000000000080000
+#define SBAS_DELETE_ALMANAC          0x0000000000100000
+#define SBAS_DELETE_SVDIR            0x0000000000200000
+#define SBAS_DELETE_SVSTEER          0x0000000000400000
+#define SBAS_DELETE_TIME             0x0000000000800000
+#define SBAS_DELETE_ALM_CORR         0x0000000001000000
+#define QZSS_DELETE_EPHEMERIS        0x0000000002000000
+#define QZSS_DELETE_ALMANAC          0x0000000004000000
+#define QZSS_DELETE_SVDIR            0x0000000008000000
+#define QZSS_DELETE_SVSTEER          0x0000000010000000
+#define QZSS_DELETE_TIME             0x0000000020000000
+#define QZSS_DELETE_ALM_CORR         0x0000000040000000
+#define BDS_DELETE_EPHEMERIS         0x0000000080000000
+#define BDS_DELETE_ALMANAC           0x0000000100000000
+#define BDS_DELETE_SVDIR             0x0000000200000000
+#define BDS_DELETE_SVSTEER           0x0000000400000000
+#define BDS_DELETE_TIME              0x0000000800000000
+#define BDS_DELETE_ALM_CORR          0x0000001000000000
+#define GNSS_DELETE_ALL              0xFFFFFFFFFFFFFFFF
 
 /** AGPS type */
 typedef uint16_t AGpsType;
@@ -266,30 +295,25 @@ typedef struct {
     GpsStatusValue status;
 } GpsStatus;
 
-/** Represents SV information. */
-typedef struct {
-    /** set to sizeof(GpsSvInfo) */
-    size_t          size;
-    /** Pseudo-random number for the SV. */
-    int     prn;
-    /** Signal to noise ratio. */
-    float   snr;
-    /** Elevation of SV in degrees. */
-    float   elevation;
-    /** Azimuth of SV in degrees. */
-    float   azimuth;
-} GpsSvInfo;
-
-/** Represents SV status. */
+/** Represents GPS SV status. */
 typedef struct {
     /** set to sizeof(GpsSvStatus) */
-    size_t          size;
+    size_t      size;
 
     /** Number of SVs currently visible. */
-    int         num_svs;
+    int_32      num_svs;
 
-    /** Contains an array of SV information. */
-    GpsSvInfo   sv_list[GPS_MAX_SVS];
+    /** Pseudo-random number for the SV. */
+    int_32      prn[GPS_MAX_SVS];
+
+    /** Signal to noise ratio. */
+    float       snr[GPS_MAX_SVS];
+
+    /** Elevation of SV in degrees. */
+    float       elevation[GPS_MAX_SVS];
+
+    /** Azimuth of SV in degrees. */
+    float       azimuth[GPS_MAX_SVS];
 
     /** Represents a bit mask indicating which SVs
      * have ephemeris data.
@@ -307,6 +331,166 @@ typedef struct {
      */
     uint32_t    used_in_fix_mask;
 } GpsSvStatus;
+
+/** Represents SBAS SV status. */
+typedef struct {
+    /** set to sizeof(SbasSvStatus) */
+    size_t      size;
+
+    /** Number of SVs currently visible. */
+    int_32      num_svs;
+
+    /** Number of SVs currently visible. */
+    int_32      num_svs;
+
+    /** Pseudo-random number for the SV. */
+    int_32      prn[SBAS_MAX_SVS];
+
+    /** Signal to noise ratio. */
+    float       snr[SBAS_MAX_SVS];
+
+    /** Elevation of SV in degrees. */
+    float       elevation[SBAS_MAX_SVS];
+
+    /** Azimuth of SV in degrees. */
+    float       azimuth[SBAS_MAX_SVS];
+
+    /** Represents a bit mask indicating which SVs
+     * have ephemeris data.
+     */
+    uint32_t    ephemeris_mask;
+
+    /** Represents a bit mask indicating which SVs
+     * have almanac data.
+     */
+    uint32_t    almanac_mask;
+
+    /**
+     * Represents a bit mask indicating which SVs
+     * were used for computing the most recent position fix.
+     */
+    uint32_t    used_in_fix_mask;
+} SbasSvStatus;
+
+/** Represents GLO SV status. */
+typedef struct {
+    /** set to sizeof(GloSvStatus) */
+    size_t      size;
+
+    /** Number of SVs currently visible. */
+    int_32      num_svs;
+
+    /** slot number for the SV. */
+    int_32      slot[GLO_MAX_SVS];
+
+    /** Signal to noise ratio. */
+    float       snr[GLO_MAX_SVS];
+
+    /** Elevation of SV in degrees. */
+    float       elevation[GLO_MAX_SVS];
+
+    /** Azimuth of SV in degrees. */
+    float       azimuth[GLO_MAX_SVS];
+
+    /** Represents a bit mask indicating which SVs
+     * have ephemeris data.
+     */
+    uint32_t    ephemeris_mask;
+
+    /** Represents a bit mask indicating which SVs
+     * have almanac data.
+     */
+    uint32_t    almanac_mask;
+
+    /**
+     * Represents a bit mask indicating which SVs
+     * were used for computing the most recent position fix.
+     */
+    uint32_t    used_in_fix_mask;
+} GloSvStatus;
+
+/** Represents QZSS SV status. */
+typedef struct {
+    /** set to sizeof(QzssSvStatus) */
+    size_t      size;
+
+    /** Number of SVs currently visible. */
+    int_32      num_svs;
+
+    /** Pseudo-random number for the SV. */
+    int_32      prn[QZSS_MAX_SVS];
+
+    /** Signal to noise ratio. */
+    float       snr[QZSS_MAX_SVS];
+
+    /** Elevation of SV in degrees. */
+    float       elevation[QZSS_MAX_SVS];
+
+    /** Azimuth of SV in degrees. */
+    float       azimuth[QZSS_MAX_SVS];
+
+    /** Represents a bit mask indicating which SVs
+     * have ephemeris data.
+     */
+    uint32_t    ephemeris_mask;
+
+    /** Represents a bit mask indicating which SVs
+     * have almanac data.
+     */
+    uint32_t    almanac_mask;
+
+    /**
+     * Represents a bit mask indicating which SVs
+     * were used for computing the most recent position fix.
+     */
+    uint32_t    used_in_fix_mask;
+} QzssSvStatus;
+
+/** Represents BDS SV status. */
+typedef struct {
+    /** set to sizeof(BdsSvStatus) */
+    size_t      size;
+
+    /** Number of SVs currently visible. */
+    int_32      num_svs;
+
+    /** Pseudo-random number for the SV. */
+    int_32      prn[BSD_MAX_SVS];
+
+    /** Signal to noise ratio. */
+    float       snr[BSD_MAX_SVS];
+
+    /** Elevation of SV in degrees. */
+    float       elevation[BSD_MAX_SVS];
+
+    /** Azimuth of SV in degrees. */
+    float       azimuth[BSD_MAX_SVS];
+
+    /** Represents a bit mask indicating which SVs
+     * have ephemeris data.
+     */
+    uint32_t    ephemeris_mask;
+
+    /** Represents a bit mask indicating which SVs
+     * have almanac data.
+     */
+    uint32_t    almanac_mask;
+
+    /**
+     * Represents a bit mask indicating which SVs
+     * were used for computing the most recent position fix.
+     */
+    uint64_t    used_in_fix_mask;
+} BdsSvStatus;
+
+/** Represents overall GNSS SV status. */
+typedef struct {
+    GpsSvStatus  gpsSvStatus;
+    SbasSvStatus sbasSvStatus;
+    GloSvStatus  gloSvStatus;
+    QzssSvStatus qzssSvStatus;
+    BdsSvStatus bdsSvStatus;
+} GnssSvStatus;
 
 /* 2G and 3G */
 /* In 3G lac is discarded */
