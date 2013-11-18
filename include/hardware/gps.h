@@ -36,7 +36,13 @@ __BEGIN_DECLS
 typedef int64_t GpsUtcTime;
 
 /** Maximum number of SVs for gps_sv_status_callback(). */
-#define GPS_MAX_SVS 32
+#define GNSS_MAX_SVS 138
+/** Maximum number of SVs for each GNSS system. */
+#define GPS_MAX_SVS  32
+#define SBAS_MAX_SVS 32
+#define GLO_MAX_SVS  32
+#define QZSS_MAX_SVS  5
+#define BDS_MAX_SVS  37
 
 /** Requested operational mode for GPS operation. */
 typedef uint32_t GpsPositionMode;
@@ -266,47 +272,50 @@ typedef struct {
     GpsStatusValue status;
 } GpsStatus;
 
+/** Represents a bit mask indicating if an SV
+ *  has ephemeris data.
+ */
+#define GnssSvUsageHasEphemeris  0x1
+/** Represents a bit mask indicating if an SV
+ *  has almanac data.
+ */
+#define GnssSvUsageHasAlmanc     0x2
+/** Represents a bit mask indicating if an SV
+ *  was used for computing the most recent position fix
+ */
+#define GnssSvUsageUsedInFix     0x4
+
 /** Represents SV information. */
 typedef struct {
     /** set to sizeof(GpsSvInfo) */
     size_t          size;
     /** Pseudo-random number for the SV. */
-    int     prn;
+    int      prn;
     /** Signal to noise ratio. */
-    float   snr;
+    float    snr;
     /** Elevation of SV in degrees. */
-    float   elevation;
+    float    elevation;
     /** Azimuth of SV in degrees. */
-    float   azimuth;
-} GpsSvInfo;
+    float    azimuth;
+    /** Mask showing the usage of this sv */
+    uint32_t usageMask;
+} GnssSvInfo;
+
+typedef GnssSvInfo GpsSvInfo;
 
 /** Represents SV status. */
 typedef struct {
-    /** set to sizeof(GpsSvStatus) */
+    /** set to sizeof(GnssSvStatus) */
     size_t          size;
 
     /** Number of SVs currently visible. */
     int         num_svs;
 
     /** Contains an array of SV information. */
-    GpsSvInfo   sv_list[GPS_MAX_SVS];
+    GnssSvInfo  sv_list[GNSS_MAX_SVS];
+} GnssSvStatus;
 
-    /** Represents a bit mask indicating which SVs
-     * have ephemeris data.
-     */
-    uint32_t    ephemeris_mask;
-
-    /** Represents a bit mask indicating which SVs
-     * have almanac data.
-     */
-    uint32_t    almanac_mask;
-
-    /**
-     * Represents a bit mask indicating which SVs
-     * were used for computing the most recent position fix.
-     */
-    uint32_t    used_in_fix_mask;
-} GpsSvStatus;
+typedef GnssSvStatus GpsSvStatus;
 
 /* 2G and 3G */
 /* In 3G lac is discarded */
@@ -344,7 +353,7 @@ typedef void (* gps_status_callback)(GpsStatus* status);
 /** Callback with SV status information.
  *  Can only be called from a thread created by create_thread_cb.
  */
-typedef void (* gps_sv_status_callback)(GpsSvStatus* sv_info);
+typedef void (* gps_sv_status_callback)(GnssSvStatus* sv_info);
 
 /** Callback for reporting NMEA sentences.
  *  Can only be called from a thread created by create_thread_cb.
