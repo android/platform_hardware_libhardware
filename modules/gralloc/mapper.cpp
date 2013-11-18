@@ -56,11 +56,11 @@ static int gralloc_map(gralloc_module_t const* module,
             ALOGE("Could not mmap %s", strerror(errno));
             return -errno;
         }
-        hnd->base = intptr_t(mappedAddress) + hnd->offset;
+        hnd->base = mappedAddress + hnd->offset;
         //ALOGD("gralloc_map() succeeded fd=%d, off=%d, size=%d, vaddr=%p",
         //        hnd->fd, hnd->offset, hnd->size, mappedAddress);
     }
-    *vaddr = (void*)hnd->base;
+    *vaddr = hnd->base;
     return 0;
 }
 

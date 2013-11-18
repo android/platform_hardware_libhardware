@@ -94,7 +94,7 @@ static int fb_post(struct framebuffer_device_t* dev, buffer_handle_t buffer)
             dev->common.module);
 
     if (hnd->flags & private_handle_t::PRIV_FLAGS_FRAMEBUFFER) {
-        const size_t offset = hnd->base - m->framebuffer->base;
+        const size_t offset = (size_t)hnd->base - (size_t)m->framebuffer->base;
         m->info.activate = FB_ACTIVATE_VBL;
         m->info.yoffset = offset / m->finfo.line_length;
         if (ioctl(m->framebuffer->fd, FBIOPUT_VSCREENINFO, &m->info) == -1) {
@@ -283,7 +283,7 @@ int mapFrameBufferLocked(struct private_module_t* module)
         ALOGE("Error mapping the framebuffer (%s)", strerror(errno));
         return -errno;
     }
-    module->framebuffer->base = intptr_t(vaddr);
+    module->framebuffer->base = vaddr;
     memset(vaddr, 0, fbSize);
     return 0;
 }

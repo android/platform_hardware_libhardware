@@ -147,7 +147,7 @@ static int gralloc_alloc_framebuffer_locked(alloc_device_t* dev,
         vaddr += bufferSize;
     }
     
-    hnd->base = vaddr;
+    hnd->base = (void *)vaddr;
     hnd->offset = vaddr - intptr_t(m->framebuffer->base);
     *pHandle = hnd;
 
@@ -254,7 +254,7 @@ static int gralloc_free(alloc_device_t* dev,
         private_module_t* m = reinterpret_cast<private_module_t*>(
                 dev->common.module);
         const size_t bufferSize = m->finfo.line_length * m->info.yres;
-        int index = (hnd->base - m->framebuffer->base) / bufferSize;
+        int index = ((intptr_t)hnd->base - (intptr_t)m->framebuffer->base) / bufferSize;
         m->bufferMask &= ~(1<<index); 
     } else { 
         gralloc_module_t* module = reinterpret_cast<gralloc_module_t*>(
