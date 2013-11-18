@@ -35,8 +35,12 @@ __BEGIN_DECLS
 /** Milliseconds since January 1, 1970 */
 typedef int64_t GpsUtcTime;
 
-/** Maximum number of SVs for gps_sv_status_callback(). */
-#define GPS_MAX_SVS 32
+/** Maximum number of SVs for each GNSS system. */
+#define GPS_MAX_SVS  32
+#define SBAS_MAX_SVS 32
+#define GLO_MAX_SVS  32
+#define QZSS_MAX_SVS  5
+#define BDS_MAX_SVS  37
 
 /** Requested operational mode for GPS operation. */
 typedef uint32_t GpsPositionMode;
@@ -266,30 +270,25 @@ typedef struct {
     GpsStatusValue status;
 } GpsStatus;
 
-/** Represents SV information. */
-typedef struct {
-    /** set to sizeof(GpsSvInfo) */
-    size_t          size;
-    /** Pseudo-random number for the SV. */
-    int     prn;
-    /** Signal to noise ratio. */
-    float   snr;
-    /** Elevation of SV in degrees. */
-    float   elevation;
-    /** Azimuth of SV in degrees. */
-    float   azimuth;
-} GpsSvInfo;
-
-/** Represents SV status. */
+/** Represents GPS SV status. */
 typedef struct {
     /** set to sizeof(GpsSvStatus) */
-    size_t          size;
+    size_t      size;
 
     /** Number of SVs currently visible. */
-    int         num_svs;
+    int_32      num_svs;
 
-    /** Contains an array of SV information. */
-    GpsSvInfo   sv_list[GPS_MAX_SVS];
+    /** Pseudo-random number for the SV. */
+    int_32      prn[GPS_MAX_SVS];
+
+    /** Signal to noise ratio. */
+    float       snr[GPS_MAX_SVS];
+
+    /** Elevation of SV in degrees. */
+    float       elevation[GPS_MAX_SVS];
+
+    /** Azimuth of SV in degrees. */
+    float       azimuth[GPS_MAX_SVS];
 
     /** Represents a bit mask indicating which SVs
      * have ephemeris data.
@@ -307,6 +306,166 @@ typedef struct {
      */
     uint32_t    used_in_fix_mask;
 } GpsSvStatus;
+
+/** Represents SBAS SV status. */
+typedef struct {
+    /** set to sizeof(SbasSvStatus) */
+    size_t      size;
+
+    /** Number of SVs currently visible. */
+    int_32      num_svs;
+
+    /** Number of SVs currently visible. */
+    int_32      num_svs;
+
+    /** Pseudo-random number for the SV. */
+    int_32      prn[SBAS_MAX_SVS];
+
+    /** Signal to noise ratio. */
+    float       snr[SBAS_MAX_SVS];
+
+    /** Elevation of SV in degrees. */
+    float       elevation[SBAS_MAX_SVS];
+
+    /** Azimuth of SV in degrees. */
+    float       azimuth[SBAS_MAX_SVS];
+
+    /** Represents a bit mask indicating which SVs
+     * have ephemeris data.
+     */
+    uint32_t    ephemeris_mask;
+
+    /** Represents a bit mask indicating which SVs
+     * have almanac data.
+     */
+    uint32_t    almanac_mask;
+
+    /**
+     * Represents a bit mask indicating which SVs
+     * were used for computing the most recent position fix.
+     */
+    uint32_t    used_in_fix_mask;
+} SbasSvStatus;
+
+/** Represents GLO SV status. */
+typedef struct {
+    /** set to sizeof(GloSvStatus) */
+    size_t      size;
+
+    /** Number of SVs currently visible. */
+    int_32      num_svs;
+
+    /** slot number for the SV. */
+    int_32      slot[GLO_MAX_SVS];
+
+    /** Signal to noise ratio. */
+    float       snr[GLO_MAX_SVS];
+
+    /** Elevation of SV in degrees. */
+    float       elevation[GLO_MAX_SVS];
+
+    /** Azimuth of SV in degrees. */
+    float       azimuth[GLO_MAX_SVS];
+
+    /** Represents a bit mask indicating which SVs
+     * have ephemeris data.
+     */
+    uint32_t    ephemeris_mask;
+
+    /** Represents a bit mask indicating which SVs
+     * have almanac data.
+     */
+    uint32_t    almanac_mask;
+
+    /**
+     * Represents a bit mask indicating which SVs
+     * were used for computing the most recent position fix.
+     */
+    uint32_t    used_in_fix_mask;
+} GloSvStatus;
+
+/** Represents QZSS SV status. */
+typedef struct {
+    /** set to sizeof(QzssSvStatus) */
+    size_t      size;
+
+    /** Number of SVs currently visible. */
+    int_32      num_svs;
+
+    /** Pseudo-random number for the SV. */
+    int_32      prn[QZSS_MAX_SVS];
+
+    /** Signal to noise ratio. */
+    float       snr[QZSS_MAX_SVS];
+
+    /** Elevation of SV in degrees. */
+    float       elevation[QZSS_MAX_SVS];
+
+    /** Azimuth of SV in degrees. */
+    float       azimuth[QZSS_MAX_SVS];
+
+    /** Represents a bit mask indicating which SVs
+     * have ephemeris data.
+     */
+    uint32_t    ephemeris_mask;
+
+    /** Represents a bit mask indicating which SVs
+     * have almanac data.
+     */
+    uint32_t    almanac_mask;
+
+    /**
+     * Represents a bit mask indicating which SVs
+     * were used for computing the most recent position fix.
+     */
+    uint32_t    used_in_fix_mask;
+} QzssSvStatus;
+
+/** Represents BDS SV status. */
+typedef struct {
+    /** set to sizeof(BdsSvStatus) */
+    size_t      size;
+
+    /** Number of SVs currently visible. */
+    int_32      num_svs;
+
+    /** Pseudo-random number for the SV. */
+    int_32      prn[BSD_MAX_SVS];
+
+    /** Signal to noise ratio. */
+    float       snr[BSD_MAX_SVS];
+
+    /** Elevation of SV in degrees. */
+    float       elevation[BSD_MAX_SVS];
+
+    /** Azimuth of SV in degrees. */
+    float       azimuth[BSD_MAX_SVS];
+
+    /** Represents a bit mask indicating which SVs
+     * have ephemeris data.
+     */
+    uint32_t    ephemeris_mask;
+
+    /** Represents a bit mask indicating which SVs
+     * have almanac data.
+     */
+    uint32_t    almanac_mask;
+
+    /**
+     * Represents a bit mask indicating which SVs
+     * were used for computing the most recent position fix.
+     */
+    uint64_t    used_in_fix_mask;
+} BdsSvStatus;
+
+/** Represents overall GNSS SV status. */
+typedef struct {
+    GpsSvStatus  gpsSvStatus;
+    SbasSvStatus sbasSvStatus;
+    GloSvStatus  gloSvStatus;
+    QzssSvStatus qzssSvStatus;
+    BdsSvStatus bdsSvStatus;
+} GnssSvStatus;
 
 /* 2G and 3G */
 /* In 3G lac is discarded */
