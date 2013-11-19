@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fe71ed53_c084e345",
+        "filename": "include/hardware/gps.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 111,
+      "author": {
+        "id": 1034489
+      },
+      "writtenOn": "2013-11-19T22:04:32Z",
+      "side": 1,
+      "message": "do we expect this to grow in the future again? If so should we use 64bit for future grow?",
+      "revId": "2f0a699b3e50223269e686b039ed847b40bb6754",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
