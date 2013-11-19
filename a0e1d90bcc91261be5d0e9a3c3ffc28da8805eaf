@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9e08f1da_c136d16a",
+        "filename": "include/hardware/gps.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 1034489
+      },
+      "writtenOn": "2013-11-19T21:58:04Z",
+      "side": 1,
+      "message": "do we need this constant? it is not used",
+      "revId": "a0e1d90bcc91261be5d0e9a3c3ffc28da8805eaf",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9e08f1da_e14af5ea",
+        "filename": "include/hardware/gps.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 289,
+      "author": {
+        "id": 1034489
+      },
+      "writtenOn": "2013-11-19T21:58:04Z",
+      "side": 1,
+      "message": "This is not needed anymore, it is not referenced in the file",
+      "revId": "a0e1d90bcc91261be5d0e9a3c3ffc28da8805eaf",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9e08f1da_41712126",
+        "filename": "include/hardware/gps.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 316,
+      "author": {
+        "id": 1034489
+      },
+      "writtenOn": "2013-11-19T21:58:04Z",
+      "side": 1,
+      "message": "what about defining a GnssSvStatus data structure for common status information to all Gnss technologies? If sv_list is of type GnssSvInfo* all the information can be common,",
+      "revId": "a0e1d90bcc91261be5d0e9a3c3ffc28da8805eaf",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5e64b999_a5845944",
+        "filename": "include/hardware/gps.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 438,
+      "author": {
+        "id": 1034489
+      },
+      "writtenOn": "2013-11-19T21:58:04Z",
+      "side": 1,
+      "message": "How is this data structure consumed by the HAL client?",
+      "revId": "a0e1d90bcc91261be5d0e9a3c3ffc28da8805eaf",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
