@@ -19,6 +19,23 @@
     },
     {
       "key": {
+        "uuid": "23d44e2d_253158d6",
+        "filename": "include/hardware/gps.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 287,
+      "author": {
+        "id": 1036868
+      },
+      "writtenOn": "2013-12-05T21:32:11Z",
+      "side": 1,
+      "message": "I wonder if there is any real benefit for trying to come up with a common structure to represent different satellite systems. For example, GLONASS does not really have the concept of PRN. So I guess with this change we want overload the PRN field with some other meaning, like slot number if this is GLONASS? This can be confusing when trying to interpret values from this field.\n\nHow about we just define a dedicated structure for each system, and give them a more technically correct name?",
+      "revId": "a0e1d90bcc91261be5d0e9a3c3ffc28da8805eaf",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9e08f1da_e14af5ea",
         "filename": "include/hardware/gps.h",
         "patchSetId": 3
@@ -47,6 +64,23 @@
       "writtenOn": "2013-11-19T21:58:04Z",
       "side": 1,
       "message": "what about defining a GnssSvStatus data structure for common status information to all Gnss technologies? If sv_list is of type GnssSvInfo* all the information can be common,",
+      "revId": "a0e1d90bcc91261be5d0e9a3c3ffc28da8805eaf",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e3cdd6a7_a8ec2337",
+        "filename": "include/hardware/gps.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 428,
+      "author": {
+        "id": 1036868
+      },
+      "writtenOn": "2013-12-05T21:32:11Z",
+      "side": 1,
+      "message": "If BDS_MAX_SVS is 37, how are you going to fit them in an uin32?",
       "revId": "a0e1d90bcc91261be5d0e9a3c3ffc28da8805eaf",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
