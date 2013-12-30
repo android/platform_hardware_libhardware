@@ -19,6 +19,41 @@
     },
     {
       "key": {
+        "uuid": "a832dbd0_50448461",
+        "filename": "include/hardware/vibrator.h",
+        "patchSetId": 7
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 1012411
+      },
+      "writtenOn": "2013-12-30T16:25:19Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e1d30d45_fc7c21c0",
+      "revId": "8f0301eec93d7acaab3ce30683af93a29fe35892",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "21e9a52b_a00c7a54",
+        "filename": "include/hardware/vibrator.h",
+        "patchSetId": 7
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 1012411
+      },
+      "writtenOn": "2013-12-30T16:25:19Z",
+      "side": 1,
+      "message": "unsigned int timeout_ms",
+      "revId": "8f0301eec93d7acaab3ce30683af93a29fe35892",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "61c0fd68_ce0403e4",
         "filename": "include/hardware/vibrator.h",
         "patchSetId": 7
@@ -30,6 +65,24 @@
       "writtenOn": "2013-10-08T16:54:36Z",
       "side": 1,
       "message": "vibrator_device_t.",
+      "revId": "8f0301eec93d7acaab3ce30683af93a29fe35892",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c8438f32_2e7967de",
+        "filename": "include/hardware/vibrator.h",
+        "patchSetId": 7
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 1012411
+      },
+      "writtenOn": "2013-12-30T16:25:19Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "61c0fd68_ce0403e4",
       "revId": "8f0301eec93d7acaab3ce30683af93a29fe35892",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
@@ -53,6 +106,41 @@
     },
     {
       "key": {
+        "uuid": "a832dbd0_104a0c72",
+        "filename": "modules/vibrator/vibrator.c",
+        "patchSetId": 7
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1012411
+      },
+      "writtenOn": "2013-12-30T16:25:19Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e1d30d45_5c40b562",
+      "revId": "8f0301eec93d7acaab3ce30683af93a29fe35892",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "61df1d80_62fc36e8",
+        "filename": "modules/vibrator/vibrator.c",
+        "patchSetId": 7
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1012411
+      },
+      "writtenOn": "2013-12-30T16:25:19Z",
+      "side": 1,
+      "message": "ceil(log(UINT_MAX)) + 2  // +1 for \\n, +1 for \\0",
+      "revId": "8f0301eec93d7acaab3ce30683af93a29fe35892",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "21ba85ee_81cb8099",
         "filename": "modules/vibrator/vibrator.c",
         "patchSetId": 7
@@ -64,6 +152,24 @@
       "writtenOn": "2013-10-08T17:04:43Z",
       "side": 1,
       "message": "return -errno",
+      "revId": "8f0301eec93d7acaab3ce30683af93a29fe35892",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "884ef754_37a380c9",
+        "filename": "modules/vibrator/vibrator.c",
+        "patchSetId": 7
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 1012411
+      },
+      "writtenOn": "2013-12-30T16:25:19Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "21ba85ee_81cb8099",
       "revId": "8f0301eec93d7acaab3ce30683af93a29fe35892",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
@@ -87,6 +193,24 @@
     },
     {
       "key": {
+        "uuid": "884ef754_57a004ba",
+        "filename": "modules/vibrator/vibrator.c",
+        "patchSetId": 7
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 1012411
+      },
+      "writtenOn": "2013-12-30T16:25:19Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "21ba85ee_21d27448",
+      "revId": "8f0301eec93d7acaab3ce30683af93a29fe35892",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "21ba85ee_617d0c6d",
         "filename": "modules/vibrator/vibrator.c",
         "patchSetId": 7
@@ -98,6 +222,24 @@
       "writtenOn": "2013-10-08T17:04:43Z",
       "side": 1,
       "message": "nit: Can not -\u003e Cannot",
+      "revId": "8f0301eec93d7acaab3ce30683af93a29fe35892",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "a832dbd0_30471069",
+        "filename": "modules/vibrator/vibrator.c",
+        "patchSetId": 7
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 1012411
+      },
+      "writtenOn": "2013-12-30T16:25:19Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "21ba85ee_617d0c6d",
       "revId": "8f0301eec93d7acaab3ce30683af93a29fe35892",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
