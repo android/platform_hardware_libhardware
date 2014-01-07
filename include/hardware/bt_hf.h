@@ -275,6 +275,9 @@ typedef struct {
     bt_status_t (*phone_state_change) (int num_active, int num_held, bthf_call_state_t call_setup_state,
                                        const char *number, bthf_call_addrtype_t type);
 
+    /** get remote supported features */
+    int (*get_remote_features)();
+
     /** Closes the interface. */
     void  (*cleanup)( void );
 } bthf_interface_t;
