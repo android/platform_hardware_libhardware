@@ -19,6 +19,23 @@
     },
     {
       "key": {
+        "uuid": "ad33cd7d_223fee39",
+        "filename": "include/hardware/vibrator.h",
+        "patchSetId": 8
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 1000411
+      },
+      "writtenOn": "2014-01-10T16:46:52Z",
+      "side": 1,
+      "message": "This is a bit ambiguous, it would be nicer if this explained that on failure this returns -1 and errno can be read for the exact error.",
+      "revId": "df7bda974cfaae1dd95a530ea87092db3428f313",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ad33cd7d_22660e88",
         "filename": "include/hardware/vibrator.h",
         "patchSetId": 8
