@@ -1,0 +1,129 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ad33cd7d_42631277",
+        "filename": "include/hardware/vibrator.h",
+        "patchSetId": 8
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 1000411
+      },
+      "writtenOn": "2014-01-10T16:38:31Z",
+      "side": 1,
+      "message": "Can you specify what is supposed to happen if the function is called several times before the first call\u0027s timeout has expired? I.e. do the timeout accumulate, or does the one with the older expiration date prevails.\n\nThanks.",
+      "revId": "df7bda974cfaae1dd95a530ea87092db3428f313",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ad33cd7d_22660e88",
+        "filename": "include/hardware/vibrator.h",
+        "patchSetId": 8
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 1000411
+      },
+      "writtenOn": "2014-01-10T16:38:31Z",
+      "side": 1,
+      "message": "Can you clarify why this is needed exactly? I assume it\u0027s to turn the vibrator off before the timeout has expired, but it would be nice if this was explicit.",
+      "revId": "df7bda974cfaae1dd95a530ea87092db3428f313",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ede2251a_8fa8392e",
+        "filename": "modules/vibrator/Android.mk",
+        "patchSetId": 8
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1000411
+      },
+      "writtenOn": "2014-01-10T16:38:31Z",
+      "side": 1,
+      "message": "s/implemenation/implementation/ :-)",
+      "revId": "df7bda974cfaae1dd95a530ea87092db3428f313",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ede2251a_afa3f552",
+        "filename": "modules/vibrator/vibrator.c",
+        "patchSetId": 8
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 1000411
+      },
+      "writtenOn": "2014-01-10T16:38:31Z",
+      "side": 1,
+      "message": "First, this should be log10(), not log() here\n\nSecond, this is not portable, since it relies on the compiler\u0027s ability to compute this value at compile time. Otherwise, this will not compile in C, and generate a static initializer in C++, which seems really wasteful.\n\nBetter just use a constant like 32 which should be large enough (for 32-bits, the real value is 20, iirc, but don\u0027t take my word for it).",
+      "revId": "df7bda974cfaae1dd95a530ea87092db3428f313",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ad33cd7d_e2302671",
+        "filename": "modules/vibrator/vibrator.c",
+        "patchSetId": 8
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 1000411
+      },
+      "writtenOn": "2014-01-10T16:38:31Z",
+      "side": 1,
+      "message": "Could you use TEMP_FAILURE_RETRY here and below to allow looping around EINTR?\n\nReminder: Do not use it with close, on Linux, if close() returns EINTR, the file descriptor is always already closed anyway :-(",
+      "revId": "df7bda974cfaae1dd95a530ea87092db3428f313",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ad33cd7d_02366a6a",
+        "filename": "modules/vibrator/vibrator.c",
+        "patchSetId": 8
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 1000411
+      },
+      "writtenOn": "2014-01-10T16:38:31Z",
+      "side": 1,
+      "message": "Why? Returning -1 seems to be more consistent given that you would return it on line 60 if the write() fails.",
+      "range": {
+        "startLine": 52,
+        "startChar": 16,
+        "endLine": 52,
+        "endChar": 21
+      },
+      "revId": "df7bda974cfaae1dd95a530ea87092db3428f313",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "0dd6993f_30a766a5",
+        "filename": "modules/vibrator/vibrator.c",
+        "patchSetId": 8
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 1000411
+      },
+      "writtenOn": "2014-01-10T16:38:31Z",
+      "side": 1,
+      "message": "This may erase errno if the close fails for some reason, which isn\u0027t desirable if the client really wants to know why a write() failed.",
+      "revId": "df7bda974cfaae1dd95a530ea87092db3428f313",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
