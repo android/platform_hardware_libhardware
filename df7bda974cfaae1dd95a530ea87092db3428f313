@@ -36,6 +36,24 @@
     },
     {
       "key": {
+        "uuid": "0dd6993f_705f2ecf",
+        "filename": "include/hardware/vibrator.h",
+        "patchSetId": 8
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 1000411
+      },
+      "writtenOn": "2014-01-10T17:00:47Z",
+      "side": 1,
+      "message": "Actually, I now think that returning a negative errno code is simpler for everyone. Sorry for the noise, but can you change the implementation to be consistent and clarify this with something like:\n\n  @return 0 on success, negative errno code on failure.\n\nThanks.",
+      "parentUuid": "ad33cd7d_223fee39",
+      "revId": "df7bda974cfaae1dd95a530ea87092db3428f313",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ad33cd7d_22660e88",
         "filename": "include/hardware/vibrator.h",
         "patchSetId": 8
