@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "ede2251a_2f1b85ca",
+        "filename": "include/hardware/vibrator.h",
+        "patchSetId": 8
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 1012411
+      },
+      "writtenOn": "2014-01-10T17:33:06Z",
+      "side": 1,
+      "message": "I\u0027m not sure we can do that: it depends on the implementation.  Even the default implementation relies on the \"timed_output\" driver class, which does not guarantee anything in that regard.",
+      "parentUuid": "ad33cd7d_42631277",
+      "revId": "df7bda974cfaae1dd95a530ea87092db3428f313",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ad33cd7d_223fee39",
         "filename": "include/hardware/vibrator.h",
         "patchSetId": 8
@@ -71,6 +89,24 @@
     },
     {
       "key": {
+        "uuid": "0dd6993f_10c7ca2f",
+        "filename": "include/hardware/vibrator.h",
+        "patchSetId": 8
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 1012411
+      },
+      "writtenOn": "2014-01-10T17:33:06Z",
+      "side": 1,
+      "message": "Same issue as for vibrator_on() but I\u0027ll try to clarify it",
+      "parentUuid": "ad33cd7d_22660e88",
+      "revId": "df7bda974cfaae1dd95a530ea87092db3428f313",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ede2251a_8fa8392e",
         "filename": "modules/vibrator/Android.mk",
         "patchSetId": 8
@@ -82,6 +118,24 @@
       "writtenOn": "2014-01-10T16:38:31Z",
       "side": 1,
       "message": "s/implemenation/implementation/ :-)",
+      "revId": "df7bda974cfaae1dd95a530ea87092db3428f313",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ede2251a_4ff5b138",
+        "filename": "modules/vibrator/Android.mk",
+        "patchSetId": 8
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1012411
+      },
+      "writtenOn": "2014-01-10T17:33:06Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ede2251a_8fa8392e",
       "revId": "df7bda974cfaae1dd95a530ea87092db3428f313",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
@@ -117,6 +171,24 @@
       "side": 1,
       "message": "I meant 20 should be enough for 64-bits. Ahh.",
       "parentUuid": "ede2251a_afa3f552",
+      "revId": "df7bda974cfaae1dd95a530ea87092db3428f313",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ad33cd7d_8274ba16",
+        "filename": "modules/vibrator/vibrator.c",
+        "patchSetId": 8
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 1012411
+      },
+      "writtenOn": "2014-01-10T17:33:06Z",
+      "side": 1,
+      "message": "ok, let\u0027s go for 20 - nobody in their right mind will ever want to vibrate for billions and billions of years anyway, right ? :)",
+      "parentUuid": "ede2251a_2f982513",
       "revId": "df7bda974cfaae1dd95a530ea87092db3428f313",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
