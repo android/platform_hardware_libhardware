@@ -70,6 +70,24 @@
     },
     {
       "key": {
+        "uuid": "ede2251a_2f982513",
+        "filename": "modules/vibrator/vibrator.c",
+        "patchSetId": 8
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 1000411
+      },
+      "writtenOn": "2014-01-10T16:41:55Z",
+      "side": 1,
+      "message": "I meant 20 should be enough for 64-bits. Ahh.",
+      "parentUuid": "ede2251a_afa3f552",
+      "revId": "df7bda974cfaae1dd95a530ea87092db3428f313",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ad33cd7d_e2302671",
         "filename": "modules/vibrator/vibrator.c",
         "patchSetId": 8
@@ -98,6 +116,30 @@
       "writtenOn": "2014-01-10T16:38:31Z",
       "side": 1,
       "message": "Why? Returning -1 seems to be more consistent given that you would return it on line 60 if the write() fails.",
+      "range": {
+        "startLine": 52,
+        "startChar": 16,
+        "endLine": 52,
+        "endChar": 21
+      },
+      "revId": "df7bda974cfaae1dd95a530ea87092db3428f313",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "0dd6993f_90905a31",
+        "filename": "modules/vibrator/vibrator.c",
+        "patchSetId": 8
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 1000411
+      },
+      "writtenOn": "2014-01-10T16:41:55Z",
+      "side": 1,
+      "message": "I now realize you tried to fix a bug in the previous AOSP implementation, I still think a -1 would be more consistent here. Thanks for your understanding :-)",
+      "parentUuid": "ad33cd7d_02366a6a",
       "range": {
         "startLine": 52,
         "startChar": 16,
