@@ -37,6 +37,24 @@
     },
     {
       "key": {
+        "uuid": "ad33cd7d_62217600",
+        "filename": "include/hardware/vibrator.h",
+        "patchSetId": 8
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 1000411
+      },
+      "writtenOn": "2014-01-10T17:53:35Z",
+      "side": 1,
+      "message": "Ok, that\u0027s really sad, but I\u0027d prefer if you could make this ambiguity explicit with a comment which explains that the behaviour is implementation-dependent. E.g.:\n\n  What happens when this function is called while the\n  the timeout of a previous call has not expired is\n  implementation dependent.\n\nIdeally, this should even go up the Java framework comments, to ensure it doesn\u0027t rely on a specific behaviour, which will create facepalms in the future for people who want to implement a new module. I hate undefined behaviour :-(",
+      "parentUuid": "ede2251a_2f1b85ca",
+      "revId": "df7bda974cfaae1dd95a530ea87092db3428f313",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ad33cd7d_223fee39",
         "filename": "include/hardware/vibrator.h",
         "patchSetId": 8
@@ -189,6 +207,24 @@
       "side": 1,
       "message": "ok, let\u0027s go for 20 - nobody in their right mind will ever want to vibrate for billions and billions of years anyway, right ? :)",
       "parentUuid": "ede2251a_2f982513",
+      "revId": "df7bda974cfaae1dd95a530ea87092db3428f313",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ad33cd7d_c20ba27c",
+        "filename": "modules/vibrator/vibrator.c",
+        "patchSetId": 8
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 1000411
+      },
+      "writtenOn": "2014-01-10T17:53:35Z",
+      "side": 1,
+      "message": "Sure :)",
+      "parentUuid": "ad33cd7d_8274ba16",
       "revId": "df7bda974cfaae1dd95a530ea87092db3428f313",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
