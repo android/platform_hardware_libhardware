@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "12231a8f_a572def9",
+        "filename": "modules/gralloc/gralloc_priv.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 83,
+      "author": {
+        "id": 1014443
+      },
+      "writtenOn": "2014-02-07T19:06:49Z",
+      "side": 1,
+      "message": "I don\u0027t understand why you\u0027ve made this a function. Can\u0027t the entire expression here be evaluated at compile time ?",
+      "revId": "d2be74aa57aef69853e3451839dab43cfad39a02",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
