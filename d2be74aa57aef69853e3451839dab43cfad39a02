@@ -16,6 +16,24 @@
       "revId": "d2be74aa57aef69853e3451839dab43cfad39a02",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b2324ed1_4d106d6a",
+        "filename": "modules/gralloc/gralloc_priv.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 83,
+      "author": {
+        "id": 1037066
+      },
+      "writtenOn": "2014-02-07T19:14:23Z",
+      "side": 1,
+      "message": "I tried doing it. \n\n\"static const int sNumInts \u003d ((sizeof(private_handle_t) - sizeof(native_handle_t))/sizeof(int)) - sNumFds)\"\n\ngives an invalid application of \u0027sizeof\u0027 to incomplete type \u0027private_handle_t\u0027 error.",
+      "parentUuid": "12231a8f_a572def9",
+      "revId": "d2be74aa57aef69853e3451839dab43cfad39a02",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
