@@ -1,0 +1,8 @@
+Code-Review+2: David Turner <digit@android.com>
+Verified+1: David Turner <digit@android.com>
+Verified+1: Deckard Autoverifier <deckard@android.com>
+Submitted-by: David Turner <digit@android.com>
+Submitted-at: Fri, 14 Feb 2014 16:34:25 +0000
+Reviewed-on: https://android-review.googlesource.com/80342
+Project: platform/hardware/libhardware
+Branch: refs/heads/master
