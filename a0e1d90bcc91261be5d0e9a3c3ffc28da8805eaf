@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "9c3ac1c3_548ca223",
+        "filename": "include/hardware/gps.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 1010570
+      },
+      "writtenOn": "2014-02-25T17:55:56Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9e08f1da_c136d16a",
+      "revId": "a0e1d90bcc91261be5d0e9a3c3ffc28da8805eaf",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "23d44e2d_253158d6",
         "filename": "include/hardware/gps.h",
         "patchSetId": 3
@@ -30,6 +48,24 @@
       "writtenOn": "2013-12-05T21:32:11Z",
       "side": 1,
       "message": "I wonder if there is any real benefit for trying to come up with a common structure to represent different satellite systems. For example, GLONASS does not really have the concept of PRN. So I guess with this change we want overload the PRN field with some other meaning, like slot number if this is GLONASS? This can be confusing when trying to interpret values from this field.\n\nHow about we just define a dedicated structure for each system, and give them a more technically correct name?",
+      "revId": "a0e1d90bcc91261be5d0e9a3c3ffc28da8805eaf",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3cfb9535_a8da54b5",
+        "filename": "include/hardware/gps.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 287,
+      "author": {
+        "id": 1010570
+      },
+      "writtenOn": "2014-02-25T17:55:56Z",
+      "side": 1,
+      "message": "Agreed on the concerns on overloading prn.  \n\nA change is made per your suggestion, we can review next patch set.  The association of SV data becomes a little loose, as it now becomes a set of arrays, that an SV\u0027s data is in the corresponding slots of all of these arrays.  This association is less obvious.  But this is more of a APIs for experts, where we can assume better knowledge of how they are supposed to be used, different than public APIs.  So maybe this is less of a concern.",
+      "parentUuid": "23d44e2d_253158d6",
       "revId": "a0e1d90bcc91261be5d0e9a3c3ffc28da8805eaf",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
@@ -70,6 +106,24 @@
     },
     {
       "key": {
+        "uuid": "9c3ac1c3_74220636",
+        "filename": "include/hardware/gps.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 316,
+      "author": {
+        "id": 1010570
+      },
+      "writtenOn": "2014-02-25T17:55:56Z",
+      "side": 1,
+      "message": "this will become a little difficult considering the masks.  We have a collection of 138 satellites adding all constellations together.  It would be difficult to bit mask them in one structure.  Not difficult exactly, but less obvious, as likely an array of bytes would be really a mask of 138 bits.  Other than this sore point, this is in fact also a pursuable approach.",
+      "parentUuid": "9e08f1da_41712126",
+      "revId": "a0e1d90bcc91261be5d0e9a3c3ffc28da8805eaf",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "e3cdd6a7_a8ec2337",
         "filename": "include/hardware/gps.h",
         "patchSetId": 3
@@ -87,6 +141,24 @@
     },
     {
       "key": {
+        "uuid": "1cf89137_a9001820",
+        "filename": "include/hardware/gps.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 428,
+      "author": {
+        "id": 1010570
+      },
+      "writtenOn": "2014-02-25T17:55:56Z",
+      "side": 1,
+      "message": "good catch.  thanks.",
+      "parentUuid": "e3cdd6a7_a8ec2337",
+      "revId": "a0e1d90bcc91261be5d0e9a3c3ffc28da8805eaf",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5e64b999_a5845944",
         "filename": "include/hardware/gps.h",
         "patchSetId": 3
@@ -98,6 +170,24 @@
       "writtenOn": "2013-11-19T21:58:04Z",
       "side": 1,
       "message": "How is this data structure consumed by the HAL client?",
+      "revId": "a0e1d90bcc91261be5d0e9a3c3ffc28da8805eaf",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1cf89137_8930bc01",
+        "filename": "include/hardware/gps.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 438,
+      "author": {
+        "id": 1010570
+      },
+      "writtenOn": "2014-02-25T17:55:56Z",
+      "side": 1,
+      "message": "I envision that the HAL client would look into each of the *SvStatus struct, check the num_svs field, and read into that many slots of the arrays to assemble the SvInfo.  The mask checking should be the same as they are now.",
+      "parentUuid": "5e64b999_a5845944",
       "revId": "a0e1d90bcc91261be5d0e9a3c3ffc28da8805eaf",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
