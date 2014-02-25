@@ -16,6 +16,24 @@
       "revId": "2f0a699b3e50223269e686b039ed847b40bb6754",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3cfb9535_39c3387a",
+        "filename": "include/hardware/gps.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 111,
+      "author": {
+        "id": 1010570
+      },
+      "writtenOn": "2014-02-25T20:02:12Z",
+      "side": 1,
+      "message": "good comment.  I will combine this with https://android-review.googlesource.com/#/c/70311, as this is really a part of the additional constellations.",
+      "parentUuid": "fe71ed53_c084e345",
+      "revId": "2f0a699b3e50223269e686b039ed847b40bb6754",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
