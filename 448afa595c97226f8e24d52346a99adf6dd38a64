@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fc32ddef_4ce65f99",
+        "filename": "include/hardware/gps.h",
+        "patchSetId": 4
+      },
+      "lineNbr": 491,
+      "author": {
+        "id": 1034489
+      },
+      "writtenOn": "2014-02-27T20:33:27Z",
+      "side": 1,
+      "message": "see my comment in the complementary CR to this change",
+      "range": {
+        "startLine": 490,
+        "startChar": 4,
+        "endLine": 491,
+        "endChar": 34
+      },
+      "revId": "448afa595c97226f8e24d52346a99adf6dd38a64",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
