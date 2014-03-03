@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7c58ad41_63cfd247",
+        "filename": "include/hardware/gps.h",
+        "patchSetId": 5
+      },
+      "lineNbr": 494,
+      "author": {
+        "id": 1034489
+      },
+      "writtenOn": "2014-03-03T21:10:41Z",
+      "side": 1,
+      "message": "AFAIK ipaddr was added after the first version of the HAL was released,",
+      "range": {
+        "startLine": 494,
+        "startChar": 0,
+        "endLine": 494,
+        "endChar": 27
+      },
+      "revId": "0b19fd0548c88eb09fafadd90e29253fc68d511b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7c58ad41_63b8f2a7",
+        "filename": "include/hardware/gps.h",
+        "patchSetId": 5
+      },
+      "lineNbr": 536,
+      "author": {
+        "id": 1034489
+      },
+      "writtenOn": "2014-03-03T21:10:41Z",
+      "side": 1,
+      "message": "This won\u0027t work well for back-compat, right? If the HAL implementation remains unchanged, but the android platform takes this change, there is no way to know if data_conn_open supports the bearer type",
+      "range": {
+        "startLine": 536,
+        "startChar": 42,
+        "endLine": 536,
+        "endChar": 70
+      },
+      "revId": "0b19fd0548c88eb09fafadd90e29253fc68d511b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
