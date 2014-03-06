@@ -1,0 +1,9 @@
+Code-Review+1: Bernhard Rosenkränzer <Bernhard.Rosenkranzer@linaro.org>
+Verified+1: Deckard Autoverifier <deckard@android.com>
+Code-Review+1: David Turner <digit@android.com>
+Code-Review+2: Jesse Hall <jessehall@google.com>
+Submitted-by: Jesse Hall <jessehall@google.com>
+Submitted-at: Thu, 06 Mar 2014 19:04:07 +0000
+Reviewed-on: https://android-review.googlesource.com/83132
+Project: platform/hardware/libhardware
+Branch: refs/heads/master
