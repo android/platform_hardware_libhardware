@@ -1,0 +1,9 @@
+Code-Review+1: Fengwei Yin <fengwei.yin@intel.com>
+Verified+1: Deckard Autoverifier <deckard@android.com>
+Code-Review+1: David Turner <digit@android.com>
+Code-Review+2: Greg Hackmann <ghackmann@google.com>
+Submitted-by: Greg Hackmann <ghackmann@google.com>
+Submitted-at: Thu, 06 Mar 2014 18:24:48 +0000
+Reviewed-on: https://android-review.googlesource.com/83905
+Project: platform/hardware/libhardware
+Branch: refs/heads/master
