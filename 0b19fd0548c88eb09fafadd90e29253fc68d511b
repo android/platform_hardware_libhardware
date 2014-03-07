@@ -65,6 +65,23 @@
     },
     {
       "key": {
+        "uuid": "fc4c9db4_03a04d0b",
+        "filename": "include/hardware/gps.h",
+        "patchSetId": 5
+      },
+      "lineNbr": 505,
+      "author": {
+        "id": 1036868
+      },
+      "writtenOn": "2014-03-07T22:05:10Z",
+      "side": 1,
+      "message": "Actually, have you considered just using struct inet_addr instead? It has a field for version (so no ipVersion is needed here).",
+      "revId": "0b19fd0548c88eb09fafadd90e29253fc68d511b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7c58ad41_63b8f2a7",
         "filename": "include/hardware/gps.h",
         "patchSetId": 5
@@ -100,6 +117,30 @@
       "side": 1,
       "message": "Kevin, backwork compatibility is our main concern right now. Can there be caller other than JNI _GpsLocationProvider.cpp?\n\nA safer approach would be creating a new AGpsInterface. There would be overhead on the caller but at least we don\u0027t need to worry about caller built with previous version.",
       "parentUuid": "7c58ad41_63b8f2a7",
+      "range": {
+        "startLine": 536,
+        "startChar": 42,
+        "endLine": 536,
+        "endChar": 70
+      },
+      "revId": "0b19fd0548c88eb09fafadd90e29253fc68d511b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bc586570_e970a11c",
+        "filename": "include/hardware/gps.h",
+        "patchSetId": 5
+      },
+      "lineNbr": 536,
+      "author": {
+        "id": 1036868
+      },
+      "writtenOn": "2014-03-07T22:05:10Z",
+      "side": 1,
+      "message": "And do we really need to pass bearertype if the address itself contains information about IP version info?",
+      "parentUuid": "7c526d52_fba34bc0",
       "range": {
         "startLine": 536,
         "startChar": 42,
