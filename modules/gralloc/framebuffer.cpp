@@ -132,6 +132,27 @@ static int fb_post(struct framebuffer_device_t* dev, buffer_handle_t buffer)
 
 /*****************************************************************************/
 
+void clearFrameBuffer(void* vaddr, size_t fbSize)
+{
+#ifdef __aarch64__
+    /*
+     * The optimised memset for arm64 cannot operate on device memory.
+     * The zeroing has to be done differently. This is a copy of bionic's
+     * generic memset.
+     */
+    char* q = (char*)vaddr;
+    char* end = q + fbSize;
+    for (;;) {
+        if (q >= end) break; *q++ = 0;
+        if (q >= end) break; *q++ = 0;
+        if (q >= end) break; *q++ = 0;
+        if (q >= end) break; *q++ = 0;
+    }
+#else
+    memset(vaddr, 0, fbSize);
+#endif
+}
+
 int mapFrameBufferLocked(struct private_module_t* module)
 {
     // already initialized...
@@ -284,7 +305,7 @@ int mapFrameBufferLocked(struct private_module_t* module)
         return -errno;
     }
     module->framebuffer->base = intptr_t(vaddr);
-    memset(vaddr, 0, fbSize);
+    clearFrameBuffer(vaddr, fbSize);
     return 0;
 }
 
