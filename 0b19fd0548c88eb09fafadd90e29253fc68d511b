@@ -37,6 +37,24 @@
     },
     {
       "key": {
+        "uuid": "fcb49dfd_5c455dd1",
+        "filename": "include/hardware/gps.h",
+        "patchSetId": 5
+      },
+      "lineNbr": 145,
+      "author": {
+        "id": 1010570
+      },
+      "writtenOn": "2014-03-14T15:43:26Z",
+      "side": 1,
+      "message": "well, not done yet, will do that is",
+      "parentUuid": "5cb3e9f9_f19c280f",
+      "revId": "0b19fd0548c88eb09fafadd90e29253fc68d511b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7c58ad41_63cfd247",
         "filename": "include/hardware/gps.h",
         "patchSetId": 5
