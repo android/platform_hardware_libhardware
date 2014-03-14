@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "5cb3e9f9_f19c280f",
+        "filename": "include/hardware/gps.h",
+        "patchSetId": 5
+      },
+      "lineNbr": 145,
+      "author": {
+        "id": 1010570
+      },
+      "writtenOn": "2014-03-14T01:57:33Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7c526d52_5b207780",
+      "revId": "0b19fd0548c88eb09fafadd90e29253fc68d511b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7c58ad41_63cfd247",
         "filename": "include/hardware/gps.h",
         "patchSetId": 5
@@ -30,6 +48,30 @@
       "writtenOn": "2014-03-03T21:10:41Z",
       "side": 1,
       "message": "AFAIK ipaddr was added after the first version of the HAL was released,",
+      "range": {
+        "startLine": 494,
+        "startChar": 0,
+        "endLine": 494,
+        "endChar": 27
+      },
+      "revId": "0b19fd0548c88eb09fafadd90e29253fc68d511b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3cc8f574_503dd4a0",
+        "filename": "include/hardware/gps.h",
+        "patchSetId": 5
+      },
+      "lineNbr": 494,
+      "author": {
+        "id": 1010570
+      },
+      "writtenOn": "2014-03-14T01:57:33Z",
+      "side": 1,
+      "message": "yes, https://android-review.googlesource.com/#/c/23469/1/include/hardware/gps.h",
+      "parentUuid": "7c58ad41_63cfd247",
       "range": {
         "startLine": 494,
         "startChar": 0,
@@ -65,6 +107,30 @@
     },
     {
       "key": {
+        "uuid": "3cc8f574_f0c6e035",
+        "filename": "include/hardware/gps.h",
+        "patchSetId": 5
+      },
+      "lineNbr": 500,
+      "author": {
+        "id": 1010570
+      },
+      "writtenOn": "2014-03-14T01:57:33Z",
+      "side": 1,
+      "message": "I think this is a good suggestion.  Let me try that out.  Could you also look at my comment on ipaddr / inversion?  Once I have your input, I can update that patch together.  Thanks.",
+      "parentUuid": "bc586570_40b522d1",
+      "range": {
+        "startLine": 500,
+        "startChar": 4,
+        "endLine": 500,
+        "endChar": 10
+      },
+      "revId": "0b19fd0548c88eb09fafadd90e29253fc68d511b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "fc4c9db4_03a04d0b",
         "filename": "include/hardware/gps.h",
         "patchSetId": 5
@@ -76,6 +142,24 @@
       "writtenOn": "2014-03-07T22:05:10Z",
       "side": 1,
       "message": "Actually, have you considered just using struct inet_addr instead? It has a field for version (so no ipVersion is needed here).",
+      "revId": "0b19fd0548c88eb09fafadd90e29253fc68d511b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "dc10b997_1230b2ff",
+        "filename": "include/hardware/gps.h",
+        "patchSetId": 5
+      },
+      "lineNbr": 505,
+      "author": {
+        "id": 1010570
+      },
+      "writtenOn": "2014-03-14T01:57:33Z",
+      "side": 1,
+      "message": "I am not aware of or able to find a inet_addr.  Could you point me to it?  Or did you mean struct sockaddr?  Seems good, just that the naming is socket*.  Relevant, but not exactly fitting.  We could define one...",
+      "parentUuid": "fc4c9db4_03a04d0b",
       "revId": "0b19fd0548c88eb09fafadd90e29253fc68d511b",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
@@ -141,6 +225,78 @@
       "side": 1,
       "message": "And do we really need to pass bearertype if the address itself contains information about IP version info?",
       "parentUuid": "7c526d52_fba34bc0",
+      "range": {
+        "startLine": 536,
+        "startChar": 42,
+        "endLine": 536,
+        "endChar": 70
+      },
+      "revId": "0b19fd0548c88eb09fafadd90e29253fc68d511b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5cb3e9f9_8c511329",
+        "filename": "include/hardware/gps.h",
+        "patchSetId": 5
+      },
+      "lineNbr": 536,
+      "author": {
+        "id": 1010570
+      },
+      "writtenOn": "2014-03-14T01:57:33Z",
+      "side": 1,
+      "message": "no one other than here calls this.  We can create a new call or new interface.  But are we sure we do have backward compatibility issues?",
+      "parentUuid": "7c526d52_fba34bc0",
+      "range": {
+        "startLine": 536,
+        "startChar": 42,
+        "endLine": 536,
+        "endChar": 70
+      },
+      "revId": "0b19fd0548c88eb09fafadd90e29253fc68d511b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3cc8f574_7096503a",
+        "filename": "include/hardware/gps.h",
+        "patchSetId": 5
+      },
+      "lineNbr": 536,
+      "author": {
+        "id": 1010570
+      },
+      "writtenOn": "2014-03-14T01:57:33Z",
+      "side": 1,
+      "message": "I think it will.  The older HAL would know nothing about inversion, and  always assume it is IPv4.  It would still work when it is actually IPv4 APN.  If this is IPv6 APN, there is no way to get older HAL to work anyways.",
+      "parentUuid": "7c58ad41_63b8f2a7",
+      "range": {
+        "startLine": 536,
+        "startChar": 42,
+        "endLine": 536,
+        "endChar": 70
+      },
+      "revId": "0b19fd0548c88eb09fafadd90e29253fc68d511b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5cb3e9f9_6c875f4f",
+        "filename": "include/hardware/gps.h",
+        "patchSetId": 5
+      },
+      "lineNbr": 536,
+      "author": {
+        "id": 1010570
+      },
+      "writtenOn": "2014-03-14T01:57:33Z",
+      "side": 1,
+      "message": "yes, this tell the type of APN, not ip version.  There could be IPv4v6 APNx.",
+      "parentUuid": "bc586570_e970a11c",
       "range": {
         "startLine": 536,
         "startChar": 42,
