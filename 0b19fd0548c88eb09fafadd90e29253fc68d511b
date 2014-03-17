@@ -184,6 +184,24 @@
     },
     {
       "key": {
+        "uuid": "fcb49dfd_f7f9d7ed",
+        "filename": "include/hardware/gps.h",
+        "patchSetId": 5
+      },
+      "lineNbr": 505,
+      "author": {
+        "id": 1036868
+      },
+      "writtenOn": "2014-03-17T17:50:06Z",
+      "side": 1,
+      "message": "You are right, struct sockaddr is the right term, not inet_addr (my bad). And I think it might be even better to just use the sockaddr_storage so the sizeof() will always give you the same value (but not sure how useful this is).",
+      "parentUuid": "dc10b997_1230b2ff",
+      "revId": "0b19fd0548c88eb09fafadd90e29253fc68d511b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7c58ad41_63b8f2a7",
         "filename": "include/hardware/gps.h",
         "patchSetId": 5
@@ -315,6 +333,30 @@
       "side": 1,
       "message": "yes, this tell the type of APN, not ip version.  There could be IPv4v6 APNx.",
       "parentUuid": "bc586570_e970a11c",
+      "range": {
+        "startLine": 536,
+        "startChar": 42,
+        "endLine": 536,
+        "endChar": 70
+      },
+      "revId": "0b19fd0548c88eb09fafadd90e29253fc68d511b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "dcb1990e_b3efe398",
+        "filename": "include/hardware/gps.h",
+        "patchSetId": 5
+      },
+      "lineNbr": 536,
+      "author": {
+        "id": 1036868
+      },
+      "writtenOn": "2014-03-17T17:50:06Z",
+      "side": 1,
+      "message": "Let\u0027s discuss this offline.",
+      "parentUuid": "5cb3e9f9_8c511329",
       "range": {
         "startLine": 536,
         "startChar": 42,
