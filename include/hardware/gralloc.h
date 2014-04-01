@@ -62,6 +62,8 @@ __BEGIN_DECLS
 
 #define GRALLOC_HARDWARE_GPU0 "gpu0"
 
+#define GRALLOC_SUPPORTS_LOCK_ASYNC 1
+
 enum {
     /* buffer is never read in software */
     GRALLOC_USAGE_SW_READ_NEVER         = 0x00000000,
@@ -241,8 +243,21 @@ typedef struct gralloc_module_t {
             int l, int t, int w, int h,
             struct android_ycbcr *ycbcr);
 
+    #ifdef GRALLOC_SUPPORTS_LOCK_ASYNC
+    int (*lockAsync)(struct gralloc_module_t const* module,
+            buffer_handle_t handle, int usage,
+            int l, int t, int w, int h,
+            void** vaddr, int fd);
+
+    int (*unlockAsync)(struct gralloc_module_t const* module,
+            buffer_handle_t handle, int* fd);
+
+    /* reserved for future use */
+    void* reserved_proc[4];
+    #else
     /* reserved for future use */
     void* reserved_proc[6];
+    #endif
 } gralloc_module_t;
 
 /*****************************************************************************/
