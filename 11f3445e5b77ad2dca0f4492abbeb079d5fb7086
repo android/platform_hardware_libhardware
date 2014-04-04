@@ -1,0 +1,78 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "999e536b_d7f8f495",
+        "filename": "include/hardware/gralloc.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 1010672
+      },
+      "writtenOn": "2014-04-04T23:18:13Z",
+      "side": 1,
+      "message": "Does this still serve any purpose? The change in frameworks/native assumes it\u0027s defined.",
+      "revId": "11f3445e5b77ad2dca0f4492abbeb079d5fb7086",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "999e536b_f7f5f89c",
+        "filename": "include/hardware/gralloc.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 247,
+      "author": {
+        "id": 1010672
+      },
+      "writtenOn": "2014-04-04T23:18:13Z",
+      "side": 1,
+      "message": "Some documentation would be helpful. Especially about ownership of the fence fd: does the caller or the callee close it?",
+      "revId": "11f3445e5b77ad2dca0f4492abbeb079d5fb7086",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b9995785_b819a1d6",
+        "filename": "include/hardware/gralloc.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 250,
+      "author": {
+        "id": 1010672
+      },
+      "writtenOn": "2014-04-04T23:18:13Z",
+      "side": 1,
+      "message": "Elsewhere we call this fenceFd so it\u0027s clear what the parameter is.",
+      "range": {
+        "startLine": 250,
+        "startChar": 30,
+        "endLine": 250,
+        "endChar": 32
+      },
+      "revId": "11f3445e5b77ad2dca0f4492abbeb079d5fb7086",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d9be0bc6_3cd3d54b",
+        "filename": "include/hardware/gralloc.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 252,
+      "author": {
+        "id": 1010672
+      },
+      "writtenOn": "2014-04-04T23:18:13Z",
+      "side": 1,
+      "message": "Ditto on documentation (especially ownership) and parameter name.",
+      "revId": "11f3445e5b77ad2dca0f4492abbeb079d5fb7086",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
