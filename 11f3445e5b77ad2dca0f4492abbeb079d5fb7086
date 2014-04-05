@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "f96f4f39_2406723d",
+        "filename": "include/hardware/gralloc.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 1005148
+      },
+      "writtenOn": "2014-04-05T01:01:21Z",
+      "side": 1,
+      "message": "this is for our internal branches only - so gralloc knows whether these functions are present.  I should have removed it before I pushed the patch.",
+      "parentUuid": "999e536b_d7f8f495",
+      "revId": "11f3445e5b77ad2dca0f4492abbeb079d5fb7086",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "999e536b_f7f5f89c",
         "filename": "include/hardware/gralloc.h",
         "patchSetId": 1
@@ -30,6 +48,24 @@
       "writtenOn": "2014-04-04T23:18:13Z",
       "side": 1,
       "message": "Some documentation would be helpful. Especially about ownership of the fence fd: does the caller or the callee close it?",
+      "revId": "11f3445e5b77ad2dca0f4492abbeb079d5fb7086",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "39764713_c011026f",
+        "filename": "include/hardware/gralloc.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 247,
+      "author": {
+        "id": 1005148
+      },
+      "writtenOn": "2014-04-05T01:01:21Z",
+      "side": 1,
+      "message": "callee closes it.  i will add docs in a new patchset.",
+      "parentUuid": "999e536b_f7f5f89c",
       "revId": "11f3445e5b77ad2dca0f4492abbeb079d5fb7086",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
