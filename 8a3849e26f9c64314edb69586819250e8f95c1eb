@@ -1,0 +1,8 @@
+Code-Review+2: Brian Carlstrom <bdc@google.com>
+Code-Review+2: Geremy Condra <gcondra@google.com>
+Verified+1: Kenny Root <kroot@android.com>
+Submitted-by: Kenny Root <kroot@android.com>
+Submitted-at: Fri, 18 Apr 2014 18:50:01 +0000
+Reviewed-on: https://android-review.googlesource.com/68873
+Project: platform/hardware/libhardware
+Branch: refs/heads/master
