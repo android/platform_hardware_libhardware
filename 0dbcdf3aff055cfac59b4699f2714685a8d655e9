@@ -1,0 +1,7 @@
+Code-Review+2: Eric Laurent <elaurent@google.com>
+Verified+1: Colin Cross <ccross@android.com>
+Submitted-by: Colin Cross <ccross@android.com>
+Submitted-at: Sat, 19 Apr 2014 00:11:28 +0000
+Reviewed-on: https://android-review.googlesource.com/91547
+Project: platform/hardware/libhardware
+Branch: refs/heads/master
