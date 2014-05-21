@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "2a58a819_24b42810",
+        "filename": "modules/gralloc/framebuffer.cpp",
+        "patchSetId": 3
+      },
+      "lineNbr": 181,
+      "author": {
+        "id": 1000411
+      },
+      "writtenOn": "2014-05-21T12:27:23Z",
+      "side": 1,
+      "message": "Are you sure a simple -DUSE_PAN_DISPLAY will be enough for #if to work? I would think -DUSE_PAN_DISPLAY\u003d1 would be better.\n\nGenerally speaking, it\u0027s better to be explicit, i.e. do something like:\n\n  ... at the start of the source file.\n\n  // Define USE_PAN_DISPLAY to 1 at compile time if the\n  // board uses FBIOPAN_DISPLAY to setup page flipping.\n  // otherwise the default will be to use FBIOPUT_VSCREENINFO\n  #ifndef USE_PAN_DISPLAY\n  #  define USE_PAN_DISPLAY 0\n  #endif\n\n  ... later\n\n  # if USE_PAN_DISPLAY\n    ....\n  #else\n    ...\n  #endif",
+      "revId": "c83041a5556626c74e1f8e46277cd8c7e4b18e3a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
