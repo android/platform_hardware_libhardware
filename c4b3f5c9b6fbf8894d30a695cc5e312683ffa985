@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "dfed10cb_566a2af7",
+        "filename": "include/hardware/gps.h",
+        "patchSetId": 6
+      },
+      "lineNbr": 510,
+      "author": {
+        "id": 1034489
+      },
+      "writtenOn": "2014-05-27T20:57:59Z",
+      "side": 1,
+      "message": "you shouldn\u0027t really remove the field ipaddr for this version, it\u0027s a breaking change, for the size field to really work it is required that fields are only added.",
+      "range": {
+        "startLine": 510,
+        "startChar": 0,
+        "endLine": 510,
+        "endChar": 35
+      },
+      "revId": "c4b3f5c9b6fbf8894d30a695cc5e312683ffa985",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "dfed10cb_f6587666",
+        "filename": "include/hardware/gps.h",
+        "patchSetId": 6
+      },
+      "lineNbr": 571,
+      "author": {
+        "id": 1034489
+      },
+      "writtenOn": "2014-05-27T20:57:59Z",
+      "side": 1,
+      "message": "I\u0027d keep the name the same, and try to find a better name for the added method",
+      "range": {
+        "startLine": 571,
+        "startChar": 11,
+        "endLine": 571,
+        "endChar": 29
+      },
+      "revId": "c4b3f5c9b6fbf8894d30a695cc5e312683ffa985",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "dfed10cb_c1e8121f",
+        "filename": "include/hardware/gps.h",
+        "patchSetId": 6
+      },
+      "lineNbr": 588,
+      "author": {
+        "id": 1034489
+      },
+      "writtenOn": "2014-05-27T20:57:59Z",
+      "side": 1,
+      "message": "why do we use different representations of an ip address in here and in AGpsStatus_v3, we should use the same way, which seems to be sockaddr_storage.",
+      "range": {
+        "startLine": 588,
+        "startChar": 28,
+        "endLine": 588,
+        "endChar": 70
+      },
+      "revId": "c4b3f5c9b6fbf8894d30a695cc5e312683ffa985",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
