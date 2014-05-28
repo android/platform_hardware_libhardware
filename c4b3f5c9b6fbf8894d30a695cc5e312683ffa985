@@ -49,6 +49,30 @@
     },
     {
       "key": {
+        "uuid": "3fa38cb4_b30e22c3",
+        "filename": "include/hardware/gps.h",
+        "patchSetId": 6
+      },
+      "lineNbr": 510,
+      "author": {
+        "id": 1010570
+      },
+      "writtenOn": "2014-05-28T22:49:29Z",
+      "side": 1,
+      "message": "actually the proposed jni implementation relies on size incrementally grow, not only unique (but that is only pertaining to this implementation).  The current v* defs do grow.",
+      "parentUuid": "ff8c944a_51afb66f",
+      "range": {
+        "startLine": 510,
+        "startChar": 0,
+        "endLine": 510,
+        "endChar": 35
+      },
+      "revId": "c4b3f5c9b6fbf8894d30a695cc5e312683ffa985",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "dfed10cb_f6587666",
         "filename": "include/hardware/gps.h",
         "patchSetId": 6
