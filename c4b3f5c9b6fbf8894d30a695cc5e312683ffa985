@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "ff8c944a_51afb66f",
+        "filename": "include/hardware/gps.h",
+        "patchSetId": 6
+      },
+      "lineNbr": 510,
+      "author": {
+        "id": 1010570
+      },
+      "writtenOn": "2014-05-28T22:40:38Z",
+      "side": 1,
+      "message": "I disagree.  For size field to work, it only requires that each version has a unique size.  We know that sizeof(AGpsStatus_v3) \u003e sizeof(AGpsStatus_v2) or sizeof(AGpsStatus_v1)",
+      "parentUuid": "dfed10cb_566a2af7",
+      "range": {
+        "startLine": 510,
+        "startChar": 0,
+        "endLine": 510,
+        "endChar": 35
+      },
+      "revId": "c4b3f5c9b6fbf8894d30a695cc5e312683ffa985",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "dfed10cb_f6587666",
         "filename": "include/hardware/gps.h",
         "patchSetId": 6
@@ -48,6 +72,30 @@
     },
     {
       "key": {
+        "uuid": "1fa8888f_920f5a51",
+        "filename": "include/hardware/gps.h",
+        "patchSetId": 6
+      },
+      "lineNbr": 571,
+      "author": {
+        "id": 1010570
+      },
+      "writtenOn": "2014-05-28T22:40:38Z",
+      "side": 1,
+      "message": "Will do",
+      "parentUuid": "dfed10cb_f6587666",
+      "range": {
+        "startLine": 571,
+        "startChar": 11,
+        "endLine": 571,
+        "endChar": 29
+      },
+      "revId": "c4b3f5c9b6fbf8894d30a695cc5e312683ffa985",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "dfed10cb_c1e8121f",
         "filename": "include/hardware/gps.h",
         "patchSetId": 6
@@ -59,6 +107,30 @@
       "writtenOn": "2014-05-27T20:57:59Z",
       "side": 1,
       "message": "why do we use different representations of an ip address in here and in AGpsStatus_v3, we should use the same way, which seems to be sockaddr_storage.",
+      "range": {
+        "startLine": 588,
+        "startChar": 28,
+        "endLine": 588,
+        "endChar": 70
+      },
+      "revId": "c4b3f5c9b6fbf8894d30a695cc5e312683ffa985",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3fa38cb4_f3850af6",
+        "filename": "include/hardware/gps.h",
+        "patchSetId": 6
+      },
+      "lineNbr": 588,
+      "author": {
+        "id": 1010570
+      },
+      "writtenOn": "2014-05-28T22:40:38Z",
+      "side": 1,
+      "message": "this is APN string, not IP address",
+      "parentUuid": "dfed10cb_c1e8121f",
       "range": {
         "startLine": 588,
         "startChar": 28,
