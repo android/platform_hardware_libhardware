@@ -37,6 +37,24 @@
     },
     {
       "key": {
+        "uuid": "1fa8888f_58e0b15d",
+        "filename": "include/hardware/gps.h",
+        "patchSetId": 6
+      },
+      "lineNbr": 139,
+      "author": {
+        "id": 1010570
+      },
+      "writtenOn": "2014-05-29T03:14:20Z",
+      "side": 1,
+      "message": "Don\u0027t know why they were chosen so, but the typedef\u0027s above all chose uint16_t for very small range too.  I can\u0027t really see any real gain changing it from uint16 to uint8, but at least there is some level consistency if we keep it as 16.  Would you agree?",
+      "parentUuid": "9f6c7849_e38b7258",
+      "revId": "c4b3f5c9b6fbf8894d30a695cc5e312683ffa985",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9f6c7849_e338d2e9",
         "filename": "include/hardware/gps.h",
         "patchSetId": 6
@@ -48,6 +66,24 @@
       "writtenOn": "2014-05-29T01:19:20Z",
       "side": 1,
       "message": "It seems incorrect to set an uint16_t variable to -1, since uint16_t is an unsigned type.",
+      "revId": "c4b3f5c9b6fbf8894d30a695cc5e312683ffa985",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1fa8888f_38ebed45",
+        "filename": "include/hardware/gps.h",
+        "patchSetId": 6
+      },
+      "lineNbr": 140,
+      "author": {
+        "id": 1010570
+      },
+      "writtenOn": "2014-05-29T03:14:20Z",
+      "side": 1,
+      "message": "hmmm, true, good catch, thanks.  Will be corrected in the next patch.",
+      "parentUuid": "9f6c7849_e338d2e9",
       "revId": "c4b3f5c9b6fbf8894d30a695cc5e312683ffa985",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
