@@ -2,6 +2,40 @@
   "comments": [
     {
       "key": {
+        "uuid": "9f6c7849_c33bd6e3",
+        "filename": "include/hardware/gps.h",
+        "patchSetId": 6
+      },
+      "lineNbr": 139,
+      "author": {
+        "id": 1000835
+      },
+      "writtenOn": "2014-05-29T01:19:20Z",
+      "side": 1,
+      "message": "Why is this not a uint8_t or int8_t? Its values only go from -1 to 2.",
+      "revId": "c4b3f5c9b6fbf8894d30a695cc5e312683ffa985",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9f6c7849_e338d2e9",
+        "filename": "include/hardware/gps.h",
+        "patchSetId": 6
+      },
+      "lineNbr": 140,
+      "author": {
+        "id": 1000835
+      },
+      "writtenOn": "2014-05-29T01:19:20Z",
+      "side": 1,
+      "message": "It seems incorrect to set an uint16_t variable to -1, since uint16_t is an unsigned type.",
+      "revId": "c4b3f5c9b6fbf8894d30a695cc5e312683ffa985",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "dfed10cb_566a2af7",
         "filename": "include/hardware/gps.h",
         "patchSetId": 6
