@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "9f6c7849_e38b7258",
+        "filename": "include/hardware/gps.h",
+        "patchSetId": 6
+      },
+      "lineNbr": 139,
+      "author": {
+        "id": 1000835
+      },
+      "writtenOn": "2014-05-29T01:59:34Z",
+      "side": 1,
+      "message": "Or perhaps even use an enum type here, so you get compiler checking.",
+      "parentUuid": "9f6c7849_c33bd6e3",
+      "revId": "c4b3f5c9b6fbf8894d30a695cc5e312683ffa985",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9f6c7849_e338d2e9",
         "filename": "include/hardware/gps.h",
         "patchSetId": 6
@@ -101,6 +119,23 @@
         "endLine": 510,
         "endChar": 35
       },
+      "revId": "c4b3f5c9b6fbf8894d30a695cc5e312683ffa985",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9f6c7849_c38e766b",
+        "filename": "include/hardware/gps.h",
+        "patchSetId": 6
+      },
+      "lineNbr": 568,
+      "author": {
+        "id": 1000835
+      },
+      "writtenOn": "2014-05-29T01:59:34Z",
+      "side": 1,
+      "message": "Please fix trailing whitespace.",
       "revId": "c4b3f5c9b6fbf8894d30a695cc5e312683ffa985",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
