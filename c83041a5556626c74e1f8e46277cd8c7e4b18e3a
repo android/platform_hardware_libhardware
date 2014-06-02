@@ -16,6 +16,24 @@
       "revId": "c83041a5556626c74e1f8e46277cd8c7e4b18e3a",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "dfd0b03d_9e2be172",
+        "filename": "modules/gralloc/framebuffer.cpp",
+        "patchSetId": 3
+      },
+      "lineNbr": 181,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2014-06-02T12:18:46Z",
+      "side": 1,
+      "message": "Thanks for the feedback. I\u0027ve uploaded a new patchset for review.\n\nI have used -DUSE_PAN_DISPLAY or similar variables quiet a few times though and they seem to work fine for #if in respective source file(s).",
+      "parentUuid": "2a58a819_24b42810",
+      "revId": "c83041a5556626c74e1f8e46277cd8c7e4b18e3a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
