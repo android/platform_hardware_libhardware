@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5f4e8057_34e61e50",
+        "filename": "include/hardware/keymaster.h",
+        "patchSetId": 6
+      },
+      "lineNbr": 512,
+      "author": {
+        "id": 1002975
+      },
+      "writtenOn": "2014-06-13T22:10:02Z",
+      "side": 1,
+      "message": "You can\u0027t insert new things at the beginning. They have to be appended because binary-only implementations won\u0027t be recompiled.",
+      "range": {
+        "startLine": 512,
+        "startChar": 0,
+        "endLine": 512,
+        "endChar": 85
+      },
+      "revId": "bd6550bb3ca88b965d636a4b4045126b41216208",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
