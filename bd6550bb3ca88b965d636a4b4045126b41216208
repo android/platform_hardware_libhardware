@@ -22,6 +22,30 @@
       "revId": "bd6550bb3ca88b965d636a4b4045126b41216208",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "df74307d_589e4b84",
+        "filename": "include/hardware/keymaster.h",
+        "patchSetId": 6
+      },
+      "lineNbr": 512,
+      "author": {
+        "id": 1043663
+      },
+      "writtenOn": "2014-06-14T22:45:31Z",
+      "side": 1,
+      "message": "Moved the new entries to the end.",
+      "parentUuid": "5f4e8057_34e61e50",
+      "range": {
+        "startLine": 512,
+        "startChar": 0,
+        "endLine": 512,
+        "endChar": 85
+      },
+      "revId": "bd6550bb3ca88b965d636a4b4045126b41216208",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
