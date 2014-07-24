@@ -76,6 +76,17 @@ enum {
      * by SurfaceFlinger (just as if compositionType was set to HWC_OVERLAY).
      */
     HWC_SKIP_LAYER = 0x00000001,
+
+    /*
+     * HWC_LAYER_HAS_UPDATE is set by surfaceflinger to indicate HAL
+     * if a layer has any change for current frame composition from previous
+     * frame. This includes any geometry changes,changes in drawing state and
+     * new buffer posts from client/application.
+     *
+     *  - If bit is set layer has changed from previos composition cycle.
+     *  - If not set layer has no change from previos composition cycle.
+     */
+    HWC_LAYER_HAS_UPDATE = 0x10000000
 };
 
 /*

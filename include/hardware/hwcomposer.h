@@ -284,6 +284,13 @@ enum {
      * and acquire fences.
      */
     HWC_GEOMETRY_CHANGED = 0x00000001,
+
+    /*
+     * HWC_LAYERS_CHANGED is set by SurfaceFlinger to indicate HAL about the
+     * change in layer list. This flag will be set when SF has a new layer
+     * added or removed from previous frame.
+     */
+    HWC_LAYERS_CHANGED = 0x10000000
 };
 
 /*
