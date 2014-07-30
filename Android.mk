@@ -15,7 +15,7 @@ QEMU_HARDWARE := true
 
 LOCAL_SHARED_LIBRARIES += libdl
 
-LOCAL_SRC_FILES += hardware.c
+LOCAL_SRC_FILES += hardware.c keymaster_enforcement.cpp authorization_set.cpp
 
 LOCAL_MODULE:= libhardware
 
