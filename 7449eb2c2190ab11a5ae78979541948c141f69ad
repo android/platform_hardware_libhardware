@@ -16,6 +16,24 @@
       "revId": "7449eb2c2190ab11a5ae78979541948c141f69ad",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "763a93c6_f36f23c4",
+        "filename": "include/hardware/keymaster_defs.h",
+        "patchSetId": 15
+      },
+      "lineNbr": 363,
+      "author": {
+        "id": 1043663
+      },
+      "writtenOn": "2014-07-31T17:32:29Z",
+      "side": 1,
+      "message": "The app ID isn\u0027t actually stored anywhere in keymaster, so we can\u0027t diagnose invalid app ID. Same with app data. The values are used in the authenticated encryption of the key material, though, so a client that fails to provide the correct values will get a return code of KM_ERROR_INVALID_KEY_BLOB, because decryption of the key will fail. The same will happen if the key is used in the wrong root of trust, or any of a few other ways that the context is invalid for using the key.",
+      "parentUuid": "763a93c6_53dcaf81",
+      "revId": "7449eb2c2190ab11a5ae78979541948c141f69ad",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
