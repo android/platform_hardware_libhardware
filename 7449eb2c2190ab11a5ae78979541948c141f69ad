@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "763a93c6_53dcaf81",
+        "filename": "include/hardware/keymaster_defs.h",
+        "patchSetId": 15
+      },
+      "lineNbr": 363,
+      "author": {
+        "id": 1048048
+      },
+      "writtenOn": "2014-07-31T17:23:04Z",
+      "side": 1,
+      "message": "Do we need an error for an invalid app id or will that be represented using the invalid user id?",
+      "revId": "7449eb2c2190ab11a5ae78979541948c141f69ad",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
