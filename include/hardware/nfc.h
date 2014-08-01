@@ -53,6 +53,7 @@ __BEGIN_DECLS
  * 9) Core NCI stack calls close()
  */
 #define NFC_NCI_HARDWARE_MODULE_ID "nfc_nci"
+#define NFC_NCI_NXP_PN54X_HARDWARE_MODULE_ID "nfc_nci.pn54x"
 #define NFC_NCI_CONTROLLER "nci"
 
 /*
