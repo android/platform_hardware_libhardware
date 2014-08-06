@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "76029343_51fa34da",
+        "filename": "keystore_enforcement.cpp",
+        "patchSetId": 4
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 1048048
+      },
+      "writtenOn": "2014-08-06T22:02:34Z",
+      "side": 1,
+      "message": "I can wrap it and then ifdef\u0027d out or something like that inside Trusty.",
+      "parentUuid": "16aeb765_3a6b29f5",
+      "range": {
+        "startLine": 39,
+        "startChar": 4,
+        "endLine": 39,
+        "endChar": 12
+      },
+      "revId": "384fd854b79ab8f066dc1ef0f6625c6784de3d62",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "d6a7bf88_fe4ca1ae",
         "filename": "keystore_enforcement.cpp",
         "patchSetId": 4
@@ -42,6 +66,24 @@
     },
     {
       "key": {
+        "uuid": "76029343_d1058431",
+        "filename": "keystore_enforcement.cpp",
+        "patchSetId": 4
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 1048048
+      },
+      "writtenOn": "2014-08-06T22:02:34Z",
+      "side": 1,
+      "message": "No. I\u0027ll refactor the function to have a parameter for the intended purpose that needs to be validated.",
+      "parentUuid": "d6a7bf88_fe4ca1ae",
+      "revId": "384fd854b79ab8f066dc1ef0f6625c6784de3d62",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "d6a7bf88_de4f65a1",
         "filename": "keystore_enforcement.h",
         "patchSetId": 4
@@ -53,6 +95,24 @@
       "writtenOn": "2014-08-06T21:43:59Z",
       "side": 1,
       "message": "Can\u0027t use STL.",
+      "revId": "384fd854b79ab8f066dc1ef0f6625c6784de3d62",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "56390f00_47a7fd92",
+        "filename": "keystore_enforcement.h",
+        "patchSetId": 4
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1048048
+      },
+      "writtenOn": "2014-08-06T22:02:34Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d6a7bf88_de4f65a1",
       "revId": "384fd854b79ab8f066dc1ef0f6625c6784de3d62",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
@@ -82,6 +142,30 @@
     },
     {
       "key": {
+        "uuid": "76029343_512fd4a7",
+        "filename": "keystore_enforcement.h",
+        "patchSetId": 4
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 1048048
+      },
+      "writtenOn": "2014-08-06T22:02:34Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d665ff2a_3a9499f4",
+      "range": {
+        "startLine": 49,
+        "startChar": 12,
+        "endLine": 49,
+        "endChar": 28
+      },
+      "revId": "384fd854b79ab8f066dc1ef0f6625c6784de3d62",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "16aeb765_1a718dee",
         "filename": "keystore_enforcement.h",
         "patchSetId": 4
@@ -93,6 +177,24 @@
       "writtenOn": "2014-08-06T21:43:59Z",
       "side": 1,
       "message": "s/delete/add/\n\nAlso, is this method part of the public interface? It seems like this is an internal implementation detail, called by authorizeRescope, and should therefore be private.",
+      "revId": "384fd854b79ab8f066dc1ef0f6625c6784de3d62",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "f63f63e6_f739a059",
+        "filename": "keystore_enforcement.h",
+        "patchSetId": 4
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 1048048
+      },
+      "writtenOn": "2014-08-06T22:02:34Z",
+      "side": 1,
+      "message": "It\u0027s currently public but should be private.",
+      "parentUuid": "16aeb765_1a718dee",
       "revId": "384fd854b79ab8f066dc1ef0f6625c6784de3d62",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
@@ -116,6 +218,24 @@
     },
     {
       "key": {
+        "uuid": "f63f63e6_5794d4f4",
+        "filename": "keystore_enforcement.h",
+        "patchSetId": 4
+      },
+      "lineNbr": 75,
+      "author": {
+        "id": 1048048
+      },
+      "writtenOn": "2014-08-06T22:02:34Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "16aeb765_3a76c9e7",
+      "revId": "384fd854b79ab8f066dc1ef0f6625c6784de3d62",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "d665ff2a_9a232d0a",
         "filename": "keystore_enforcement.h",
         "patchSetId": 4
@@ -127,6 +247,24 @@
       "writtenOn": "2014-08-06T21:43:59Z",
       "side": 1,
       "message": "I\u0027m not sure what this is used for. We use an arbitrary byte array as app ID, because we probably want to encode additional data into the ID, like the signing cert.",
+      "revId": "384fd854b79ab8f066dc1ef0f6625c6784de3d62",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "56390f00_a7ac0975",
+        "filename": "keystore_enforcement.h",
+        "patchSetId": 4
+      },
+      "lineNbr": 203,
+      "author": {
+        "id": 1048048
+      },
+      "writtenOn": "2014-08-06T22:02:34Z",
+      "side": 1,
+      "message": "It\u0027s been removed but not uploaded yet. I added when I thought I would need to derive the appId from the uid.",
+      "parentUuid": "d665ff2a_9a232d0a",
       "revId": "384fd854b79ab8f066dc1ef0f6625c6784de3d62",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
