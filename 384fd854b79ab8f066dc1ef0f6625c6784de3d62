@@ -1,0 +1,135 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "16aeb765_3a6b29f5",
+        "filename": "keystore_enforcement.cpp",
+        "patchSetId": 4
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 1043663
+      },
+      "writtenOn": "2014-08-06T21:43:59Z",
+      "side": 1,
+      "message": "No semaphores in Trusty (no threads).  Can this be abstracted out?",
+      "range": {
+        "startLine": 39,
+        "startChar": 4,
+        "endLine": 39,
+        "endChar": 12
+      },
+      "revId": "384fd854b79ab8f066dc1ef0f6625c6784de3d62",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d6a7bf88_fe4ca1ae",
+        "filename": "keystore_enforcement.cpp",
+        "patchSetId": 4
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 1043663
+      },
+      "writtenOn": "2014-08-06T21:43:59Z",
+      "side": 1,
+      "message": "A key will often have multiple authorized purposes.  We need to validate that the purpose being used is one of the allowed set.  Or is that handled elsewhere?",
+      "revId": "384fd854b79ab8f066dc1ef0f6625c6784de3d62",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d6a7bf88_de4f65a1",
+        "filename": "keystore_enforcement.h",
+        "patchSetId": 4
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1043663
+      },
+      "writtenOn": "2014-08-06T21:43:59Z",
+      "side": 1,
+      "message": "Can\u0027t use STL.",
+      "revId": "384fd854b79ab8f066dc1ef0f6625c6784de3d62",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d665ff2a_3a9499f4",
+        "filename": "keystore_enforcement.h",
+        "patchSetId": 4
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 1043663
+      },
+      "writtenOn": "2014-08-06T21:43:59Z",
+      "side": 1,
+      "message": "authSet and appid should probably be passed as const references. They won\u0027t be modified, right? Also, let\u0027s stick with this_naming_convention for variables and ThisNamingConvention for non-trivial methods.\n\nI dislike method names that begin with capitals, but that\u0027s the Google C++ standard.  Trivial methods use this_naming_convention, and non-trivial ones are camel case, with leading cap.\n\nOne comment about formatting: We wrap at 100 columns.",
+      "range": {
+        "startLine": 49,
+        "startChar": 12,
+        "endLine": 49,
+        "endChar": 28
+      },
+      "revId": "384fd854b79ab8f066dc1ef0f6625c6784de3d62",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "16aeb765_1a718dee",
+        "filename": "keystore_enforcement.h",
+        "patchSetId": 4
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 1043663
+      },
+      "writtenOn": "2014-08-06T21:43:59Z",
+      "side": 1,
+      "message": "s/delete/add/\n\nAlso, is this method part of the public interface? It seems like this is an internal implementation detail, called by authorizeRescope, and should therefore be private.",
+      "revId": "384fd854b79ab8f066dc1ef0f6625c6784de3d62",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "16aeb765_3a76c9e7",
+        "filename": "keystore_enforcement.h",
+        "patchSetId": 4
+      },
+      "lineNbr": 75,
+      "author": {
+        "id": 1043663
+      },
+      "writtenOn": "2014-08-06T21:43:59Z",
+      "side": 1,
+      "message": "s/add/delete/",
+      "revId": "384fd854b79ab8f066dc1ef0f6625c6784de3d62",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d665ff2a_9a232d0a",
+        "filename": "keystore_enforcement.h",
+        "patchSetId": 4
+      },
+      "lineNbr": 203,
+      "author": {
+        "id": 1043663
+      },
+      "writtenOn": "2014-08-06T21:43:59Z",
+      "side": 1,
+      "message": "I\u0027m not sure what this is used for. We use an arbitrary byte array as app ID, because we probably want to encode additional data into the ID, like the signing cert.",
+      "revId": "384fd854b79ab8f066dc1ef0f6625c6784de3d62",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
