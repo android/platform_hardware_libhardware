@@ -1,0 +1,445 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "b36c1d49_23174a1f",
+        "filename": "keymaster_enforcement.cpp",
+        "patchSetId": 10
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 1043663
+      },
+      "writtenOn": "2014-08-26T03:22:48Z",
+      "side": 1,
+      "message": "One line per variable, please.",
+      "range": {
+        "startLine": 48,
+        "startChar": 33,
+        "endLine": 48,
+        "endChar": 38
+      },
+      "revId": "d3b2f9be289078bf27437107e9ecfd67a0523d5b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9397195e_e2a8067e",
+        "filename": "keymaster_enforcement.cpp",
+        "patchSetId": 10
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 1043663
+      },
+      "writtenOn": "2014-08-26T03:22:48Z",
+      "side": 1,
+      "message": "Given clang-format, I prefer not to put braces around single-expression blocks. Without automated formatting that can be dangerous, but with it block errors become immediately obvious, so we can save the vertical whitespace.",
+      "range": {
+        "startLine": 54,
+        "startChar": 61,
+        "endLine": 54,
+        "endChar": 72
+      },
+      "revId": "d3b2f9be289078bf27437107e9ecfd67a0523d5b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9397195e_8206daee",
+        "filename": "keymaster_enforcement.cpp",
+        "patchSetId": 10
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 1043663
+      },
+      "writtenOn": "2014-08-26T03:22:48Z",
+      "side": 1,
+      "message": "Let\u0027s get rid of the goto. Use destructors to handle cleanup, and just early-return when you hit a failure.",
+      "revId": "d3b2f9be289078bf27437107e9ecfd67a0523d5b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d3b431fe_fc18a968",
+        "filename": "keymaster_enforcement.cpp",
+        "patchSetId": 10
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 1043663
+      },
+      "writtenOn": "2014-08-26T03:22:48Z",
+      "side": 1,
+      "message": "Early return rather than setting return_error will make this simpler.",
+      "revId": "d3b2f9be289078bf27437107e9ecfd67a0523d5b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d3b431fe_9cf9a59e",
+        "filename": "keymaster_enforcement.cpp",
+        "patchSetId": 10
+      },
+      "lineNbr": 102,
+      "author": {
+        "id": 1043663
+      },
+      "writtenOn": "2014-08-26T03:22:48Z",
+      "side": 1,
+      "message": "Rather than default, let\u0027s enumerate all of the tags here.  That\u0027ll force the maintainer to think about how a newly-added tag should be handled. Also, you can break the tags up into groups, with a comment above each explaining why the group isn\u0027t checked.",
+      "range": {
+        "startLine": 102,
+        "startChar": 8,
+        "endLine": 102,
+        "endChar": 15
+      },
+      "revId": "d3b2f9be289078bf27437107e9ecfd67a0523d5b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9397195e_6203d6e0",
+        "filename": "keymaster_enforcement.cpp",
+        "patchSetId": 10
+      },
+      "lineNbr": 137,
+      "author": {
+        "id": 1043663
+      },
+      "writtenOn": "2014-08-26T03:22:48Z",
+      "side": 1,
+      "message": "Usage is verification or decryption.",
+      "range": {
+        "startLine": 137,
+        "startChar": 19,
+        "endLine": 137,
+        "endChar": 36
+      },
+      "revId": "d3b2f9be289078bf27437107e9ecfd67a0523d5b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "53a121b9_80bb76fb",
+        "filename": "keymaster_enforcement.cpp",
+        "patchSetId": 10
+      },
+      "lineNbr": 141,
+      "author": {
+        "id": 1043663
+      },
+      "writtenOn": "2014-08-26T03:22:48Z",
+      "side": 1,
+      "message": "These lines of code are identical between usage and origination. It would be nice to factor them out.",
+      "range": {
+        "startLine": 141,
+        "startChar": 11,
+        "endLine": 141,
+        "endChar": 22
+      },
+      "revId": "d3b2f9be289078bf27437107e9ecfd67a0523d5b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9397195e_a2cb1e5a",
+        "filename": "keymaster_enforcement.cpp",
+        "patchSetId": 10
+      },
+      "lineNbr": 152,
+      "author": {
+        "id": 1043663
+      },
+      "writtenOn": "2014-08-26T03:22:48Z",
+      "side": 1,
+      "message": "Origination is signing or encryption. Actually, there will eventually be other purposes as well, so it\u0027s a good idea to implement this as a switch without a default clause. That way the compiler will flag this code when other uses are added.",
+      "range": {
+        "startLine": 152,
+        "startChar": 19,
+        "endLine": 152,
+        "endChar": 34
+      },
+      "revId": "d3b2f9be289078bf27437107e9ecfd67a0523d5b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "53a121b9_40c56e70",
+        "filename": "keymaster_enforcement.cpp",
+        "patchSetId": 10
+      },
+      "lineNbr": 211,
+      "author": {
+        "id": 1043663
+      },
+      "writtenOn": "2014-08-26T03:22:48Z",
+      "side": 1,
+      "message": "Timing attack? I don\u0027t think app IDs are that secret, but it doesn\u0027t hurt to use memcmp_s here, and it\u0027s remotely possible that it might help.",
+      "revId": "d3b2f9be289078bf27437107e9ecfd67a0523d5b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d3b431fe_7cdff923",
+        "filename": "keymaster_enforcement.cpp",
+        "patchSetId": 10
+      },
+      "lineNbr": 252,
+      "author": {
+        "id": 1043663
+      },
+      "writtenOn": "2014-08-26T03:22:48Z",
+      "side": 1,
+      "message": "What does not having a rescope timeout mean? Did I define that? What should it mean?",
+      "revId": "d3b2f9be289078bf27437107e9ecfd67a0523d5b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "53a121b9_00ae46b9",
+        "filename": "keymaster_enforcement.cpp",
+        "patchSetId": 10
+      },
+      "lineNbr": 262,
+      "author": {
+        "id": 1043663
+      },
+      "writtenOn": "2014-08-26T03:22:48Z",
+      "side": 1,
+      "message": "These lists are likely to be fairly small... but I still wonder if it wouldn\u0027t be better to sort them so you can do this a little more efficiently.\n\nProbably not. Let\u0027s at least add a comment to the method documentation explaining the run-time characteristics.",
+      "revId": "d3b2f9be289078bf27437107e9ecfd67a0523d5b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "53a121b9_e01da256",
+        "filename": "keymaster_enforcement.cpp",
+        "patchSetId": 10
+      },
+      "lineNbr": 298,
+      "author": {
+        "id": 1043663
+      },
+      "writtenOn": "2014-08-26T03:22:48Z",
+      "side": 1,
+      "message": "Again, let\u0027s get rid of the gotos. C++ provides tools that make them largely unnecessary.",
+      "range": {
+        "startLine": 298,
+        "startChar": 0,
+        "endLine": 298,
+        "endChar": 16
+      },
+      "revId": "d3b2f9be289078bf27437107e9ecfd67a0523d5b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "53a121b9_c0229e92",
+        "filename": "keymaster_enforcement.cpp",
+        "patchSetId": 10
+      },
+      "lineNbr": 307,
+      "author": {
+        "id": 1043663
+      },
+      "writtenOn": "2014-08-26T03:22:48Z",
+      "side": 1,
+      "message": "It seems like I already implemented this...",
+      "range": {
+        "startLine": 307,
+        "startChar": 27,
+        "endLine": 307,
+        "endChar": 43
+      },
+      "revId": "d3b2f9be289078bf27437107e9ecfd67a0523d5b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d3b431fe_7c06d9f1",
+        "filename": "keymaster_enforcement.cpp",
+        "patchSetId": 10
+      },
+      "lineNbr": 365,
+      "author": {
+        "id": 1043663
+      },
+      "writtenOn": "2014-08-26T03:22:48Z",
+      "side": 1,
+      "message": "If you get rid of the default case and just put a return false after the switch, the compiler should diagnose if any additional purposes are added which aren\u0027t handled.",
+      "range": {
+        "startLine": 365,
+        "startChar": 4,
+        "endLine": 365,
+        "endChar": 11
+      },
+      "revId": "d3b2f9be289078bf27437107e9ecfd67a0523d5b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d3b431fe_5c031de0",
+        "filename": "keymaster_enforcement.cpp",
+        "patchSetId": 10
+      },
+      "lineNbr": 393,
+      "author": {
+        "id": 1043663
+      },
+      "writtenOn": "2014-08-26T03:22:48Z",
+      "side": 1,
+      "message": "Why separate declaration and initialization of purpose_index? For that matter, why not do both in the first clause of the for?",
+      "range": {
+        "startLine": 393,
+        "startChar": 4,
+        "endLine": 393,
+        "endChar": 17
+      },
+      "revId": "d3b2f9be289078bf27437107e9ecfd67a0523d5b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d3b431fe_3c9cd18b",
+        "filename": "keymaster_enforcement.h",
+        "patchSetId": 10
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1043663
+      },
+      "writtenOn": "2014-08-26T03:22:48Z",
+      "side": 1,
+      "message": "Virtual methods might be a cleaner way to handle this. Make KeymasterEnforcement abstract, with a pure virtual \"lock()\" method, and then have concrete subclasses for Trusty and Android. The Trusty implementation of lock() would be a NO-OP, obviously, and the Android subclass ctor and dtor would handle semaphore initialization and cleanup.\n\nAnother fundamentally similar though perhaps even cleaner approach is to create a Mutex abstraction, with a NullMutex subclass passed in for Trusty and a SemaphoreMutex for Android. To make the NullMutex (or NonMutex?) a bit safer, the lock() and release() methods could increment and decrement a counter, asserting if it ever takes an unexpected value, which might indicate the NullMutex is being used in a context that isn\u0027t single-threaded.",
+      "range": {
+        "startLine": 27,
+        "startChar": 10,
+        "endLine": 27,
+        "endChar": 19
+      },
+      "revId": "d3b2f9be289078bf27437107e9ecfd67a0523d5b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "f372151f_45c7ea4e",
+        "filename": "keymaster_enforcement.h",
+        "patchSetId": 10
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 1043663
+      },
+      "writtenOn": "2014-08-26T03:22:48Z",
+      "side": 1,
+      "message": "One thing to think about here: Trusty doesn\u0027t have a wall clock. We can apparently get access to a timer that allows us to track relative time, but it\u0027s a different API. time() is a NO-OP in Trusty.",
+      "range": {
+        "startLine": 40,
+        "startChar": 4,
+        "endLine": 40,
+        "endChar": 10
+      },
+      "revId": "d3b2f9be289078bf27437107e9ecfd67a0523d5b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b36c1d49_03124e2e",
+        "filename": "keymaster_enforcement.h",
+        "patchSetId": 10
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 1043663
+      },
+      "writtenOn": "2014-08-26T03:22:48Z",
+      "side": 1,
+      "message": "Should this method be const?",
+      "range": {
+        "startLine": 55,
+        "startChar": 22,
+        "endLine": 55,
+        "endChar": 40
+      },
+      "revId": "d3b2f9be289078bf27437107e9ecfd67a0523d5b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9397195e_a210be23",
+        "filename": "keymaster_enforcement.h",
+        "patchSetId": 10
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 1043663
+      },
+      "writtenOn": "2014-08-26T03:22:48Z",
+      "side": 1,
+      "message": "auth_set should be a const AuthorizationSet\u0026.\n\nIn general, if you\u0027re going to modify an argument, it\u0027s a non-const pointer. If you\u0027re not going to modify it, it\u0027s a const reference. This is a pretty well-established convention in C++, and it\u0027s required by Google C++ style.",
+      "revId": "d3b2f9be289078bf27437107e9ecfd67a0523d5b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d36fd139_e44a9a39",
+        "filename": "keymaster_enforcement.h",
+        "patchSetId": 10
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 1043663
+      },
+      "writtenOn": "2014-08-26T03:22:48Z",
+      "side": 1,
+      "message": "This (and several other) methods appear to be implementation details, not methods that a client would call. I think they should be private.",
+      "range": {
+        "startLine": 71,
+        "startChar": 22,
+        "endLine": 71,
+        "endChar": 40
+      },
+      "revId": "d3b2f9be289078bf27437107e9ecfd67a0523d5b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "f372151f_e5d7f6f5",
+        "filename": "keymaster_enforcement.h",
+        "patchSetId": 10
+      },
+      "lineNbr": 146,
+      "author": {
+        "id": 1043663
+      },
+      "writtenOn": "2014-08-26T03:22:48Z",
+      "side": 1,
+      "message": "s/maintaine din/maintained in/\n\nI understand the rationale, but I wonder if copying is the right solution here.",
+      "revId": "d3b2f9be289078bf27437107e9ecfd67a0523d5b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
