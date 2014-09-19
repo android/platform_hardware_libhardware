@@ -210,6 +210,7 @@ typedef uint16_t AGpsStatusValue;
 #define AGPS_REF_LOCATION_TYPE_GSM_CELLID   1
 #define AGPS_REF_LOCATION_TYPE_UMTS_CELLID  2
 #define AGPS_REG_LOCATION_TYPE_MAC          3
+#define AGPS_REF_LOCATION_TYPE_LTE_CELLID   4
 
 /** Network types for update_network_state "type" parameter */
 #define AGPS_RIL_NETWORK_TYPE_MOBILE        0
@@ -483,7 +484,20 @@ typedef struct {
     uint16_t mnc;
     uint16_t lac;
     uint32_t cid;
-} AGpsRefLocationCellID;
+} AGpsRefLocationCellID_v1;
+
+/* Adding pci field for */
+/* 4G cell support */
+typedef struct {
+    uint16_t type;
+    uint16_t mcc;
+    uint16_t mnc;
+    uint16_t lac;
+    uint32_t cid;
+    uint16_t pci;
+} AGpsRefLocationCellID_v2;
+
+typedef AGpsRefLocationCellID_v2    AGpsRefLocationCellID;
 
 typedef struct {
     uint8_t mac[6];
@@ -493,10 +507,20 @@ typedef struct {
 typedef struct {
     uint16_t type;
     union {
-        AGpsRefLocationCellID   cellID;
-        AGpsRefLocationMac      mac;
+        AGpsRefLocationCellID_v1    cellID;
+        AGpsRefLocationMac          mac;
     } u;
-} AGpsRefLocation;
+} AGpsRefLocation_v1;
+
+typedef struct {
+    uint16_t type;
+    union {
+        AGpsRefLocationCellID_v2    cellID;
+        AGpsRefLocationMac          mac;
+    } u;
+} AGpsRefLocation_v2;
+
+typedef AGpsRefLocation_v2    AGpsRefLocation;
 
 /** Callback with location information.
  *  Can only be called from a thread created by create_thread_cb.
