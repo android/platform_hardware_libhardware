@@ -321,6 +321,17 @@ typedef void (*dut_mode_recv_callback)(uint16_t opcode, uint8_t *buf, uint8_t le
 * This callback shall be invoked whenever the le_tx_test, le_rx_test or le_test_end is invoked
 * The num_packets is valid only for le_test_end command */
 typedef void (*le_test_mode_callback)(bt_status_t status, uint16_t num_packets);
+
+/** Bluetooth Vendor Specific Command Complete Callback */
+/* This callback is invoked whenever a command complete message is received for a message initially sent
+   using vendor_specific_command */
+typedef void (*vendor_specific_command_complete_callback)(uint16_t opcode, uint8_t *buf, uint8_t len);
+
+/** Vendor specific event callback */
+/* This callback is invoked whenever a vendor specific event is received from the controller. Reception
+   of such events must first be enabled through the function enable_vendor_specific_events */
+typedef void (*vendor_specific_event_callback)(uint8_t *buf, uint8_t len);
+
 /** TODO: Add callbacks for Link Up/Down and other generic
   *  notifications/callbacks */
 
@@ -340,6 +351,8 @@ typedef struct {
     callback_thread_event thread_evt_cb;
     dut_mode_recv_callback dut_mode_recv_cb;
     le_test_mode_callback le_test_mode_cb;
+    vendor_specific_command_complete_callback vendor_specific_command_complete_cb;
+    vendor_specific_event_callback vendor_specific_event_cb;
 } bt_callbacks_t;
 
 /** NOTE: By default, no profiles are initialized at the time of init/enable.
@@ -453,6 +466,13 @@ typedef struct {
 
     /* enable or disable bluetooth HCI snoop log */
     int (*config_hci_snoop_log)(uint8_t enable);
+
+    /** Vendor Specific HCI interface APIs */
+    /* Send any vendor-specific HCI command to the controller. */
+    int (*vendor_specific_command)(uint16_t opcode, uint8_t *buf, uint8_t len);
+
+    /* Disable/enable receiving callbacks for vendor specific events from the controller. */
+    int (*enable_vendor_specific_events)(uint8_t enable);
 } bt_interface_t;
 
 /** TODO: Need to add APIs for Service Discovery, Service authorization and
