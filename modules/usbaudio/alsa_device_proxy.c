@@ -18,7 +18,10 @@
 /*#define LOG_NDEBUG 0*/
 /*#define LOG_PCM_PARAMS 0*/
 
+#include <stdlib.h>
+
 #include <log/log.h>
+#include <cutils/properties.h>
 
 #include "alsa_device_proxy.h"
 
@@ -27,9 +30,38 @@
 #define DEFAULT_PERIOD_SIZE     1024
 #define DEFAULT_PERIOD_COUNT    2
 
+static int proxy_read_audio_primary_prop(alsa_device_proxy * proxy, const char *in_out)
+{
+    char period_count_prop[PROPERTY_VALUE_MAX];
+    char period_size_prop[PROPERTY_VALUE_MAX];
+    char period_count_key[PROPERTY_KEY_MAX];
+    char period_size_key[PROPERTY_KEY_MAX];
+
+    if (snprintf(period_count_key, sizeof(period_count_key),
+                "audio.primary.%s.period_count", in_out) < 0)
+        return -1;
+
+    if (snprintf(period_size_key, sizeof(period_size_key),
+                "audio.primary.%s.period_size", in_out) < 0)
+        return -1;
+
+    property_get(period_count_key, period_count_prop, "");
+    property_get(period_size_key, period_size_prop, "");
+    if (strlen(period_count_prop) == 0 || strlen(period_size_prop) == 0) {
+        ALOGW("Properties not set by primary audio HAL");
+        return -1;
+    }
+
+    proxy->alsa_config.period_count = atoi(period_count_prop);
+    proxy->alsa_config.period_size = atoi(period_size_prop);
+    return 0;
+}
+
 void proxy_prepare(alsa_device_proxy * proxy, alsa_device_profile* profile,
                    struct pcm_config * config)
 {
+    int ret = -1;
+
     ALOGV("proxy_prepare()");
 
     proxy->profile = profile;
@@ -48,9 +80,13 @@ void proxy_prepare(alsa_device_proxy * proxy, alsa_device_profile* profile,
         config->channels != 0 && profile_is_channel_count_valid(profile, config->channels)
             ? config->channels : profile->default_config.channels;
 
-    proxy->alsa_config.period_count = profile->default_config.period_count;
-    proxy->alsa_config.period_size =
-            profile_get_period_size(proxy->profile, proxy->alsa_config.rate);
+    ret = (profile->direction == PCM_OUT) ? proxy_read_audio_primary_prop(proxy, "out")
+            : proxy_read_audio_primary_prop(proxy, "in") ;
+    if (ret < 0) {
+        proxy->alsa_config.period_count = profile->default_config.period_count;
+        proxy->alsa_config.period_size =
+                profile_get_period_size(proxy->profile, proxy->alsa_config.rate);
+    }
 
     // Hack for USB accessory audio.
     // Here we set the correct value for period_count if tinyalsa fails to get it from the
