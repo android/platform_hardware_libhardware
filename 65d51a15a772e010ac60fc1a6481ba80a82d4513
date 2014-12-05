@@ -1,0 +1,8 @@
+Verified+1: Deckard Autoverifier <deckard@android.com>
+Code-Review+1: Yabin Cui <yabinc@google.com>
+Code-Review+2: Elliott Hughes <enh@google.com>
+Submitted-by: Elliott Hughes <enh@google.com>
+Submitted-at: Fri, 05 Dec 2014 17:47:28 +0000
+Reviewed-on: https://android-review.googlesource.com/117663
+Project: platform/hardware/libhardware
+Branch: refs/heads/master
