@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "a4d05a89_6b07fdb8",
+        "filename": "tests/camera2/CameraBurstTests.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 1043845
+      },
+      "writtenOn": "2014-12-12T22:14:55Z",
+      "side": 1,
+      "message": "Clever",
+      "revId": "1f1d79732fa50d140eb50c7fb756e116e3da713d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
