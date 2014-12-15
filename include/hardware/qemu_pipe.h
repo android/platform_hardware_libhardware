@@ -63,13 +63,20 @@ qemu_pipe_open(const char*  pipeName)
         return -1;
     }
 
+    /* try virtio serial port first */
+    snprintf(buff, sizeof buff, "/dev/virtio-ports/%s", pipeName);
+    fd = open(buff, O_RDWR);
+    if (fd >= 0)
+        return fd;
+
     snprintf(buff, sizeof buff, "pipe:%s", pipeName);
 
     fd = open("/dev/qemu_pipe", O_RDWR);
     if (fd < 0 && errno == ENOENT)
         fd = open("/dev/goldfish_pipe", O_RDWR);
+
     if (fd < 0) {
-        D("%s: Could not open /dev/qemu_pipe: %s", __FUNCTION__, strerror(errno));
+        D("%s: Could not open pipe to backend: %s", __FUNCTION__, strerror(errno));
         //errno = ENOSYS;
         return -1;
     }
