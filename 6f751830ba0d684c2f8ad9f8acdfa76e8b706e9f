@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "8ef455d2_0faa050f",
+        "filename": "modules/usbaudio/audio_hw.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 855,
+      "author": {
+        "id": 1003259
+      },
+      "writtenOn": "2015-01-09T15:41:10Z",
+      "side": 1,
+      "message": "this should be an assert, at least an error log",
+      "range": {
+        "startLine": 855,
+        "startChar": 16,
+        "endLine": 855,
+        "endChar": 35
+      },
+      "revId": "6f751830ba0d684c2f8ad9f8acdfa76e8b706e9f",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
