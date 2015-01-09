@@ -47,11 +47,15 @@ __BEGIN_DECLS
  *
  * GRALLOC_MODULE_API_VERSION_0_3:
  * Add support for fence passing to/from lock/unlock.
+ *
+ * GRALLOC_MODULE_API_VERSION_0_4:
+ * Add support for hardware buffer copy.
  */
 
 #define GRALLOC_MODULE_API_VERSION_0_1  HARDWARE_MODULE_API_VERSION(0, 1)
 #define GRALLOC_MODULE_API_VERSION_0_2  HARDWARE_MODULE_API_VERSION(0, 2)
 #define GRALLOC_MODULE_API_VERSION_0_3  HARDWARE_MODULE_API_VERSION(0, 3)
+#define GRALLOC_MODULE_API_VERSION_0_4  HARDWARE_MODULE_API_VERSION(0, 4)
 
 #define GRALLOC_DEVICE_API_VERSION_0_1  HARDWARE_DEVICE_API_VERSION(0, 1)
 
@@ -302,8 +306,36 @@ typedef struct gralloc_module_t {
             int l, int t, int w, int h,
             struct android_ycbcr *ycbcr, int fenceFd);
 
+    /*
+     * The (*copyBuffer)() method allows the caller to copy the contents of one
+     * buffer to another buffer.
+     *
+     * Synchronisation of this operation is managed through the fenceFd
+     * parameter, which is a pointer to a sync fence FD.
+     *
+     * On input to the function the caller provides an FD that the gralloc
+     * implemention must wait on before starting the copy operation. If the FD
+     * is invalid (less than 0) then the copy operation does not need to wait.
+     * The gralloc implementation always takes ownership of this FD, even if the
+     * operation fails and the method returns an error.
+     *
+     * On output, the gralloc implementation returns an FD in the fenceFd
+     * parameter, which represents when the copy operation will be completed.
+     * The caller takes ownership of this FD. If the operation fails, then an
+     * error code is returned, and fenceFd is set to an invalid FD.
+     *
+     * If the fenceFd pointer is NULL then:
+     *   - the copy operation does not need to wait
+     *   - the gralloc implemention will wait for the copy operation to complete
+     *     before returning.
+     */
+    int (*copyBuffer)(struct gralloc_module_t const* module,
+                      buffer_handle_t src,
+                      buffer_handle_t dst,
+                      int *fenceFd);
+
     /* reserved for future use */
-    void* reserved_proc[3];
+    void* reserved_proc[2];
 } gralloc_module_t;
 
 /*****************************************************************************/
