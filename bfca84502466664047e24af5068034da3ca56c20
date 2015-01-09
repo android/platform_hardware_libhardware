@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "0ecb0596_f30a10c9",
+        "filename": "modules/usbaudio/audio_hw.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 855,
+      "author": {
+        "id": 1003259
+      },
+      "writtenOn": "2015-01-09T16:54:44Z",
+      "side": 1,
+      "message": "please use LOG_ALWAYS_FATAL if no condition is checked.",
+      "range": {
+        "startLine": 855,
+        "startChar": 16,
+        "endLine": 855,
+        "endChar": 27
+      },
+      "revId": "bfca84502466664047e24af5068034da3ca56c20",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "0ecb0596_93de3ce7",
+        "filename": "modules/usbaudio/audio_hw.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 881,
+      "author": {
+        "id": 1003259
+      },
+      "writtenOn": "2015-01-09T16:54:44Z",
+      "side": 1,
+      "message": "please put else on same line a }",
+      "range": {
+        "startLine": 881,
+        "startChar": 4,
+        "endLine": 881,
+        "endChar": 8
+      },
+      "revId": "bfca84502466664047e24af5068034da3ca56c20",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
