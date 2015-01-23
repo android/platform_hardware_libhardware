@@ -16,6 +16,24 @@
       "revId": "2efc5b5fbcb5b6f1d12a0978f6a986df6aede74c",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "cbe47f53_24019c78",
+        "filename": "include/hardware/keymaster_defs.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 141,
+      "author": {
+        "id": 1043663
+      },
+      "writtenOn": "2015-01-23T20:48:28Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "cbe47f53_a4b2cc88",
+      "revId": "2efc5b5fbcb5b6f1d12a0978f6a986df6aede74c",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
