@@ -1,0 +1,7 @@
+Verified+1: Deckard Autoverifier <deckard@android.com>
+Code-Review+2: Kenny Root <kroot@google.com>
+Submitted-by: Kenny Root <kroot@google.com>
+Submitted-at: Mon, 26 Jan 2015 18:52:53 +0000
+Reviewed-on: https://android-review.googlesource.com/124511
+Project: platform/hardware/libhardware
+Branch: refs/heads/master
