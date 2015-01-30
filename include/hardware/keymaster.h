@@ -561,11 +561,14 @@ struct keymaster_device {
      * guaranteed not to be smaller than sum of the output lengths from update() and finish().  The
      * estimate takes into account input data already provided.
      *
+     * \param[in] operation_handle The operation handle returned by begin().
+     *
      * \param[in] input_length The number of additional input bytes to be processed.
      *
      * \param[out] output_estimate The length of the output that will be produced.
      */
-    keymaster_error_t (*get_output_size)(size_t input_length, size_t* output_estimate);
+    keymaster_error_t (*get_output_size)(keymaster_operation_handle_t operation_handle,
+                                         size_t input_length, size_t* output_estimate);
 
     /**
      * Provides data to, and possibly receives output from, an ongoing cryptographic operation begun
