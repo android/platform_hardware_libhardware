@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "abbf508b_effab5c7",
+        "filename": "include/hardware/hwcomposer.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 317,
+      "author": {
+        "id": 1049264
+      },
+      "writtenOn": "2015-02-13T20:41:08Z",
+      "side": 1,
+      "message": "I think it might make more sense to make and use a hwc_fregion",
+      "revId": "81a1831088f738380efbaf705587f8fdab707750",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
