@@ -34,6 +34,24 @@
       "revId": "81a1831088f738380efbaf705587f8fdab707750",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "6bb9d8a9_0705b68b",
+        "filename": "include/hardware/hwcomposer.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 317,
+      "author": {
+        "id": 1049264
+      },
+      "writtenOn": "2015-02-13T21:43:15Z",
+      "side": 1,
+      "message": "How about we change hwc_region_t to not use size_t?",
+      "parentUuid": "6bb9d8a9_47672e0b",
+      "revId": "81a1831088f738380efbaf705587f8fdab707750",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
