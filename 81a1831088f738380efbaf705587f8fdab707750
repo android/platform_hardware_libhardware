@@ -16,6 +16,24 @@
       "revId": "81a1831088f738380efbaf705587f8fdab707750",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "6bb9d8a9_47672e0b",
+        "filename": "include/hardware/hwcomposer.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 317,
+      "author": {
+        "id": 1043625
+      },
+      "writtenOn": "2015-02-13T21:06:14Z",
+      "side": 1,
+      "message": "Actually, I realized late last night that it probably didn\u0027t make sense to specify the damage using frects, since the damage is defined on pixel boundaries (I was originally thinking frect because sourceCrop is a frect, but that\u0027s not exactly analagous).\n\nI think this should be hwc_rect_t. That probably implies that we should use hwc_region_t, except that size_t is way overkill and will eat another 8 bytes in 64-bit relative to this (since we\u0027re currently getting the uint32_t for free because of padding).",
+      "parentUuid": "abbf508b_effab5c7",
+      "revId": "81a1831088f738380efbaf705587f8fdab707750",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
