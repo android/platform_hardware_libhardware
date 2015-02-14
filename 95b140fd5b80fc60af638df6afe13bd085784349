@@ -46,6 +46,30 @@
       "revId": "95b140fd5b80fc60af638df6afe13bd085784349",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "2b40c074_5d27db57",
+        "filename": "include/hardware/hwcomposer.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 315,
+      "author": {
+        "id": 1066828
+      },
+      "writtenOn": "2015-02-14T07:12:06Z",
+      "side": 1,
+      "message": "Yeah buffer handle check works. Good to have in comments that this field is relevant only on handle change?",
+      "parentUuid": "2b40c074_7db9f7c5",
+      "range": {
+        "startLine": 315,
+        "startChar": 15,
+        "endLine": 315,
+        "endChar": 23
+      },
+      "revId": "95b140fd5b80fc60af638df6afe13bd085784349",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
