@@ -22,6 +22,30 @@
       "revId": "95b140fd5b80fc60af638df6afe13bd085784349",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "2b40c074_7db9f7c5",
+        "filename": "include/hardware/hwcomposer.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 315,
+      "author": {
+        "id": 1043625
+      },
+      "writtenOn": "2015-02-14T01:30:59Z",
+      "side": 1,
+      "message": "Would it be sufficient to say that damage is only relevant when the buffer handle changes? I hadn\u0027t considered single-buffered surfaces, so your proposed change sounds reasonable if we can\u0027t trust the buffer handle to change when its contents do.",
+      "parentUuid": "cb580472_3a0021e5",
+      "range": {
+        "startLine": 315,
+        "startChar": 15,
+        "endLine": 315,
+        "endChar": 23
+      },
+      "revId": "95b140fd5b80fc60af638df6afe13bd085784349",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
