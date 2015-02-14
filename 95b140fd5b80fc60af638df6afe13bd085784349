@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "cb580472_3a0021e5",
+        "filename": "include/hardware/hwcomposer.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 315,
+      "author": {
+        "id": 1066828
+      },
+      "writtenOn": "2015-02-14T01:21:15Z",
+      "side": 1,
+      "message": "If a certain layer\u0027s content doesn\u0027t change, but another layer has an update, then is the original layer\u0027s damage from a previous drawing round sent again?\n\nIf it is sent again then that\u0027s probably not optimal since the panel\u0027s memory already has the damaged portion programmed.\n\nIf the damage is cleared, then that\u0027s suboptimal too, since we end up assuming that the entire layer has been modified and re-program the panel memory.\n\nWhat if surfaceDamage.numRects \u003d\u003d 0 meant the surface didn\u0027t change from the previous round and the surfaceDamage set to full layer dimensions meant that it was really completely modified?",
+      "range": {
+        "startLine": 315,
+        "startChar": 15,
+        "endLine": 315,
+        "endChar": 23
+      },
+      "revId": "95b140fd5b80fc60af638df6afe13bd085784349",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
