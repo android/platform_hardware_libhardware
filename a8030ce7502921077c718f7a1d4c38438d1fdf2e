@@ -45,6 +45,30 @@
       "revId": "a8030ce7502921077c718f7a1d4c38438d1fdf2e",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c8d64a82_2d707970",
+        "filename": "include/hardware/hwcomposer.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 317,
+      "author": {
+        "id": 1049264
+      },
+      "writtenOn": "2015-02-23T21:33:43Z",
+      "side": 1,
+      "message": "If GPU-pre-rotation is used, the damage rect will be relative to the post-transformed buffer but if GPU-pre-rotation is not used it will be relative to the pre-transformed buffer.",
+      "parentUuid": "e81cee53_23c98a5d",
+      "range": {
+        "startLine": 317,
+        "startChar": 45,
+        "endLine": 317,
+        "endChar": 47
+      },
+      "revId": "a8030ce7502921077c718f7a1d4c38438d1fdf2e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
