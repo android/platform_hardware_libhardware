@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "08206281_843886fd",
+        "filename": "include/hardware/hwcomposer.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 315,
+      "author": {
+        "id": 1066828
+      },
+      "writtenOn": "2015-02-23T21:20:07Z",
+      "side": 1,
+      "message": "From an earlier comment could you please add something for static layers here as well?\n\nPasting:\n\"If a layer isn\u0027t updated in a prepare/set cycle, we will pass down an empty rect (1 rect, [0, 0, 0, 0])\"",
+      "range": {
+        "startLine": 315,
+        "startChar": 15,
+        "endLine": 315,
+        "endChar": 23
+      },
+      "revId": "a8030ce7502921077c718f7a1d4c38438d1fdf2e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e81cee53_23c98a5d",
+        "filename": "include/hardware/hwcomposer.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 317,
+      "author": {
+        "id": 1066828
+      },
+      "writtenOn": "2015-02-23T21:20:07Z",
+      "side": 1,
+      "message": "If GPU-pre-rotation is used, the transform value sent to HWC is 0. So if the damage rect is relative to the pre-transformed buffer then HWC will have no way to correctly transform and use it? Is it possible to send in damage rects relative to post-transformed values, if GPU\u003dpre-rotation is used at front-end?",
+      "range": {
+        "startLine": 317,
+        "startChar": 45,
+        "endLine": 317,
+        "endChar": 47
+      },
+      "revId": "a8030ce7502921077c718f7a1d4c38438d1fdf2e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
