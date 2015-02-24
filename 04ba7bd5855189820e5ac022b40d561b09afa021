@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "c5e5551d_b2b6c0d2",
+        "filename": "include/hardware/keymaster_common.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 1022895
+      },
+      "writtenOn": "2015-02-24T21:47:12Z",
+      "side": 1,
+      "message": "Should be 1_0? Are we going to be calling 0.4 1.0?",
+      "range": {
+        "startLine": 53,
+        "startChar": 8,
+        "endLine": 53,
+        "endChar": 40
+      },
+      "revId": "04ba7bd5855189820e5ac022b40d561b09afa021",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
