@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "a5ea21ed_91b5fc78",
+        "filename": "include/hardware/keymaster1.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 90,
+      "author": {
+        "id": 1022895
+      },
+      "writtenOn": "2015-02-24T21:52:14Z",
+      "side": 0,
+      "message": "Shouldn\u0027t this file keep the deprecated notes?",
+      "range": {
+        "startLine": 90,
+        "startChar": 8,
+        "endLine": 90,
+        "endChar": 18
+      },
+      "revId": "4f5949b5dda4a2e95d29e1aa3effb22c678df21a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
