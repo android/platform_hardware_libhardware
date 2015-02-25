@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "a263f7f0_2951cd50",
+        "filename": "include/hardware/hwcomposer.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 315,
+      "author": {
+        "id": 1043625
+      },
+      "writtenOn": "2015-02-25T21:43:48Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "08206281_843886fd",
+      "range": {
+        "startLine": 315,
+        "startChar": 15,
+        "endLine": 315,
+        "endChar": 23
+      },
+      "revId": "a8030ce7502921077c718f7a1d4c38438d1fdf2e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "e81cee53_23c98a5d",
         "filename": "include/hardware/hwcomposer.h",
         "patchSetId": 3
