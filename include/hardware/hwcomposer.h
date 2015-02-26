@@ -787,9 +787,10 @@ typedef struct hwc_composer_device_1 {
     int (*setCursorPositionAsync)(struct hwc_composer_device_1 *dev, int disp, int x_pos, int y_pos);
 
     /*
-     * Reserved for future use. Must be NULL.
+     * Perform custom operations on the HWC. Return -EINVAL if the operation
+     * is not supported. The operations document the operands being passed.
      */
-    void* reserved_proc[1];
+    int (*perform)(struct hwc_composer_device_1 *dev, int disp, int operation, ...);
 
 } hwc_composer_device_1_t;
 

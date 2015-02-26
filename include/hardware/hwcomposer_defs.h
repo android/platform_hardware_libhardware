@@ -167,6 +167,16 @@ enum {
      * Returns a mask of supported display types.
      */
     HWC_DISPLAY_TYPES_SUPPORTED         = 2,
+
+    /* Availability: HWC_DEVICE_API_VERSION_1_5
+     * Returns true if the HWC can handle color
+     * transformations such as color inversion and
+     * color blind modes.
+     * If supported, the transformation is passed before set()
+     * through a perform function using the
+     * HWC_PERFORM_COLOR_TRANSFORM operation
+     */
+    HWC_COLOR_TRANSFORM_SUPPORTED       = 3,
 };
 
 /* display attributes returned by getDisplayAttributes() */
@@ -238,6 +248,33 @@ enum {
      * and manage it autonomously to implement low power always-on display
      * functionality. */
     HWC_POWER_MODE_DOZE_SUSPEND  = 3,
+};
+
+/* First operand in the HWC_PERFORM_COLOR_TRANSFORM operation */
+enum {
+    /* No transform */
+    HWC_COLOR_MODE_NONE               = 0,
+    /* Invert colors on the display */
+    HWC_COLOR_MODE_INVERSE            = 1,
+    /* Color blind mode - L (red) cone missing */
+    HWC_COLOR_MODE_PROTANOPIA         = 2,
+    /* Color blind mode - M (green) cone missing */
+    HWC_COLOR_MODE_DEUTERANOPIA       = 3,
+    /* Color blind mode - S (blue) cone missing */
+    HWC_COLOR_MODE_TRITANOPIA         = 4,
+    /* Color blind mode - L (red) cone deficient */
+    HWC_COLOR_MODE_PROTANOMALY        = 5,
+    /* Color blind mode - M (green) cone deficient */
+    HWC_COLOR_MODE_DEUTERANOMALY      = 6,
+    /* Color blind mode - S (blue) cone deficient */
+    HWC_COLOR_MODE_TRITANOMALY        = 7,
+};
+
+/* HWC perform operations */
+enum {
+    /* Apply a global color transformation on the display
+     * Takes one int operand */
+    HWC_PERFORM_COLOR_TRANSFORM   = 1,
 };
 
 /*****************************************************************************/
