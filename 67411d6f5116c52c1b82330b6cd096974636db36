@@ -1,0 +1,7 @@
+Verified+1: Deckard Autoverifier <deckard@android.com>
+Code-Review+2: Chad Brubaker <cbrubaker@google.com>
+Submitted-by: Shawn Willden <swillden@google.com>
+Submitted-at: Thu, 12 Mar 2015 00:39:24 +0000
+Reviewed-on: https://android-review.googlesource.com/138042
+Project: platform/hardware/libhardware
+Branch: refs/heads/master
