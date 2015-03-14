@@ -131,6 +131,9 @@ typedef enum {
     KM_TAG_NONCE = KM_BYTES | 1001,           /* Nonce or Initialization Vector */
     KM_TAG_CHUNK_LENGTH = KM_INT | 1002,      /* AEAD mode chunk size, in bytes.  0 means no limit,
                                                  which requires KM_TAG_RETURN_UNAUTHED. */
+    KM_TAG_AUTH_TOKEN = KM_BYTES | 1003,      /* Authentication token that proves secure user
+                                                 authentication has been performed.  Structure
+                                                 defined in keymaster_auth_token_t. */
 } keymaster_tag_t;
 
 /**
@@ -313,6 +316,20 @@ typedef enum {
     KM_KEY_FORMAT_PKCS12 = 2, /* for asymmetric key pair import, not required */
     KM_KEY_FORMAT_RAW = 3,    /* for symmetric key import, required */
 } keymaster_key_format_t;
+
+/**
+ * Data format for an authentication record used to prove successful authentication.  All
+ * integral-type fields are in network order.
+ */
+typedef struct __attribute__((__packed__)) {
+    const uint8_t version = 1;
+    uint32_t user_id;
+    uint64_t root_secure_user_id;
+    uint64_t secondary_secure_user_id;
+    uint32_t authenticator_id;
+    uint64_t timestamp;
+    uint8_t hmac[16];
+} keymaster_auth_token_t;
 
 /**
  * The keymaster operation API consists of begin, update, finish and abort. This is the type of the
