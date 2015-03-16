@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "063a1cf6_c0877e11",
+        "filename": "include/hardware/keymaster_defs.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 331,
+      "author": {
+        "id": 1018773
+      },
+      "writtenOn": "2015-03-16T16:07:29Z",
+      "side": 1,
+      "message": "Shouldn\u0027t we be using longer HMACs, e.g., 32 bytes?",
+      "range": {
+        "startLine": 331,
+        "startChar": 17,
+        "endLine": 331,
+        "endChar": 19
+      },
+      "revId": "02823811c11458916998f4fdf029efe9832858d9",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
