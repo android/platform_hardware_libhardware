@@ -22,6 +22,30 @@
       "revId": "02823811c11458916998f4fdf029efe9832858d9",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "a6ecf0ce_ed53853c",
+        "filename": "include/hardware/keymaster_defs.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 331,
+      "author": {
+        "id": 1043663
+      },
+      "writtenOn": "2015-03-16T17:59:20Z",
+      "side": 1,
+      "message": "Given the short life of both tokens and HMAC keys, I don\u0027t see a need, but we certainly could.\n\nGiven the small cost, I\u0027ve increased the size.",
+      "parentUuid": "063a1cf6_c0877e11",
+      "range": {
+        "startLine": 331,
+        "startChar": 17,
+        "endLine": 331,
+        "endChar": 19
+      },
+      "revId": "02823811c11458916998f4fdf029efe9832858d9",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
