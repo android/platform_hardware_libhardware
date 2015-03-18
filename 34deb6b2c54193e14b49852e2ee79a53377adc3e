@@ -22,6 +22,30 @@
       "revId": "34deb6b2c54193e14b49852e2ee79a53377adc3e",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "2612c0d8_cca87f04",
+        "filename": "include/hardware/hw_auth_token.h",
+        "patchSetId": 6
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1043663
+      },
+      "writtenOn": "2015-03-18T23:42:11Z",
+      "side": 1,
+      "message": "Done, more or less.",
+      "parentUuid": "46e6d429_329c10b6",
+      "range": {
+        "startLine": 26,
+        "startChar": 26,
+        "endLine": 26,
+        "endChar": 27
+      },
+      "revId": "34deb6b2c54193e14b49852e2ee79a53377adc3e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
