@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e67fc8e4_304ce952",
+        "filename": "include/hardware/hw_auth_token.h",
+        "patchSetId": 5
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1038928
+      },
+      "writtenOn": "2015-03-18T15:57:24Z",
+      "side": 1,
+      "message": "should we put this last to keep 32-bit alignment?",
+      "range": {
+        "startLine": 26,
+        "startChar": 0,
+        "endLine": 26,
+        "endChar": 45
+      },
+      "revId": "264577bb2710379161eb8540e82fd7de774fb588",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
