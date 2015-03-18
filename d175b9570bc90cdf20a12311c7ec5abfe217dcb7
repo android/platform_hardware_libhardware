@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "66c9189c_f9bc2f52",
+        "filename": "include/hardware/keymaster_defs.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 97,
+      "author": {
+        "id": 1038928
+      },
+      "writtenOn": "2015-03-18T21:02:55Z",
+      "side": 1,
+      "message": "does it make sense have 2 tags, one for USER ID and one for AUTHENTICATOR_ID? Doesn\u0027t change the semantics but makes it a bit clearer than putting things we\u0027re calling authenticator IDs in a USER_ID tag.",
+      "range": {
+        "startLine": 97,
+        "startChar": 4,
+        "endLine": 97,
+        "endChar": 25
+      },
+      "revId": "d175b9570bc90cdf20a12311c7ec5abfe217dcb7",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
