@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "46e6d429_329c10b6",
+        "filename": "include/hardware/hw_auth_token.h",
+        "patchSetId": 6
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1038928
+      },
+      "writtenOn": "2015-03-18T21:12:03Z",
+      "side": 1,
+      "message": "s/2/HW_AUTH_PASSWORD \u003c\u003c 1/\n\nor \n\nstatic int COUNTER \u003d 1;\n\ntypedef enum {\n   HW_AUTH_PASSWORD \u003d COUNTER \u003c\u003c 0;\n   HW_AUTH_FP \u003d COUNTER \u003c\u003c 1;\n...\n\n}",
+      "range": {
+        "startLine": 26,
+        "startChar": 26,
+        "endLine": 26,
+        "endChar": 27
+      },
+      "revId": "34deb6b2c54193e14b49852e2ee79a53377adc3e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
