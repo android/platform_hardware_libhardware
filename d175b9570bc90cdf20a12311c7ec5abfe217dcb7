@@ -22,6 +22,29 @@
       "revId": "d175b9570bc90cdf20a12311c7ec5abfe217dcb7",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "46e6d429_12c22ca0",
+        "filename": "include/hardware/keymaster_defs.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 101,
+      "author": {
+        "id": 1038928
+      },
+      "writtenOn": "2015-03-18T21:03:52Z",
+      "side": 1,
+      "message": "not rep if the enum is a bitmask",
+      "range": {
+        "startLine": 101,
+        "startChar": 4,
+        "endLine": 101,
+        "endChar": 25
+      },
+      "revId": "d175b9570bc90cdf20a12311c7ec5abfe217dcb7",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
