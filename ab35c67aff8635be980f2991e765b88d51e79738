@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "067dbcec_5d5097b5",
+        "filename": "include/hardware/keymaster_defs.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 99,
+      "author": {
+        "id": 1038928
+      },
+      "writtenOn": "2015-03-18T16:00:34Z",
+      "side": 1,
+      "message": "as in the other patchset, don\u0027t really know if this should be a repeated value",
+      "range": {
+        "startLine": 99,
+        "startChar": 28,
+        "endLine": 99,
+        "endChar": 39
+      },
+      "revId": "ab35c67aff8635be980f2991e765b88d51e79738",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
