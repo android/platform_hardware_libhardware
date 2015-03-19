@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "460fb4b1_b3f12a18",
+        "filename": "include/hardware/keymaster_defs.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 97,
+      "author": {
+        "id": 1043663
+      },
+      "writtenOn": "2015-03-19T00:42:09Z",
+      "side": 1,
+      "message": "Perhaps. Let\u0027s do this for now and discuss.",
+      "parentUuid": "66c9189c_f9bc2f52",
+      "range": {
+        "startLine": 97,
+        "startChar": 4,
+        "endLine": 97,
+        "endChar": 25
+      },
+      "revId": "d175b9570bc90cdf20a12311c7ec5abfe217dcb7",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "46e6d429_12c22ca0",
         "filename": "include/hardware/keymaster_defs.h",
         "patchSetId": 3
@@ -36,6 +60,30 @@
       "writtenOn": "2015-03-18T21:03:52Z",
       "side": 1,
       "message": "not rep if the enum is a bitmask",
+      "range": {
+        "startLine": 101,
+        "startChar": 4,
+        "endLine": 101,
+        "endChar": 25
+      },
+      "revId": "d175b9570bc90cdf20a12311c7ec5abfe217dcb7",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "460fb4b1_73ecd23a",
+        "filename": "include/hardware/keymaster_defs.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 101,
+      "author": {
+        "id": 1043663
+      },
+      "writtenOn": "2015-03-19T00:42:09Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "46e6d429_12c22ca0",
       "range": {
         "startLine": 101,
         "startChar": 4,
