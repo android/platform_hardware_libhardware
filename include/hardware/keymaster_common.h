@@ -18,7 +18,6 @@
 #define ANDROID_HARDWARE_KEYMASTER_COMMON_H
 
 #include <stdint.h>
-#include <sys/cdefs.h>
 #include <sys/types.h>
 
 #include <hardware/hardware.h>
