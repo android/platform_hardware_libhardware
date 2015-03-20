@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "068cdc85_ab5adb53",
+        "filename": "include/hardware/keymaster_defs.h",
+        "patchSetId": 10
+      },
+      "lineNbr": 103,
+      "author": {
+        "id": 1018773
+      },
+      "writtenOn": "2015-03-20T20:21:05Z",
+      "side": 1,
+      "message": "Shouldn\u0027t this be KM_ENUM_REP, similar to the type of KM_TAG_PURPOSE?",
+      "revId": "4719acae0218b38226b6479a400efdcbb3593f21",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
