@@ -16,6 +16,24 @@
       "revId": "4719acae0218b38226b6479a400efdcbb3593f21",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c6a1e40d_63a8c084",
+        "filename": "include/hardware/keymaster_defs.h",
+        "patchSetId": 10
+      },
+      "lineNbr": 103,
+      "author": {
+        "id": 1043663
+      },
+      "writtenOn": "2015-03-23T01:32:13Z",
+      "side": 1,
+      "message": "No, it\u0027s a bitmask enum, so multiple values can be masked together. Andres and I decided that would be more convenient than a repeated field in this case. This does limit us to 32 different authenticators, but that doesn\u0027t seem like an unreasonable restriction.",
+      "parentUuid": "068cdc85_ab5adb53",
+      "revId": "4719acae0218b38226b6479a400efdcbb3593f21",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
