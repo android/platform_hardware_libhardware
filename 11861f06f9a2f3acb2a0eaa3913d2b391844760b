@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "8620cc83_04dc960f",
+        "filename": "modules/usbaudio/alsa_device_proxy.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 103,
+      "author": {
+        "id": 1002682
+      },
+      "writtenOn": "2015-03-24T16:33:30Z",
+      "side": 1,
+      "message": "remove this line",
+      "revId": "11861f06f9a2f3acb2a0eaa3913d2b391844760b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "a6215087_05abb254",
+        "filename": "modules/usbaudio/alsa_device_proxy.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 104,
+      "author": {
+        "id": 1002682
+      },
+      "writtenOn": "2015-03-24T16:33:30Z",
+      "side": 1,
+      "message": "compare to NULL to follow the style of the rest of the file",
+      "revId": "11861f06f9a2f3acb2a0eaa3913d2b391844760b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "a6215087_65d386fe",
+        "filename": "modules/usbaudio/alsa_device_proxy.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 105,
+      "author": {
+        "id": 1002682
+      },
+      "writtenOn": "2015-03-24T16:33:30Z",
+      "side": 1,
+      "message": "return true here",
+      "revId": "11861f06f9a2f3acb2a0eaa3913d2b391844760b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "8620cc83_e4e69ada",
+        "filename": "modules/usbaudio/alsa_device_proxy.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 108,
+      "author": {
+        "id": 1002682
+      },
+      "writtenOn": "2015-03-24T16:33:30Z",
+      "side": 1,
+      "message": "return false here",
+      "revId": "11861f06f9a2f3acb2a0eaa3913d2b391844760b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
