@@ -42,6 +42,7 @@ unsigned proxy_get_latency(const alsa_device_proxy * proxy);
 
 int proxy_open(alsa_device_proxy * proxy);
 void proxy_close(alsa_device_proxy * proxy);
+bool proxy_is_pcm_opened(alsa_device_proxy * proxy);
 
 int proxy_write(const alsa_device_proxy * proxy, const void *data, unsigned int count);
 int proxy_read(const alsa_device_proxy * proxy, void *data, unsigned int count);

@@ -429,8 +429,18 @@ static ssize_t out_write(struct audio_stream_out *stream, const void* buffer, si
         write_buff = out->conversion_buffer;
     }
 
+    if (false == proxy_is_pcm_opened(&out->proxy)) {
+        pthread_mutex_unlock(&out->dev->lock);
+        ALOGE("ERROR @ %s: pcm is NULL", __func__);
+        ret = -1;
+        goto err;
+    }
+
     if (write_buff != NULL && num_write_buff_bytes != 0) {
-        proxy_write(&out->proxy, write_buff, num_write_buff_bytes);
+        ret = proxy_write(&out->proxy, write_buff, num_write_buff_bytes);
+        if (0 != ret) {
+            ALOGE(" %s: ERROR (ret = %d, %s)", __FUNCTION__, ret, strerror(errno));
+        }
     }
 
     pthread_mutex_unlock(&out->lock);

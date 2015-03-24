@@ -98,6 +98,16 @@ void proxy_close(alsa_device_proxy * proxy)
     }
 }
 
+bool proxy_is_pcm_opened(alsa_device_proxy * proxy)
+{
+    bool retval = false;
+    if (proxy->pcm) {
+        retval = true;
+    }
+
+    return retval;
+}
+
 /*
  * Sample Rate
  */
