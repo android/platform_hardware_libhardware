@@ -100,12 +100,11 @@ void proxy_close(alsa_device_proxy * proxy)
 
 bool proxy_is_pcm_opened(alsa_device_proxy * proxy)
 {
-    bool retval = false;
-    if (proxy->pcm) {
-        retval = true;
+    if (proxy->pcm != NULL) {
+        return true;
     }
 
-    return retval;
+    return false;
 }
 
 /*
