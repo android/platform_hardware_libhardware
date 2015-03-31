@@ -27,6 +27,8 @@
 #include <cutils/log.h>
 
 #include <vector>
+#include <string>
+#include <fstream>
 #include <map>
 #include <string>
 
@@ -461,28 +463,19 @@ static bool starts_with(const char* s, const char* prefix) {
  * Adds valid paths from the config file to the vector passed in.
  * The vector must not be null.
  */
-static void get_so_paths(std::vector<char*> *so_paths) {
-    FILE *conf_file = fopen(CONFIG_FILENAME, "r");
-    if (conf_file == NULL) {
+static void get_so_paths(std::vector<std::string> *so_paths) {
+    std::string line;
+    std::ifstream conf_file(CONFIG_FILENAME);
+
+    if(!conf_file) {
         ALOGW("No multihal config file found at %s", CONFIG_FILENAME);
         return;
     }
     ALOGV("Multihal config file found at %s", CONFIG_FILENAME);
-    char *line = NULL;
-    size_t len = 0;
-    int line_count = 0;
-    while (getline(&line, &len, conf_file) != -1) {
-        // overwrite trailing eoln with null char
-        char* pch = strchr(line, '\n');
-        if (pch != NULL) {
-            *pch = '\0';
-        }
-        ALOGV("config file line #%d: '%s'", ++line_count, line);
+    while (std::getline(conf_file, line)) {
+        ALOGV("config file line: '%s'", line.c_str());
         so_paths->push_back(line);
     }
-    free(line);
-    fclose(conf_file);
-    ALOGV("hals.conf contained %d lines", line_count);
 }
 
 /*
@@ -495,15 +488,15 @@ static void lazy_init_modules() {
         pthread_mutex_unlock(&init_modules_mutex);
         return;
     }
-    std::vector<char*> *so_paths = new std::vector<char*>();
+    std::vector<std::string> *so_paths = new std::vector<std::string>();
     get_so_paths(so_paths);
 
     // dlopen the module files and cache their module symbols in sub_hw_modules
     sub_hw_modules = new std::vector<hw_module_t *>();
     dlerror(); // clear any old errors
     const char* sym = HAL_MODULE_INFO_SYM_AS_STR;
-    for (std::vector<char*>::iterator it = so_paths->begin(); it != so_paths->end(); it++) {
-        char* path = *it;
+    for (std::vector<std::string>::iterator it = so_paths->begin(); it != so_paths->end(); it++) {
+        const char* path = it->c_str();
         void* lib_handle = dlopen(path, RTLD_LAZY);
         if (lib_handle == NULL) {
             ALOGW("dlerror(): %s", dlerror());
