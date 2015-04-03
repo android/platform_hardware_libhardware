@@ -52,18 +52,23 @@ typedef enum {
      */
 
     /* Crypto parameters */
-    KM_TAG_PURPOSE = KM_ENUM_REP | 1,     /* keymaster_purpose_t. */
-    KM_TAG_ALGORITHM = KM_ENUM | 2,       /* keymaster_algorithm_t. */
-    KM_TAG_KEY_SIZE = KM_UINT | 3,        /* Key size in bits. */
-    KM_TAG_BLOCK_MODE = KM_ENUM_REP | 4,  /* keymaster_block_mode_t. */
-    KM_TAG_DIGEST = KM_ENUM_REP | 5,      /* keymaster_digest_t. */
-    KM_TAG_PADDING = KM_ENUM_REP | 6,     /* keymaster_padding_t. */
-    KM_TAG_CALLER_NONCE = KM_BOOL | 7,    /* Allow caller to specify nonce or IV. */
-    KM_TAG_MIN_MAC_LENGTH = KM_UINT | 8,  /* Minimum length of MAC or AEAD authentication tag in
-                                           * bits. */
+    KM_TAG_PURPOSE = KM_ENUM_REP | 1,      /* keymaster_purpose_t. */
+    KM_TAG_ALGORITHM = KM_ENUM | 2,        /* keymaster_algorithm_t. */
+    KM_TAG_KEY_SIZE = KM_UINT | 3,         /* Key size in bits. */
+    KM_TAG_BLOCK_MODE = KM_ENUM_REP | 4,   /* keymaster_block_mode_t. */
+    KM_TAG_DIGEST = KM_ENUM_REP | 5,       /* keymaster_digest_t. */
+    KM_TAG_PADDING = KM_ENUM_REP | 6,      /* keymaster_padding_t. */
+    KM_TAG_CALLER_NONCE = KM_BOOL | 7,     /* Allow caller to specify nonce or IV. */
+    KM_TAG_MIN_MAC_LENGTH = KM_UINT | 8,   /* Minimum length of MAC or AEAD authentication tag in
+                                            * bits. */
+    KM_TAG_KDF = KM_ENUM | 9,              /* keymaster_kdf_t */
+    KM_TAG_EC_CURVE = KM_ENUM | 10,        /* keymaster_ec_curve_t */
+    KM_TAG_EC_POINT_FORMAT = KM_ENUM | 11, /* keymaster_ec_point_format_t */
 
     /* Algorithm-specific. */
     KM_TAG_RSA_PUBLIC_EXPONENT = KM_ULONG | 200,
+    KM_TAG_ECIES_SINGLE_HASH_MODE = KM_BOOL | 201, /* Whether the ephemeral public key is fed into
+                                                    *  the KDF, see 10.2 in http://goo.gl/WbmSSO */
 
     /* Other hardware-enforced. */
     KM_TAG_BLOB_USAGE_REQUIREMENTS = KM_ENUM | 301, /* keymaster_key_blob_usage_requirements_t */
@@ -186,6 +191,68 @@ typedef enum {
     KM_DIGEST_SHA_2_384 = 5,
     KM_DIGEST_SHA_2_512 = 6,
 } keymaster_digest_t;
+
+/*
+ * Key derivation functions, mostly used in ECIES.
+ */
+typedef enum {
+    /* HKDF defined in RFC 5869 with SHA256 */
+    KM_KDF_RFC5869_SHA256 = 0,
+    /* KDF1 defined in ISO 18033-2 with SHA1 */
+    KM_KDF_ISO18033_1_KDF2_SHA1 = 1,
+    /* KDF1 defined in ISO 18033-2 with SHA256 */
+    KM_KDF_ISO18033_1_KDF1_SHA256 = 2,
+    /* KDF2 defined in ISO 18033-2 with SHA1 */
+    KM_KDF_ISO18033_2_KDF2_SHA1 = 3,
+    /* KDF2 defined in ISO 18033-2 with SHA256 */
+    KM_KDF_ISO18033_2_KDF2_SHA256 = 4,
+} keymaster_kdf_t;
+
+/**
+ * Supported EC curves, used in ECDSA/ECIES.
+ */
+typedef enum {
+    KM_EC_CURVE_P_224 = 0,
+    KM_EC_CURVE_P_256 = 1,
+    KM_EC_CURVE_P_384 = 2,
+    KM_EC_CURVE_P_521 = 3,
+} keymaster_ec_curve_t;
+
+/**
+ * The wire format of the elliptic curve points that may be used for ECDSA/ECIES.
+ */
+typedef enum {
+    /*
+     * A point is represented as z || x || y, where z is 0x04 (not 0x00 0x04 as in
+     * X509_SPKI_UNCOMPRESSED) x and y unsigned big-endian fixed length representations of the
+     * coordinates of the point.
+     */
+    KM_EC_POINT_UNCOMPRESSED = 0,
+
+    /*
+     * Using point compression for representing the ephemeral key. A point is reperesented as
+     * z || x where z is 2+lsb(y) and x is using a unsigned fixed length big-endian representation.
+     * Using compressed points is the preferable format when the size of the ciphertext matters.
+     * E.g. for 256-bit curves the ciphertext is 32 bytes shorter compared to the format
+     * POINT_UNCOMPRESSED.
+     */
+    KM_EC_POINT_COMPRESSED = 1,
+
+    /*
+     * The point is represented in DER format as a SubjectPublicKeyInfo field. The format is
+     * SEQUENCE {
+     *   SEQUENCE {
+     *     ecPublicKey   OID
+     *     curve         OID
+     *   }
+     *   point BIT STRING
+     * }
+     * In Java we can get this representation by using PublicKey.getEncoded(). The format is for
+     * example defined in RFC 6818, thought there might be a more approriate reference.
+     * NOTE: This point format generates and accepts only DER encoded uncompressed points.
+     */
+    KM_EC_X509_SPKI_UNCOMPRESSED = 2,
+} keymaster_ec_point_format_t;
 
 /**
  * The origin of a key (or pair), i.e. where it was generated.  Note that KM_TAG_ORIGIN can be found
@@ -340,12 +407,13 @@ typedef enum {
     KM_ERROR_INVALID_MAC_LENGTH = -57,
     KM_ERROR_MISSING_MIN_MAC_LENGTH = -58,
     KM_ERROR_UNSUPPORTED_MIN_MAC_LENGTH = -59,
+    KM_ERROR_UNSUPPORTED_KDF = -60,
+    KM_ERROR_UNSUPPORTED_EC_CURVE = -61,
+    KM_ERROR_UNSUPPORTED_EC_POINT_FORMAT = -62,
 
     KM_ERROR_UNIMPLEMENTED = -100,
     KM_ERROR_VERSION_MISMATCH = -101,
 
-    /* Additional error codes may be added by implementations, but implementers should coordinate
-     * with Google to avoid code collision. */
     KM_ERROR_UNKNOWN_ERROR = -1000,
 } keymaster_error_t;
 
