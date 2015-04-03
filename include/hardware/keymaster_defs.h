@@ -62,6 +62,9 @@ typedef enum {
     KM_TAG_RETURN_UNAUTHED = KM_BOOL | 8, /* Allow AEAD decryption to return plaintext before it has
                                              been authenticated.  WARNING: Not recommended. */
     KM_TAG_CALLER_NONCE = KM_BOOL | 9,    /* Allow caller to specify nonce or IV. */
+    KM_TAG_KDF = KM_ENUM | 10,             /* keymaster_kdf_t */
+    KM_TAG_EC_CURVE = KM_ENUM | 11,        /* keymaster_ec_curve_t */
+    KM_TAG_EC_POINT_FORMAT = KM_ENUM | 12, /* keymaster_ec_point_format_t */
 
     /* Other hardware-enforced. */
     KM_TAG_RESCOPING_ADD = KM_ENUM_REP | 101, /* Tags authorized for addition via rescoping. */
@@ -75,6 +78,7 @@ typedef enum {
     KM_TAG_DSA_Q = KM_BIGNUM | 203,
     /* Note there are no EC-specific params.  Field size is defined by KM_TAG_KEY_SIZE, and the
        curve is chosen from NIST recommendations for field size */
+    KM_TAG_ECIES_SINGLE_HASH_MODE = KM_BOOL | 204,
 
     /*
      * Tags that should be semantically enforced by hardware if possible and will otherwise be
@@ -237,6 +241,82 @@ typedef enum {
 } keymaster_digest_t;
 
 /**
+ * Key derivation functions, mostly used in ECIES.
+ */
+typedef enum {
+    /* HKDF defined in RFC 5869 with SHA256 */
+    KM_KDF_RFC5869_SHA256 = 0,          /* required */
+    /* KDF2 defined in ISO 18033-2 with SHA256 */
+    KM_KDF_ISO18033_2_KDF2_SHA256 = 1,  /* required */
+    /* KDF1 defined in ISO 18033-2 with SHA1 */
+    KM_KDF_ISO18033_1_KDF2_SHA1 = 1,    /* required */
+} keymaster_kdf_t;
+
+
+/**
+ * Supported EC curves, used in ECDSA/ECIES.
+ */
+typedef enum {
+    KM_EC_CURVE_P_224 = 0,     /* required */
+    KM_EC_CURVE_P_256 = 1,     /* required */
+    KM_EC_CURVE_P_384 = 2,     /* recommended */
+    KM_EC_CURVE_P_521 = 3,     /* recommended */
+    KM_EC_CURVE_BITCOIN = 4,   /* recommended */
+    KM_EC_CURVE_CURVE25519 = 5 /* recommended */
+} keymaster_ec_curve_t;
+
+
+/**
+ * The wire format of the elliptic curve points that may be used for ECDSA/ECIES.
+ */
+typedef enum {
+    /* The following comments are copied from code written by Bleichenbacher. */
+    /*
+     * A point is represented as z || x || y, where z is 0x04
+     * (not 0x00 0x04 as in X509_SPKI_UNCOMPRESSED) x and y unsigned big-endian
+     * fixed length representations of the coordinates of the point.
+     */
+    KM_EC_POINT_UNCOMPRESSED = 0,   /* required */
+
+    /*
+     * Using point compression for representing the ephemeral key.
+     * A point is reperesented as z || x where z is 2+lsb(y) and x is using a
+     * unsigned fixed length big-endian representation.
+     * Using compressed points is the preferable format when the size of the
+     * ciphertext matters. E.g. for 256-bit curves the ciphertext is 32 bytes
+     * shorter compared to the format POINT_UNCOMPRESSED.
+     * NOTE: Point compression is not yet supported by keymaster.
+     */ 
+    KM_EC_POINT_COMPRESSED = 1,
+
+    /*
+     * The point is represented in DER format as a SubjectPublicKeyInfo field.
+     * The format is
+     * SEQUENCE {
+     *   SEQUENCE {
+     *     ecPublicKey   OID
+     *     curve         OID
+     *   }
+     *   point BIT STRING
+     * }
+     * In Java we can get this representation by using PublicKey.getEncoded().
+     * The format is for example defined in RFC 6818, thought there might be
+     * a more approriate reference.
+     * NOTE: This point format generates and accepts only DER encoded
+     * uncompressed points. Accepting alternate BER encodings would
+     * complicate the implementation.
+     * NOTE: this point format is not yet supported by keymaster.
+     */
+    KM_EC_X509_SPKI_UNCOMPRESSED = 2,
+
+    /*
+     * In Curve25519, all 32-byte strings are valid public keys.
+     */
+    KM_EC_POINT_CURVE25519 = 3,
+} keymaster_ec_point_format_t;
+
+
+/**
  * The origin of a key (or pair), i.e. where it was generated.  Origin and can be used together to
  * determine whether a key may have existed outside of secure hardware.  This type is new in 0_4.
  */
@@ -382,6 +462,9 @@ typedef enum {
     KM_ERROR_INVALID_NONCE = -52,
     KM_ERROR_UNSUPPORTED_CHUNK_LENGTH = -53,
     KM_ERROR_RESCOPABLE_KEY_NOT_USABLE = -54,
+    KM_ERROR_UNSUPPORTED_KDF = - 55,
+    KM_ERROR_UNSUPPORTED_EC_CURVE = - 56,
+    KM_ERROR_UNSUPPORTED_EC_POINT_FORMAT = - 57,
 
     KM_ERROR_UNIMPLEMENTED = -100,
     KM_ERROR_VERSION_MISMATCH = -101,
