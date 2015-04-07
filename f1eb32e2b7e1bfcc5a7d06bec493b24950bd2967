@@ -2,6 +2,29 @@
   "comments": [
     {
       "key": {
+        "uuid": "832a7e12_0979b9f6",
+        "filename": "include/hardware/keymaster_defs.h",
+        "patchSetId": 4
+      },
+      "lineNbr": 79,
+      "author": {
+        "id": 1043663
+      },
+      "writtenOn": "2015-04-07T19:06:22Z",
+      "side": 1,
+      "message": "Also, please remove this.  And we also need to update all of the ECDSA code and tests to use the new curve specifications, rather than assuming the curve based on key size.",
+      "range": {
+        "startLine": 79,
+        "startChar": 7,
+        "endLine": 79,
+        "endChar": 44
+      },
+      "revId": "f1eb32e2b7e1bfcc5a7d06bec493b24950bd2967",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "a32b0216_a446ac2f",
         "filename": "include/hardware/keymaster_defs.h",
         "patchSetId": 4
@@ -13,6 +36,30 @@
       "writtenOn": "2015-04-07T18:55:59Z",
       "side": 1,
       "message": "Should I remove these /* require */ comments?",
+      "range": {
+        "startLine": 260,
+        "startChar": 34,
+        "endLine": 260,
+        "endChar": 42
+      },
+      "revId": "f1eb32e2b7e1bfcc5a7d06bec493b24950bd2967",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "832a7e12_49c1f19a",
+        "filename": "include/hardware/keymaster_defs.h",
+        "patchSetId": 4
+      },
+      "lineNbr": 260,
+      "author": {
+        "id": 1043663
+      },
+      "writtenOn": "2015-04-07T19:06:22Z",
+      "side": 1,
+      "message": "Yes, please.",
+      "parentUuid": "a32b0216_a446ac2f",
       "range": {
         "startLine": 260,
         "startChar": 34,
