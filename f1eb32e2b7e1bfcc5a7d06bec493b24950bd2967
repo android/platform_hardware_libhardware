@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "a32b0216_a446ac2f",
+        "filename": "include/hardware/keymaster_defs.h",
+        "patchSetId": 4
+      },
+      "lineNbr": 260,
+      "author": {
+        "id": 1069370
+      },
+      "writtenOn": "2015-04-07T18:55:59Z",
+      "side": 1,
+      "message": "Should I remove these /* require */ comments?",
+      "range": {
+        "startLine": 260,
+        "startChar": 34,
+        "endLine": 260,
+        "endChar": 42
+      },
+      "revId": "f1eb32e2b7e1bfcc5a7d06bec493b24950bd2967",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
