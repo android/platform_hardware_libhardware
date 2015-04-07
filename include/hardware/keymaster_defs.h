@@ -143,29 +143,14 @@ typedef enum {
  */
 typedef enum {
     /* Asymmetric algorithms. */
-    KM_ALGORITHM_RSA = 1,   /* required */
-    KM_ALGORITHM_DSA = 2,
-    KM_ALGORITHM_ECDSA = 3, /* required */
-    KM_ALGORITHM_ECIES = 4,
-    /* FIPS Approved Ciphers */
-    KM_ALGORITHM_AES = 32, /* required */
-    KM_ALGORITHM_3DES = 33,
-    KM_ALGORITHM_SKIPJACK = 34,
-    /* AES Finalists */
-    KM_ALGORITHM_MARS = 48,
-    KM_ALGORITHM_RC6 = 49,
-    KM_ALGORITHM_SERPENT = 50,
-    KM_ALGORITHM_TWOFISH = 51,
-    /* Other common block ciphers */
-    KM_ALGORITHM_IDEA = 52,
-    KM_ALGORITHM_RC5 = 53,
-    KM_ALGORITHM_CAST5 = 54,
-    KM_ALGORITHM_BLOWFISH = 55,
-    /* Common stream ciphers */
-    KM_ALGORITHM_RC4 = 64,
-    KM_ALGORITHM_CHACHA20 = 65,
+    KM_ALGORITHM_RSA = 1,
+    KM_ALGORITHM_EC = 3,
+
+    /* Block ciphers algorithms */
+    KM_ALGORITHM_AES = 32,
+
     /* MAC algorithms */
-    KM_ALGORITHM_HMAC = 128, /* required */
+    KM_ALGORITHM_HMAC = 128,
 } keymaster_algorithm_t;
 
 /**
