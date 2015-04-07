@@ -1,0 +1,119 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "63258a42_67073ad4",
+        "filename": "include/hardware/keymaster_defs.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 265,
+      "author": {
+        "id": 1043663
+      },
+      "writtenOn": "2015-04-07T18:41:31Z",
+      "side": 1,
+      "message": "Let\u0027s remove all of the non-required bits.  I\u0027m doing that for the rest of keymaster_defs.h. P-384 and P-521 are required.\n\nIn the future we\u0027ll probably add optional elements back into the keymaster API, when we have a better app-level API.  Right now we don\u0027t have a good way to expose to clients what is and is not supported, so we need to have a well-specified set of functionality.  At that point we\u0027ll also need get_supported_* methods in the API to allow querying about supported curves, KDFS, and point formats.",
+      "range": {
+        "startLine": 262,
+        "startChar": 3,
+        "endLine": 265,
+        "endChar": 48
+      },
+      "revId": "b142c8c8b194aaa8d27af9b53f9fc016fb5144ba",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "a32b0216_0979b9f6",
+        "filename": "include/hardware/keymaster_defs.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 273,
+      "author": {
+        "id": 1043663
+      },
+      "writtenOn": "2015-04-07T18:41:31Z",
+      "side": 1,
+      "message": "Remove this part.  It\u0027s not relevant who wrote them.\n\nAlso, please word wrap comments at 100 columns.",
+      "range": {
+        "startLine": 273,
+        "startChar": 62,
+        "endLine": 273,
+        "endChar": 76
+      },
+      "revId": "b142c8c8b194aaa8d27af9b53f9fc016fb5144ba",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "63258a42_0779a6f6",
+        "filename": "include/hardware/keymaster_defs.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 288,
+      "author": {
+        "id": 1043663
+      },
+      "writtenOn": "2015-04-07T18:41:31Z",
+      "side": 1,
+      "message": "This note doesn\u0027t belong here. This file defines the public API for all keymaster implementations, and isn\u0027t related to any specific one (including the one in AOSP).\n\nAlso, if we\u0027re not going to support (and require that other implementors support) the compressed format, we should remove it.",
+      "range": {
+        "startLine": 288,
+        "startChar": 7,
+        "endLine": 288,
+        "endChar": 65
+      },
+      "revId": "b142c8c8b194aaa8d27af9b53f9fc016fb5144ba",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "832a7e12_4e4817b7",
+        "filename": "include/hardware/keymaster_defs.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 289,
+      "author": {
+        "id": 1043663
+      },
+      "writtenOn": "2015-04-07T18:41:31Z",
+      "side": 1,
+      "message": "Delete trailing whitespace.",
+      "range": {
+        "startLine": 289,
+        "startChar": 7,
+        "endLine": 289,
+        "endChar": 8
+      },
+      "revId": "b142c8c8b194aaa8d27af9b53f9fc016fb5144ba",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "63258a42_6272c8e3",
+        "filename": "include/hardware/keymaster_defs.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 316,
+      "author": {
+        "id": 1043663
+      },
+      "writtenOn": "2015-04-07T18:41:31Z",
+      "side": 1,
+      "message": "A question about point formats: Given one format, is it always possible to convert to any other format?",
+      "range": {
+        "startLine": 316,
+        "startChar": 2,
+        "endLine": 316,
+        "endChar": 29
+      },
+      "revId": "b142c8c8b194aaa8d27af9b53f9fc016fb5144ba",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
