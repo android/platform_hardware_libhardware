@@ -46,6 +46,30 @@
       "revId": "5dfdb35f126e98f2a16d4b20ee88a5f7d00bfc57",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "63f82afb_752ce83e",
+        "filename": "include/hardware/keymaster_defs.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 147,
+      "author": {
+        "id": 1022895
+      },
+      "writtenOn": "2015-04-08T17:45:53Z",
+      "side": 1,
+      "message": "Might be a good idea just so no one tries to use 2",
+      "parentUuid": "e3ec1a3e_53c464be",
+      "range": {
+        "startLine": 147,
+        "startChar": 0,
+        "endLine": 147,
+        "endChar": 24
+      },
+      "revId": "5dfdb35f126e98f2a16d4b20ee88a5f7d00bfc57",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
