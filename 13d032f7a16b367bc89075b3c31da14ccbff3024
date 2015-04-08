@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "8358bee6_2438729c",
+        "filename": "include/hardware/keymaster_defs.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 188,
+      "author": {
+        "id": 1018773
+      },
+      "writtenOn": "2015-04-08T00:08:01Z",
+      "side": 1,
+      "message": "BTW, I wasn\u0027t planning to expose ZERO padding at the framework level. Is there a use case for it?",
+      "revId": "13d032f7a16b367bc89075b3c31da14ccbff3024",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
