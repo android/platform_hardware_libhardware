@@ -141,6 +141,24 @@
       "revId": "13d032f7a16b367bc89075b3c31da14ccbff3024",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "a3eea234_23da2e14",
+        "filename": "include/hardware/keymaster_defs.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 188,
+      "author": {
+        "id": 1043663
+      },
+      "writtenOn": "2015-04-08T11:05:50Z",
+      "side": 1,
+      "message": "Sorry, thinko.",
+      "parentUuid": "e38eda7f_c32f16b6",
+      "revId": "13d032f7a16b367bc89075b3c31da14ccbff3024",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
