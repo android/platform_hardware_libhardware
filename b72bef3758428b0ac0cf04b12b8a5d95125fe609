@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "63258a42_c59ddc6b",
+        "filename": "include/hardware/keymaster_defs.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 281,
+      "author": {
+        "id": 1069370
+      },
+      "writtenOn": "2015-04-08T00:45:44Z",
+      "side": 1,
+      "message": "Is it always DER or will we support BER?",
+      "range": {
+        "startLine": 281,
+        "startChar": 4,
+        "endLine": 281,
+        "endChar": 22
+      },
+      "revId": "b72bef3758428b0ac0cf04b12b8a5d95125fe609",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
