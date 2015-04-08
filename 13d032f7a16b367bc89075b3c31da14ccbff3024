@@ -123,6 +123,24 @@
       "revId": "13d032f7a16b367bc89075b3c31da14ccbff3024",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e38eda7f_c32f16b6",
+        "filename": "include/hardware/keymaster_defs.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 188,
+      "author": {
+        "id": 1018773
+      },
+      "writtenOn": "2015-04-08T00:31:39Z",
+      "side": 1,
+      "message": "CTR mode does not need any padding. It\u0027s a stream cipher for all intents and purposes. What\u0027s the use of padding with CTR?",
+      "parentUuid": "a32b0216_c8c3b288",
+      "revId": "13d032f7a16b367bc89075b3c31da14ccbff3024",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
