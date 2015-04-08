@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "8358bee6_44824e9d",
+        "filename": "include/hardware/keymaster_defs.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 186,
+      "author": {
+        "id": 1018773
+      },
+      "writtenOn": "2015-04-08T00:18:10Z",
+      "side": 1,
+      "message": "AndroidKeyStore abstraction sitting on top of keymaster needs to offer RSA with PKCS#1 padding because AndroidKeyStore has been offering it in previous public releases of the Android platform.",
+      "parentUuid": "a32b0216_cd9e64e2",
+      "range": {
+        "startLine": 186,
+        "startChar": 4,
+        "endLine": 186,
+        "endChar": 32
+      },
+      "revId": "13d032f7a16b367bc89075b3c31da14ccbff3024",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "8358bee6_2438729c",
         "filename": "include/hardware/keymaster_defs.h",
         "patchSetId": 1
