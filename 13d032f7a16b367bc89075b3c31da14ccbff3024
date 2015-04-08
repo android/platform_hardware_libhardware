@@ -2,6 +2,29 @@
   "comments": [
     {
       "key": {
+        "uuid": "a32b0216_cd9e64e2",
+        "filename": "include/hardware/keymaster_defs.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 186,
+      "author": {
+        "id": 1069370
+      },
+      "writtenOn": "2015-04-08T00:12:56Z",
+      "side": 1,
+      "message": "Do we really want to support PKCS1 v1.5?",
+      "range": {
+        "startLine": 186,
+        "startChar": 4,
+        "endLine": 186,
+        "endChar": 32
+      },
+      "revId": "13d032f7a16b367bc89075b3c31da14ccbff3024",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "8358bee6_2438729c",
         "filename": "include/hardware/keymaster_defs.h",
         "patchSetId": 1
@@ -13,6 +36,24 @@
       "writtenOn": "2015-04-08T00:08:01Z",
       "side": 1,
       "message": "BTW, I wasn\u0027t planning to expose ZERO padding at the framework level. Is there a use case for it?",
+      "revId": "13d032f7a16b367bc89075b3c31da14ccbff3024",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "a32b0216_6db71067",
+        "filename": "include/hardware/keymaster_defs.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 188,
+      "author": {
+        "id": 1069370
+      },
+      "writtenOn": "2015-04-08T00:12:56Z",
+      "side": 1,
+      "message": "Just guessing: it\u0027s used in stream ciphers?",
+      "parentUuid": "8358bee6_2438729c",
       "revId": "13d032f7a16b367bc89075b3c31da14ccbff3024",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
