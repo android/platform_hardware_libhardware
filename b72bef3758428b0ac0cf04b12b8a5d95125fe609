@@ -22,6 +22,30 @@
       "revId": "b72bef3758428b0ac0cf04b12b8a5d95125fe609",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e3ec1a3e_a27800f4",
+        "filename": "include/hardware/keymaster_defs.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 281,
+      "author": {
+        "id": 1043663
+      },
+      "writtenOn": "2015-04-08T11:09:15Z",
+      "side": 1,
+      "message": "Is there value in supporting BER?",
+      "parentUuid": "63258a42_c59ddc6b",
+      "range": {
+        "startLine": 281,
+        "startChar": 4,
+        "endLine": 281,
+        "endChar": 22
+      },
+      "revId": "b72bef3758428b0ac0cf04b12b8a5d95125fe609",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
