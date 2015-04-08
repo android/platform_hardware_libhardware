@@ -49,6 +49,30 @@
     },
     {
       "key": {
+        "uuid": "a32b0216_28e826f8",
+        "filename": "include/hardware/keymaster_defs.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 186,
+      "author": {
+        "id": 1043663
+      },
+      "writtenOn": "2015-04-08T00:27:03Z",
+      "side": 1,
+      "message": "Yep, we don\u0027t want to, we have to.\n\nNote that we are breaking compatibility by removing DSA.  But kroot@ thinks it\u0027s sufficiently unlikely that anyone is using it that that\u0027s okay.",
+      "parentUuid": "8358bee6_44824e9d",
+      "range": {
+        "startLine": 186,
+        "startChar": 4,
+        "endLine": 186,
+        "endChar": 32
+      },
+      "revId": "13d032f7a16b367bc89075b3c31da14ccbff3024",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "8358bee6_2438729c",
         "filename": "include/hardware/keymaster_defs.h",
         "patchSetId": 1
@@ -77,6 +101,24 @@
       "writtenOn": "2015-04-08T00:12:56Z",
       "side": 1,
       "message": "Just guessing: it\u0027s used in stream ciphers?",
+      "parentUuid": "8358bee6_2438729c",
+      "revId": "13d032f7a16b367bc89075b3c31da14ccbff3024",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "a32b0216_c8c3b288",
+        "filename": "include/hardware/keymaster_defs.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 188,
+      "author": {
+        "id": 1043663
+      },
+      "writtenOn": "2015-04-08T00:27:03Z",
+      "side": 1,
+      "message": "Not really.  I just kept it because I had previously (for reasons I can no longer recall) marked it as required.  I do think we need PKCS7 padding.\n\n(Note to Thai: I think CTR mode should support PKCS7 padding.)",
       "parentUuid": "8358bee6_2438729c",
       "revId": "13d032f7a16b367bc89075b3c31da14ccbff3024",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
