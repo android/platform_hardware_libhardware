@@ -22,6 +22,30 @@
       "revId": "5dfdb35f126e98f2a16d4b20ee88a5f7d00bfc57",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e3ec1a3e_53c464be",
+        "filename": "include/hardware/keymaster_defs.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 147,
+      "author": {
+        "id": 1043663
+      },
+      "writtenOn": "2015-04-08T17:34:31Z",
+      "side": 1,
+      "message": "I want to leave the gap.  It\u0027s unfortunate, but the pleasantness of sequential numbers isn\u0027t worth the amount of work required to deal with the change.\n\nPerhaps I\u0027ll put a comment in there with KM_ALGORITHM_DSA \u003d 2 -- removed. That will make clear why there\u0027s a gap and also help to ensure that 2 doesn\u0027t get reused in some way that would cause problems.",
+      "parentUuid": "a3eea234_572f3486",
+      "range": {
+        "startLine": 147,
+        "startChar": 0,
+        "endLine": 147,
+        "endChar": 24
+      },
+      "revId": "5dfdb35f126e98f2a16d4b20ee88a5f7d00bfc57",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
