@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "a3eea234_572f3486",
+        "filename": "include/hardware/keymaster_defs.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 147,
+      "author": {
+        "id": 1022895
+      },
+      "writtenOn": "2015-04-08T17:29:21Z",
+      "side": 1,
+      "message": "Do we want to leave the gap left by KM_ALGORITHM_DSA or shift EC to 2?",
+      "range": {
+        "startLine": 147,
+        "startChar": 0,
+        "endLine": 147,
+        "endChar": 24
+      },
+      "revId": "5dfdb35f126e98f2a16d4b20ee88a5f7d00bfc57",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
