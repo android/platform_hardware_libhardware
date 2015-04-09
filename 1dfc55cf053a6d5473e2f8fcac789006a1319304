@@ -1,0 +1,8 @@
+Code-Review+2: Ying Wang <wangying@android.com>
+Code-Review+2: Dan Albert <danalbert@google.com>
+Verified+1: Colin Cross <ccross@google.com>
+Submitted-by: Colin Cross <ccross@google.com>
+Submitted-at: Thu, 09 Apr 2015 23:59:47 +0000
+Reviewed-on: https://android-review.googlesource.com/146214
+Project: platform/hardware/libhardware
+Branch: refs/heads/master-soong
