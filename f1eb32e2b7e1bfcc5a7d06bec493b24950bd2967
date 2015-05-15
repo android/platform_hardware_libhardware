@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "a32b0216_24729c10",
+        "filename": "include/hardware/keymaster_defs.h",
+        "patchSetId": 4
+      },
+      "lineNbr": 79,
+      "author": {
+        "id": 1069370
+      },
+      "writtenOn": "2015-05-15T22:00:51Z",
+      "side": 1,
+      "message": "Yes, I\u0027ll update the ECDSA bits in the other CL.",
+      "parentUuid": "832a7e12_0979b9f6",
+      "range": {
+        "startLine": 79,
+        "startChar": 7,
+        "endLine": 79,
+        "endChar": 44
+      },
+      "revId": "f1eb32e2b7e1bfcc5a7d06bec493b24950bd2967",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "a32b0216_a446ac2f",
         "filename": "include/hardware/keymaster_defs.h",
         "patchSetId": 4
@@ -60,6 +84,30 @@
       "side": 1,
       "message": "Yes, please.",
       "parentUuid": "a32b0216_a446ac2f",
+      "range": {
+        "startLine": 260,
+        "startChar": 34,
+        "endLine": 260,
+        "endChar": 42
+      },
+      "revId": "f1eb32e2b7e1bfcc5a7d06bec493b24950bd2967",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "63258a42_ed30091f",
+        "filename": "include/hardware/keymaster_defs.h",
+        "patchSetId": 4
+      },
+      "lineNbr": 260,
+      "author": {
+        "id": 1069370
+      },
+      "writtenOn": "2015-05-15T22:00:51Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "832a7e12_49c1f19a",
       "range": {
         "startLine": 260,
         "startChar": 34,
