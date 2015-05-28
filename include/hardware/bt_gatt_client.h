@@ -28,7 +28,7 @@ __BEGIN_DECLS
  * Buffer sizes for maximum attribute length and maximum read/write
  * operation buffer size.
  */
-#define BTGATT_MAX_ATTR_LEN 600
+#define BTGATT_MAX_ATTR_LEN 512
 
 /** Buffer type for unformatted reads/writes */
 typedef struct
