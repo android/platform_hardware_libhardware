@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "b91fb853_d8443b69",
+        "filename": "include/hardware/bt_gatt_client.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1058798
+      },
+      "writtenOn": "2015-06-01T16:44:45Z",
+      "side": 1,
+      "message": "Should check if this is really only used for the payload.",
+      "revId": "e092d39c2d310d5d1b5b6bb75cfeaf5691b4b77f",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
