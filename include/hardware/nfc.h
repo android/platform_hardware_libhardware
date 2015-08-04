@@ -190,6 +190,12 @@ typedef struct nfc_nci_device {
      * HAL_OPEN_CPLT_EVT will notify when operation is complete.
      */
     int (*power_cycle)(const struct nfc_nci_device *p_dev);
+
+    /*
+     * Set or get information from the hardware-specific HAL.
+     */
+    int (*run_vendor_command)(const struct nfc_nci_device *p_dev, uint32_t commandId, void* inputData, void* outputData);
+
 } nfc_nci_device_t;
 
 /*
