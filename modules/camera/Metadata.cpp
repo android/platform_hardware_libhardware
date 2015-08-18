@@ -52,7 +52,7 @@ int Metadata::init(const camera_metadata_t *metadata)
 {
     camera_metadata_t* tmp;
 
-    if (!validate_camera_metadata_structure(metadata, NULL))
+    if (validate_camera_metadata_structure(metadata, NULL))
         return -EINVAL;
 
     tmp = clone_camera_metadata(metadata);
@@ -130,16 +130,27 @@ bool Metadata::validate(uint32_t tag, int tag_type, int count)
 int Metadata::add(uint32_t tag, int count, const void *tag_data)
 {
     int res;
+    size_t entry_capacity = 0;
+    size_t data_capacity = 0;
+    size_t size = 0;
     camera_metadata_t* tmp;
     int tag_type = get_camera_metadata_tag_type(tag);
-    size_t size = calculate_camera_metadata_entry_data_size(tag_type, count);
-    size_t entry_capacity = get_camera_metadata_entry_count(mData) + 1;
-    size_t data_capacity = get_camera_metadata_data_count(mData) + size;
+
+    if (NULL == mData) {
+        size = calculate_camera_metadata_entry_data_size(tag_type, count);
+        entry_capacity = 1;
+        data_capacity = size;
+        tmp = allocate_camera_metadata(entry_capacity, size);
+        init(tmp);
+    } else {
+        size = calculate_camera_metadata_entry_data_size(tag_type, count);
+        entry_capacity = get_camera_metadata_entry_count(mData) + 1;
+        data_capacity = get_camera_metadata_data_count(mData) + size;
+    }
 
     // Opportunistically attempt to add if metadata has room for it
     if (!add_camera_metadata_entry(mData, tag, tag_data, count))
         return 0;
-
     // Double new dimensions to minimize future reallocations
     tmp = allocate_camera_metadata(entry_capacity * 2, data_capacity * 2);
     if (tmp == NULL) {
