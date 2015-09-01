@@ -210,6 +210,7 @@ typedef uint16_t AGpsStatusValue;
 #define AGPS_REF_LOCATION_TYPE_GSM_CELLID   1
 #define AGPS_REF_LOCATION_TYPE_UMTS_CELLID  2
 #define AGPS_REG_LOCATION_TYPE_MAC          3
+#define AGPS_REG_LOCATION_TYPE_LTE_CELLID   4
 
 /** Network types for update_network_state "type" parameter */
 #define AGPS_RIL_NETWORK_TYPE_MOBILE        0
@@ -495,14 +496,20 @@ typedef struct {
 } GpsSvStatus;
 
 
-/* 2G and 3G */
-/* In 3G lac is discarded */
+/* 2G, 3G and LTE
+lac_tac = Location Area Code in 2G and 3G
+        = Tracking Area Code in LTE
+cid     = Cell id in 2G, Utran Cell id in 3G
+        = Cell Global Id EUTRA in LTE
+pcid    = Physical Cell id in LTE (not used in 2G and 3G)
+*/
 typedef struct {
     uint16_t type;
     uint16_t mcc;
     uint16_t mnc;
-    uint16_t lac;
+    uint16_t lac_tac;
     uint32_t cid;
+    uint16_t pcid;
 } AGpsRefLocationCellID;
 
 typedef struct {
