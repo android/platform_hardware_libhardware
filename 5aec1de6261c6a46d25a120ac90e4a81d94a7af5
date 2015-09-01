@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e4d42ed5_91b23cc9",
+        "filename": "include/hardware/nfc.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 1013030
+      },
+      "writtenOn": "2015-09-01T14:06:10Z",
+      "side": 1,
+      "message": "Whenever new things are added to the HAL we must deal with versioning.\n\nAdd a comment section here about the different versions. For example:\n\nNFC_NCI_DEVICE_API_VERSION_1_0:\nInitial NFC NCI API\n\nNFC_NCI_DEVICE_API_VERSION_1_1:\nAdded run_vendor_command()\n\nThen define the versions below:\n\n#define NFC_NCI_DEVICE_API_VERSION_1_0 HARDWARE_DEVICE_API_VERSION(1, 0)\n#define NFC_NCI_DEVICE_API_VERSION_1_1 HARDWARE_DEVICE_API_VERSION(1, 1)",
+      "range": {
+        "startLine": 54,
+        "startChar": 1,
+        "endLine": 54,
+        "endChar": 3
+      },
+      "revId": "5aec1de6261c6a46d25a120ac90e4a81d94a7af5",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "447a5aab_f47058d4",
+        "filename": "include/hardware/nfc.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 196,
+      "author": {
+        "id": 1013030
+      },
+      "writtenOn": "2015-09-01T14:06:10Z",
+      "side": 1,
+      "message": "comment that this was added in NFC_NCI_DEVICE_API_VERSION_1_1",
+      "range": {
+        "startLine": 195,
+        "startChar": 5,
+        "endLine": 196,
+        "endChar": 7
+      },
+      "revId": "5aec1de6261c6a46d25a120ac90e4a81d94a7af5",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
