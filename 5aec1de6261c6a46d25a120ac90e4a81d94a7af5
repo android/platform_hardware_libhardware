@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "848ff2ac_73ca622f",
+        "filename": "include/hardware/nfc.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 1018624
+      },
+      "writtenOn": "2015-09-15T14:57:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e4d42ed5_91b23cc9",
+      "range": {
+        "startLine": 54,
+        "startChar": 1,
+        "endLine": 54,
+        "endChar": 3
+      },
+      "revId": "5aec1de6261c6a46d25a120ac90e4a81d94a7af5",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "447a5aab_f47058d4",
         "filename": "include/hardware/nfc.h",
         "patchSetId": 1
@@ -36,6 +60,30 @@
       "writtenOn": "2015-09-01T14:06:10Z",
       "side": 1,
       "message": "comment that this was added in NFC_NCI_DEVICE_API_VERSION_1_1",
+      "range": {
+        "startLine": 195,
+        "startChar": 5,
+        "endLine": 196,
+        "endChar": 7
+      },
+      "revId": "5aec1de6261c6a46d25a120ac90e4a81d94a7af5",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "a9420f4a_3eee9531",
+        "filename": "include/hardware/nfc.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 196,
+      "author": {
+        "id": 1018624
+      },
+      "writtenOn": "2015-09-15T14:57:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "447a5aab_f47058d4",
       "range": {
         "startLine": 195,
         "startChar": 5,
