@@ -51,7 +51,16 @@ __BEGIN_DECLS
  * ...
  * ...
  * 9) Core NCI stack calls close()
+ *
+ * NFC_NCI_DEVICE_API_VERSION_1_0:
+ * This is the initial version.
+ *
+ * NFC_NCI_DEVICE_API_VERSION_1_1:
+ * Add run_vendor_command().
  */
+
+#define NFC_NCI_DEVICE_API_VERSION_1_0 HARDWARE_DEVICE_API_VERSION(1,0)
+#define NFC_NCI_DEVICE_API_VERSION_1_1 HARDWARE_DEVICE_API_VERSION(1,1)
 #define NFC_NCI_HARDWARE_MODULE_ID "nfc_nci"
 #define NFC_NCI_BCM2079X_HARDWARE_MODULE_ID "nfc_nci.bcm2079x"
 #define NFC_NCI_CONTROLLER "nci"
@@ -190,6 +199,13 @@ typedef struct nfc_nci_device {
      * HAL_OPEN_CPLT_EVT will notify when operation is complete.
      */
     int (*power_cycle)(const struct nfc_nci_device *p_dev);
+
+    /*
+     * Set or get information from the hardware-specific HAL.
+     * This function is added in NFC_NCI_DEVICE_API_VERSION_1_1.
+     */
+    int (*run_vendor_command)(const struct nfc_nci_device *p_dev, uint32_t commandId, void* inputData, void* outputData);
+
 } nfc_nci_device_t;
 
 /*
