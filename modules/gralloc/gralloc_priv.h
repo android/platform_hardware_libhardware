@@ -37,7 +37,7 @@ struct private_handle_t;
 struct private_module_t {
     gralloc_module_t base;
 
-    private_handle_t* framebuffer;
+    struct private_handle_t* framebuffer;
     uint32_t flags;
     uint32_t numBuffers;
     uint32_t bufferMask;
