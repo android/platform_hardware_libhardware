@@ -33,6 +33,7 @@ LOCAL_CPPFLAGS += -std=c++14 -Wno-unused-parameter
 
 LOCAL_MODULE := libinput_evdev
 LOCAL_MODULE_TAGS := optional
+LOCAL_EXPORT_C_INCLUDE_DIRS := $(LOCAL_PATH)
 
 include $(BUILD_SHARED_LIBRARY)
 
