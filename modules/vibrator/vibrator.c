@@ -21,10 +21,76 @@
 
 #include <malloc.h>
 #include <stdio.h>
+#include <string.h>
 #include <unistd.h>
 #include <fcntl.h>
 #include <errno.h>
 #include <math.h>
+
+static const char LED_DEVICE[] = "/sys/class/leds/vibrator";
+
+static int write_value(const char *file, const char *value)
+{
+    char file_str[50];
+    int to_write, written, ret, fd;
+
+    snprintf(file_str, sizeof(file_str), "%s/%s", LED_DEVICE, file);
+    fd = TEMP_FAILURE_RETRY(open(file_str, O_RDWR));
+    if(fd < 0) {
+        return -errno;
+    }
+
+    to_write = strlen(value);
+    written = TEMP_FAILURE_RETRY(write(fd, value, to_write));
+    if (written == -1) {
+        ret = -errno;
+    } else if (written != to_write) {
+        /* even though EAGAIN is an errno value that could be set
+           by write() in some cases, none of them apply here.  So, this return
+           value can be clearly identified when debugging and suggests the
+           caller that it may try to call vibraror_on() again */
+        ret = -EAGAIN;
+    } else {
+        ret = 0;
+    }
+
+    errno = 0;
+    close(fd);
+
+    return ret;
+}
+
+static int vibra_led_exists()
+{
+    if (write_value("trigger", "transient\n") < 0)
+        return 0;
+
+    return 1;
+}
+
+static int vibra_led_on(vibrator_device_t* vibradev __unused, unsigned int timeout_ms)
+{
+    int ret;
+    char value[20]; /* large enough for millions of years */
+
+    if (write_value("state", "1") < 0)
+        return 0;
+
+    snprintf(value, sizeof(value), "%u\n", timeout_ms);
+    ret = write_value("duration", value);
+    if (ret)
+        return ret;
+
+    ret = write_value("activate", "1");
+
+    return ret;
+}
+
+static int vibra_led_off(vibrator_device_t* vibradev __unused)
+{
+    return write_value("activate", "0");
+}
+
 
 static const char THE_DEVICE[] = "/sys/class/timed_output/vibrator/enable";
 
@@ -33,7 +99,6 @@ static int vibra_exists() {
 
     fd = TEMP_FAILURE_RETRY(open(THE_DEVICE, O_RDWR));
     if(fd < 0) {
-        ALOGE("Vibrator file does not exist : %d", fd);
         return 0;
     }
 
@@ -92,7 +157,15 @@ static int vibra_close(hw_device_t *device)
 
 static int vibra_open(const hw_module_t* module, const char* id __unused,
                       hw_device_t** device __unused) {
-    if (!vibra_exists()) {
+    int use_led;
+
+    if (vibra_exists()) {
+        ALOGE("Vibrator using timed_output");
+        use_led = 0;
+    } else if (vibra_led_exists()) {
+        ALOGE("Vibrator using LED trigger");
+        use_led = 1;
+    } else {
         ALOGE("Vibrator device does not exist. Cannot start vibrator");
         return -ENODEV;
     }
@@ -109,8 +182,13 @@ static int vibra_open(const hw_module_t* module, const char* id __unused,
     vibradev->common.version = HARDWARE_DEVICE_API_VERSION(1,0);
     vibradev->common.close = vibra_close;
 
-    vibradev->vibrator_on = vibra_on;
-    vibradev->vibrator_off = vibra_off;
+    if (use_led) {
+        vibradev->vibrator_on = vibra_led_on;
+        vibradev->vibrator_off = vibra_led_off;
+    } else {
+        vibradev->vibrator_on = vibra_on;
+        vibradev->vibrator_off = vibra_off;
+    }
 
     *device = (hw_device_t *) vibradev;
 
