@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5b2a4b7b_09bcbaf5",
+        "filename": "modules/camera/Metadata.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 130,
+      "author": {
+        "id": 1010050
+      },
+      "writtenOn": "2015-11-16T20:49:24Z",
+      "side": 1,
+      "message": "This function isn\u0027t designed to be called before init() is, though that should be better enforced.\n\nI don\u0027t have an objection to making it allocate if mData is NULL.",
+      "revId": "f3901792e41b5233549b881b5bb5f9f22eb4e161",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5b25eb9e_b1c2c781",
+        "filename": "modules/camera/Metadata.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 143,
+      "author": {
+        "id": 1010050
+      },
+      "writtenOn": "2015-11-16T20:49:24Z",
+      "side": 1,
+      "message": "Instead of allocating here and calling init(), just calculating the right initial entry/data_capacity is [almost] enough - the rest of the function can be made to work simply, and reduces the number of code flows through here.",
+      "revId": "f3901792e41b5233549b881b5bb5f9f22eb4e161",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fb2e9f8f_2afbeaa2",
+        "filename": "modules/camera/Metadata.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 146,
+      "author": {
+        "id": 1010050
+      },
+      "writtenOn": "2015-11-16T20:49:24Z",
+      "side": 1,
+      "message": "size is the same in both branches, might as well do this on 135.",
+      "revId": "f3901792e41b5233549b881b5bb5f9f22eb4e161",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5b532b27_bba73b29",
+        "filename": "modules/camera/Metadata.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 162,
+      "author": {
+        "id": 1010050
+      },
+      "writtenOn": "2015-11-16T20:49:24Z",
+      "side": 1,
+      "message": "This needs to be skipped if mData is NULL.  Then with the correct initial entry/data_capacity, we\u0027ll try to add and fail, allocate tmp, skip append, add the entry, and finally replace.",
+      "revId": "f3901792e41b5233549b881b5bb5f9f22eb4e161",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
