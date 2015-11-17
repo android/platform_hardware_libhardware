@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5b25eb9e_ea9e0121",
+        "filename": "modules/camera/Metadata.cpp",
+        "patchSetId": 2
+      },
+      "lineNbr": 148,
+      "author": {
+        "id": 1010050
+      },
+      "writtenOn": "2015-11-17T23:26:45Z",
+      "side": 1,
+      "message": "add_camera_metadata_entry does actually check for mData being NULL and returns an error, but it\u0027s fine to be more defensive.",
+      "revId": "2ecebbf8ff383bbb622e2ed88c69feb82c090673",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
