@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1b17f3fd_d7485eb1",
+        "filename": "include/hardware/bluetooth.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 501,
+      "author": {
+        "id": 1058798
+      },
+      "writtenOn": "2015-12-01T21:21:50Z",
+      "side": 1,
+      "message": "typo",
+      "range": {
+        "startLine": 501,
+        "startChar": 30,
+        "endLine": 501,
+        "endChar": 35
+      },
+      "revId": "ebe4b134cc490eda5e208ddfe6369629d132a101",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
