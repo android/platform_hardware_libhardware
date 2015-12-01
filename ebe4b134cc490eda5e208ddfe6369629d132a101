@@ -2,6 +2,29 @@
   "comments": [
     {
       "key": {
+        "uuid": "fba69f26_eb2f7132",
+        "filename": "include/hardware/bluetooth.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 259,
+      "author": {
+        "id": 1071489
+      },
+      "writtenOn": "2015-12-01T21:26:24Z",
+      "side": 1,
+      "message": "Is this data going to be used for anything except bonding?\nIf the answer is no, you should clarify in the description:\n\n\"Bluetooth ... data\" -\u003e \"Bluetooth ... data for bonding\"\n\nAlso, the comment should start with \"/**\" instead of \"/*\" - for consistency with the rest of the code in this file.",
+      "range": {
+        "startLine": 259,
+        "startChar": 3,
+        "endLine": 259,
+        "endChar": 29
+      },
+      "revId": "ebe4b134cc490eda5e208ddfe6369629d132a101",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1b17f3fd_d7485eb1",
         "filename": "include/hardware/bluetooth.h",
         "patchSetId": 2
