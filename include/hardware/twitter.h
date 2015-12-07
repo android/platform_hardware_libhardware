@@ -1,0 +1,40 @@
+/*
+ * Copyright (C) 2011 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/*
+ * Twitter implements a very simple abstraction over a qemu-pipe,
+ * with the purpose of creating uniform time-stamped logs on the host.
+ */
+
+#ifndef _TWITTER_H_
+#define _TWITTER_H_
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+#define  MAX_TWEET_LEN 256
+
+int twitter_init(void);
+int twitter_fini(void);
+int send_tweet(const char *msg);
+int recv_tweet(char **msg);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif // _TWITTER_H_
