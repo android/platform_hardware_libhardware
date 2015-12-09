@@ -22,6 +22,30 @@
       "revId": "54f5b9afe311dd09d511e887801429a98fb662a4",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "60f4bc02_3eeb6913",
+        "filename": "include/hardware/boot_control.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 128,
+      "author": {
+        "id": 1076971
+      },
+      "writtenOn": "2015-12-09T15:00:39Z",
+      "side": 1,
+      "message": "Sure thing, fixing.",
+      "parentUuid": "6003dc91_89471da1",
+      "range": {
+        "startLine": 126,
+        "startChar": 0,
+        "endLine": 128,
+        "endChar": 15
+      },
+      "revId": "54f5b9afe311dd09d511e887801429a98fb662a4",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
