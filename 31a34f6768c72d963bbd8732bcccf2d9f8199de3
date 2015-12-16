@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "05a79224_8e46bb56",
+        "filename": "tests/camera2/camera2_utils.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 392,
+      "author": {
+        "id": 1041833
+      },
+      "writtenOn": "2015-12-16T23:54:07Z",
+      "side": 1,
+      "message": "I had hoped not to have to do this... :-)",
+      "parentUuid": "0512320e_135e6cc1",
+      "revId": "31a34f6768c72d963bbd8732bcccf2d9f8199de3",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "85bb823a_4fa32d1f",
         "filename": "tests/camera2/camera2_utils.cpp",
         "patchSetId": 1
