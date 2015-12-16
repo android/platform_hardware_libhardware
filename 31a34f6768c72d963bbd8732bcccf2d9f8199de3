@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "0512320e_135e6cc1",
+        "filename": "tests/camera2/camera2_utils.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 392,
+      "author": {
+        "id": 1003224
+      },
+      "writtenOn": "2015-12-16T22:23:13Z",
+      "side": 1,
+      "message": "dimensions",
+      "revId": "31a34f6768c72d963bbd8732bcccf2d9f8199de3",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "85bb823a_4fa32d1f",
+        "filename": "tests/camera2/camera2_utils.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 393,
+      "author": {
+        "id": 1003224
+      },
+      "writtenOn": "2015-12-16T22:23:13Z",
+      "side": 1,
+      "message": "remove format",
+      "revId": "31a34f6768c72d963bbd8732bcccf2d9f8199de3",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "05a79224_8b422d23",
+        "filename": "tests/camera2/camera2_utils.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 401,
+      "author": {
+        "id": 1003224
+      },
+      "writtenOn": "2015-12-16T22:23:13Z",
+      "side": 1,
+      "message": "format",
+      "revId": "31a34f6768c72d963bbd8732bcccf2d9f8199de3",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "459d0ad3_cdfa892b",
+        "filename": "tests/camera2/camera2_utils.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 402,
+      "author": {
+        "id": 1003224
+      },
+      "writtenOn": "2015-12-16T22:23:13Z",
+      "side": 1,
+      "message": "remove dimensions",
+      "revId": "31a34f6768c72d963bbd8732bcccf2d9f8199de3",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
