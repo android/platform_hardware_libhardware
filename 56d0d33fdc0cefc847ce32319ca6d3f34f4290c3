@@ -1,0 +1,119 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "2a7b83af_b468a0c4",
+        "filename": "include/hardware/nvram.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 1080683
+      },
+      "writtenOn": "2015-12-18T20:24:33Z",
+      "side": 1,
+      "message": "nit: In other HAL headers, the * is aligned with the first * on the line above.\n\nSame for other comments below.",
+      "range": {
+        "startLine": 60,
+        "startChar": 4,
+        "endLine": 60,
+        "endChar": 5
+      },
+      "revId": "56d0d33fdc0cefc847ce32319ca6d3f34f4290c3",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "0a76bfc5_335fc8f8",
+        "filename": "include/hardware/nvram.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 96,
+      "author": {
+        "id": 1080683
+      },
+      "writtenOn": "2015-12-18T20:24:33Z",
+      "side": 1,
+      "message": "nit: it seems other HAL headers use an 80 columns width limit (as do your comments).",
+      "range": {
+        "startLine": 96,
+        "startChar": 0,
+        "endLine": 96,
+        "endChar": 84
+      },
+      "revId": "56d0d33fdc0cefc847ce32319ca6d3f34f4290c3",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "8a6aafd7_f722a07c",
+        "filename": "include/hardware/nvram.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 152,
+      "author": {
+        "id": 1080683
+      },
+      "writtenOn": "2015-12-18T20:24:33Z",
+      "side": 1,
+      "message": "attempt to do what?",
+      "range": {
+        "startLine": 152,
+        "startChar": 48,
+        "endLine": 152,
+        "endChar": 60
+      },
+      "revId": "56d0d33fdc0cefc847ce32319ca6d3f34f4290c3",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "2a7b83af_54458c4c",
+        "filename": "include/hardware/nvram.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 171,
+      "author": {
+        "id": 1080683
+      },
+      "writtenOn": "2015-12-18T20:24:33Z",
+      "side": 1,
+      "message": "nit: remove extra blank line.",
+      "range": {
+        "startLine": 171,
+        "startChar": 0,
+        "endLine": 171,
+        "endChar": 5
+      },
+      "revId": "56d0d33fdc0cefc847ce32319ca6d3f34f4290c3",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ead24be6_729478bb",
+        "filename": "include/hardware/nvram.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 208,
+      "author": {
+        "id": 1080683
+      },
+      "writtenOn": "2015-12-18T20:24:33Z",
+      "side": 1,
+      "message": "nit: Since we\u0027re lacking the introduction section from the spec document here, it may make sense to clarify the meaning of \"full device reset\". I.e. not reboot, but wipe.",
+      "range": {
+        "startLine": 207,
+        "startChar": 56,
+        "endLine": 208,
+        "endChar": 11
+      },
+      "revId": "56d0d33fdc0cefc847ce32319ca6d3f34f4290c3",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
