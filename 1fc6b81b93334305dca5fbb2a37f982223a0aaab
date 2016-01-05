@@ -1,0 +1,441 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "eae08b3e_22aceea8",
+        "filename": "include/hardware/keymaster2.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 1091885
+      },
+      "writtenOn": "2016-01-05T10:59:20Z",
+      "side": 1,
+      "message": "param_sets",
+      "range": {
+        "startLine": 86,
+        "startChar": 48,
+        "endLine": 86,
+        "endChar": 54
+      },
+      "revId": "1fc6b81b93334305dca5fbb2a37f982223a0aaab",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ca6e677a_09b9c9ea",
+        "filename": "include/hardware/keymaster2.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 181,
+      "author": {
+        "id": 1091885
+      },
+      "writtenOn": "2016-01-05T10:59:20Z",
+      "side": 1,
+      "message": "Or a symmetric key (with KM_KEY_FORMAT_RAW)?",
+      "range": {
+        "startLine": 181,
+        "startChar": 17,
+        "endLine": 181,
+        "endChar": 27
+      },
+      "revId": "1fc6b81b93334305dca5fbb2a37f982223a0aaab",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ea6b2b68_ea146794",
+        "filename": "include/hardware/keymaster2.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 191,
+      "author": {
+        "id": 1091885
+      },
+      "writtenOn": "2016-01-05T10:59:20Z",
+      "side": 1,
+      "message": "No such parameter.",
+      "range": {
+        "startLine": 191,
+        "startChar": 7,
+        "endLine": 191,
+        "endChar": 67
+      },
+      "revId": "1fc6b81b93334305dca5fbb2a37f982223a0aaab",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "0a54ffaf_6301824c",
+        "filename": "include/hardware/keymaster2.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 197,
+      "author": {
+        "id": 1091885
+      },
+      "writtenOn": "2016-01-05T10:59:20Z",
+      "side": 1,
+      "message": "Missing description of these parameters.",
+      "range": {
+        "startLine": 196,
+        "startChar": 36,
+        "endLine": 197,
+        "endChar": 69
+      },
+      "revId": "1fc6b81b93334305dca5fbb2a37f982223a0aaab",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "cae3c748_41d65221",
+        "filename": "include/hardware/keymaster2.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 201,
+      "author": {
+        "id": 1091885
+      },
+      "writtenOn": "2016-01-05T10:59:20Z",
+      "side": 1,
+      "message": "Since there isn\u0027t a distinguihsed type for ECDH keys, this should probably just say \u0027EC key\u0027. (The need for KM_PURPOSE_DERIVE KEY is explained below.)",
+      "range": {
+        "startLine": 201,
+        "startChar": 65,
+        "endLine": 201,
+        "endChar": 73
+      },
+      "revId": "1fc6b81b93334305dca5fbb2a37f982223a0aaab",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "2a2b8319_54d66c21",
+        "filename": "include/hardware/keymaster2.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 203,
+      "author": {
+        "id": 1091885
+      },
+      "writtenOn": "2016-01-05T10:59:20Z",
+      "side": 1,
+      "message": "new_key_param_sets",
+      "range": {
+        "startLine": 203,
+        "startChar": 57,
+        "endLine": 203,
+        "endChar": 71
+      },
+      "revId": "1fc6b81b93334305dca5fbb2a37f982223a0aaab",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "cae3c748_01bc4ad5",
+        "filename": "include/hardware/keymaster2.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 205,
+      "author": {
+        "id": 1091885
+      },
+      "writtenOn": "2016-01-05T10:59:20Z",
+      "side": 1,
+      "message": "returned",
+      "range": {
+        "startLine": 205,
+        "startChar": 77,
+        "endLine": 205,
+        "endChar": 84
+      },
+      "revId": "1fc6b81b93334305dca5fbb2a37f982223a0aaab",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "2a2b8319_74d36830",
+        "filename": "include/hardware/keymaster2.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 206,
+      "author": {
+        "id": 1091885
+      },
+      "writtenOn": "2016-01-05T10:59:20Z",
+      "side": 1,
+      "message": "new_key_blobs",
+      "range": {
+        "startLine": 206,
+        "startChar": 85,
+        "endLine": 206,
+        "endChar": 95
+      },
+      "revId": "1fc6b81b93334305dca5fbb2a37f982223a0aaab",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "8a68ef71_07b9b6ea",
+        "filename": "include/hardware/keymaster2.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 206,
+      "author": {
+        "id": 1091885
+      },
+      "writtenOn": "2016-01-05T10:59:20Z",
+      "side": 1,
+      "message": "blobs",
+      "range": {
+        "startLine": 206,
+        "startChar": 65,
+        "endLine": 206,
+        "endChar": 69
+      },
+      "revId": "1fc6b81b93334305dca5fbb2a37f982223a0aaab",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "eae08b3e_c2c1c25b",
+        "filename": "include/hardware/keymaster2.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 207,
+      "author": {
+        "id": 1091885
+      },
+      "writtenOn": "2016-01-05T10:59:20Z",
+      "side": 1,
+      "message": "keys\u0027",
+      "range": {
+        "startLine": 207,
+        "startChar": 47,
+        "endLine": 207,
+        "endChar": 52
+      },
+      "revId": "1fc6b81b93334305dca5fbb2a37f982223a0aaab",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "4a2c372e_15d0f420",
+        "filename": "include/hardware/keymaster2.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 220,
+      "author": {
+        "id": 1091885
+      },
+      "writtenOn": "2016-01-05T10:59:20Z",
+      "side": 1,
+      "message": "Rather than have this awkward requirement on the param sets, it might be neater to have the KDF specified as a distinct parameter to this function (and not be present in the param sets). Are there any other parameters that have to be checked for consistency (like key type and size)?",
+      "range": {
+        "startLine": 218,
+        "startChar": 95,
+        "endLine": 220,
+        "endChar": 47
+      },
+      "revId": "1fc6b81b93334305dca5fbb2a37f982223a0aaab",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "0a54ffaf_831fde9e",
+        "filename": "include/hardware/keymaster2.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 242,
+      "author": {
+        "id": 1091885
+      },
+      "writtenOn": "2016-01-05T10:59:20Z",
+      "side": 1,
+      "message": "More detail on the contents of these X.509 certificates (constraints, validity periods, etc)?",
+      "range": {
+        "startLine": 242,
+        "startChar": 19,
+        "endLine": 242,
+        "endChar": 49
+      },
+      "revId": "1fc6b81b93334305dca5fbb2a37f982223a0aaab",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "2a2b8319_d4e83cd5",
+        "filename": "include/hardware/keymaster2.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 244,
+      "author": {
+        "id": 1091885
+      },
+      "writtenOn": "2016-01-05T10:59:20Z",
+      "side": 1,
+      "message": "?",
+      "range": {
+        "startLine": 244,
+        "startChar": 24,
+        "endLine": 244,
+        "endChar": 59
+      },
+      "revId": "1fc6b81b93334305dca5fbb2a37f982223a0aaab",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "6a5f3bcc_86bb6adf",
+        "filename": "include/hardware/keymaster2.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 248,
+      "author": {
+        "id": 1091885
+      },
+      "writtenOn": "2016-01-05T10:59:20Z",
+      "side": 1,
+      "message": "key_to_attest (or rename parameter to \u0027key\u0027)",
+      "range": {
+        "startLine": 248,
+        "startChar": 18,
+        "endLine": 248,
+        "endChar": 21
+      },
+      "revId": "1fc6b81b93334305dca5fbb2a37f982223a0aaab",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "0a54ffaf_a3245aeb",
+        "filename": "include/hardware/keymaster2.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 277,
+      "author": {
+        "id": 1091885
+      },
+      "writtenOn": "2016-01-05T10:59:20Z",
+      "side": 1,
+      "message": "key_to_upgrade",
+      "range": {
+        "startLine": 277,
+        "startChar": 18,
+        "endLine": 277,
+        "endChar": 21
+      },
+      "revId": "1fc6b81b93334305dca5fbb2a37f982223a0aaab",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ca6e677a_89f299c1",
+        "filename": "include/hardware/keymaster2.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 452,
+      "author": {
+        "id": 1091885
+      },
+      "writtenOn": "2016-01-05T10:59:20Z",
+      "side": 1,
+      "message": "Presumably \u0027keymaster1\u0027 should be \u0027keymaster2\u0027 here.",
+      "range": {
+        "startLine": 447,
+        "startChar": 0,
+        "endLine": 452,
+        "endChar": 49
+      },
+      "revId": "1fc6b81b93334305dca5fbb2a37f982223a0aaab",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ea6b2b68_cad2c3f8",
+        "filename": "include/hardware/keymaster_defs.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 70,
+      "author": {
+        "id": 1091885
+      },
+      "writtenOn": "2016-01-05T10:59:20Z",
+      "side": 1,
+      "message": "I get a \u0027this goo.gl shortlink has been disabled\u0027 message.",
+      "range": {
+        "startLine": 70,
+        "startChar": 76,
+        "endLine": 70,
+        "endChar": 96
+      },
+      "revId": "1fc6b81b93334305dca5fbb2a37f982223a0aaab",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "8a68ef71_67ac32aa",
+        "filename": "include/hardware/keymaster_defs.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 216,
+      "author": {
+        "id": 1091885
+      },
+      "writtenOn": "2016-01-05T10:59:20Z",
+      "side": 1,
+      "message": "The occurrences of \u0027KDF1\u0027 and \u0027KDF2\u0027, and of \u0027ISO-18033-1\u0027 and \u0027ISO-18033-2\u0027, seem inconsistent between the names and the descriptions here.",
+      "range": {
+        "startLine": 209,
+        "startChar": 4,
+        "endLine": 216,
+        "endChar": 38
+      },
+      "revId": "1fc6b81b93334305dca5fbb2a37f982223a0aaab",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "6a5f3bcc_66018e4c",
+        "filename": "include/hardware/keymaster_defs.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 220,
+      "author": {
+        "id": 1091885
+      },
+      "writtenOn": "2016-01-05T10:59:20Z",
+      "side": 1,
+      "message": "There doesn\u0027t seem to be explicit support for ECIES in this API: the only new EC algorithm is ECDH key derivation. Is the intention to make a new keymaster_algorithm_t for ECIES encryption, or is the intention that callers wanting to use ECIES have to \u0027roll their own\u0027 using the ECDH primitive?",
+      "range": {
+        "startLine": 220,
+        "startChar": 38,
+        "endLine": 220,
+        "endChar": 43
+      },
+      "revId": "1fc6b81b93334305dca5fbb2a37f982223a0aaab",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
