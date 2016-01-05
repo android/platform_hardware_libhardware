@@ -347,6 +347,29 @@
     },
     {
       "key": {
+        "uuid": "cae3c748_6131d628",
+        "filename": "include/hardware/keymaster2.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 344,
+      "author": {
+        "id": 1091885
+      },
+      "writtenOn": "2016-01-05T12:41:47Z",
+      "side": 1,
+      "message": "This is not defined in keymaster_defs.h.",
+      "range": {
+        "startLine": 344,
+        "startChar": 42,
+        "endLine": 344,
+        "endChar": 59
+      },
+      "revId": "1fc6b81b93334305dca5fbb2a37f982223a0aaab",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ca6e677a_89f299c1",
         "filename": "include/hardware/keymaster2.h",
         "patchSetId": 1
