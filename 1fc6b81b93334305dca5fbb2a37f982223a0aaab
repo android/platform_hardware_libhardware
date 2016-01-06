@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "ca202730_5cc2117c",
+        "filename": "include/hardware/keymaster2.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 1043663
+      },
+      "writtenOn": "2016-01-06T01:32:19Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "eae08b3e_22aceea8",
+      "range": {
+        "startLine": 86,
+        "startChar": 48,
+        "endLine": 86,
+        "endChar": 54
+      },
+      "revId": "1fc6b81b93334305dca5fbb2a37f982223a0aaab",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ca6e677a_09b9c9ea",
         "filename": "include/hardware/keymaster2.h",
         "patchSetId": 1
@@ -36,6 +60,30 @@
       "writtenOn": "2016-01-05T10:59:20Z",
       "side": 1,
       "message": "Or a symmetric key (with KM_KEY_FORMAT_RAW)?",
+      "range": {
+        "startLine": 181,
+        "startChar": 17,
+        "endLine": 181,
+        "endChar": 27
+      },
+      "revId": "1fc6b81b93334305dca5fbb2a37f982223a0aaab",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "aa3e9347_e6e83ad5",
+        "filename": "include/hardware/keymaster2.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 181,
+      "author": {
+        "id": 1043663
+      },
+      "writtenOn": "2016-01-06T01:32:19Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ca6e677a_09b9c9ea",
       "range": {
         "startLine": 181,
         "startChar": 17,
@@ -71,6 +119,30 @@
     },
     {
       "key": {
+        "uuid": "4a4357e2_a39e9e89",
+        "filename": "include/hardware/keymaster2.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 191,
+      "author": {
+        "id": 1043663
+      },
+      "writtenOn": "2016-01-06T01:32:19Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ea6b2b68_ea146794",
+      "range": {
+        "startLine": 191,
+        "startChar": 7,
+        "endLine": 191,
+        "endChar": 67
+      },
+      "revId": "1fc6b81b93334305dca5fbb2a37f982223a0aaab",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "0a54ffaf_6301824c",
         "filename": "include/hardware/keymaster2.h",
         "patchSetId": 1
@@ -82,6 +154,30 @@
       "writtenOn": "2016-01-05T10:59:20Z",
       "side": 1,
       "message": "Missing description of these parameters.",
+      "range": {
+        "startLine": 196,
+        "startChar": 36,
+        "endLine": 197,
+        "endChar": 69
+      },
+      "revId": "1fc6b81b93334305dca5fbb2a37f982223a0aaab",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "4a4357e2_c3a3aaca",
+        "filename": "include/hardware/keymaster2.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 197,
+      "author": {
+        "id": 1043663
+      },
+      "writtenOn": "2016-01-06T01:32:19Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "0a54ffaf_6301824c",
       "range": {
         "startLine": 196,
         "startChar": 36,
@@ -117,6 +213,30 @@
     },
     {
       "key": {
+        "uuid": "8a1aaf01_dac6219a",
+        "filename": "include/hardware/keymaster2.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 201,
+      "author": {
+        "id": 1043663
+      },
+      "writtenOn": "2016-01-06T01:32:19Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "cae3c748_41d65221",
+      "range": {
+        "startLine": 201,
+        "startChar": 65,
+        "endLine": 201,
+        "endChar": 73
+      },
+      "revId": "1fc6b81b93334305dca5fbb2a37f982223a0aaab",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "2a2b8319_54d66c21",
         "filename": "include/hardware/keymaster2.h",
         "patchSetId": 1
@@ -140,6 +260,30 @@
     },
     {
       "key": {
+        "uuid": "0a4ddf0f_4192360b",
+        "filename": "include/hardware/keymaster2.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 203,
+      "author": {
+        "id": 1043663
+      },
+      "writtenOn": "2016-01-06T01:32:19Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "2a2b8319_54d66c21",
+      "range": {
+        "startLine": 203,
+        "startChar": 57,
+        "endLine": 203,
+        "endChar": 71
+      },
+      "revId": "1fc6b81b93334305dca5fbb2a37f982223a0aaab",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "cae3c748_01bc4ad5",
         "filename": "include/hardware/keymaster2.h",
         "patchSetId": 1
@@ -151,6 +295,30 @@
       "writtenOn": "2016-01-05T10:59:20Z",
       "side": 1,
       "message": "returned",
+      "range": {
+        "startLine": 205,
+        "startChar": 77,
+        "endLine": 205,
+        "endChar": 84
+      },
+      "revId": "1fc6b81b93334305dca5fbb2a37f982223a0aaab",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "aa1773d7_7e36e9dc",
+        "filename": "include/hardware/keymaster2.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 205,
+      "author": {
+        "id": 1043663
+      },
+      "writtenOn": "2016-01-06T01:32:19Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "cae3c748_01bc4ad5",
       "range": {
         "startLine": 205,
         "startChar": 77,
@@ -209,6 +377,54 @@
     },
     {
       "key": {
+        "uuid": "aa3e9347_86da8e3b",
+        "filename": "include/hardware/keymaster2.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 206,
+      "author": {
+        "id": 1043663
+      },
+      "writtenOn": "2016-01-06T01:32:19Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "8a68ef71_07b9b6ea",
+      "range": {
+        "startLine": 206,
+        "startChar": 65,
+        "endLine": 206,
+        "endChar": 69
+      },
+      "revId": "1fc6b81b93334305dca5fbb2a37f982223a0aaab",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "aa1773d7_de2b756e",
+        "filename": "include/hardware/keymaster2.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 206,
+      "author": {
+        "id": 1043663
+      },
+      "writtenOn": "2016-01-06T01:32:19Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "2a2b8319_74d36830",
+      "range": {
+        "startLine": 206,
+        "startChar": 85,
+        "endLine": 206,
+        "endChar": 95
+      },
+      "revId": "1fc6b81b93334305dca5fbb2a37f982223a0aaab",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "eae08b3e_c2c1c25b",
         "filename": "include/hardware/keymaster2.h",
         "patchSetId": 1
@@ -220,6 +436,30 @@
       "writtenOn": "2016-01-05T10:59:20Z",
       "side": 1,
       "message": "keys\u0027",
+      "range": {
+        "startLine": 207,
+        "startChar": 47,
+        "endLine": 207,
+        "endChar": 52
+      },
+      "revId": "1fc6b81b93334305dca5fbb2a37f982223a0aaab",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "4a4357e2_63709620",
+        "filename": "include/hardware/keymaster2.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 207,
+      "author": {
+        "id": 1043663
+      },
+      "writtenOn": "2016-01-06T01:32:19Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "eae08b3e_c2c1c25b",
       "range": {
         "startLine": 207,
         "startChar": 47,
@@ -255,6 +495,30 @@
     },
     {
       "key": {
+        "uuid": "aa3e9347_e63efa08",
+        "filename": "include/hardware/keymaster2.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 220,
+      "author": {
+        "id": 1043663
+      },
+      "writtenOn": "2016-01-06T01:32:19Z",
+      "side": 1,
+      "message": "Types and sizes can be different, I think. I don\u0027t recall why I was so picky about using the same KDF for all of the keys, actually. I\u0027m going to confer with some real cryptographers, but I think we can probably just drop the constraint (other than that all of the key params must include *some* KDF).",
+      "parentUuid": "4a2c372e_15d0f420",
+      "range": {
+        "startLine": 218,
+        "startChar": 95,
+        "endLine": 220,
+        "endChar": 47
+      },
+      "revId": "1fc6b81b93334305dca5fbb2a37f982223a0aaab",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "0a54ffaf_831fde9e",
         "filename": "include/hardware/keymaster2.h",
         "patchSetId": 1
@@ -266,6 +530,30 @@
       "writtenOn": "2016-01-05T10:59:20Z",
       "side": 1,
       "message": "More detail on the contents of these X.509 certificates (constraints, validity periods, etc)?",
+      "range": {
+        "startLine": 242,
+        "startChar": 19,
+        "endLine": 242,
+        "endChar": 49
+      },
+      "revId": "1fc6b81b93334305dca5fbb2a37f982223a0aaab",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ca202730_5fdbe371",
+        "filename": "include/hardware/keymaster2.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 242,
+      "author": {
+        "id": 1043663
+      },
+      "writtenOn": "2016-01-06T01:32:19Z",
+      "side": 1,
+      "message": "Added TODO",
+      "parentUuid": "0a54ffaf_831fde9e",
       "range": {
         "startLine": 242,
         "startChar": 19,
@@ -301,6 +589,30 @@
     },
     {
       "key": {
+        "uuid": "8a1aaf01_00a0acaf",
+        "filename": "include/hardware/keymaster2.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 244,
+      "author": {
+        "id": 1043663
+      },
+      "writtenOn": "2016-01-06T01:32:19Z",
+      "side": 1,
+      "message": "I need to get the documentation a little closer to done, then I\u0027ll replace this with a hyperlink to a public Google doc.",
+      "parentUuid": "2a2b8319_d4e83cd5",
+      "range": {
+        "startLine": 244,
+        "startChar": 24,
+        "endLine": 244,
+        "endChar": 59
+      },
+      "revId": "1fc6b81b93334305dca5fbb2a37f982223a0aaab",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "6a5f3bcc_86bb6adf",
         "filename": "include/hardware/keymaster2.h",
         "patchSetId": 1
@@ -312,6 +624,30 @@
       "writtenOn": "2016-01-05T10:59:20Z",
       "side": 1,
       "message": "key_to_attest (or rename parameter to \u0027key\u0027)",
+      "range": {
+        "startLine": 248,
+        "startChar": 18,
+        "endLine": 248,
+        "endChar": 21
+      },
+      "revId": "1fc6b81b93334305dca5fbb2a37f982223a0aaab",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "4a4357e2_46d808a2",
+        "filename": "include/hardware/keymaster2.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 248,
+      "author": {
+        "id": 1043663
+      },
+      "writtenOn": "2016-01-06T01:32:19Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "6a5f3bcc_86bb6adf",
       "range": {
         "startLine": 248,
         "startChar": 18,
@@ -347,6 +683,30 @@
     },
     {
       "key": {
+        "uuid": "2a52a3ad_45b9e000",
+        "filename": "include/hardware/keymaster2.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 277,
+      "author": {
+        "id": 1043663
+      },
+      "writtenOn": "2016-01-06T01:32:19Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "0a54ffaf_a3245aeb",
+      "range": {
+        "startLine": 277,
+        "startChar": 18,
+        "endLine": 277,
+        "endChar": 21
+      },
+      "revId": "1fc6b81b93334305dca5fbb2a37f982223a0aaab",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "cae3c748_6131d628",
         "filename": "include/hardware/keymaster2.h",
         "patchSetId": 1
@@ -370,6 +730,30 @@
     },
     {
       "key": {
+        "uuid": "0a4ddf0f_84b92c96",
+        "filename": "include/hardware/keymaster2.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 344,
+      "author": {
+        "id": 1043663
+      },
+      "writtenOn": "2016-01-06T01:32:19Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "cae3c748_6131d628",
+      "range": {
+        "startLine": 344,
+        "startChar": 42,
+        "endLine": 344,
+        "endChar": 59
+      },
+      "revId": "1fc6b81b93334305dca5fbb2a37f982223a0aaab",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ca6e677a_89f299c1",
         "filename": "include/hardware/keymaster2.h",
         "patchSetId": 1
@@ -381,6 +765,30 @@
       "writtenOn": "2016-01-05T10:59:20Z",
       "side": 1,
       "message": "Presumably \u0027keymaster1\u0027 should be \u0027keymaster2\u0027 here.",
+      "range": {
+        "startLine": 447,
+        "startChar": 0,
+        "endLine": 452,
+        "endChar": 49
+      },
+      "revId": "1fc6b81b93334305dca5fbb2a37f982223a0aaab",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "8a41cfd9_a8599f14",
+        "filename": "include/hardware/keymaster2.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 452,
+      "author": {
+        "id": 1043663
+      },
+      "writtenOn": "2016-01-06T01:32:19Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ca6e677a_89f299c1",
       "range": {
         "startLine": 447,
         "startChar": 0,
