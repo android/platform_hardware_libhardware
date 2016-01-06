@@ -472,6 +472,29 @@
     },
     {
       "key": {
+        "uuid": "ea6b2b68_4adb3372",
+        "filename": "include/hardware/keymaster2.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 214,
+      "author": {
+        "id": 1091885
+      },
+      "writtenOn": "2016-01-06T08:52:39Z",
+      "side": 1,
+      "message": "Is the implementation required to do any checks on the certificate, or simply to extract the public key?",
+      "range": {
+        "startLine": 214,
+        "startChar": 18,
+        "endLine": 214,
+        "endChar": 39
+      },
+      "revId": "1fc6b81b93334305dca5fbb2a37f982223a0aaab",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "4a2c372e_15d0f420",
         "filename": "include/hardware/keymaster2.h",
         "patchSetId": 1
@@ -507,6 +530,30 @@
       "side": 1,
       "message": "Types and sizes can be different, I think. I don\u0027t recall why I was so picky about using the same KDF for all of the keys, actually. I\u0027m going to confer with some real cryptographers, but I think we can probably just drop the constraint (other than that all of the key params must include *some* KDF).",
       "parentUuid": "4a2c372e_15d0f420",
+      "range": {
+        "startLine": 218,
+        "startChar": 95,
+        "endLine": 220,
+        "endChar": 47
+      },
+      "revId": "1fc6b81b93334305dca5fbb2a37f982223a0aaab",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "2a2b8319_143794b7",
+        "filename": "include/hardware/keymaster2.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 220,
+      "author": {
+        "id": 1091885
+      },
+      "writtenOn": "2016-01-06T08:52:39Z",
+      "side": 1,
+      "message": "Thinking about it, I don\u0027t actually see the reason for allowing this function to derive multiple keys (rather than just one). If one wants multiple keys, one can call the function multiple times with different (single) param sets, and the keys will be the same as if one called it once with multiple param sets. (The situation is different for generate_key(), of course.) Wouldn\u0027t it be simpler to restrict to deriving one key at a time?",
+      "parentUuid": "aa3e9347_e63efa08",
       "range": {
         "startLine": 218,
         "startChar": 95,
