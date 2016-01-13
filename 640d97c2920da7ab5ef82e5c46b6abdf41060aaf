@@ -1,0 +1,157 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "274e5eac_bccc16e6",
+        "filename": "include/hardware/nvram.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 1000205
+      },
+      "writtenOn": "2016-01-13T23:01:54Z",
+      "side": 1,
+      "message": "Why not describe all the arguments.",
+      "revId": "640d97c2920da7ab5ef82e5c46b6abdf41060aaf",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c75ca266_5876b4ba",
+        "filename": "include/hardware/nvram.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 122,
+      "author": {
+        "id": 1000205
+      },
+      "writtenOn": "2016-01-13T23:01:54Z",
+      "side": 1,
+      "message": "This api does not seem to support a large number of entries. What is the expected use of this api? It seems to only return a set of numbers with no additional information about what they are used for.",
+      "revId": "640d97c2920da7ab5ef82e5c46b6abdf41060aaf",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "27673e34_1e36eabb",
+        "filename": "include/hardware/nvram.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 131,
+      "author": {
+        "id": 1000205
+      },
+      "writtenOn": "2016-01-13T23:01:54Z",
+      "side": 1,
+      "message": "how does a client determine what value should be passed here (and everywhere else that takes an index)",
+      "revId": "640d97c2920da7ab5ef82e5c46b6abdf41060aaf",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "274e5eac_3c27665c",
+        "filename": "include/hardware/nvram.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 151,
+      "author": {
+        "id": 1000205
+      },
+      "writtenOn": "2016-01-13T23:01:54Z",
+      "side": 1,
+      "message": "I would avoid pointers to enums in your api, as the size of enums can change between compilers and compiler options.",
+      "revId": "640d97c2920da7ab5ef82e5c46b6abdf41060aaf",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "07495aa4_6722fd4c",
+        "filename": "include/hardware/nvram.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 175,
+      "author": {
+        "id": 1000205
+      },
+      "writtenOn": "2016-01-13T23:01:54Z",
+      "side": 1,
+      "message": "OK, but how do you find the same space again later if you dynamically allocated an index.",
+      "revId": "640d97c2920da7ab5ef82e5c46b6abdf41060aaf",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c75ca266_984e8c6f",
+        "filename": "include/hardware/nvram.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 218,
+      "author": {
+        "id": 1000205
+      },
+      "writtenOn": "2016-01-13T23:01:54Z",
+      "side": 1,
+      "message": "who calls this, and how does it work with multiple clients.",
+      "revId": "640d97c2920da7ab5ef82e5c46b6abdf41060aaf",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "07495aa4_47cb81a1",
+        "filename": "include/hardware/nvram.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 229,
+      "author": {
+        "id": 1000205
+      },
+      "writtenOn": "2016-01-13T23:01:54Z",
+      "side": 1,
+      "message": "0xff is not compatible with normal filesystems. It would be better to use 0 here.",
+      "revId": "640d97c2920da7ab5ef82e5c46b6abdf41060aaf",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "4768b202_92faed5f",
+        "filename": "include/hardware/nvram.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 230,
+      "author": {
+        "id": 1000205
+      },
+      "writtenOn": "2016-01-13T23:01:54Z",
+      "side": 1,
+      "message": "are only complete updates supported?",
+      "revId": "640d97c2920da7ab5ef82e5c46b6abdf41060aaf",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e759a674_1560830a",
+        "filename": "include/hardware/nvram.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 247,
+      "author": {
+        "id": 1000205
+      },
+      "writtenOn": "2016-01-13T23:01:54Z",
+      "side": 1,
+      "message": "See above.",
+      "revId": "640d97c2920da7ab5ef82e5c46b6abdf41060aaf",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
