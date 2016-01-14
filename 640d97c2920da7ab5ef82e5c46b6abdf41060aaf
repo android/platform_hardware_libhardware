@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "676db610_627dbbfb",
+        "filename": "include/hardware/nvram.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 1079236
+      },
+      "writtenOn": "2016-01-14T22:31:14Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "274e5eac_bccc16e6",
+      "revId": "640d97c2920da7ab5ef82e5c46b6abdf41060aaf",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "c75ca266_5876b4ba",
         "filename": "include/hardware/nvram.h",
         "patchSetId": 2
@@ -30,6 +48,24 @@
       "writtenOn": "2016-01-13T23:01:54Z",
       "side": 1,
       "message": "This api does not seem to support a large number of entries. What is the expected use of this api? It seems to only return a set of numbers with no additional information about what they are used for.",
+      "revId": "640d97c2920da7ab5ef82e5c46b6abdf41060aaf",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e759a674_2b828370",
+        "filename": "include/hardware/nvram.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 122,
+      "author": {
+        "id": 1079236
+      },
+      "writtenOn": "2016-01-14T22:31:14Z",
+      "side": 1,
+      "message": "We expect \u003c 10 spaces. I\u0027ve intentionally left this API agnostic to specific index values, but the intent is that they are defined at compile time in another file so device developers don\u0027t need to change the HAL to add an index.",
+      "parentUuid": "c75ca266_5876b4ba",
       "revId": "640d97c2920da7ab5ef82e5c46b6abdf41060aaf",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
@@ -53,6 +89,24 @@
     },
     {
       "key": {
+        "uuid": "274e5eac_2efc4988",
+        "filename": "include/hardware/nvram.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 131,
+      "author": {
+        "id": 1079236
+      },
+      "writtenOn": "2016-01-14T22:31:14Z",
+      "side": 1,
+      "message": "[See above]. The intent is that these index values are well-defined at compile time (elsewhere) and clients know which values they want to use work with.",
+      "parentUuid": "27673e34_1e36eabb",
+      "revId": "640d97c2920da7ab5ef82e5c46b6abdf41060aaf",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "274e5eac_3c27665c",
         "filename": "include/hardware/nvram.h",
         "patchSetId": 2
@@ -64,6 +118,24 @@
       "writtenOn": "2016-01-13T23:01:54Z",
       "side": 1,
       "message": "I would avoid pointers to enums in your api, as the size of enums can change between compilers and compiler options.",
+      "revId": "640d97c2920da7ab5ef82e5c46b6abdf41060aaf",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "274e5eac_ce6fa5ff",
+        "filename": "include/hardware/nvram.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 151,
+      "author": {
+        "id": 1079236
+      },
+      "writtenOn": "2016-01-14T22:31:14Z",
+      "side": 1,
+      "message": "Is this a realistic concern? Wouldn\u0027t every int and every struct that contains an int / enum also have problems? I think ABI compatible toolchains for all components in the same system needs to be a given. Of course, the field size needs to be exact for marshaling or persisting the value but that\u0027s not the case here.\n\nAll that said, enums are widely used in other HAL APIs and I\u0027d like to keep that consistent here. Do you know instances where other HALs have had this sort of issue in the past?",
+      "parentUuid": "274e5eac_3c27665c",
       "revId": "640d97c2920da7ab5ef82e5c46b6abdf41060aaf",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
@@ -87,6 +159,24 @@
     },
     {
       "key": {
+        "uuid": "678e9643_7ff55072",
+        "filename": "include/hardware/nvram.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 175,
+      "author": {
+        "id": 1079236
+      },
+      "writtenOn": "2016-01-14T22:31:14Z",
+      "side": 1,
+      "message": "I have no intention to support dynamic index allocation. Making this API agnostic to index values does make it possible, however. If we did support it there would have to be some kind of central index manager, like keystore provides for keys. I\u0027d rather just not go there for now.",
+      "parentUuid": "07495aa4_6722fd4c",
+      "revId": "640d97c2920da7ab5ef82e5c46b6abdf41060aaf",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "c75ca266_984e8c6f",
         "filename": "include/hardware/nvram.h",
         "patchSetId": 2
@@ -98,6 +188,24 @@
       "writtenOn": "2016-01-13T23:01:54Z",
       "side": 1,
       "message": "who calls this, and how does it work with multiple clients.",
+      "revId": "640d97c2920da7ab5ef82e5c46b6abdf41060aaf",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "4768b202_26fc7688",
+        "filename": "include/hardware/nvram.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 218,
+      "author": {
+        "id": 1079236
+      },
+      "writtenOn": "2016-01-14T22:31:14Z",
+      "side": 1,
+      "message": "This is designed to allow enforcement of a one-time setup / enrollment / registration stage, after which we have confidence the spaces we access were setup before that stage closed.\n\nIt affects all clients.",
+      "parentUuid": "c75ca266_984e8c6f",
       "revId": "640d97c2920da7ab5ef82e5c46b6abdf41060aaf",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
@@ -121,6 +229,24 @@
     },
     {
       "key": {
+        "uuid": "676db610_647b08a0",
+        "filename": "include/hardware/nvram.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 229,
+      "author": {
+        "id": 1079236
+      },
+      "writtenOn": "2016-01-14T22:31:14Z",
+      "side": 1,
+      "message": "How is it incompatible? Filesystems should be agnostic to the data in files, no? \n\nUsing 0xFF is an attempt to reduce erase cycles on some types of flash -- apart from that it\u0027s arbitrary. Is there any kind of performance or convenience advantage to using 0?",
+      "parentUuid": "07495aa4_47cb81a1",
+      "revId": "640d97c2920da7ab5ef82e5c46b6abdf41060aaf",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "4768b202_92faed5f",
         "filename": "include/hardware/nvram.h",
         "patchSetId": 2
@@ -132,6 +258,24 @@
       "writtenOn": "2016-01-13T23:01:54Z",
       "side": 1,
       "message": "are only complete updates supported?",
+      "revId": "640d97c2920da7ab5ef82e5c46b6abdf41060aaf",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c75ca266_8ca3eacb",
+        "filename": "include/hardware/nvram.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 230,
+      "author": {
+        "id": 1079236
+      },
+      "writtenOn": "2016-01-14T22:31:14Z",
+      "side": 1,
+      "message": "Yes. Typically the data in these spaces is just a hash or otherwise very small so this is an easy way to reduce complexity.",
+      "parentUuid": "4768b202_92faed5f",
       "revId": "640d97c2920da7ab5ef82e5c46b6abdf41060aaf",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
