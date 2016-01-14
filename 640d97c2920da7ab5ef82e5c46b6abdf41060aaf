@@ -142,6 +142,24 @@
     },
     {
       "key": {
+        "uuid": "07623a24_6beabc5b",
+        "filename": "include/hardware/nvram.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 151,
+      "author": {
+        "id": 1000205
+      },
+      "writtenOn": "2016-01-14T23:19:49Z",
+      "side": 1,
+      "message": "enum are not comparable to ints. Some compilers will change the size if the enum based on the largest value defined. The size of an int is defined by the abi.",
+      "parentUuid": "274e5eac_ce6fa5ff",
+      "revId": "640d97c2920da7ab5ef82e5c46b6abdf41060aaf",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "07495aa4_6722fd4c",
         "filename": "include/hardware/nvram.h",
         "patchSetId": 2
@@ -241,6 +259,24 @@
       "side": 1,
       "message": "How is it incompatible? Filesystems should be agnostic to the data in files, no? \n\nUsing 0xFF is an attempt to reduce erase cycles on some types of flash -- apart from that it\u0027s arbitrary. Is there any kind of performance or convenience advantage to using 0?",
       "parentUuid": "07495aa4_47cb81a1",
+      "revId": "640d97c2920da7ab5ef82e5c46b6abdf41060aaf",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e759a674_2ed73174",
+        "filename": "include/hardware/nvram.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 229,
+      "author": {
+        "id": 1000205
+      },
+      "writtenOn": "2016-01-14T23:19:49Z",
+      "side": 1,
+      "message": "From the truncate man page:\n       If the file previously was larger than this size, the extra data is lost.   If  the  file  previously  was\n       shorter, it is extended, and the extended part reads as null bytes (\u0027\\0\u0027).\n\nI have no plan to make secure storage in trusty have any other behavior if we allow growing the file size without writing data to it.",
+      "parentUuid": "676db610_647b08a0",
       "revId": "640d97c2920da7ab5ef82e5c46b6abdf41060aaf",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
