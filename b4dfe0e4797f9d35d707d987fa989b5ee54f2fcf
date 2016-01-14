@@ -1,0 +1,349 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "6777760f_86dbaa3f",
+        "filename": "include/hardware/keymaster2.h",
+        "patchSetId": 6
+      },
+      "lineNbr": 211,
+      "author": {
+        "id": 1091885
+      },
+      "writtenOn": "2016-01-14T09:04:04Z",
+      "side": 1,
+      "message": "new_key_params",
+      "range": {
+        "startLine": 211,
+        "startChar": 57,
+        "endLine": 211,
+        "endChar": 75
+      },
+      "revId": "b4dfe0e4797f9d35d707d987fa989b5ee54f2fcf",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "2771fe1c_c4e59ef6",
+        "filename": "include/hardware/keymaster2.h",
+        "patchSetId": 6
+      },
+      "lineNbr": 214,
+      "author": {
+        "id": 1091885
+      },
+      "writtenOn": "2016-01-14T09:04:04Z",
+      "side": 1,
+      "message": "key_blob",
+      "range": {
+        "startLine": 214,
+        "startChar": 86,
+        "endLine": 214,
+        "endChar": 99
+      },
+      "revId": "b4dfe0e4797f9d35d707d987fa989b5ee54f2fcf",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "a77deeee_880e574d",
+        "filename": "include/hardware/keymaster2.h",
+        "patchSetId": 6
+      },
+      "lineNbr": 214,
+      "author": {
+        "id": 1091885
+      },
+      "writtenOn": "2016-01-14T09:04:04Z",
+      "side": 1,
+      "message": "blob",
+      "range": {
+        "startLine": 214,
+        "startChar": 65,
+        "endLine": 214,
+        "endChar": 70
+      },
+      "revId": "b4dfe0e4797f9d35d707d987fa989b5ee54f2fcf",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "07931a6b_4b0b8570",
+        "filename": "include/hardware/keymaster2.h",
+        "patchSetId": 6
+      },
+      "lineNbr": 215,
+      "author": {
+        "id": 1091885
+      },
+      "writtenOn": "2016-01-14T09:04:04Z",
+      "side": 1,
+      "message": "key\u0027s",
+      "range": {
+        "startLine": 215,
+        "startChar": 50,
+        "endLine": 215,
+        "endChar": 55
+      },
+      "revId": "b4dfe0e4797f9d35d707d987fa989b5ee54f2fcf",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "07931a6b_2b16399d",
+        "filename": "include/hardware/keymaster2.h",
+        "patchSetId": 6
+      },
+      "lineNbr": 240,
+      "author": {
+        "id": 1091885
+      },
+      "writtenOn": "2016-01-14T09:04:04Z",
+      "side": 1,
+      "message": "key_blob",
+      "range": {
+        "startLine": 240,
+        "startChar": 57,
+        "endLine": 240,
+        "endChar": 70
+      },
+      "revId": "b4dfe0e4797f9d35d707d987fa989b5ee54f2fcf",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "a77deeee_48aa9f41",
+        "filename": "include/hardware/keymaster2.h",
+        "patchSetId": 6
+      },
+      "lineNbr": 259,
+      "author": {
+        "id": 1091885
+      },
+      "writtenOn": "2016-01-14T09:04:04Z",
+      "side": 1,
+      "message": "will chain",
+      "range": {
+        "startLine": 259,
+        "startChar": 64,
+        "endLine": 259,
+        "endChar": 82
+      },
+      "revId": "b4dfe0e4797f9d35d707d987fa989b5ee54f2fcf",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "8780ea14_a7018a4f",
+        "filename": "include/hardware/keymaster2.h",
+        "patchSetId": 6
+      },
+      "lineNbr": 263,
+      "author": {
+        "id": 1091885
+      },
+      "writtenOn": "2016-01-14T09:04:04Z",
+      "side": 1,
+      "message": "Remove this parameter? (You\u0027ve removed it from the documentation so I assume it\u0027s not needed, i.e. only full chains allowed?)",
+      "range": {
+        "startLine": 263,
+        "startChar": 84,
+        "endLine": 263,
+        "endChar": 99
+      },
+      "revId": "b4dfe0e4797f9d35d707d987fa989b5ee54f2fcf",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e783661b_4a48d3b3",
+        "filename": "include/hardware/keymaster_defs.h",
+        "patchSetId": 6
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 1091885
+      },
+      "writtenOn": "2016-01-14T09:04:04Z",
+      "side": 1,
+      "message": "Delete space after \u0027(\u0027.",
+      "range": {
+        "startLine": 65,
+        "startChar": 65,
+        "endLine": 65,
+        "endChar": 83
+      },
+      "revId": "b4dfe0e4797f9d35d707d987fa989b5ee54f2fcf",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "8780ea14_e7fb828f",
+        "filename": "include/hardware/keymaster_defs.h",
+        "patchSetId": 6
+      },
+      "lineNbr": 70,
+      "author": {
+        "id": 1091885
+      },
+      "writtenOn": "2016-01-14T09:04:04Z",
+      "side": 1,
+      "message": "Please fix link.",
+      "range": {
+        "startLine": 70,
+        "startChar": 76,
+        "endLine": 70,
+        "endChar": 96
+      },
+      "revId": "b4dfe0e4797f9d35d707d987fa989b5ee54f2fcf",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "076cfa46_e3b372b0",
+        "filename": "include/hardware/keymaster_defs.h",
+        "patchSetId": 6
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 1091885
+      },
+      "writtenOn": "2016-01-14T09:04:04Z",
+      "side": 1,
+      "message": "This needs more explanation (perhaps not here though).",
+      "range": {
+        "startLine": 71,
+        "startChar": 4,
+        "endLine": 71,
+        "endChar": 28
+      },
+      "revId": "b4dfe0e4797f9d35d707d987fa989b5ee54f2fcf",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "076cfa46_c3b676a3",
+        "filename": "include/hardware/keymaster_defs.h",
+        "patchSetId": 6
+      },
+      "lineNbr": 73,
+      "author": {
+        "id": 1091885
+      },
+      "writtenOn": "2016-01-14T09:04:04Z",
+      "side": 1,
+      "message": "keymaster2 only",
+      "range": {
+        "startLine": 73,
+        "startChar": 86,
+        "endLine": 73,
+        "endChar": 96
+      },
+      "revId": "b4dfe0e4797f9d35d707d987fa989b5ee54f2fcf",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "07931a6b_ab01494f",
+        "filename": "include/hardware/keymaster_defs.h",
+        "patchSetId": 6
+      },
+      "lineNbr": 213,
+      "author": {
+        "id": 1091885
+      },
+      "writtenOn": "2016-01-14T09:04:04Z",
+      "side": 1,
+      "message": "KDF1 ?",
+      "range": {
+        "startLine": 213,
+        "startChar": 22,
+        "endLine": 213,
+        "endChar": 26
+      },
+      "revId": "b4dfe0e4797f9d35d707d987fa989b5ee54f2fcf",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "2771fe1c_041176a4",
+        "filename": "include/hardware/keymaster_defs.h",
+        "patchSetId": 6
+      },
+      "lineNbr": 213,
+      "author": {
+        "id": 1091885
+      },
+      "writtenOn": "2016-01-14T09:04:04Z",
+      "side": 1,
+      "message": "ISO18033_2 ?",
+      "range": {
+        "startLine": 213,
+        "startChar": 11,
+        "endLine": 213,
+        "endChar": 21
+      },
+      "revId": "b4dfe0e4797f9d35d707d987fa989b5ee54f2fcf",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e798c691_c2f182c0",
+        "filename": "include/hardware/keymaster_defs.h",
+        "patchSetId": 6
+      },
+      "lineNbr": 215,
+      "author": {
+        "id": 1091885
+      },
+      "writtenOn": "2016-01-14T09:04:04Z",
+      "side": 1,
+      "message": "ISO18033_2 ?",
+      "range": {
+        "startLine": 215,
+        "startChar": 11,
+        "endLine": 215,
+        "endChar": 21
+      },
+      "revId": "b4dfe0e4797f9d35d707d987fa989b5ee54f2fcf",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c786622d_694da5c2",
+        "filename": "include/hardware/keymaster_defs.h",
+        "patchSetId": 6
+      },
+      "lineNbr": 571,
+      "author": {
+        "id": 1091885
+      },
+      "writtenOn": "2016-01-14T09:04:04Z",
+      "side": 1,
+      "message": "Then set chain-\u003eentries to NULL (as is done in keymaster_free_param_set)?",
+      "range": {
+        "startLine": 571,
+        "startChar": 8,
+        "endLine": 571,
+        "endChar": 29
+      },
+      "revId": "b4dfe0e4797f9d35d707d987fa989b5ee54f2fcf",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
