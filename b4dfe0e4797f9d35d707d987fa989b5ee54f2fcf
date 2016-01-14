@@ -2,6 +2,23 @@
   "comments": [
     {
       "key": {
+        "uuid": "4768b202_0304cd9a",
+        "filename": "include/hardware/keymaster2.h",
+        "patchSetId": 6
+      },
+      "lineNbr": 125,
+      "author": {
+        "id": 1079236
+      },
+      "writtenOn": "2016-01-14T19:15:41Z",
+      "side": 1,
+      "message": "I recommend consistent ownership semantics and related documentation text for get_key_characteristics, import_key, and agree_key.\n\nFWIW, I like the explicit mention of keymaster_free_characteristics() in import_key below.",
+      "revId": "b4dfe0e4797f9d35d707d987fa989b5ee54f2fcf",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "6777760f_86dbaa3f",
         "filename": "include/hardware/keymaster2.h",
         "patchSetId": 6
