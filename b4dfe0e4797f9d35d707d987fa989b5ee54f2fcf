@@ -600,6 +600,30 @@
     },
     {
       "key": {
+        "uuid": "c75ca266_ca8021b7",
+        "filename": "include/hardware/keymaster_defs.h",
+        "patchSetId": 6
+      },
+      "lineNbr": 213,
+      "author": {
+        "id": 1073493
+      },
+      "writtenOn": "2016-01-15T16:27:11Z",
+      "side": 1,
+      "message": "You\u0027re right. KDF1 and ISO18033_2",
+      "parentUuid": "2771fe1c_041176a4",
+      "range": {
+        "startLine": 213,
+        "startChar": 11,
+        "endLine": 213,
+        "endChar": 21
+      },
+      "revId": "b4dfe0e4797f9d35d707d987fa989b5ee54f2fcf",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "e798c691_c2f182c0",
         "filename": "include/hardware/keymaster_defs.h",
         "patchSetId": 6
@@ -611,6 +635,30 @@
       "writtenOn": "2016-01-14T09:04:04Z",
       "side": 1,
       "message": "ISO18033_2 ?",
+      "range": {
+        "startLine": 215,
+        "startChar": 11,
+        "endLine": 215,
+        "endChar": 21
+      },
+      "revId": "b4dfe0e4797f9d35d707d987fa989b5ee54f2fcf",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "87562a44_45efe969",
+        "filename": "include/hardware/keymaster_defs.h",
+        "patchSetId": 6
+      },
+      "lineNbr": 215,
+      "author": {
+        "id": 1073493
+      },
+      "writtenOn": "2016-01-15T16:27:11Z",
+      "side": 1,
+      "message": "Yes",
+      "parentUuid": "e798c691_c2f182c0",
       "range": {
         "startLine": 215,
         "startChar": 11,
