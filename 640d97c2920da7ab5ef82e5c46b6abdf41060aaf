@@ -160,6 +160,24 @@
     },
     {
       "key": {
+        "uuid": "8780ea14_8a264b92",
+        "filename": "include/hardware/nvram.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 151,
+      "author": {
+        "id": 1080683
+      },
+      "writtenOn": "2016-01-18T08:50:02Z",
+      "side": 1,
+      "message": "I concur with Arve. The standard says the compiler may choose an integer type of any width provided it can hold all valid enum values. This impacts the size of array elements, which would break the API if provider and consumer disagree on sizeof(nvaram_control_t).\n\nI think it\u0027s conceivable that compilers may make different choices, in particular choosing either uint32_t or uint64_t depending on whatever is considered to be faster w.r.t. to register width or whatnot.\n\nOn a slightly related note, if this were C++ you could just use a scoped enum type and declare the width explicitly, i.e.\n\nenum class nvram_control_t : uint32_t { ... }",
+      "parentUuid": "07623a24_6beabc5b",
+      "revId": "640d97c2920da7ab5ef82e5c46b6abdf41060aaf",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "07495aa4_6722fd4c",
         "filename": "include/hardware/nvram.h",
         "patchSetId": 2
@@ -189,6 +207,24 @@
       "side": 1,
       "message": "I have no intention to support dynamic index allocation. Making this API agnostic to index values does make it possible, however. If we did support it there would have to be some kind of central index manager, like keystore provides for keys. I\u0027d rather just not go there for now.",
       "parentUuid": "07495aa4_6722fd4c",
+      "revId": "640d97c2920da7ab5ef82e5c46b6abdf41060aaf",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e798c691_68ba9789",
+        "filename": "include/hardware/nvram.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 175,
+      "author": {
+        "id": 1080683
+      },
+      "writtenOn": "2016-01-18T08:50:02Z",
+      "side": 1,
+      "message": "Note that get_space_list is provided in the API, so you can find existing spaces that have been dynamically allocated previously.",
+      "parentUuid": "678e9643_7ff55072",
       "revId": "640d97c2920da7ab5ef82e5c46b6abdf41060aaf",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
@@ -277,6 +313,24 @@
       "side": 1,
       "message": "From the truncate man page:\n       If the file previously was larger than this size, the extra data is lost.   If  the  file  previously  was\n       shorter, it is extended, and the extended part reads as null bytes (\u0027\\0\u0027).\n\nI have no plan to make secure storage in trusty have any other behavior if we allow growing the file size without writing data to it.",
       "parentUuid": "676db610_647b08a0",
+      "revId": "640d97c2920da7ab5ef82e5c46b6abdf41060aaf",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e798c691_48b7d39f",
+        "filename": "include/hardware/nvram.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 229,
+      "author": {
+        "id": 1080683
+      },
+      "writtenOn": "2016-01-18T08:50:02Z",
+      "side": 1,
+      "message": "NVRAM space size is determined at creation time, so truncate behavior is not a concern. FWIW, my implementation on top of secure storage didn\u0027t run into issues in this regard.\n\nIn general, I don\u0027t think it makes a practical implementation difference as to what value the space contents start out with, at least as long as you can write multiple times to the same space (hence an implementation can always perform an implicit write at creation time to initialize the space contents appropriately). However, I do feel strong that we should mandate initialization, as this will reduce surprises in case consumers unintentionally rely on uninitialized space contents.",
+      "parentUuid": "e759a674_2ed73174",
       "revId": "640d97c2920da7ab5ef82e5c46b6abdf41060aaf",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
