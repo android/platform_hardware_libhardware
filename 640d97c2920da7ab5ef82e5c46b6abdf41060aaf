@@ -178,6 +178,24 @@
     },
     {
       "key": {
+        "uuid": "27673e34_cfa957b5",
+        "filename": "include/hardware/nvram.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 151,
+      "author": {
+        "id": 1079236
+      },
+      "writtenOn": "2016-01-19T17:35:03Z",
+      "side": 1,
+      "message": "Done -- I\u0027ve made these types uint32_t and declared constants.",
+      "parentUuid": "8780ea14_8a264b92",
+      "revId": "640d97c2920da7ab5ef82e5c46b6abdf41060aaf",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "07495aa4_6722fd4c",
         "filename": "include/hardware/nvram.h",
         "patchSetId": 2
@@ -331,6 +349,24 @@
       "side": 1,
       "message": "NVRAM space size is determined at creation time, so truncate behavior is not a concern. FWIW, my implementation on top of secure storage didn\u0027t run into issues in this regard.\n\nIn general, I don\u0027t think it makes a practical implementation difference as to what value the space contents start out with, at least as long as you can write multiple times to the same space (hence an implementation can always perform an implicit write at creation time to initialize the space contents appropriately). However, I do feel strong that we should mandate initialization, as this will reduce surprises in case consumers unintentionally rely on uninitialized space contents.",
       "parentUuid": "e759a674_2ed73174",
+      "revId": "640d97c2920da7ab5ef82e5c46b6abdf41060aaf",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "07495aa4_5ca50771",
+        "filename": "include/hardware/nvram.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 229,
+      "author": {
+        "id": 1079236
+      },
+      "writtenOn": "2016-01-19T17:35:03Z",
+      "side": 1,
+      "message": "Changed to 0 in the design doc and here.",
+      "parentUuid": "e798c691_48b7d39f",
       "revId": "640d97c2920da7ab5ef82e5c46b6abdf41060aaf",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
