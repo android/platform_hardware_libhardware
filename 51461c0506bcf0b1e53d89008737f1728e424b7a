@@ -1,0 +1,96 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f4bb169e_ed9de1da",
+        "filename": "include/hardware/bt_gatt_client.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 103,
+      "author": {
+        "id": 1071489
+      },
+      "writtenOn": "2016-01-22T19:45:47Z",
+      "side": 1,
+      "message": "[Same comment as in the corresponding CL aog/197810]\n\nThere should be a better way of sharing the info instead of\nredefining it in both places.",
+      "range": {
+        "startLine": 99,
+        "startChar": 0,
+        "endLine": 103,
+        "endChar": 3
+      },
+      "revId": "51461c0506bcf0b1e53d89008737f1728e424b7a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "94b81aa8_ea7f07b5",
+        "filename": "include/hardware/bt_gatt_client.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 118,
+      "author": {
+        "id": 1071489
+      },
+      "writtenOn": "2016-01-22T19:45:47Z",
+      "side": 1,
+      "message": "Can you shorten it a bit and put it after the field it applies to.",
+      "range": {
+        "startLine": 118,
+        "startChar": 4,
+        "endLine": 118,
+        "endChar": 61
+      },
+      "revId": "51461c0506bcf0b1e53d89008737f1728e424b7a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b4b51eae_4b8df9af",
+        "filename": "include/hardware/bt_gatt_client.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 121,
+      "author": {
+        "id": 1071489
+      },
+      "writtenOn": "2016-01-22T19:45:47Z",
+      "side": 1,
+      "message": "Same comment as above.",
+      "range": {
+        "startLine": 121,
+        "startChar": 4,
+        "endLine": 121,
+        "endChar": 55
+      },
+      "revId": "51461c0506bcf0b1e53d89008737f1728e424b7a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "54aa2254_e81e2b4e",
+        "filename": "include/hardware/bt_gatt_client.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 482,
+      "author": {
+        "id": 1071489
+      },
+      "writtenOn": "2016-01-22T19:45:47Z",
+      "side": 1,
+      "message": "Nit: gatt -\u003e GATT",
+      "range": {
+        "startLine": 482,
+        "startChar": 12,
+        "endLine": 482,
+        "endChar": 16
+      },
+      "revId": "51461c0506bcf0b1e53d89008737f1728e424b7a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
