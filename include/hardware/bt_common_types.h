@@ -41,4 +41,25 @@ typedef struct
     uint8_t  *p_scan_rsp_data;
 } btgatt_track_adv_info_t;
 
+typedef enum
+{
+    BTGATT_DB_EL_PRIM_SRVC,
+    BTGATT_DB_EL_SEC_SRVC,
+    BTGATT_DB_EL_INCL_SRVC,
+    BTGATT_DB_EL_CHAR,
+    BTGATT_DB_EL_CHAR_DESCR,
+} bt_gatt_db_el_t;
+
+typedef struct
+{
+    bt_uuid_t           uuid;
+    bt_gatt_db_el_t     type;
+    uint16_t            handle;
+    /* if type is service, this is end handle, 0 otherwise */
+    uint16_t            handle2;
+    uint8_t             id;
+    /* if type is characteristic, this is properties */
+    uint8_t             prop;
+} btgatt_db_element_t;
+
 #endif  /* ANDROID_INCLUDE_BT_COMMON_TYPES_H */
