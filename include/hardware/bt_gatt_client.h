@@ -96,6 +96,33 @@ typedef struct
     uint16_t            u5;
 } btgatt_test_params_t;
 
+#ifndef ANDROID_BTGATT_DB_ELEMENT_T
+#define ANDROID_BTGATT_DB_ELEMENT_T
+/* This is re-defined in system/bt/bta/include/bta_gatt_api.h, please modify
+ * both if you need to do any changes.
+ */
+typedef enum
+{
+    BTGATT_DB_EL_PRIM_SRVC,
+    BTGATT_DB_EL_SEC_SRVC,
+    BTGATT_DB_EL_INCL_SRVC,
+    BTGATT_DB_EL_CHAR,
+    BTGATT_DB_EL_CHAR_DESCR,
+} bt_gatt_db_el_t;
+
+typedef struct
+{
+    bt_uuid_t           uuid;
+    bt_gatt_db_el_t     type;
+    uint16_t            handle;
+    /* if type is service, this is end handle, 0 otherwise */
+    uint16_t            handle2;
+    uint8_t             id;
+    /* if type is characteristic, this is properties */
+    uint8_t             prop;
+} btgatt_db_element_t;
+#endif
+
 /* BT GATT client error codes */
 typedef enum
 {
@@ -245,6 +272,9 @@ typedef void (*track_adv_event_callback)(btgatt_track_adv_info_t *p_track_adv_in
 typedef void (*scan_parameter_setup_completed_callback)(int client_if,
                                                         btgattc_error_t status);
 
+/** GATT get database callback */
+typedef void (*get_gatt_db_callback)(int conn_id, btgatt_db_element_t *db, int count);
+
 typedef struct {
     register_client_callback            register_client_cb;
     scan_result_callback                scan_result_cb;
@@ -279,6 +309,7 @@ typedef struct {
     batchscan_threshold_callback        batchscan_threshold_cb;
     track_adv_event_callback            track_adv_event_cb;
     scan_parameter_setup_completed_callback scan_parameter_setup_completed_cb;
+    get_gatt_db_callback                get_gatt_db_cb;
 } btgatt_client_callbacks_t;
 
 /** Represents the standard BT-GATT client interface. */
@@ -447,6 +478,9 @@ typedef struct {
 
     /** Test mode interface */
     bt_status_t (*test_command)( int command, btgatt_test_params_t* params);
+
+    /** Get gatt db content */
+    bt_status_t (*get_gatt_db)( int conn_id);
 
 } btgatt_client_interface_t;
 
