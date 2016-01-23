@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d4be1290_f234de1a",
+        "filename": "include/hardware/gps.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 512,
+      "author": {
+        "id": 1060151
+      },
+      "writtenOn": "2016-01-23T01:14:46Z",
+      "side": 1,
+      "message": "if pcid is included, then does it make sense to also include psc (wcdma) and bsic (gsm)?\n\nAlso, for GSM+WCDMA, any thought to including RAC?\n\nI don\u0027t know the source of the data, so these are open questions.",
+      "revId": "ab82313d31c7ab269ee61818ce6af2e96a0b84b9",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
