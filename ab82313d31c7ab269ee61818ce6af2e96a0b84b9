@@ -16,6 +16,24 @@
       "revId": "ab82313d31c7ab269ee61818ce6af2e96a0b84b9",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "941ada01_abf441ac",
+        "filename": "include/hardware/gps.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 512,
+      "author": {
+        "id": 1080077
+      },
+      "writtenOn": "2016-01-28T03:11:59Z",
+      "side": 1,
+      "message": "With this updated structure, we now support all the mandatory elements of the SUPL CellInfo. That enables a successful AGPS U-plane session in 2G, 3G and LTE. There some other optional elements (neighbor cell measurements, PSC in 3G), but they are not always provided by the modem. And not sure they are used by the SUPL server either. \nI don\u0027t see the RAC in the OMA SUPL v2 messages. And I haven\u0027t seen a method in the framework to get it (in CellIdentityGsm, CellIdentityWcdma)",
+      "parentUuid": "d4be1290_f234de1a",
+      "revId": "ab82313d31c7ab269ee61818ce6af2e96a0b84b9",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
