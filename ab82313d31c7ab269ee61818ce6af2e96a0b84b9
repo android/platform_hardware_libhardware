@@ -34,6 +34,24 @@
       "revId": "ab82313d31c7ab269ee61818ce6af2e96a0b84b9",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "f4b5d6da_f5d08f22",
+        "filename": "include/hardware/gps.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 512,
+      "author": {
+        "id": 1060151
+      },
+      "writtenOn": "2016-01-28T04:28:51Z",
+      "side": 1,
+      "message": "Marshmallow framework (class CellIdentityWcdma) has support for psc, but there is no support in Marshmallow for BSIC or RAC, so if the source of the data is the framework, then PSC would be nice but bsic and rac would be useless as it stands today.",
+      "parentUuid": "941ada01_abf441ac",
+      "revId": "ab82313d31c7ab269ee61818ce6af2e96a0b84b9",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
