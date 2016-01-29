@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9489faaa_a8c55fb9",
+        "filename": "include/hardware/bt_common_types.h",
+        "patchSetId": 4
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 1058798
+      },
+      "writtenOn": "2016-01-29T19:22:17Z",
+      "side": 1,
+      "message": "Maybe spell it out completely to make it clear?\nAs in: \"If |type| is |BTGATT_DB_CHARACTERISTIC|, this contains the properties of the characteristic\" (same above)?",
+      "range": {
+        "startLine": 64,
+        "startChar": 39,
+        "endLine": 64,
+        "endChar": 41
+      },
+      "revId": "7c591b518a2c76b3267878be50f76d3ee7e381fc",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9462dabe_1d35b37d",
+        "filename": "include/hardware/bt_common_types.h",
+        "patchSetId": 4
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 1058798
+      },
+      "writtenOn": "2016-01-29T19:22:17Z",
+      "side": 1,
+      "message": "\"properties\" then? :)",
+      "range": {
+        "startLine": 65,
+        "startChar": 24,
+        "endLine": 65,
+        "endChar": 28
+      },
+      "revId": "7c591b518a2c76b3267878be50f76d3ee7e381fc",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
