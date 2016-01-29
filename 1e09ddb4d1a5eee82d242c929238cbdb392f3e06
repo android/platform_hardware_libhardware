@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d468d2a0_4d0bf9b0",
+        "filename": "include/hardware/bt_common_types.h",
+        "patchSetId": 5
+      },
+      "lineNbr": 63,
+      "author": {
+        "id": 1071489
+      },
+      "writtenOn": "2016-01-29T20:09:38Z",
+      "side": 1,
+      "message": "Is this description accurate?",
+      "range": {
+        "startLine": 62,
+        "startChar": 39,
+        "endLine": 63,
+        "endChar": 22
+      },
+      "revId": "1e09ddb4d1a5eee82d242c929238cbdb392f3e06",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
