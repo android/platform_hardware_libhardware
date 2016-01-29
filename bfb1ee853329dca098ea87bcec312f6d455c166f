@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "948f3a7c_8ff2954f",
+        "filename": "include/hardware/bt_common_types.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 1087037
+      },
+      "writtenOn": "2016-01-29T07:11:57Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "948f3a7c_cfa2dd6c",
+      "revId": "bfb1ee853329dca098ea87bcec312f6d455c166f",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "f46b1668_6a94f704",
         "filename": "include/hardware/bt_common_types.h",
         "patchSetId": 2
@@ -36,6 +54,24 @@
     },
     {
       "key": {
+        "uuid": "948f3a7c_aff7593e",
+        "filename": "include/hardware/bt_common_types.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 1087037
+      },
+      "writtenOn": "2016-01-29T07:11:57Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f46b1668_6a94f704",
+      "revId": "bfb1ee853329dca098ea87bcec312f6d455c166f",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "b4651e98_a8c8bb2e",
         "filename": "include/hardware/bt_common_types.h",
         "patchSetId": 2
@@ -47,6 +83,24 @@
       "writtenOn": "2016-01-28T19:48:30Z",
       "side": 1,
       "message": "Would prefer start_handle, end_handle and attribute_handle",
+      "revId": "bfb1ee853329dca098ea87bcec312f6d455c166f",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d44d325b_9198bc90",
+        "filename": "include/hardware/bt_common_types.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 1087037
+      },
+      "writtenOn": "2016-01-29T07:11:57Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "b4651e98_a8c8bb2e",
       "revId": "bfb1ee853329dca098ea87bcec312f6d455c166f",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
