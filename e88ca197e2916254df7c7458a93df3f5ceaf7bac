@@ -2,6 +2,23 @@
   "comments": [
     {
       "key": {
+        "uuid": "11f8bcd1_e3ca3228",
+        "filename": "modules/nvram/Android.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1080683
+      },
+      "writtenOn": "2016-02-05T14:12:47Z",
+      "side": 1,
+      "message": "Add -Wall -Wextra -Werror to LOCAL_CFLAGS?",
+      "revId": "e88ca197e2916254df7c7458a93df3f5ceaf7bac",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "f1340868_4289d20b",
         "filename": "modules/nvram/nvram.cpp",
         "patchSetId": 1
