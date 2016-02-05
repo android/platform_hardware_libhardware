@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f1340868_4289d20b",
+        "filename": "modules/nvram/nvram.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 119,
+      "author": {
+        "id": 1080683
+      },
+      "writtenOn": "2016-02-05T12:16:11Z",
+      "side": 1,
+      "message": "This is a C++ file, however designated initializers as used here are a C99-only feature. GCC/clang accept it apparently, not sure whether it\u0027s a good idea to rely on that though. Since there is no relevant benefit in this being a C++ file, you could just as well make this a C file?",
+      "range": {
+        "startLine": 119,
+        "startChar": 8,
+        "endLine": 119,
+        "endChar": 15
+      },
+      "revId": "e88ca197e2916254df7c7458a93df3f5ceaf7bac",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
