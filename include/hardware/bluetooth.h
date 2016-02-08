@@ -251,6 +251,8 @@ typedef enum {
      */
     BT_PROPERTY_LOCAL_LE_FEATURES,
 
+    BT_PROPERTY_CONTROLLER_DEBUG_INFO = 0x0E,
+
     BT_PROPERTY_REMOTE_DEVICE_TIMESTAMP = 0xFF,
 } bt_property_type_t;
 
