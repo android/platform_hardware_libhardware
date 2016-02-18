@@ -202,42 +202,6 @@ struct keymaster2_device {
                                     keymaster_blob_t* export_data);
 
     /**
-     * Derives a shared secret key from \p key, which must be an EC key, and the public key found in
-     * /p other_key_certificate, an X.509 certificate containing a compatible EC public key.  The
-     * derived key's characteristics are described in \p new_key_params, which must include
-     * algorithm (KM_TAG_ALGORITHM), key size (KM_TAG_KEY_SIZE) and KDF (KM_TAG_KDF) as well as
-     * other desired key characteristics.  The resulting key material is not returned directly, but
-     * instead a new keymaster key is created and the associated blob returned in \p key_blob.  If
-     * \p characteristics is non-NULL, the new key's characteristics are placed there.
-     *
-     * \param[in] dev The keymaster device structure.
-     *
-     * \param[in] key The keymaster key to use for key agreement. This must be an EC key with the
-     * KM_PURPOSE_DERIVE_KEY purpose.
-     *
-     * \param[in] other_key_certificate An X.509 certificate or certificate fragment containing a
-     * SubjectPublicKey field containing an EC public key on the same curve as \p key.
-     *
-     * \param[in] new_key_params A set of parameters to define/describe the newly-derived symmetric
-     * key. The parameters will define how the key may be used. The set must include KM_TAG_KDF to
-     * specify how the raw agreed key bytes will be transformed to produce the key material.
-     *
-     * \param[out] key_blob The key blob containing the newly-derived key.  The caller takes
-     * ownership of the returned blob.
-     *
-     * \param[out] characteristics. If non-null, will be used to return the characteristics of the
-     * new key blob, which will have KM_TAG_ORIGIN set to KM_ORIGIN_DERIVED.  The caller takes
-     * ownership of the returned characteristics and must deallocate with
-     * keymaster_free_characteristics().
-     */
-    keymaster_error_t (*agree_key)(const struct keymaster2_device* dev,
-                                   const keymaster_key_blob_t* key,
-                                   const keymaster_blob_t* other_key_certificate,
-                                   const keymaster_key_param_set_t* new_key_params,
-                                   keymaster_key_blob_t* new_key_blob,
-                                   keymaster_key_characteristics_t* characteristics);
-
-    /**
      * Generates a signed X.509 certificate chain attesting to the presence of \p key_to_attest in
      * keymaster (TODO(swillden): Describe certificate contents in more detail).  The certificate
      * will contain an extension with OID 1.3.6.1.4.1.11129.2.1.17 and value defined in

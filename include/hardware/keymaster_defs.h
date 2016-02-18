@@ -61,13 +61,13 @@ typedef enum {
     KM_TAG_CALLER_NONCE = KM_BOOL | 7,   /* Allow caller to specify nonce or IV. */
     KM_TAG_MIN_MAC_LENGTH = KM_UINT | 8, /* Minimum length of MAC or AEAD authentication tag in
                                           * bits. */
-    KM_TAG_KDF = KM_ENUM_REP | 9,        /* keymaster_kdf_t (keymaster2) */
+    KM_TAG_KDF = KM_ENUM_REP | 9,        /* keymaster_kdf_t (keymaster3) */
     KM_TAG_EC_CURVE = KM_ENUM | 10,      /* keymaster_ec_curve_t (keymaster2) */
 
     /* Algorithm-specific. */
     KM_TAG_RSA_PUBLIC_EXPONENT = KM_ULONG | 200,
     KM_TAG_ECIES_SINGLE_HASH_MODE = KM_BOOL | 201, /* Whether the ephemeral public key is fed into
-                                                    * the KDF */
+                                                    * the KDF (keymaster3) */
     KM_TAG_INCLUDE_UNIQUE_ID = KM_BOOL | 202,      /* If true, attestation certificates for this key
                                                     * will contain an application-scoped and
                                                     * time-bounded device-unique ID. (keymaster2) */
@@ -118,9 +118,9 @@ typedef enum {
                                               * applications. */
     KM_TAG_APPLICATION_ID = KM_BYTES | 601,  /* Byte string identifying the authorized
                                               * application. */
-    KM_TAG_EXPORTABLE = KM_BOOL | 602,       /* If true, private/secret key can be exported, but
-                                              * only if all access control requirements for use are
-                                              * met. (keymaster2) */
+    KM_TAG_EXPORTABLE = KM_BOOL | 602,       /* If true, secret key can be exported, but only if all
+                                              * access control requirements for use are
+                                              * met. (keymaster3) */
 
     /*
      * Semantically unenforceable tags, either because they have no specific meaning or because
@@ -133,7 +133,8 @@ typedef enum {
     KM_TAG_ROOT_OF_TRUST = KM_BYTES | 704,     /* Root of trust ID. */
     KM_TAG_OS_VERSION = KM_UINT | 705,         /* Version of system (keymaster2) */
     KM_TAG_OS_PATCHLEVEL = KM_UINT | 706,      /* Patch level of system (keymaster2) */
-    KM_TAG_UNIQUE_ID = KM_BYTES | 707,         /* Used to provide unique ID in attestation */
+    KM_TAG_UNIQUE_ID = KM_BYTES | 707,         /* Used to provide unique ID in attestation
+                                                * (keymaster2) */
 
     /* Tags used only to provide data to or receive data from operations */
     KM_TAG_ASSOCIATED_DATA = KM_BYTES | 1000, /* Used to provide associated data for AEAD modes. */
@@ -146,7 +147,7 @@ typedef enum {
 
     KM_TAG_RESET_SINCE_ID_ROTATION = KM_BOOL | 1004, /* Whether the device has beeen factory reset
                                                         since the last unique ID rotation.  Used for
-                                                        key attestation. */
+                                                        key attestation. (keymaster2) */
 } keymaster_tag_t;
 
 /**
@@ -400,6 +401,7 @@ typedef enum {
     KM_ERROR_UNSUPPORTED_KDF = -60,
     KM_ERROR_UNSUPPORTED_EC_CURVE = -61,
     KM_ERROR_KEY_REQUIRES_UPGRADE = -62,
+    KM_ERROR_EC_PEER_PUBLIC_KEY_MISSING = -63,
 
     KM_ERROR_UNIMPLEMENTED = -100,
     KM_ERROR_VERSION_MISMATCH = -101,
