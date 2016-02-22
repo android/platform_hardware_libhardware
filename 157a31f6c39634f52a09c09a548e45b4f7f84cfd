@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "22d0113b_4afb3f8f",
+        "filename": "include/hardware/hardware.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1058798
+      },
+      "writtenOn": "2016-02-22T20:11:50Z",
+      "side": 1,
+      "message": "Remove empty line?",
+      "revId": "157a31f6c39634f52a09c09a548e45b4f7f84cfd",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
