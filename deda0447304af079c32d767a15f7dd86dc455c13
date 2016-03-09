@@ -22,6 +22,30 @@
       "revId": "deda0447304af079c32d767a15f7dd86dc455c13",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d7de195a_8a3ffeba",
+        "filename": "include/hardware/nvram.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 1079236
+      },
+      "writtenOn": "2016-03-09T18:18:42Z",
+      "side": 1,
+      "message": "Yes, that is my intention (both for versioning and submit).",
+      "parentUuid": "77656d95_28b04b06",
+      "range": {
+        "startLine": 34,
+        "startChar": 0,
+        "endLine": 34,
+        "endChar": 70
+      },
+      "revId": "deda0447304af079c32d767a15f7dd86dc455c13",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
