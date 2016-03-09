@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "77656d95_28b04b06",
+        "filename": "include/hardware/nvram.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 1080683
+      },
+      "writtenOn": "2016-03-09T09:12:45Z",
+      "side": 1,
+      "message": "Double checking: Your intention is that 1,1 is incompatible with 0,1 and the expectation is that implementations won\u0027t support 0,1 (since we haven\u0027t shipped anyways?).\n\nAnd I assume you\u0027re intending to submit this change and the system/nvram change at the same time and hope for the build not to break?",
+      "range": {
+        "startLine": 34,
+        "startChar": 0,
+        "endLine": 34,
+        "endChar": 70
+      },
+      "revId": "deda0447304af079c32d767a15f7dd86dc455c13",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
