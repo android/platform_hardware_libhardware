@@ -77,6 +77,8 @@ struct radio_module {
  * - event RADIO_EVENT_AF: after automatic switching to alternate frequency if current
  * configuration enables AF switching.
  * - event RADIO_EVENT_ANTENNA: when the antenna is connected or disconnected.
+ * - event RADIO_EVENT_VOL_BUT_DOWN: when the button for volume down is pressed or released.
+ * - event RADIO_EVENT_VOL_BUT_UP: when the button for volume up is pressed or released.
  * - event RADIO_EVENT_METADATA: when new meta data are received from the tuned station.
  * The callback MUST NOT be called synchronously while executing a HAL function but from
  * a separate thread.
