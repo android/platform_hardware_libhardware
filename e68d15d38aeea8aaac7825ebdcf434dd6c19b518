@@ -1,0 +1,119 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7c21d2e1_72d645c6",
+        "filename": "modules/vibrator/vibrator.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 1000414
+      },
+      "writtenOn": "2016-03-17T23:51:47Z",
+      "side": 1,
+      "message": "In general this function close to sendit() - probably can be combined - no strong opinion though...",
+      "range": {
+        "startLine": 32,
+        "startChar": 11,
+        "endLine": 32,
+        "endChar": 22
+      },
+      "revId": "e68d15d38aeea8aaac7825ebdcf434dd6c19b518",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7c21d2e1_923ad91a",
+        "filename": "modules/vibrator/vibrator.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 1000414
+      },
+      "writtenOn": "2016-03-17T23:51:47Z",
+      "side": 1,
+      "message": "Formatting: if (fd \u003c 0) {",
+      "range": {
+        "startLine": 39,
+        "startChar": 6,
+        "endLine": 39,
+        "endChar": 7
+      },
+      "revId": "e68d15d38aeea8aaac7825ebdcf434dd6c19b518",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7c21d2e1_5230613e",
+        "filename": "modules/vibrator/vibrator.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 1000414
+      },
+      "writtenOn": "2016-03-17T23:51:47Z",
+      "side": 1,
+      "message": "Does it make sense to use here to_write+1  and not to add EOL to \"transient\\n\"?",
+      "range": {
+        "startLine": 44,
+        "startChar": 50,
+        "endLine": 44,
+        "endChar": 58
+      },
+      "revId": "e68d15d38aeea8aaac7825ebdcf434dd6c19b518",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7c21d2e1_925bf92b",
+        "filename": "modules/vibrator/vibrator.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 1000414
+      },
+      "writtenOn": "2016-03-17T23:51:47Z",
+      "side": 1,
+      "message": "it has mistake in original code as well, but still :)",
+      "range": {
+        "startLine": 51,
+        "startChar": 42,
+        "endLine": 51,
+        "endChar": 53
+      },
+      "revId": "e68d15d38aeea8aaac7825ebdcf434dd6c19b518",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7c21d2e1_f2c7d55c",
+        "filename": "modules/vibrator/vibrator.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 1000414
+      },
+      "writtenOn": "2016-03-17T23:51:47Z",
+      "side": 1,
+      "message": "Let\u0027s use define - it is used in several palces",
+      "range": {
+        "startLine": 74,
+        "startChar": 15,
+        "endLine": 74,
+        "endChar": 17
+      },
+      "revId": "e68d15d38aeea8aaac7825ebdcf434dd6c19b518",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
