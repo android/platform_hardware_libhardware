@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "7c21d2e1_34594e60",
+        "filename": "modules/vibrator/vibrator.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 1087673
+      },
+      "writtenOn": "2016-03-18T22:41:17Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7c21d2e1_72d645c6",
+      "range": {
+        "startLine": 32,
+        "startChar": 11,
+        "endLine": 32,
+        "endChar": 22
+      },
+      "revId": "e68d15d38aeea8aaac7825ebdcf434dd6c19b518",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7c21d2e1_48bd54dd",
         "filename": "modules/vibrator/vibrator.c",
         "patchSetId": 1
@@ -36,6 +60,30 @@
       "writtenOn": "2016-03-18T01:42:56Z",
       "side": 1,
       "message": "O_WRONLY",
+      "range": {
+        "startLine": 38,
+        "startChar": 43,
+        "endLine": 38,
+        "endChar": 49
+      },
+      "revId": "e68d15d38aeea8aaac7825ebdcf434dd6c19b518",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7c21d2e1_14e1aae5",
+        "filename": "modules/vibrator/vibrator.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 1087673
+      },
+      "writtenOn": "2016-03-18T22:41:17Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7c21d2e1_48bd54dd",
       "range": {
         "startLine": 38,
         "startChar": 43,
@@ -71,6 +119,30 @@
     },
     {
       "key": {
+        "uuid": "7c21d2e1_740f4685",
+        "filename": "modules/vibrator/vibrator.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 1087673
+      },
+      "writtenOn": "2016-03-18T22:41:17Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7c21d2e1_923ad91a",
+      "range": {
+        "startLine": 39,
+        "startChar": 6,
+        "endLine": 39,
+        "endChar": 7
+      },
+      "revId": "e68d15d38aeea8aaac7825ebdcf434dd6c19b518",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7c21d2e1_5230613e",
         "filename": "modules/vibrator/vibrator.c",
         "patchSetId": 1
@@ -82,6 +154,30 @@
       "writtenOn": "2016-03-17T23:51:47Z",
       "side": 1,
       "message": "Does it make sense to use here to_write+1  and not to add EOL to \"transient\\n\"?",
+      "range": {
+        "startLine": 44,
+        "startChar": 50,
+        "endLine": 44,
+        "endChar": 58
+      },
+      "revId": "e68d15d38aeea8aaac7825ebdcf434dd6c19b518",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7c21d2e1_54e96261",
+        "filename": "modules/vibrator/vibrator.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 1087673
+      },
+      "writtenOn": "2016-03-18T22:41:17Z",
+      "side": 1,
+      "message": "Probably so. Was just keeping consistency with what was done before for timed_output.",
+      "parentUuid": "7c21d2e1_5230613e",
       "range": {
         "startLine": 44,
         "startChar": 50,
@@ -117,6 +213,30 @@
     },
     {
       "key": {
+        "uuid": "7c21d2e1_5414c295",
+        "filename": "modules/vibrator/vibrator.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 1087673
+      },
+      "writtenOn": "2016-03-18T22:41:17Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7c21d2e1_925bf92b",
+      "range": {
+        "startLine": 51,
+        "startChar": 42,
+        "endLine": 51,
+        "endChar": 53
+      },
+      "revId": "e68d15d38aeea8aaac7825ebdcf434dd6c19b518",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7c21d2e1_084ebcb2",
         "filename": "modules/vibrator/vibrator.c",
         "patchSetId": 1
@@ -128,6 +248,30 @@
       "writtenOn": "2016-03-18T01:42:56Z",
       "side": 1,
       "message": "how about:\n\nreturn write_value(\"trigger\", \"transient\\n\") \u003d\u003d 0;\nor\n!write_value\n\n? - whichever style you prefer",
+      "range": {
+        "startLine": 65,
+        "startChar": 0,
+        "endLine": 68,
+        "endChar": 13
+      },
+      "revId": "e68d15d38aeea8aaac7825ebdcf434dd6c19b518",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7c21d2e1_0974f75a",
+        "filename": "modules/vibrator/vibrator.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 1087673
+      },
+      "writtenOn": "2016-03-18T22:41:17Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7c21d2e1_084ebcb2",
       "range": {
         "startLine": 65,
         "startChar": 0,
@@ -157,6 +301,24 @@
     },
     {
       "key": {
+        "uuid": "7c21d2e1_b409be7f",
+        "filename": "modules/vibrator/vibrator.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 72,
+      "author": {
+        "id": 1087673
+      },
+      "writtenOn": "2016-03-18T22:41:17Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7c21d2e1_68ebf899",
+      "revId": "e68d15d38aeea8aaac7825ebdcf434dd6c19b518",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7c21d2e1_f2c7d55c",
         "filename": "modules/vibrator/vibrator.c",
         "patchSetId": 1
@@ -168,6 +330,30 @@
       "writtenOn": "2016-03-17T23:51:47Z",
       "side": 1,
       "message": "Let\u0027s use define - it is used in several palces",
+      "range": {
+        "startLine": 74,
+        "startChar": 15,
+        "endLine": 74,
+        "endChar": 17
+      },
+      "revId": "e68d15d38aeea8aaac7825ebdcf434dd6c19b518",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7c21d2e1_344e6eb3",
+        "filename": "modules/vibrator/vibrator.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 1087673
+      },
+      "writtenOn": "2016-03-18T22:41:17Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7c21d2e1_f2c7d55c",
       "range": {
         "startLine": 74,
         "startChar": 15,
@@ -197,6 +383,24 @@
     },
     {
       "key": {
+        "uuid": "7c21d2e1_741906bd",
+        "filename": "modules/vibrator/vibrator.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 1087673
+      },
+      "writtenOn": "2016-03-18T22:41:17Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7c21d2e1_c875c4d4",
+      "revId": "e68d15d38aeea8aaac7825ebdcf434dd6c19b518",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7c21d2e1_88e62cd2",
         "filename": "modules/vibrator/vibrator.c",
         "patchSetId": 1
@@ -208,6 +412,24 @@
       "writtenOn": "2016-03-18T01:42:56Z",
       "side": 1,
       "message": "returns negative value if we failed to activate",
+      "revId": "e68d15d38aeea8aaac7825ebdcf434dd6c19b518",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7c21d2e1_b4137e9c",
+        "filename": "modules/vibrator/vibrator.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 82,
+      "author": {
+        "id": 1087673
+      },
+      "writtenOn": "2016-03-18T22:41:17Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7c21d2e1_88e62cd2",
       "revId": "e68d15d38aeea8aaac7825ebdcf434dd6c19b518",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
@@ -254,6 +476,24 @@
     },
     {
       "key": {
+        "uuid": "7c21d2e1_34278efd",
+        "filename": "modules/vibrator/vibrator.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 1087673
+      },
+      "writtenOn": "2016-03-18T22:41:17Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7c21d2e1_e87c08bd",
+      "revId": "e68d15d38aeea8aaac7825ebdcf434dd6c19b518",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7c21d2e1_45837d31",
         "filename": "modules/vibrator/vibrator.c",
         "patchSetId": 1
@@ -265,6 +505,30 @@
       "writtenOn": "2016-03-18T01:42:56Z",
       "side": 1,
       "message": "bool",
+      "range": {
+        "startLine": 160,
+        "startChar": 4,
+        "endLine": 160,
+        "endChar": 7
+      },
+      "revId": "e68d15d38aeea8aaac7825ebdcf434dd6c19b518",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7c21d2e1_c91dbf46",
+        "filename": "modules/vibrator/vibrator.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 160,
+      "author": {
+        "id": 1087673
+      },
+      "writtenOn": "2016-03-18T22:41:17Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7c21d2e1_45837d31",
       "range": {
         "startLine": 160,
         "startChar": 4,
@@ -294,6 +558,24 @@
     },
     {
       "key": {
+        "uuid": "7c21d2e1_09187751",
+        "filename": "modules/vibrator/vibrator.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 163,
+      "author": {
+        "id": 1087673
+      },
+      "writtenOn": "2016-03-18T22:41:17Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7c21d2e1_0598659a",
+      "revId": "e68d15d38aeea8aaac7825ebdcf434dd6c19b518",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7c21d2e1_e594316a",
         "filename": "modules/vibrator/vibrator.c",
         "patchSetId": 1
@@ -305,6 +587,30 @@
       "writtenOn": "2016-03-18T01:42:56Z",
       "side": 1,
       "message": "Same as above, ALOGD",
+      "range": {
+        "startLine": 166,
+        "startChar": 8,
+        "endLine": 166,
+        "endChar": 13
+      },
+      "revId": "e68d15d38aeea8aaac7825ebdcf434dd6c19b518",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7c21d2e1_693653cd",
+        "filename": "modules/vibrator/vibrator.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 166,
+      "author": {
+        "id": 1087673
+      },
+      "writtenOn": "2016-03-18T22:41:17Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7c21d2e1_e594316a",
       "range": {
         "startLine": 166,
         "startChar": 8,
