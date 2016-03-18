@@ -25,6 +25,29 @@
     },
     {
       "key": {
+        "uuid": "7c21d2e1_48bd54dd",
+        "filename": "modules/vibrator/vibrator.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 1018087
+      },
+      "writtenOn": "2016-03-18T01:42:56Z",
+      "side": 1,
+      "message": "O_WRONLY",
+      "range": {
+        "startLine": 38,
+        "startChar": 43,
+        "endLine": 38,
+        "endChar": 49
+      },
+      "revId": "e68d15d38aeea8aaac7825ebdcf434dd6c19b518",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7c21d2e1_923ad91a",
         "filename": "modules/vibrator/vibrator.c",
         "patchSetId": 1
@@ -94,6 +117,46 @@
     },
     {
       "key": {
+        "uuid": "7c21d2e1_084ebcb2",
+        "filename": "modules/vibrator/vibrator.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 1018087
+      },
+      "writtenOn": "2016-03-18T01:42:56Z",
+      "side": 1,
+      "message": "how about:\n\nreturn write_value(\"trigger\", \"transient\\n\") \u003d\u003d 0;\nor\n!write_value\n\n? - whichever style you prefer",
+      "range": {
+        "startLine": 65,
+        "startChar": 0,
+        "endLine": 68,
+        "endChar": 13
+      },
+      "revId": "e68d15d38aeea8aaac7825ebdcf434dd6c19b518",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7c21d2e1_68ebf899",
+        "filename": "modules/vibrator/vibrator.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 72,
+      "author": {
+        "id": 1018087
+      },
+      "writtenOn": "2016-03-18T01:42:56Z",
+      "side": 1,
+      "message": "It looks like the return 0 on line 77 is inconsistent with the rest of how the function behaves",
+      "revId": "e68d15d38aeea8aaac7825ebdcf434dd6c19b518",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7c21d2e1_f2c7d55c",
         "filename": "modules/vibrator/vibrator.c",
         "patchSetId": 1
@@ -110,6 +173,143 @@
         "startChar": 15,
         "endLine": 74,
         "endChar": 17
+      },
+      "revId": "e68d15d38aeea8aaac7825ebdcf434dd6c19b518",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7c21d2e1_c875c4d4",
+        "filename": "modules/vibrator/vibrator.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 1018087
+      },
+      "writtenOn": "2016-03-18T01:42:56Z",
+      "side": 1,
+      "message": "function returns 0 if the device failed to turn on",
+      "revId": "e68d15d38aeea8aaac7825ebdcf434dd6c19b518",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7c21d2e1_88e62cd2",
+        "filename": "modules/vibrator/vibrator.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 82,
+      "author": {
+        "id": 1018087
+      },
+      "writtenOn": "2016-03-18T01:42:56Z",
+      "side": 1,
+      "message": "returns negative value if we failed to activate",
+      "revId": "e68d15d38aeea8aaac7825ebdcf434dd6c19b518",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7c21d2e1_a85b3058",
+        "filename": "modules/vibrator/vibrator.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 1018087
+      },
+      "writtenOn": "2016-03-18T01:42:56Z",
+      "side": 1,
+      "message": "You probably want to replace all this with just return write_value(...)",
+      "range": {
+        "startLine": 84,
+        "startChar": 4,
+        "endLine": 86,
+        "endChar": 15
+      },
+      "revId": "e68d15d38aeea8aaac7825ebdcf434dd6c19b518",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7c21d2e1_e87c08bd",
+        "filename": "modules/vibrator/vibrator.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 1018087
+      },
+      "writtenOn": "2016-03-18T01:42:56Z",
+      "side": 1,
+      "message": "function returns 0 if the vibrator successfully activated, negative otherwise",
+      "revId": "e68d15d38aeea8aaac7825ebdcf434dd6c19b518",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7c21d2e1_45837d31",
+        "filename": "modules/vibrator/vibrator.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 160,
+      "author": {
+        "id": 1018087
+      },
+      "writtenOn": "2016-03-18T01:42:56Z",
+      "side": 1,
+      "message": "bool",
+      "range": {
+        "startLine": 160,
+        "startChar": 4,
+        "endLine": 160,
+        "endChar": 7
+      },
+      "revId": "e68d15d38aeea8aaac7825ebdcf434dd6c19b518",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7c21d2e1_0598659a",
+        "filename": "modules/vibrator/vibrator.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 163,
+      "author": {
+        "id": 1018087
+      },
+      "writtenOn": "2016-03-18T01:42:56Z",
+      "side": 1,
+      "message": "Should probably be ALOGD",
+      "revId": "e68d15d38aeea8aaac7825ebdcf434dd6c19b518",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7c21d2e1_e594316a",
+        "filename": "modules/vibrator/vibrator.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 166,
+      "author": {
+        "id": 1018087
+      },
+      "writtenOn": "2016-03-18T01:42:56Z",
+      "side": 1,
+      "message": "Same as above, ALOGD",
+      "range": {
+        "startLine": 166,
+        "startChar": 8,
+        "endLine": 166,
+        "endChar": 13
       },
       "revId": "e68d15d38aeea8aaac7825ebdcf434dd6c19b518",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
