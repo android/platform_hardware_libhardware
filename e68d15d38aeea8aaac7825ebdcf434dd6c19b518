@@ -541,6 +541,30 @@
     },
     {
       "key": {
+        "uuid": "7c21d2e1_756e1d95",
+        "filename": "modules/vibrator/vibrator.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 160,
+      "author": {
+        "id": 1087673
+      },
+      "writtenOn": "2016-03-21T02:50:11Z",
+      "side": 1,
+      "message": "This is a C file, so there is no bool. Or is there a common definition?",
+      "parentUuid": "7c21d2e1_c91dbf46",
+      "range": {
+        "startLine": 160,
+        "startChar": 4,
+        "endLine": 160,
+        "endChar": 7
+      },
+      "revId": "e68d15d38aeea8aaac7825ebdcf434dd6c19b518",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7c21d2e1_0598659a",
         "filename": "modules/vibrator/vibrator.c",
         "patchSetId": 1
