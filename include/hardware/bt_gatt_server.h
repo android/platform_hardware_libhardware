@@ -53,23 +53,7 @@ typedef void (*connection_callback)(int conn_id, int server_if, int connected,
 
 /** Callback invoked in response to create_service */
 typedef void (*service_added_callback)(int status, int server_if,
-                btgatt_srvc_id_t *srvc_id, int srvc_handle);
-
-/** Callback indicating that an included service has been added to a service */
-typedef void (*included_service_added_callback)(int status, int server_if,
-                int srvc_handle, int incl_srvc_handle);
-
-/** Callback invoked when a characteristic has been added to a service */
-typedef void (*characteristic_added_callback)(int status, int server_if,
-                bt_uuid_t *uuid, int srvc_handle, int char_handle);
-
-/** Callback invoked when a descriptor has been added to a characteristic */
-typedef void (*descriptor_added_callback)(int status, int server_if,
-                bt_uuid_t *uuid, int srvc_handle, int descr_handle);
-
-/** Callback invoked in response to start_service */
-typedef void (*service_started_callback)(int status, int server_if,
-                                         int srvc_handle);
+                                       const btgatt_db_element_t *service, int srvc_handle);
 
 /** Callback invoked in response to stop_service */
 typedef void (*service_stopped_callback)(int status, int server_if,
@@ -124,10 +108,6 @@ typedef struct {
     register_server_callback        register_server_cb;
     connection_callback             connection_cb;
     service_added_callback          service_added_cb;
-    included_service_added_callback included_service_added_cb;
-    characteristic_added_callback   characteristic_added_cb;
-    descriptor_added_callback       descriptor_added_cb;
-    service_started_callback        service_started_cb;
     service_stopped_callback        service_stopped_cb;
     service_deleted_callback        service_deleted_cb;
     request_read_callback           request_read_cb;
@@ -156,23 +136,7 @@ typedef struct {
                     int conn_id );
 
     /** Create a new service */
-    bt_status_t (*add_service)( int server_if, btgatt_srvc_id_t *srvc_id, int num_handles);
-
-    /** Assign an included service to it's parent service */
-    bt_status_t (*add_included_service)( int server_if, int service_handle, int included_handle);
-
-    /** Add a characteristic to a service */
-    bt_status_t (*add_characteristic)( int server_if,
-                    int service_handle, bt_uuid_t *uuid,
-                    int properties, int permissions);
-
-    /** Add a descriptor to a given service */
-    bt_status_t (*add_descriptor)(int server_if, int service_handle,
-                                  bt_uuid_t *uuid, int permissions);
-
-    /** Starts a local service */
-    bt_status_t (*start_service)(int server_if, int service_handle,
-                                 int transport);
+    bt_status_t (*add_service)(int server_if, btgatt_db_element_t *service, int count);
 
     /** Stops a local service */
     bt_status_t (*stop_service)(int server_if, int service_handle);
