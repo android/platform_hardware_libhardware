@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "cb33d6d5_e5a3edd5",
+        "filename": "include/hardware/bluetooth.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 466,
+      "author": {
+        "id": 1071489
+      },
+      "writtenOn": "2016-04-15T16:33:38Z",
+      "side": 1,
+      "message": "Follow-up work to consider.\nFrom API perspective, it is better to use a more intuitive mode_t-like type instead of \"bool\".\nCalling \"enable(false)\" is ambiguous - is this call really enabling or disabling?\nOn the other hand, \"enable(RESTRICTED_MODE)\" is self-explanatory.",
+      "range": {
+        "startLine": 466,
+        "startChar": 18,
+        "endLine": 466,
+        "endChar": 22
+      },
+      "revId": "a1d1fc126e6a61fe7d070a342df19663f2f20a96",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
