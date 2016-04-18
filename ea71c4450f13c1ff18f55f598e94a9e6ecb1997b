@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "08fc147c_f27a4043",
+        "filename": "include/hardware/bluetooth.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 466,
+      "author": {
+        "id": 1058798
+      },
+      "writtenOn": "2016-04-18T23:20:25Z",
+      "side": 1,
+      "message": "Missing parameter name",
+      "range": {
+        "startLine": 466,
+        "startChar": 18,
+        "endLine": 466,
+        "endChar": 22
+      },
+      "revId": "ea71c4450f13c1ff18f55f598e94a9e6ecb1997b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
