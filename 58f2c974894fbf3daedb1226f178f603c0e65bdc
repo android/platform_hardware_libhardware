@@ -1,0 +1,435 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ed5193a9_37ef1898",
+        "filename": "include/hardware/bt_rc.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1093574
+      },
+      "writtenOn": "2016-05-06T13:09:17Z",
+      "side": 1,
+      "message": "Keep the callback function declarations consistent, somewhere it is (*ptrFunc) () and somewhere it is (* ptrFunc) ()",
+      "revId": "58f2c974894fbf3daedb1226f178f603c0e65bdc",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ed5193a9_d7cd946d",
+        "filename": "include/hardware/bt_rc.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 91,
+      "author": {
+        "id": 1093574
+      },
+      "writtenOn": "2016-05-06T13:09:17Z",
+      "side": 1,
+      "message": "give space before and after \u003d",
+      "range": {
+        "startLine": 87,
+        "startChar": 0,
+        "endLine": 91,
+        "endChar": 30
+      },
+      "revId": "58f2c974894fbf3daedb1226f178f603c0e65bdc",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ed5193a9_b73ec816",
+        "filename": "include/hardware/bt_rc.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 280,
+      "author": {
+        "id": 1093574
+      },
+      "writtenOn": "2016-05-06T13:09:17Z",
+      "side": 1,
+      "message": "put space after , and keep the function declaration length restricted to 100 characters",
+      "range": {
+        "startLine": 280,
+        "startChar": 80,
+        "endLine": 280,
+        "endChar": 103
+      },
+      "revId": "58f2c974894fbf3daedb1226f178f603c0e65bdc",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ed5193a9_d73b5426",
+        "filename": "include/hardware/bt_rc.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 285,
+      "author": {
+        "id": 1093574
+      },
+      "writtenOn": "2016-05-06T13:09:17Z",
+      "side": 1,
+      "message": "put space after , and keep the function declaration length restricted to 100 characters",
+      "range": {
+        "startLine": 285,
+        "startChar": 98,
+        "endLine": 285,
+        "endChar": 121
+      },
+      "revId": "58f2c974894fbf3daedb1226f178f603c0e65bdc",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ed5193a9_774840bc",
+        "filename": "include/hardware/bt_rc.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 290,
+      "author": {
+        "id": 1093574
+      },
+      "writtenOn": "2016-05-06T13:09:17Z",
+      "side": 1,
+      "message": "put space after , and keep the function declaration length restricted to 100 characters",
+      "range": {
+        "startLine": 290,
+        "startChar": 103,
+        "endLine": 290,
+        "endChar": 126
+      },
+      "revId": "58f2c974894fbf3daedb1226f178f603c0e65bdc",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ed5193a9_9745cca5",
+        "filename": "include/hardware/bt_rc.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 295,
+      "author": {
+        "id": 1093574
+      },
+      "writtenOn": "2016-05-06T13:09:17Z",
+      "side": 1,
+      "message": "put space after , and keep the function declaration length restricted to 100 characters",
+      "range": {
+        "startLine": 295,
+        "startChar": 108,
+        "endLine": 295,
+        "endChar": 131
+      },
+      "revId": "58f2c974894fbf3daedb1226f178f603c0e65bdc",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ed5193a9_5718a4c2",
+        "filename": "include/hardware/bt_rc.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 298,
+      "author": {
+        "id": 1093574
+      },
+      "writtenOn": "2016-05-06T13:09:17Z",
+      "side": 1,
+      "message": "put space after , and keep the function declaration length restricted to 100 characters",
+      "range": {
+        "startLine": 298,
+        "startChar": 83,
+        "endLine": 298,
+        "endChar": 106
+      },
+      "revId": "58f2c974894fbf3daedb1226f178f603c0e65bdc",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ed5193a9_f70c5085",
+        "filename": "include/hardware/bt_rc.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 303,
+      "author": {
+        "id": 1093574
+      },
+      "writtenOn": "2016-05-06T13:09:17Z",
+      "side": 1,
+      "message": "put space after , and keep the function declaration length restricted to 100 characters",
+      "range": {
+        "startLine": 303,
+        "startChar": 93,
+        "endLine": 303,
+        "endChar": 116
+      },
+      "revId": "58f2c974894fbf3daedb1226f178f603c0e65bdc",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ed5193a9_b727a802",
+        "filename": "include/hardware/bt_rc.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 308,
+      "author": {
+        "id": 1093574
+      },
+      "writtenOn": "2016-05-06T13:09:17Z",
+      "side": 1,
+      "message": "put space after , and keep the function declaration length restricted to 100 characters",
+      "range": {
+        "startLine": 308,
+        "startChar": 94,
+        "endLine": 308,
+        "endChar": 117
+      },
+      "revId": "58f2c974894fbf3daedb1226f178f603c0e65bdc",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ed5193a9_772120ec",
+        "filename": "include/hardware/bt_rc.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 314,
+      "author": {
+        "id": 1093574
+      },
+      "writtenOn": "2016-05-06T13:09:17Z",
+      "side": 1,
+      "message": "put space after ,",
+      "range": {
+        "startLine": 314,
+        "startChar": 75,
+        "endLine": 314,
+        "endChar": 76
+      },
+      "revId": "58f2c974894fbf3daedb1226f178f603c0e65bdc",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ed5193a9_f781b0d5",
+        "filename": "include/hardware/bt_rc.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 317,
+      "author": {
+        "id": 1093574
+      },
+      "writtenOn": "2016-05-06T13:09:17Z",
+      "side": 1,
+      "message": "put space after ,",
+      "range": {
+        "startLine": 317,
+        "startChar": 69,
+        "endLine": 317,
+        "endChar": 70
+      },
+      "revId": "58f2c974894fbf3daedb1226f178f603c0e65bdc",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ed5193a9_17877ce9",
+        "filename": "include/hardware/bt_rc.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 398,
+      "author": {
+        "id": 1093574
+      },
+      "writtenOn": "2016-05-06T13:09:17Z",
+      "side": 1,
+      "message": "put space after ,",
+      "range": {
+        "startLine": 398,
+        "startChar": 60,
+        "endLine": 398,
+        "endChar": 61
+      },
+      "revId": "58f2c974894fbf3daedb1226f178f603c0e65bdc",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ed5193a9_b76c8826",
+        "filename": "include/hardware/bt_rc.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 404,
+      "author": {
+        "id": 1093574
+      },
+      "writtenOn": "2016-05-06T13:09:17Z",
+      "side": 1,
+      "message": "put space after ,",
+      "range": {
+        "startLine": 404,
+        "startChar": 65,
+        "endLine": 404,
+        "endChar": 66
+      },
+      "revId": "58f2c974894fbf3daedb1226f178f603c0e65bdc",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ed5193a9_d7691416",
+        "filename": "include/hardware/bt_rc.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 410,
+      "author": {
+        "id": 1093574
+      },
+      "writtenOn": "2016-05-06T13:09:17Z",
+      "side": 1,
+      "message": "put space after ,",
+      "range": {
+        "startLine": 410,
+        "startChar": 66,
+        "endLine": 410,
+        "endChar": 67
+      },
+      "revId": "58f2c974894fbf3daedb1226f178f603c0e65bdc",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ed5193a9_777600f9",
+        "filename": "include/hardware/bt_rc.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 413,
+      "author": {
+        "id": 1093574
+      },
+      "writtenOn": "2016-05-06T13:09:17Z",
+      "side": 1,
+      "message": "put space after ,",
+      "range": {
+        "startLine": 413,
+        "startChar": 65,
+        "endLine": 413,
+        "endChar": 66
+      },
+      "revId": "58f2c974894fbf3daedb1226f178f603c0e65bdc",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ed5193a9_97738c06",
+        "filename": "include/hardware/bt_rc.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 418,
+      "author": {
+        "id": 1093574
+      },
+      "writtenOn": "2016-05-06T13:09:17Z",
+      "side": 1,
+      "message": "put space after ,",
+      "range": {
+        "startLine": 418,
+        "startChar": 69,
+        "endLine": 418,
+        "endChar": 70
+      },
+      "revId": "58f2c974894fbf3daedb1226f178f603c0e65bdc",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ed5193a9_3761582b",
+        "filename": "include/hardware/bt_rc.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 424,
+      "author": {
+        "id": 1093574
+      },
+      "writtenOn": "2016-05-06T13:09:17Z",
+      "side": 1,
+      "message": "put space after ,",
+      "range": {
+        "startLine": 424,
+        "startChar": 70,
+        "endLine": 424,
+        "endChar": 71
+      },
+      "revId": "58f2c974894fbf3daedb1226f178f603c0e65bdc",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ed5193a9_57666443",
+        "filename": "include/hardware/bt_rc.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 430,
+      "author": {
+        "id": 1093574
+      },
+      "writtenOn": "2016-05-06T13:09:17Z",
+      "side": 1,
+      "message": "put space after ,",
+      "range": {
+        "startLine": 430,
+        "startChar": 61,
+        "endLine": 430,
+        "endChar": 62
+      },
+      "revId": "58f2c974894fbf3daedb1226f178f603c0e65bdc",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ed5193a9_f75a1072",
+        "filename": "include/hardware/bt_rc.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 436,
+      "author": {
+        "id": 1093574
+      },
+      "writtenOn": "2016-05-06T13:09:17Z",
+      "side": 1,
+      "message": "put space after ,",
+      "range": {
+        "startLine": 436,
+        "startChar": 64,
+        "endLine": 436,
+        "endChar": 65
+      },
+      "revId": "58f2c974894fbf3daedb1226f178f603c0e65bdc",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
