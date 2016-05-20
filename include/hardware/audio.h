@@ -55,7 +55,8 @@ __BEGIN_DECLS
 #define AUDIO_DEVICE_API_VERSION_1_0 HARDWARE_DEVICE_API_VERSION(1, 0)
 #define AUDIO_DEVICE_API_VERSION_2_0 HARDWARE_DEVICE_API_VERSION(2, 0)
 #define AUDIO_DEVICE_API_VERSION_3_0 HARDWARE_DEVICE_API_VERSION(3, 0)
-#define AUDIO_DEVICE_API_VERSION_CURRENT AUDIO_DEVICE_API_VERSION_3_0
+#define AUDIO_DEVICE_API_VERSION_4_0 HARDWARE_DEVICE_API_VERSION(4, 0)
+#define AUDIO_DEVICE_API_VERSION_CURRENT AUDIO_DEVICE_API_VERSION_4_0
 /* Minimal audio HAL version supported by the audio framework */
 #define AUDIO_DEVICE_API_VERSION_MIN AUDIO_DEVICE_API_VERSION_2_0
 
@@ -263,6 +264,15 @@ typedef enum {
                                    give time for gapless track switch */
 } audio_drain_type_t;
 
+/* type of easing ramp to be applied to audio_stream_out->ramp_volume(). */
+typedef enum {
+    AUDIO_EASING_LINEAR,        /* linear ramp between initial and target volume */
+    AUDIO_EASING_CUBIC_IN,      /* cubic ramp accelerating from zero velocity    */
+    AUDIO_EASING_CUBIC_OUT      /* cubic ramp decelerating to zero velocity      */
+} audio_easing_type_t;
+
+#define MAX_RAMP_DURATION_MS 60000 /* 1 minute */
+
 /**
  * audio_stream_out is the abstraction interface for the audio output hardware.
  *
@@ -289,6 +299,9 @@ struct audio_stream_out {
      * allowing you to directly set the volume as apposed to via the framework.
      * This method might produce multiple PCM outputs or hardware accelerated
      * codecs, such as MP3 or AAC.
+     * If set_global_volume() is implemented, the final applied volume is the
+     * combination of the global stream volume and this left/right volume.
+     * Any call to set_volume() overrides any on-going ramp_volume() ramps.
      */
     int (*set_volume)(struct audio_stream_out *stream, float left, float right);
 
@@ -395,6 +408,42 @@ struct audio_stream_out {
     int (*get_presentation_position)(const struct audio_stream_out *stream,
                                uint64_t *frames, struct timespec *timestamp);
 
+
+    /**
+     * Use this method in situations where audio mixing is done in the
+     * hardware. This method serves as a direct interface with hardware,
+     * allowing you to directly set the global volume for this stream
+     * as opposed to via the framework.
+     * The global volume must be multiplied with the set_volume() and/or ramp_volume().
+     *
+     * 4.0 and higher only.
+     */
+    int (*set_global_volume)(struct audio_stream_out *stream, float global_volume);
+
+    /**
+     * Use this method in situations where audio mixing is done in the
+     * hardware. This method serves as a direct interface with hardware,
+     * allowing you to directly command a volume update within a
+     * specified timeframe (delay) and following a specified easing ramp (type).
+     * The applied volume on this stream is the combination of the
+     * ramping target_volume multiplied by the global volume applicable to this stream.
+     * The units for delay are milliseconds.
+     *
+     * 4.0 and higher only.
+     */
+    int (*ramp_volume)(struct audio_stream_out *stream, float target_volume,
+                       int delay, audio_easing_type_t type);
+
+    /**
+     * Use this method in situations where audio mixing is done in the
+     * hardware. This method serves as a direct interface with hardware,
+     * allowing you to directly get the volume currently applied to
+     * the stream sent to the hardware.
+     * Returns the volume applied to the stream, ignoring global volume.
+     *
+     * 4.0 and higher only.
+     */
+    int (*get_current_volume)(struct audio_stream_out *stream, float *volume);
 };
 typedef struct audio_stream_out audio_stream_out_t;
 
