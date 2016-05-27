@@ -19,6 +19,7 @@
 #define ANDROID_INCLUDE_BT_GATT_SERVER_H
 
 #include <stdint.h>
+#include <vector>
 
 #include "bt_gatt_types.h"
 
@@ -182,8 +183,8 @@ typedef struct {
 
     /** Send value indication to a remote device */
     bt_status_t (*send_indication)(int server_if, int attribute_handle,
-                                   int conn_id, int len, int confirm,
-                                   char* p_value);
+                                   int conn_id, int confirm,
+                                   const std::vector<uint8_t> &value);
 
     /** Send a response to a read/write operation */
     bt_status_t (*send_response)(int conn_id, int trans_id,
