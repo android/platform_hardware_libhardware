@@ -23,6 +23,8 @@
 #include "bt_gatt_types.h"
 #include "bt_common_types.h"
 
+using std::vector;
+
 __BEGIN_DECLS
 
 /**
@@ -120,7 +122,7 @@ typedef void (*register_client_callback)(int status, int client_if,
                 bt_uuid_t *app_uuid);
 
 /** Callback for scan results */
-typedef void (*scan_result_callback)(bt_bdaddr_t* bda, int rssi, uint8_t* adv_data);
+typedef void (*scan_result_callback)(bt_bdaddr_t* bda, int rssi, const vector<uint8_t> &adv_data);
 
 /** GATT open callback invoked in response to open */
 typedef void (*connect_callback)(int conn_id, int status, int client_if, bt_bdaddr_t* bda);
@@ -211,7 +213,7 @@ typedef void (*batchscan_enable_disable_callback)(int action, int client_if, int
 
 /** Callback invoked when batchscan reports are obtained */
 typedef void (*batchscan_reports_callback)(int client_if, int status, int report_format,
-                                           int num_records, int data_len, uint8_t* rep_data);
+                                           int num_records, const vector<uint8_t> &data);
 
 /** Callback invoked when batchscan storage threshold limit is crossed */
 typedef void (*batchscan_threshold_callback)(int client_if);
@@ -306,7 +308,7 @@ typedef struct {
     /** Write a remote characteristic */
     bt_status_t (*write_characteristic)(int conn_id, uint16_t handle,
                     int write_type, int auth_req,
-                    const std::vector<uint8_t> &value);
+                    const vector<uint8_t> &value);
 
     /** Read the descriptor for a given characteristic */
     bt_status_t (*read_descriptor)(int conn_id, uint16_t handle, int auth_req);
@@ -314,7 +316,7 @@ typedef struct {
     /** Write a remote descriptor for a given characteristic */
     bt_status_t (*write_descriptor)( int conn_id, uint16_t handle,
                     int write_type, int auth_req,
-                    const std::vector<uint8_t> &value);
+                    const vector<uint8_t> &value);
 
     /** Execute a prepared write operation */
     bt_status_t (*execute_write)(int conn_id, int execute);
@@ -342,8 +344,8 @@ typedef struct {
                                    int filt_index, int company_id,
                                    int company_id_mask, const bt_uuid_t *p_uuid,
                                    const bt_uuid_t *p_uuid_mask, const bt_bdaddr_t *bd_addr,
-                                   char addr_type, int data_len, char* p_data, int mask_len,
-                                   char* p_mask);
+                                   char addr_type, const vector<uint8_t> &data,
+                                   const vector<uint8_t> &p_mask);
 
     /** Clear all scan filter conditions for specific filter index*/
     bt_status_t (*scan_filter_clear)(int client_if, int filt_index);
@@ -357,9 +359,9 @@ typedef struct {
     /** Set the advertising data or scan response data */
     bt_status_t (*set_adv_data)(int client_if, bool set_scan_rsp, bool include_name,
                     bool include_txpower, int min_interval, int max_interval, int appearance,
-                    uint16_t manufacturer_len, char* manufacturer_data,
-                    uint16_t service_data_len, char* service_data,
-                    uint16_t service_uuid_len, char* service_uuid);
+                    const vector<uint8_t> &manufacturer_data,
+                    const vector<uint8_t> &service_data,
+                    const vector<uint8_t> &service_uuid);
 
     /** Configure the MTU for a given connection */
     bt_status_t (*configure_mtu)(int conn_id, int mtu);
@@ -381,9 +383,8 @@ typedef struct {
 
     /* Setup the data for the specified instance */
     bt_status_t (*multi_adv_set_inst_data)(int client_if, bool set_scan_rsp, bool include_name,
-                    bool incl_txpower, int appearance, int manufacturer_len,
-                    char* manufacturer_data, int service_data_len,
-                    char* service_data, int service_uuid_len, char* service_uuid);
+                    bool incl_txpower, int appearance, const vector<uint8_t> &manufacturer_data,
+                    const vector<uint8_t> &service_data, const vector<uint8_t> &service_uuid);
 
     /* Disable the multi adv instance */
     bt_status_t (*multi_adv_disable)(int client_if);

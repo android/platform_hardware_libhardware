@@ -23,6 +23,8 @@
 
 #include "bt_gatt_types.h"
 
+using std::vector;
+
 __BEGIN_DECLS
 
 /** GATT value type used in response to remote read requests */
@@ -92,8 +94,8 @@ typedef void (*request_read_callback)(int conn_id, int trans_id, bt_bdaddr_t *bd
  * characteristic or descriptor.
  */
 typedef void (*request_write_callback)(int conn_id, int trans_id, bt_bdaddr_t *bda,
-                                       int attr_handle, int offset, int length,
-                                       bool need_rsp, bool is_prep, uint8_t* value);
+                                       int attr_handle, int offset, bool need_rsp,
+                                       bool is_prep, const vector<uint8_t> &value);
 
 /** Callback invoked when a previously prepared write is to be executed */
 typedef void (*request_exec_write_callback)(int conn_id, int trans_id,
@@ -184,7 +186,7 @@ typedef struct {
     /** Send value indication to a remote device */
     bt_status_t (*send_indication)(int server_if, int attribute_handle,
                                    int conn_id, int confirm,
-                                   const std::vector<uint8_t> &value);
+                                   const vector<uint8_t> &value);
 
     /** Send a response to a read/write operation */
     bt_status_t (*send_response)(int conn_id, int trans_id,
