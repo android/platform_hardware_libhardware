@@ -1,0 +1,9 @@
+Code-Review+2: Andre Eisenbach <eisenbach@google.com>
+Verified+1: Andre Eisenbach <eisenbach@google.com>
+Autosubmit+1: Andre Eisenbach <eisenbach@google.com>
+Presubmit-Verified-1: Treehugger Robot <treehugger-gerrit@google.com>
+Submitted-by: Jakub Pawlowski <jpawlowski@google.com>
+Submitted-at: Wed, 03 Aug 2016 10:21:43 +0000
+Reviewed-on: https://android-review.googlesource.com/210623
+Project: platform/hardware/libhardware
+Branch: refs/heads/master
