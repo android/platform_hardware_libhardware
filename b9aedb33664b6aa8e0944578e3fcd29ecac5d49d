@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1919df0e_e05d7822",
+        "filename": "include/hardware/ble_advertiser.h",
+        "patchSetId": 4
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 1076123
+      },
+      "writtenOn": "2016-08-09T22:59:05Z",
+      "side": 1,
+      "message": "nit: an advertiser",
+      "range": {
+        "startLine": 55,
+        "startChar": 18,
+        "endLine": 55,
+        "endChar": 19
+      },
+      "revId": "b9aedb33664b6aa8e0944578e3fcd29ecac5d49d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1919df0e_a06780f6",
+        "filename": "include/hardware/ble_advertiser.h",
+        "patchSetId": 4
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 1076123
+      },
+      "writtenOn": "2016-08-09T22:59:05Z",
+      "side": 1,
+      "message": "nit: Set up",
+      "range": {
+        "startLine": 68,
+        "startChar": 7,
+        "endLine": 68,
+        "endChar": 12
+      },
+      "revId": "b9aedb33664b6aa8e0944578e3fcd29ecac5d49d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
