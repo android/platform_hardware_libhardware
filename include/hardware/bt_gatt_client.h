@@ -234,6 +234,10 @@ typedef void (*services_removed_callback)(int conn_id, uint16_t start_handle, ui
 /** GATT services were added */
 typedef void (*services_added_callback)(int conn_id, btgatt_db_element_t *added, int added_count);
 
+/** GATT connection parameter updated */
+typedef void (*conn_parameter_update_callback)(bt_bdaddr_t* bda, uint16_t interval, uint16_t latency,
+                                               uint16_t timeout, int status);
+
 typedef struct {
     register_client_callback            register_client_cb;
     scan_result_callback                scan_result_cb;
@@ -267,6 +271,7 @@ typedef struct {
     get_gatt_db_callback                get_gatt_db_cb;
     services_removed_callback           services_removed_cb;
     services_added_callback             services_added_cb;
+    conn_parameter_update_callback      conn_parameter_update_cb;
 } btgatt_client_callbacks_t;
 
 /** Represents the standard BT-GATT client interface. */
