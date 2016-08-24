@@ -225,9 +225,9 @@ enum {
 
 /*
  * Maximum length in bytes of cec message body (exclude header block),
- * should not exceed 16 (spec CEC 6 Frame Description)
+ * should not exceed 15 (spec CEC 6 Frame Description)
  */
-#define CEC_MESSAGE_BODY_MAX_LENGTH 16
+#define CEC_MESSAGE_BODY_MAX_LENGTH 15
 
 typedef struct cec_message {
     /* logical address of sender */
