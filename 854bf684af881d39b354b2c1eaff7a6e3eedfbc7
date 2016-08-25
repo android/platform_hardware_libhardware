@@ -1,0 +1,9 @@
+Autosubmit+1: Greg Kaiser <gkaiser@google.com>
+Presubmit-Verified+1: Treehugger Robot <treehugger-gerrit@google.com>
+Code-Review+2: Stephen Hines <srhines@google.com>
+Verified+1: Greg Kaiser <gkaiser@google.com>
+Submitted-by: Treehugger Robot <treehugger-gerrit@google.com>
+Submitted-at: Thu, 25 Aug 2016 16:25:35 +0000
+Reviewed-on: https://android-review.googlesource.com/263372
+Project: platform/hardware/libhardware
+Branch: refs/heads/master
