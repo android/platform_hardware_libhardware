@@ -1,0 +1,8 @@
+Code-Review+2: Alexey Polyudov <apolyudov@google.com>
+Presubmit-Verified+1: Treehugger Robot <treehugger-gerrit@google.com>
+Verified+1: Chih-hung Hsieh <chh@google.com>
+Submitted-by: Chih-hung Hsieh <chh@google.com>
+Submitted-at: Sat, 27 Aug 2016 00:40:59 +0000
+Reviewed-on: https://android-review.googlesource.com/264825
+Project: platform/hardware/libhardware
+Branch: refs/heads/master
