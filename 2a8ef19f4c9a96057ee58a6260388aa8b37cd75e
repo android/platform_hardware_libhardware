@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "25883aa4_f241096d",
+        "filename": "include/hardware/bt_rc.h",
+        "patchSetId": 8
+      },
+      "lineNbr": 232,
+      "author": {
+        "id": 1071489
+      },
+      "writtenOn": "2016-08-30T19:13:02Z",
+      "side": 1,
+      "message": "Is there a pre-defined constant that can be used instead?",
+      "range": {
+        "startLine": 232,
+        "startChar": 23,
+        "endLine": 232,
+        "endChar": 25
+      },
+      "revId": "2a8ef19f4c9a96057ee58a6260388aa8b37cd75e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
