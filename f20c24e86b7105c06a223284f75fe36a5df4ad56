@@ -1,0 +1,9 @@
+Code-Review+2: Andre Eisenbach <eisenbach@google.com>
+Code-Review+1: Ajay Panicker <apanicke@google.com>
+Presubmit-Verified+1: Treehugger Robot <treehugger-gerrit@google.com>
+Verified+1: Ajay Panicker <apanicke@google.com>
+Submitted-by: Ajay Panicker <apanicke@google.com>
+Submitted-at: Fri, 02 Sep 2016 20:46:00 +0000
+Reviewed-on: https://android-review.googlesource.com/204903
+Project: platform/hardware/libhardware
+Branch: refs/heads/master
