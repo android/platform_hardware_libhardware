@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "6b3a0657_18d9eb73",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 7
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1058798
+      },
+      "writtenOn": "2016-09-13T01:05:31Z",
+      "side": 1,
+      "message": "Which parameters and what are we enabling?\nAlso, since hardware/libhardware is shared, should prefix \"Bluetooth: \" or mention Bluetooth LE in the title somewhere.",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 7,
+        "endChar": 63
+      },
+      "revId": "65199d77d8b14e54c385b379c2aedd030582e363",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "6b3a0657_b8cebfab",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 7
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1058798
+      },
+      "writtenOn": "2016-09-13T01:05:31Z",
+      "side": 1,
+      "message": "Why is this the \"proper\" order and why?",
+      "range": {
+        "startLine": 9,
+        "startChar": 0,
+        "endLine": 15,
+        "endChar": 25
+      },
+      "revId": "65199d77d8b14e54c385b379c2aedd030582e363",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
