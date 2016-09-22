@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "10045b97_2094b68e",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 3
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1071489
+      },
+      "writtenOn": "2016-09-22T16:52:59Z",
+      "side": 1,
+      "message": "Needs a bit more context; e.g.\n\"Fix an incorrect description of OOB data field\" or similar",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 7,
+        "endChar": 24
+      },
+      "revId": "7c1195f3ccd8496279609b2d5430b9316387feec",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
