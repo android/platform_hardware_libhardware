@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ff50781d_05cef27a",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1061159
+      },
+      "writtenOn": "2016-10-05T22:07:10Z",
+      "side": 1,
+      "message": "stale",
+      "range": {
+        "startLine": 9,
+        "startChar": 26,
+        "endLine": 9,
+        "endChar": 31
+      },
+      "revId": "69a67755f109aee0264f56ea76a3c9d1346fd124",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ff50781d_45abca88",
+        "filename": "include/hardware/sensors.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 1318,
+      "author": {
+        "id": 1061159
+      },
+      "writtenOn": "2016-10-05T22:07:10Z",
+      "side": 1,
+      "message": "stale\n\nYou may wish to describe what\u0027s meant by \"stale\", like \"...so that subsequent activations will not get events that occurred prior to their activation time for that sensor.\"",
+      "range": {
+        "startLine": 1318,
+        "startChar": 50,
+        "endLine": 1318,
+        "endChar": 55
+      },
+      "revId": "69a67755f109aee0264f56ea76a3c9d1346fd124",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
