@@ -420,7 +420,7 @@ typedef struct keymaster2_device keymaster2_device_t;
 /* Convenience API for opening and closing keymaster devices */
 
 static inline int keymaster2_open(const struct hw_module_t* module, keymaster2_device_t** device) {
-    return module->methods->open(module, KEYSTORE_KEYMASTER, (struct hw_device_t**)device);
+    return module->methods->open(module, KEYSTORE_KEYMASTER, __BIONIC_CAST(reinterpret_cast, struct hw_device_t**, device));
 }
 
 static inline int keymaster2_close(keymaster2_device_t* device) {

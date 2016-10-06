@@ -738,7 +738,7 @@ typedef struct hwc2_device {
 static inline int hwc2_open(const struct hw_module_t* module,
         hwc2_device_t** device) {
     return module->methods->open(module, HWC_HARDWARE_COMPOSER,
-            (struct hw_device_t**) device);
+            __BIONIC_CAST(reinterpret_cast, struct hw_device_t**, device));
 }
 
 static inline int hwc2_close(hwc2_device_t* device) {

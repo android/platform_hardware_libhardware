@@ -417,7 +417,7 @@ typedef struct hdmi_cec_device {
 static inline int hdmi_cec_open(const struct hw_module_t* module,
         struct hdmi_cec_device** device) {
     return module->methods->open(module,
-            HDMI_CEC_HARDWARE_INTERFACE, (struct hw_device_t**)device);
+            HDMI_CEC_HARDWARE_INTERFACE, __BIONIC_CAST(reinterpret_cast, struct hw_device_t**, device));
 }
 
 static inline int hdmi_cec_close(struct hdmi_cec_device* device) {

@@ -124,7 +124,7 @@ static inline int sound_trigger_hw_device_open(const struct hw_module_t* module,
                                        struct sound_trigger_hw_device** device)
 {
     return module->methods->open(module, SOUND_TRIGGER_HARDWARE_INTERFACE,
-                                 (struct hw_device_t**)device);
+                                 __BIONIC_CAST(reinterpret_cast, struct hw_device_t**, device));
 }
 
 static inline int sound_trigger_hw_device_close(struct sound_trigger_hw_device* device)

@@ -109,7 +109,7 @@ static inline int local_time_hw_device_open(
         struct local_time_hw_device** device)
 {
     return module->methods->open(module, LOCAL_TIME_HARDWARE_INTERFACE,
-                                 (struct hw_device_t**)device);
+                                 __BIONIC_CAST(reinterpret_cast, struct hw_device_t**, device));
 }
 
 static inline int local_time_hw_device_close(struct local_time_hw_device* device)

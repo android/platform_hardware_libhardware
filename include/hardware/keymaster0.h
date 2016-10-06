@@ -134,7 +134,7 @@ static inline int keymaster0_open(const struct hw_module_t* module,
         keymaster0_device_t** device)
 {
     int rc = module->methods->open(module, KEYSTORE_KEYMASTER,
-            (struct hw_device_t**) device);
+            __BIONIC_CAST(reinterpret_cast, struct hw_device_t**, device));
 
     return rc;
 }

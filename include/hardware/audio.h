@@ -678,7 +678,7 @@ static inline int audio_hw_device_open(const struct hw_module_t* module,
                                        struct audio_hw_device** device)
 {
     return module->methods->open(module, AUDIO_HARDWARE_INTERFACE,
-                                 (struct hw_device_t**)device);
+                                 __BIONIC_CAST(reinterpret_cast, struct hw_device_t**, device));
 }
 
 static inline int audio_hw_device_close(struct audio_hw_device* device)
