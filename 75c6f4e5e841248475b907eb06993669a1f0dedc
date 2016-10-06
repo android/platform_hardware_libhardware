@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bf6a802b_9d577322",
+        "filename": "tests/keymaster/keymaster_test.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 194,
+      "author": {
+        "id": 1002975
+      },
+      "writtenOn": "2016-10-06T23:36:50Z",
+      "side": 1,
+      "message": "These can all be replaced with bssl::UniquePtr\u003cEC_KEY\u003e etc.",
+      "range": {
+        "startLine": 161,
+        "startChar": 0,
+        "endLine": 194,
+        "endChar": 61
+      },
+      "revId": "75c6f4e5e841248475b907eb06993669a1f0dedc",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
