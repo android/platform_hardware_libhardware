@@ -21,9 +21,10 @@
 
 #ifdef __cplusplus
 extern "C" {
-#endif  // __cplusplus
-
 const uint8_t HW_AUTH_TOKEN_VERSION = 0;
+#else
+static const uint8_t HW_AUTH_TOKEN_VERSION = 0;
+#endif  // __cplusplus
 
 typedef enum {
     HW_AUTH_NONE = 0,
