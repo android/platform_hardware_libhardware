@@ -1,0 +1,8 @@
+Code-Review+2: Elliott Hughes <enh@google.com>
+Presubmit-Ready+1: Colin Cross <ccross@android.com>
+Verified+1: Colin Cross <ccross@android.com>
+Submitted-by: Colin Cross <ccross@android.com>
+Submitted-at: Sat, 08 Oct 2016 00:32:04 +0000
+Reviewed-on: https://android-review.googlesource.com/285588
+Project: platform/hardware/libhardware
+Branch: refs/heads/master

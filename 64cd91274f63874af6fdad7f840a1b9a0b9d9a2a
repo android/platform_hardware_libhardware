@@ -1,0 +1,9 @@
+Code-Review+2: Eino-Ville Talvala <etalvala@google.com>
+Code-Review+1: Elliott Hughes <enh@google.com>
+Presubmit-Verified-1: Treehugger Robot <treehugger-gerrit@google.com>
+Verified+1: Colin Cross <ccross@android.com>
+Submitted-by: Colin Cross <ccross@android.com>
+Submitted-at: Sat, 08 Oct 2016 00:32:04 +0000
+Reviewed-on: https://android-review.googlesource.com/285589
+Project: platform/hardware/libhardware
+Branch: refs/heads/master
