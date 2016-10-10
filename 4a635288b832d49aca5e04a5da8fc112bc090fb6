@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5fcee4f0_fc4731a4",
+        "filename": "include/hardware/ble_advertiser.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 1071489
+      },
+      "writtenOn": "2016-10-10T22:33:47Z",
+      "side": 1,
+      "message": "Not needed as part of the description.",
+      "range": {
+        "startLine": 39,
+        "startChar": 6,
+        "endLine": 39,
+        "endChar": 19
+      },
+      "revId": "4a635288b832d49aca5e04a5da8fc112bc090fb6",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
