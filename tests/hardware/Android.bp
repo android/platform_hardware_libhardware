@@ -7,7 +7,6 @@ cc_library_static {
     ],
     shared_libs: ["libhardware"],
     cflags: [
-        "-std=gnu++11",
         "-O0",
     ],
 
