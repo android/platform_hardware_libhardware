@@ -70,6 +70,30 @@
       "revId": "5b25f7ccf9afbb16cbaf28a27c6e0a91b92f3e7d",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "61ba3039_313e0380",
+        "filename": "include/hardware/ble_scanner.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1087037
+      },
+      "writtenOn": "2016-10-28T18:30:06Z",
+      "side": 1,
+      "message": "All those files are just fine. Link you send talks about forward declarations, not about \"using\"",
+      "parentUuid": "e19380d8_da2fc4bb",
+      "range": {
+        "startLine": 26,
+        "startChar": 0,
+        "endLine": 26,
+        "endChar": 5
+      },
+      "revId": "5b25f7ccf9afbb16cbaf28a27c6e0a91b92f3e7d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
