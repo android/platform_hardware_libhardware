@@ -94,6 +94,30 @@
       "revId": "5b25f7ccf9afbb16cbaf28a27c6e0a91b92f3e7d",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "a65fde57_9c4b29cc",
+        "filename": "include/hardware/ble_scanner.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1071489
+      },
+      "writtenOn": "2016-10-28T18:56:00Z",
+      "side": 1,
+      "message": "The original link was wrong; please see:\nhttps://google.github.io/styleguide/cppguide.html#Namespaces\n\nFrom there:\n\n* You may not use a using-directive to make all names from a namespace available.\n\n// Forbidden -- This pollutes the namespace.\nusing namespace foo;\n\n* Do not use Namespace aliases at namespace scope in header files except in explicitly marked internal-only namespaces, because anything imported into a namespace in a header file becomes part of the public API exported by that file.\n\n\u003d\u003d\u003d\nAlso, see some other links on the subject:\nhttp://stackoverflow.com/questions/5849457/using-namespace-in-c-headers\n\nThe first two sentences of the first answer summarizes the issue very well:\n\n\"You should definitely NOT use using namespace in headers for precisely the reason you say, that it can unexpectedly change the meaning of code in any other files that include that header. There\u0027s no way to undo a using namespace which is another reason it\u0027s so dangerous.\"\n\n\u003d\u003d\u003d\u003d\u003d\nThe C++ Coding Standards book has the following chapter\non the subject:\n59. Don’t write namespace usings in a header file or before an #include.\nhttp://www.gotw.ca/publications/c++cs.htm\n\nFor a longer rant, please see:\nhttp://www.lonecpluspluscoder.com/2012/09/22/i-dont-want-to-see-another-using-namespace-xxx-in-a-header-file-ever-again/",
+      "parentUuid": "61ba3039_313e0380",
+      "range": {
+        "startLine": 26,
+        "startChar": 0,
+        "endLine": 26,
+        "endChar": 5
+      },
+      "revId": "5b25f7ccf9afbb16cbaf28a27c6e0a91b92f3e7d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
