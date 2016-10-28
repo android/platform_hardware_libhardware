@@ -22,6 +22,30 @@
       "revId": "5b25f7ccf9afbb16cbaf28a27c6e0a91b92f3e7d",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c1667cd0_04a3979a",
+        "filename": "include/hardware/ble_scanner.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1087037
+      },
+      "writtenOn": "2016-10-28T03:09:45Z",
+      "side": 1,
+      "message": "I strongly don\u0027t argree with this rule. all header files in service/ folder use \"using\", and oce we start using proper namespaces, we\u0027ll also need that.",
+      "parentUuid": "868bbadf_e9b3ad34",
+      "range": {
+        "startLine": 26,
+        "startChar": 0,
+        "endLine": 26,
+        "endChar": 5
+      },
+      "revId": "5b25f7ccf9afbb16cbaf28a27c6e0a91b92f3e7d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
