@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "868bbadf_e9b3ad34",
+        "filename": "include/hardware/ble_scanner.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1071489
+      },
+      "writtenOn": "2016-10-28T03:03:33Z",
+      "side": 1,
+      "message": "No \"using\" in header files.",
+      "range": {
+        "startLine": 26,
+        "startChar": 0,
+        "endLine": 26,
+        "endChar": 5
+      },
+      "revId": "5b25f7ccf9afbb16cbaf28a27c6e0a91b92f3e7d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
