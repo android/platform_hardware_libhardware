@@ -57,6 +57,15 @@ typedef void (* btav_audio_config_callback)(bt_bdaddr_t *bd_addr,
                                                 uint32_t sample_rate,
                                                 uint8_t channel_count);
 
+/** Callback for audio delay report.
+  * Will be sent from the A2DP sink device.
+  * The number represents the delay between the sink receiving the audio
+  * to the time that the audio plays. Units are in increments of 1/10 of
+  * a millisecond.
+  */
+typedef void (* btav_delay_report_callback)(bt_bdaddr_t *bd_addr,
+                                                uint16_t delay);
+
 /** BT-AV callback structure. */
 typedef struct {
     /** set to sizeof(btav_callbacks_t) */
@@ -64,6 +73,7 @@ typedef struct {
     btav_connection_state_callback  connection_state_cb;
     btav_audio_state_callback audio_state_cb;
     btav_audio_config_callback audio_config_cb;
+    btav_delay_report_callback delay_report_cb;
 } btav_callbacks_t;
 
 /**
