@@ -22,6 +22,30 @@
       "revId": "efc74791a57049d7c114b716763a0bc0817611bf",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "4b770b47_f1eb029a",
+        "filename": "include/hardware/bt_av.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 1077498
+      },
+      "writtenOn": "2016-11-09T19:21:27Z",
+      "side": 1,
+      "message": "I want to say no due to the fact that the unit we get from the stack is a two byte unsigned value with units in 1/10 of a ms. If we want to do any normalizing we should do it in the java side before we pass the info to any app that wants it.",
+      "parentUuid": "4b770b47_ce4e6338",
+      "range": {
+        "startLine": 63,
+        "startChar": 37,
+        "endLine": 64,
+        "endChar": 18
+      },
+      "revId": "efc74791a57049d7c114b716763a0bc0817611bf",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
