@@ -70,6 +70,30 @@
       "revId": "efc74791a57049d7c114b716763a0bc0817611bf",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "4b770b47_315bca69",
+        "filename": "include/hardware/bt_av.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 1077498
+      },
+      "writtenOn": "2016-11-09T19:33:09Z",
+      "side": 1,
+      "message": "I don\u0027t understand what you mean by exposing. I believe doing it this way would make it less confusing to anyone who has to work on it in the future due to the fact that the units match the spec.",
+      "parentUuid": "4b770b47_312e6aee",
+      "range": {
+        "startLine": 63,
+        "startChar": 37,
+        "endLine": 64,
+        "endChar": 18
+      },
+      "revId": "efc74791a57049d7c114b716763a0bc0817611bf",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
