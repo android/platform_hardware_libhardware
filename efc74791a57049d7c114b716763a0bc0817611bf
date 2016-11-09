@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4b770b47_ce4e6338",
+        "filename": "include/hardware/bt_av.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 1071489
+      },
+      "writtenOn": "2016-11-09T19:07:31Z",
+      "side": 1,
+      "message": "Should we normalize the units to something that is more meaningful to the app (e.g., microseconds).\nIn the description you can add something along the lines:\n\"The units are in microseconds, and the precision is 100us.\"\nAlso, it would be good to include the min/max values [0, 6553500  us]",
+      "range": {
+        "startLine": 63,
+        "startChar": 37,
+        "endLine": 64,
+        "endChar": 18
+      },
+      "revId": "efc74791a57049d7c114b716763a0bc0817611bf",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
