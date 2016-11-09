@@ -46,6 +46,30 @@
       "revId": "efc74791a57049d7c114b716763a0bc0817611bf",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "4b770b47_312e6aee",
+        "filename": "include/hardware/bt_av.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 1071489
+      },
+      "writtenOn": "2016-11-09T19:26:37Z",
+      "side": 1,
+      "message": "The downside of doing it within Java is that you are exposing\nspec details (packet format fields) at that level.",
+      "parentUuid": "4b770b47_f1eb029a",
+      "range": {
+        "startLine": 63,
+        "startChar": 37,
+        "endLine": 64,
+        "endChar": 18
+      },
+      "revId": "efc74791a57049d7c114b716763a0bc0817611bf",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
