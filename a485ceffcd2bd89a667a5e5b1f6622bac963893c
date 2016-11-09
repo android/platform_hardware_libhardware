@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ebafdfaa_64408000",
+        "filename": "include/hardware/bt_av.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 1076123
+      },
+      "writtenOn": "2016-11-09T17:10:32Z",
+      "side": 1,
+      "message": "the formatting here looks odd.  Maybe we should run clang-format on this directory.",
+      "range": {
+        "startLine": 60,
+        "startChar": 0,
+        "endLine": 65,
+        "endChar": 4
+      },
+      "revId": "a485ceffcd2bd89a667a5e5b1f6622bac963893c",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
