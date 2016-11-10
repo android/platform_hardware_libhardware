@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4b1e2b19_96c26c23",
+        "filename": "include/hardware/bluetooth.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 270,
+      "author": {
+        "id": 1101148
+      },
+      "writtenOn": "2016-11-10T04:04:53Z",
+      "side": 1,
+      "message": "BLE device address (both public \u0026 static) is 48 bit. Any specific reason to have 7 bytes instead of 6 here.",
+      "revId": "d82fbad4aa900a6187525bc0f779de76f47cccb5",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
