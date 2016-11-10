@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "cbe13b42_82db3ad0",
+        "filename": "include/hardware/hw_auth_token.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1006497
+      },
+      "writtenOn": "2016-11-10T13:12:34Z",
+      "side": 1,
+      "message": "Don\u0027t bother having two definitions, just explicitly give this internal linkage for both C and C++ (i.e. just add static to the existing definition).",
+      "revId": "34a5270268b741adb80ba8ff07c0507118cfce1c",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
