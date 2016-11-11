@@ -139,6 +139,7 @@ int select_config_for_window(EGLDisplay dpy, EGLint *attr,
 
 	if (eglChooseConfig(dpy, attr, cfg, max, &n) == EGL_FALSE) {
 		fprintf(stderr, "eglChooseConfig failed\n");
+		free(cfg);
 		return -1;
 	}
 
