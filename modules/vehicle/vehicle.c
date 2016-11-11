@@ -292,9 +292,14 @@ static int vdev_set(vehicle_hw_device_t* device UNUSED, const vehicle_prop_value
             // NOTE: We only handle ASCII strings here.
             // Print the UTF-8 string.
             char *ascii_out = (char *) malloc ((data->value.str_value.len + 1) * sizeof (char));
+            if(ascii_out == NULL){
+                ALOGD("malloc fail when print VEHICLE_VALUE_TYPE_STRING\n");
+                return -EINVAL;
+            }
             memcpy(ascii_out, data->value.str_value.data, data->value.str_value.len);
             ascii_out[data->value.str_value.len] = '\0';
             ALOGD("Value: %s\n", ascii_out);
+            free(ascii_out);
             break;
         case VEHICLE_VALUE_TYPE_INT32_VEC4:
             ALOGD("Value type: INT32_VEC4\nValue[0]: %d Value[1] %d Value[2] %d Value[3] %d",
