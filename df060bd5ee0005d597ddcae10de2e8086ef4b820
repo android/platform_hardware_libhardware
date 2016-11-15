@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d0f56c92_6bc4a1f8",
+        "filename": "modules/thermal/thermal.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 143,
+      "author": {
+        "id": 1098412
+      },
+      "writtenOn": "2016-11-15T15:11:34Z",
+      "side": 1,
+      "message": "Could also you add spaces between \u0027else\u0027 and \u0027{\u0027 \u0027}\u0027 ?",
+      "range": {
+        "startLine": 141,
+        "startChar": 9,
+        "endLine": 143,
+        "endChar": 9
+      },
+      "revId": "df060bd5ee0005d597ddcae10de2e8086ef4b820",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
