@@ -28,7 +28,7 @@ __BEGIN_DECLS
 #define BTRC_MAX_APP_SETTINGS       8
 #define BTRC_MAX_FOLDER_DEPTH       4
 #define BTRC_MAX_APP_ATTR_SIZE      16
-#define BTRC_MAX_ELEM_ATTR_SIZE     8
+#define BTRC_MAX_ELEM_ATTR_SIZE     7
 #define BTRC_FEATURE_BIT_MASK_SIZE 16
 
 /* Macros for valid scopes in get_folder_items */
