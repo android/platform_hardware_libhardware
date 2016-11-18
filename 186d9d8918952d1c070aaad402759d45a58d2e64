@@ -46,6 +46,29 @@
       "revId": "186d9d8918952d1c070aaad402759d45a58d2e64",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "500b3ca9_1036aaf9",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1073753
+      },
+      "writtenOn": "2016-11-18T22:02:43Z",
+      "side": 1,
+      "message": "This is not a good test for this!\n\nPlease have something that fails before your CL and passes after.\n\nAt the least you can have \"connect to a \u003ctype\u003e carkit\" since that is broken now.",
+      "range": {
+        "startLine": 14,
+        "startChar": 5,
+        "endLine": 14,
+        "endChar": 14
+      },
+      "revId": "186d9d8918952d1c070aaad402759d45a58d2e64",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
