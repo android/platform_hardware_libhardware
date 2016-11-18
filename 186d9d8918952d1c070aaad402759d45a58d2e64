@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "500b3ca9_f05c369e",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1071489
+      },
+      "writtenOn": "2016-11-18T21:39:38Z",
+      "side": 1,
+      "message": "What the spec says about the value, and why is it suppose to be 7?\n\nIn file apps/Bluetooth/jni/com_android_bluetooth_avrcp.cpp for\nexample, I see code like the following. By reducing the value\nwe could be creating other issues.\n\n   if (numAttr \u003e BTRC_MAX_ELEM_ATTR_SIZE) {\n        ALOGE(\"get_element_attr_rsp: number of attributes exceed maximum\");\n        return JNI_FALSE;\n    }",
+      "range": {
+        "startLine": 9,
+        "startChar": 0,
+        "endLine": 11,
+        "endChar": 35
+      },
+      "revId": "186d9d8918952d1c070aaad402759d45a58d2e64",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
