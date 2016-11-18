@@ -22,6 +22,30 @@
       "revId": "186d9d8918952d1c070aaad402759d45a58d2e64",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "500b3ca9_d01932a5",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1121403
+      },
+      "writtenOn": "2016-11-18T21:53:15Z",
+      "side": 1,
+      "message": "On page 147 of AVRCP spec, attribute id 0x1 to 0x8 are defined. However, since we do not support attribute 0x8 (Cover Art) yet, the only valid attribute ids for us are 0x1 to 0x7. Thus the maximum number of element attributes should be 7 instead of 8.",
+      "parentUuid": "500b3ca9_f05c369e",
+      "range": {
+        "startLine": 9,
+        "startChar": 0,
+        "endLine": 11,
+        "endChar": 35
+      },
+      "revId": "186d9d8918952d1c070aaad402759d45a58d2e64",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
