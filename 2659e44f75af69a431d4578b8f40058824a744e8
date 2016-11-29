@@ -22,6 +22,30 @@
       "revId": "2659e44f75af69a431d4578b8f40058824a744e8",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "f01d104e_59b905cc",
+        "filename": "include/hardware/bt_hf_client.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 329,
+      "author": {
+        "id": 1071489
+      },
+      "writtenOn": "2016-11-29T21:20:04Z",
+      "side": 1,
+      "message": "I take it back - I mixed it with (*connect).",
+      "parentUuid": "f01d104e_79d161e6",
+      "range": {
+        "startLine": 329,
+        "startChar": 33,
+        "endLine": 329,
+        "endChar": 39
+      },
+      "revId": "2659e44f75af69a431d4578b8f40058824a744e8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
