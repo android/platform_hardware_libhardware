@@ -377,6 +377,10 @@ typedef void (*callback_thread_event)(bt_cb_thread_evt evt);
 /* Receive any HCI event from controller. Must be in DUT Mode for this callback to be received */
 typedef void (*dut_mode_recv_callback)(uint16_t opcode, uint8_t *buf, uint8_t len);
 
+/** Bluetooth HCI event Callback */
+/* Receive any HCI event from controller for raw commands */
+typedef void (*hci_event_recv_callback)(uint8_t event_code, uint8_t *buf, uint8_t len);
+
 /* LE Test mode callbacks
 * This callback shall be invoked whenever the le_tx_test, le_rx_test or le_test_end is invoked
 * The num_packets is valid only for le_test_end command */
@@ -414,6 +418,7 @@ typedef struct {
     dut_mode_recv_callback dut_mode_recv_cb;
     le_test_mode_callback le_test_mode_cb;
     energy_info_callback energy_info_cb;
+    hci_event_recv_callback hci_event_recv_cb;
 } bt_callbacks_t;
 
 typedef void (*alarm_cb)(void *data);
@@ -550,6 +555,10 @@ typedef struct {
 
     /* Send any test HCI (vendor-specific) command to the controller. Must be in DUT Mode */
     int (*dut_mode_send)(uint16_t opcode, uint8_t *buf, uint8_t len);
+
+    /* Send any test HCI command to the controller. */
+    int (*hci_cmd_send)(uint16_t opcode, uint8_t *buf, uint8_t len);
+
     /** BLE Test Mode APIs */
     /* opcode MUST be one of: LE_Receiver_Test, LE_Transmitter_Test, LE_Test_End */
     int (*le_test_mode)(uint16_t opcode, uint8_t *buf, uint8_t len);
