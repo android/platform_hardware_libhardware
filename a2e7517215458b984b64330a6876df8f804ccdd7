@@ -1,0 +1,9 @@
+Code-Review+2: Steven Moreland <smoreland@google.com>
+Code-Review+2: Andre Eisenbach <eisenbach@google.com>
+Presubmit-Verified+1: Treehugger Robot <treehugger-gerrit@google.com>
+Verified+1: Ruchi Kandoi <kandoiruchi@google.com>
+Submitted-by: Ruchi Kandoi <kandoiruchi@google.com>
+Submitted-at: Wed, 30 Nov 2016 20:45:03 +0000
+Reviewed-on: https://android-review.googlesource.com/307416
+Project: platform/hardware/libhardware
+Branch: refs/heads/master
