@@ -1,0 +1,8 @@
+Presubmit-Verified+1: Treehugger Robot <treehugger-gerrit@google.com>
+Code-Review+2: Pavlin Radoslavov <pavlin@google.com>
+Verified+1: Sanket Agarwal <sanketa@google.com>
+Submitted-by: Sanket Agarwal <sanketa@google.com>
+Submitted-at: Wed, 30 Nov 2016 01:23:42 +0000
+Reviewed-on: https://android-review.googlesource.com/308125
+Project: platform/hardware/libhardware
+Branch: refs/heads/master
