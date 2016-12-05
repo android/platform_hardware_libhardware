@@ -17,6 +17,8 @@
 #ifndef ANDROID_INCLUDE_BT_AV_H
 #define ANDROID_INCLUDE_BT_AV_H
 
+#include <hardware/bluetooth.h>
+
 __BEGIN_DECLS
 
 /* Bluetooth AV connection states */
@@ -34,6 +36,79 @@ typedef enum {
     BTAV_AUDIO_STATE_STARTED,
 } btav_audio_state_t;
 
+/*
+ * Enum values for each A2DP supported codec.
+ * There should be a separate entry for each A2DP codec that is supported
+ * for encoding (SRC), and for decoding purpose (SINK).
+ */
+typedef enum {
+  BTAV_A2DP_CODEC_INDEX_SOURCE_MIN = 0,
+  BTAV_A2DP_CODEC_INDEX_SOURCE_SBC = 0,
+
+  /* Add an entry for each new source codec here */
+
+  BTAV_A2DP_CODEC_INDEX_SOURCE_MAX,
+
+  BTAV_A2DP_CODEC_INDEX_SINK_MIN = BTAV_A2DP_CODEC_INDEX_SOURCE_MAX,
+  BTAV_A2DP_CODEC_INDEX_SINK_SBC = BTAV_A2DP_CODEC_INDEX_SINK_MIN,
+
+  /* Add an entry for each new sink codec here */
+
+  BTAV_A2DP_CODEC_INDEX_SINK_MAX,
+
+  BTAV_A2DP_CODEC_INDEX_MIN = BTAV_A2DP_CODEC_INDEX_SOURCE_MIN,
+  BTAV_A2DP_CODEC_INDEX_MAX = BTAV_A2DP_CODEC_INDEX_SINK_MAX
+} btav_a2dp_codec_index_t;
+
+typedef uint32_t btav_a2dp_codec_priority_t;
+
+typedef enum {
+  BTAV_A2DP_CODEC_SAMPLE_RATE_NONE   = 0x0,
+  BTAV_A2DP_CODEC_SAMPLE_RATE_044100 = 0x1 << 0,
+  BTAV_A2DP_CODEC_SAMPLE_RATE_048000 = 0x1 << 1,
+  BTAV_A2DP_CODEC_SAMPLE_RATE_088200 = 0x1 << 2,
+  BTAV_A2DP_CODEC_SAMPLE_RATE_096000 = 0x1 << 3,
+  BTAV_A2DP_CODEC_SAMPLE_RATE_176400 = 0x1 << 4,
+  BTAV_A2DP_CODEC_SAMPLE_RATE_192000 = 0x1 << 5
+} btav_a2dp_codec_sample_rate_t;
+
+typedef enum {
+  BTAV_A2DP_CODEC_CHANNEL_COUNT_NONE   = 0x0,
+  BTAV_A2DP_CODEC_CHANNEL_COUNT_MONO   = 0x1 << 0,
+  BTAV_A2DP_CODEC_CHANNEL_COUNT_STEREO = 0x1 << 1
+} btav_a2dp_codec_channel_count_t;
+
+typedef enum {
+  BTAV_A2DP_CODEC_BITS_PER_SAMPLE_NONE = 0x0,
+  BTAV_A2DP_CODEC_BITS_PER_SAMPLE_16 = 0x1 << 0,
+  BTAV_A2DP_CODEC_BITS_PER_SAMPLE_24 = 0x1 << 1,
+  BTAV_A2DP_CODEC_BITS_PER_SAMPLE_32 = 0x1 << 2
+} btav_a2dp_codec_bits_per_sample_t;
+
+/*
+ * Structure for representing codec capability or configuration.
+ * It is used for configuring A2DP codec preference, and for reporting back
+ * current configuration or codec capability.
+ * For codec capability, fields "sample_rate", "channel_count" and
+ * "bits_per_sample" can contain bit-masks with all supported features.
+ */
+typedef struct {
+  btav_a2dp_codec_index_t codec_type;
+  bt_bdaddr_t bd_addr;          // Peer device's Bluetooth address. If 0, the
+                                // report contains the local capability for
+                                // this particular codec.
+  btav_a2dp_codec_priority_t codec_priority; // Codec selection priority
+                                // relative to other codecs: larger value
+                                // means higher priority. If 0, reset to
+                                // default.
+  btav_a2dp_codec_sample_rate_t sample_rate;
+  btav_a2dp_codec_channel_count_t channel_count;
+  btav_a2dp_codec_bits_per_sample_t bits_per_sample;
+  int64_t codec_specific_1;     // Codec-specific value 1
+  int64_t codec_specific_2;     // Codec-specific value 2
+  int64_t codec_specific_3;     // Codec-specific value 3
+  int64_t codec_specific_4;     // Codec-specific value 4
+} btav_a2dp_codec_config_t;
 
 /** Callback for connection state change.
  *  state will have one of the values from btav_connection_state_t
