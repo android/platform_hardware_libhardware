@@ -1,0 +1,9 @@
+Presubmit-Verified+1: Treehugger Robot <treehugger-gerrit@google.com>
+Code-Review+2: Myles Watson <mylesgw@google.com>
+Verified+1: Marie Janssen <jamuraa@google.com>
+Autosubmit+1: Marie Janssen <jamuraa@google.com>
+Submitted-by: Treehugger Robot <treehugger-gerrit@google.com>
+Submitted-at: Tue, 06 Dec 2016 01:10:28 +0000
+Reviewed-on: https://android-review.googlesource.com/309862
+Project: platform/hardware/libhardware
+Branch: refs/heads/master
