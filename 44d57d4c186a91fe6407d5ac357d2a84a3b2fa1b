@@ -1,0 +1,10 @@
+Presubmit-Verified+1: Treehugger Robot <treehugger-gerrit@google.com>
+Code-Review+2: Jakub Pawlowski <jpawlowski@google.com>
+Code-Review+2: Pavlin Radoslavov <pavlin@google.com>
+Verified+1: Pavlin Radoslavov <pavlin@google.com>
+Autosubmit+1: Pavlin Radoslavov <pavlin@google.com>
+Submitted-by: Treehugger Robot <treehugger-gerrit@google.com>
+Submitted-at: Tue, 13 Dec 2016 23:36:41 +0000
+Reviewed-on: https://android-review.googlesource.com/311956
+Project: platform/hardware/libhardware
+Branch: refs/heads/master
