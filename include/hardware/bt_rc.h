@@ -222,16 +222,16 @@ typedef struct {
     uint16_t type;
 } btrc_now_playing_changed_t;
 
-typedef union
-{
+typedef union {
     btrc_play_status_t play_status;
-    btrc_uid_t track; /* queue position in NowPlaying */
+    btrc_uid_t track;
     uint32_t song_pos;
     uint16_t uid_counter;
     btrc_player_settings_t player_setting;
     btrc_addr_player_changed_t addr_player_changed;
     btrc_uids_changed_t uids_changed;
     btrc_now_playing_changed_t now_playing_changed;
+    uint16_t volume;
 } btrc_register_notification_t;
 
 typedef struct {
