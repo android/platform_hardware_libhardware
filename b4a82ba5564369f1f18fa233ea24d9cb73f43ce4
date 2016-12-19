@@ -1,0 +1,142 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ba4b7745_9580904b",
+        "filename": "include/hardware/ble_scanner.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 96,
+      "author": {
+        "id": 1058798
+      },
+      "writtenOn": "2016-12-19T20:15:01Z",
+      "side": 1,
+      "message": "filter_index or filter_idx if you must.\nfilter_params below.\nbtgatt_filter_params_t or so below as well.",
+      "range": {
+        "startLine": 96,
+        "startChar": 44,
+        "endLine": 96,
+        "endChar": 54
+      },
+      "revId": "b4a82ba5564369f1f18fa233ea24d9cb73f43ce4",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba4b7745_b57d9485",
+        "filename": "include/hardware/bt_common_types.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 78,
+      "author": {
+        "id": 1058798
+      },
+      "writtenOn": "2016-12-19T20:15:01Z",
+      "side": 1,
+      "message": "feature_selection or similar.",
+      "range": {
+        "startLine": 78,
+        "startChar": 13,
+        "endLine": 78,
+        "endChar": 22
+      },
+      "revId": "b4a82ba5564369f1f18fa233ea24d9cb73f43ce4",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba4b7745_f5c1dc93",
+        "filename": "include/hardware/bt_common_types.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 80,
+      "author": {
+        "id": 1058798
+      },
+      "writtenOn": "2016-12-19T20:15:01Z",
+      "side": 1,
+      "message": "filter_logic_type",
+      "range": {
+        "startLine": 80,
+        "startChar": 13,
+        "endLine": 80,
+        "endChar": 28
+      },
+      "revId": "b4a82ba5564369f1f18fa233ea24d9cb73f43ce4",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba4b7745_15c740a7",
+        "filename": "include/hardware/bt_common_types.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 83,
+      "author": {
+        "id": 1058798
+      },
+      "writtenOn": "2016-12-19T20:15:01Z",
+      "side": 1,
+      "message": "delay_mode",
+      "range": {
+        "startLine": 83,
+        "startChar": 13,
+        "endLine": 83,
+        "endChar": 22
+      },
+      "revId": "b4a82ba5564369f1f18fa233ea24d9cb73f43ce4",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba4b7745_75ceccc1",
+        "filename": "include/hardware/bt_common_types.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 87,
+      "author": {
+        "id": 1058798
+      },
+      "writtenOn": "2016-12-19T20:15:01Z",
+      "side": 1,
+      "message": "num_tracking_entries",
+      "range": {
+        "startLine": 87,
+        "startChar": 14,
+        "endLine": 87,
+        "endChar": 37
+      },
+      "revId": "b4a82ba5564369f1f18fa233ea24d9cb73f43ce4",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba4b7745_f5a8fcc5",
+        "filename": "include/hardware/bt_common_types.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 88,
+      "author": {
+        "id": 1058798
+      },
+      "writtenOn": "2016-12-19T20:15:01Z",
+      "side": 1,
+      "message": "Yes, I know you only moved it, please fix anyway :D",
+      "range": {
+        "startLine": 88,
+        "startChar": 2,
+        "endLine": 88,
+        "endChar": 27
+      },
+      "revId": "b4a82ba5564369f1f18fa233ea24d9cb73f43ce4",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
