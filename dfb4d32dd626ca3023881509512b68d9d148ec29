@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "37b082be_3f7f6653",
+        "filename": "modules/vehicle/vehicle.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 302,
+      "author": {
+        "id": 1096946
+      },
+      "writtenOn": "2016-12-27T07:41:51Z",
+      "side": 1,
+      "message": "Looks like this entire block can be replaced by\n\nALOGD(\"Value: %.*s\\n\", data-\u003evalue.str_value.len, data-\u003evalue.str_value.data);\n\nOr am I missing something?",
+      "range": {
+        "startLine": 294,
+        "startChar": 0,
+        "endLine": 302,
+        "endChar": 28
+      },
+      "revId": "dfb4d32dd626ca3023881509512b68d9d148ec29",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
