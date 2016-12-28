@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "37b082be_d714ee66",
+        "filename": "include/hardware/bt_rc.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 234,
+      "author": {
+        "id": 1076123
+      },
+      "writtenOn": "2016-12-28T19:17:05Z",
+      "side": 1,
+      "message": "How do we know that the union contains a volume?\n\nI\u0027m confused how this is used, since there is a btrc_uids_changed_t and a uid_counter..",
+      "range": {
+        "startLine": 234,
+        "startChar": 4,
+        "endLine": 234,
+        "endChar": 20
+      },
+      "revId": "db6b0f2998c31e250d0546ce79d9e9763bcae64d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
