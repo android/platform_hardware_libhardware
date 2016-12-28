@@ -22,6 +22,30 @@
       "revId": "db6b0f2998c31e250d0546ce79d9e9763bcae64d",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "37b082be_3d4e83e0",
+        "filename": "include/hardware/bt_rc.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 234,
+      "author": {
+        "id": 1073753
+      },
+      "writtenOn": "2016-12-28T22:08:41Z",
+      "side": 1,
+      "message": "because the event type is BTRC_EVT_VOL_CHANGED.  That\u0027s how any of these are distinguished from each other.\n\nThis is a response to a Register Notification (or it\u0027s notification that it has changed)",
+      "parentUuid": "37b082be_d714ee66",
+      "range": {
+        "startLine": 234,
+        "startChar": 4,
+        "endLine": 234,
+        "endChar": 20
+      },
+      "revId": "db6b0f2998c31e250d0546ce79d9e9763bcae64d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
