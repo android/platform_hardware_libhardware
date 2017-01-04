@@ -80,6 +80,11 @@ typedef struct {
      */
     void (*cleanup)(void);
 
+    /**
+     * Set Tethering status
+     */
+    void (*set_tethering)(bool enable);
+
 } btpan_interface_t;
 
 __END_DECLS
