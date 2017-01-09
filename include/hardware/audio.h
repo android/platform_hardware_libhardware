@@ -393,8 +393,6 @@ struct audio_stream_out {
      * and the timestamp should correspond to N rather than N+M.
      * The terms 'recent' and 'small' are not defined.
      * They reflect the quality of the implementation.
-     *
-     * 3.0 and higher only.
      */
     int (*get_presentation_position)(const struct audio_stream_out *stream,
                                uint64_t *frames, struct timespec *timestamp);
