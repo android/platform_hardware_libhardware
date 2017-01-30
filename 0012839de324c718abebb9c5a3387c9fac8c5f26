@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "77c44923_eb4849c3",
+        "filename": "include/hardware/ble_scanner.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 1058798
+      },
+      "writtenOn": "2017-01-30T18:01:20Z",
+      "side": 1,
+      "message": "Here it\u0027s _adv_, above it\u0027s advertising_. Please pick one.",
+      "range": {
+        "startLine": 54,
+        "startChar": 59,
+        "endLine": 54,
+        "endChar": 75
+      },
+      "revId": "0012839de324c718abebb9c5a3387c9fac8c5f26",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}
