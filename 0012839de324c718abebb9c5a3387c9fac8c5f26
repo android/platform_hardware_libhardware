@@ -22,6 +22,29 @@
       "revId": "0012839de324c718abebb9c5a3387c9fac8c5f26",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "1bb7253e_2f12f0bf",
+        "filename": "include/hardware/ble_scanner.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 1087037
+      },
+      "writtenOn": "2017-01-30T20:57:51Z",
+      "side": 1,
+      "message": "periodic_advertising_int is very long, so I decided to short it to periodic_adv_int.\n\nOn the other hand advertising_sid  is not really long. Making it into adv_sid makes it sound like a weird acronym.\n\nCan it stay like this please?",
+      "range": {
+        "startLine": 54,
+        "startChar": 59,
+        "endLine": 54,
+        "endChar": 75
+      },
+      "revId": "0012839de324c718abebb9c5a3387c9fac8c5f26",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
     }
   ]
 }
