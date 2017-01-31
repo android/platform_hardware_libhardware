@@ -29,11 +29,13 @@
 
 /** Base path of the hal modules */
 #if defined(__LP64__)
-#define HAL_LIBRARY_PATH1 "/system/lib64/hw"
+#define HAL_LIBRARY_PATH0 "/system/lib64/hw"
+#define HAL_LIBRARY_PATH1 "/system/lib64/framework/hw"
 #define HAL_LIBRARY_PATH2 "/vendor/lib64/hw"
 #define HAL_LIBRARY_PATH3 "/odm/lib64/hw"
 #else
-#define HAL_LIBRARY_PATH1 "/system/lib/hw"
+#define HAL_LIBRARY_PATH0 "/system/lib/hw"
+#define HAL_LIBRARY_PATH1 "/system/lib/framework/hw"
 #define HAL_LIBRARY_PATH2 "/vendor/lib/hw"
 #define HAL_LIBRARY_PATH3 "/odm/lib/hw"
 #endif
@@ -143,6 +145,11 @@ static int hw_module_exists(char *path, size_t path_len, const char *name,
 
     snprintf(path, path_len, "%s/%s.%s.so",
              HAL_LIBRARY_PATH1, name, subname);
+    if (access(path, R_OK) == 0)
+        return 0;
+
+    snprintf(path, path_len, "%s/%s.%s.so",
+             HAL_LIBRARY_PATH0, name, subname);
     if (access(path, R_OK) == 0)
         return 0;
 
