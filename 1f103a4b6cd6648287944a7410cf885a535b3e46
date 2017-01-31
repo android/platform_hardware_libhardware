@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7086c45e_02bfa7aa",
+        "filename": "include/hardware/bt_av.h",
+        "patchSetId": 5
+      },
+      "lineNbr": 73,
+      "author": {
+        "id": 1058798
+      },
+      "writtenOn": "2017-01-31T00:32:23Z",
+      "side": 1,
+      "message": "Weird value. But sure, why note...",
+      "revId": "1f103a4b6cd6648287944a7410cf885a535b3e46",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}
