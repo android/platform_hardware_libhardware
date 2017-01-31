@@ -16,6 +16,23 @@
       "revId": "1f103a4b6cd6648287944a7410cf885a535b3e46",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f07d646d_d4141925",
+        "filename": "include/hardware/bt_av.h",
+        "patchSetId": 5
+      },
+      "lineNbr": 73,
+      "author": {
+        "id": 1071489
+      },
+      "writtenOn": "2017-01-31T00:35:41Z",
+      "side": 1,
+      "message": "The actual value is semi-randomly selected, and its usage/value might change in a follow-up CL for the priority configuration.",
+      "revId": "1f103a4b6cd6648287944a7410cf885a535b3e46",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
     }
   ]
 }
