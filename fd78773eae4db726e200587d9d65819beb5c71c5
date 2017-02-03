@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "30e6c543_a22144d8",
+        "filename": "include/hardware/ble_advertiser.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 1087037
+      },
+      "writtenOn": "2017-02-03T15:24:47Z",
+      "side": 1,
+      "message": "Remove white space modification.",
+      "range": {
+        "startLine": 69,
+        "startChar": 57,
+        "endLine": 71,
+        "endChar": 22
+      },
+      "revId": "fd78773eae4db726e200587d9d65819beb5c71c5",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b1a24294_38537f29",
+        "filename": "include/hardware/ble_advertiser.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 1087037
+      },
+      "writtenOn": "2017-02-03T15:24:47Z",
+      "side": 1,
+      "message": "change \"handle\" to \"advertiser_id\", and make it a first argument. This is first argument in all methods in this interface.",
+      "range": {
+        "startLine": 74,
+        "startChar": 67,
+        "endLine": 74,
+        "endChar": 73
+      },
+      "revId": "fd78773eae4db726e200587d9d65819beb5c71c5",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fcb9699b_5ff23cd3",
+        "filename": "include/hardware/ble_scanner.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 1087037
+      },
+      "writtenOn": "2017-02-03T15:24:47Z",
+      "side": 1,
+      "message": "I wrote a separate patch for propagating bt5 scan properties up the stack. It looks exactly same as your code:\n\nhttps://android-review.googlesource.com/#/c/330143/\n\nSee whole topic:\nhttps://android-review.googlesource.com/#/q/topic:bt5_scan_prop",
+      "range": {
+        "startLine": 50,
+        "startChar": 37,
+        "endLine": 54,
+        "endChar": 76
+      },
+      "revId": "fd78773eae4db726e200587d9d65819beb5c71c5",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
