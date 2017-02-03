@@ -47,7 +47,11 @@ typedef void (*scan_parameter_setup_completed_callback)(int client_if,
                                                         btgattc_error_t status);
 
 /** Callback for scan results */
-typedef void (*scan_result_callback)(bt_bdaddr_t *bda, int rssi,
+typedef void (*scan_result_callback)(uint16_t event_type, uint8_t addr_type,
+                                     bt_bdaddr_t *bda, uint8_t primary_phy,
+                                     uint8_t secondary_phy,
+                                     uint8_t advertising_sid, int8_t tx_power,
+                                     int8_t rssi, uint16_t periodic_adv_int,
                                      std::vector<uint8_t> adv_data);
 
 /** Callback invoked when a scan filter configuration command has completed */
@@ -62,6 +66,19 @@ typedef void (*scan_filter_param_callback)(int action, int client_if,
 typedef void (*scan_filter_status_callback)(int enable, int client_if,
                                             int status);
 
+/** Callback for Periodic Advertising Sync Establish */
+typedef void (*periodic_sync_establish_callback)(int syncHandle, bt_bdaddr_t bda,
+                                                int advertisingSid, int skip,
+                                                int timeout, int status);
+
+/** Callback for Periodic Advertising Report */
+typedef void (*periodic_adv_report_callback)(int syncHandle, int txPower,
+                                             int rssi, int dataStatus,
+                                             std::vector<uint8_t> data);
+
+/** Callback for Periodic Advertising Sync Lost */
+typedef void (*periodic_sync_lost_callback)(int syncHandle);
+
 typedef struct {
   scan_result_callback scan_result_cb;
   batchscan_cfg_storage_callback batchscan_cfg_storage_cb;
@@ -73,11 +90,17 @@ typedef struct {
   scan_filter_cfg_callback scan_filter_cfg_cb;
   scan_filter_param_callback scan_filter_param_cb;
   scan_filter_status_callback scan_filter_status_cb;
+  periodic_sync_establish_callback periodic_sync_establish_cb;
+  periodic_adv_report_callback periodic_adv_report_cb;
+  periodic_sync_lost_callback periodic_sync_lost_cb;
 } btgatt_scanner_callbacks_t;
 
 class BleScannerInterface {
  public:
   virtual ~BleScannerInterface() = default;
+
+  /** Callback invoked when operation has completed */
+  using Callback = base::Callback<void(uint8_t /* status */)>;
 
   using RegisterCallback =
       base::Callback<void(uint8_t /* scanner_id */, uint8_t /* status */)>;
@@ -114,6 +137,38 @@ class BleScannerInterface {
   /** Sets the LE scan interval and window in units of N*0.625 msec */
   virtual void SetScanParameters(int client_if, int scan_interval,
                                  int scan_window) = 0;
+
+  /** Sets the LE Extended scan interval and window in units of N*0.625 msec */
+  virtual void SetExtScanParameters(uint8_t client_if,
+                                    uint8_t filter_policy,
+                                    uint8_t scan_phy,
+                                    uint8_t scan_type,
+                                    uint16_t scan_interval,
+                                    uint16_t scan_window,
+                                    Callback cb) = 0;
+
+  /** Start or stop LE Extended device scanning */
+  virtual void ExtScan(uint8_t client_if,
+                       bool start, uint8_t filter_duplicate,
+                       uint16_t duration, uint16_t period,
+                       Callback cb) = 0;
+
+  /** Create Periodic advertisement Sync */
+  virtual void CreatePeriodicAdvSync(uint8_t client_if,
+                                    uint8_t filter_policy,
+                                    uint8_t adv_sid,
+                                    uint8_t adv_address_type,
+                                    bt_bdaddr_t adv_address,
+                                    uint16_t skip,
+                                    uint16_t sync_timeout,
+                                    Callback cb) = 0;
+
+  /** Cancel Periodic advertisement Sync */
+  virtual void CancelPeriodicAdvSync(uint8_t client_if, Callback cb) = 0;
+
+  /** Terminate Periodic advertisement Sync */
+  virtual void TerminatePeriodicAdvSync(uint8_t client_if, int syncHandle,
+                                        Callback cb) = 0;
 
   /* Configure the batchscan storage */
   virtual void BatchscanConfigStorage(int client_if, int batch_scan_full_max,
