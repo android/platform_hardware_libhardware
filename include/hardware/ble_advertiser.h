@@ -53,13 +53,31 @@ class BleAdvertiserInterface {
       uint8_t primary_advertising_phy, uint8_t secondary_advertising_phy,
       uint8_t scan_request_notification_enable, Callback cb) = 0;
 
+  /* Set the periodic parameters */
+  virtual void SetPeriodicParameters(uint8_t advertiser_id,
+        uint32_t periodic_adv_int_min, uint32_t periodic_adv_int_max,
+        uint16_t periodic_adv_properties, Callback cb) = 0;
+
   /* Setup the data */
-  virtual void SetData(int advertiser_id, bool set_scan_rsp,
+  virtual void SetData(uint8_t advertiser_id, bool set_scan_rsp,
                        std::vector<uint8_t> data, Callback cb) = 0;
 
+  /* Setup the periodic advetisement data */
+  virtual void SetPeriodicAdvertisingData(uint8_t advertiser_id,
+                                          uint8_t operation,
+                                          uint8_t periodic_data_length,
+                                          std::vector<uint8_t> periodic_data,
+                                          Callback cb) = 0;
+
   /* Enable the advertising instance */
-  virtual void Enable(uint8_t advertiser_id, bool enable, Callback cb,
+  virtual void Enable(uint8_t advertiser_id, bool enable,
+                      Callback cb,
                       int timeout_s, Callback timeout_cb) = 0;
+
+  /* Enable the periodic advertising instance */
+  virtual void EnablePeriodicAdvertisement(uint8_t advertiser_id,
+                                           uint8_t enable,
+                                           Callback cb) = 0;
 
   /*  Unregisters an advertiser */
   virtual void Unregister(uint8_t advertiser_id) = 0;
