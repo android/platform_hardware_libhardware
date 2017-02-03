@@ -60,8 +60,7 @@ typedef void (*scan_filter_param_callback)(int action, int client_if,
 
 /** Callback invoked when a scan filter configuration command has completed */
 typedef void (*scan_filter_status_callback)(int enable, int client_if,
-                                            int status);
-
+                                           int status);
 typedef struct {
   scan_result_callback scan_result_cb;
   batchscan_cfg_storage_callback batchscan_cfg_storage_cb;
