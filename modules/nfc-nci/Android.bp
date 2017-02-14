@@ -14,6 +14,7 @@
 
 cc_library_shared {
     name: "nfc_nci.default",
+    proprietary: true,
     relative_install_path: "hw",
     srcs: ["nfc_nci_example.c"],
     shared_libs: [
