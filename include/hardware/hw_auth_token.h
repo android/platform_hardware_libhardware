@@ -30,7 +30,7 @@ typedef enum {
     HW_AUTH_PASSWORD = 1 << 0,
     HW_AUTH_FINGERPRINT = 1 << 1,
     // Additional entries should be powers of 2.
-    HW_AUTH_ANY = UINT32_MAX,
+    HW_AUTH_ANY = -1,
 } hw_authenticator_type_t;
 
 /**
