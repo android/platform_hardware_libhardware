@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "eda6a5f0_d9f5a963",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1087743
+      },
+      "writtenOn": "2017-02-22T07:40:23Z",
+      "side": 1,
+      "message": "Because of this warning it is impossible to use this header in the project that requires treat all warnings like errors.\n\nAlso much more clear way to set bits in int is to set it in -1.",
+      "range": {
+        "startLine": 10,
+        "startChar": 6,
+        "endLine": 10,
+        "endChar": 15
+      },
+      "revId": "6796042daf32087ec987b3d72f0e6e7cab0c4883",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
