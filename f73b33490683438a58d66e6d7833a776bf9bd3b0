@@ -22,6 +22,30 @@
       "revId": "f73b33490683438a58d66e6d7833a776bf9bd3b0",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "0b16bb39_5d16aa83",
+        "filename": "include/hardware/ble_scanner.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 159,
+      "author": {
+        "id": 1087037
+      },
+      "writtenOn": "2017-03-06T17:55:30Z",
+      "side": 1,
+      "message": "Is one device doing multiple periodic advertising a valid scenario ? In case of non-android devices, the address can be same on different advertising sets.\nIf yes one would have to always specify the SID to say which to pick.",
+      "parentUuid": "6690d075_13e19a76",
+      "range": {
+        "startLine": 159,
+        "startChar": 44,
+        "endLine": 159,
+        "endChar": 51
+      },
+      "revId": "f73b33490683438a58d66e6d7833a776bf9bd3b0",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
