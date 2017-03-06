@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "6690d075_13e19a76",
+        "filename": "include/hardware/ble_scanner.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 159,
+      "author": {
+        "id": 1095528
+      },
+      "writtenOn": "2017-03-06T03:06:08Z",
+      "side": 1,
+      "message": "Can adv_sid and other values be obtained from the scan records, stored and reused instead of expecting it from the higher layers.",
+      "range": {
+        "startLine": 159,
+        "startChar": 44,
+        "endLine": 159,
+        "endChar": 51
+      },
+      "revId": "f73b33490683438a58d66e6d7833a776bf9bd3b0",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
