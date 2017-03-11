@@ -1,0 +1,9 @@
+Code-Review+2: Rom Lemarchand <romlem@google.com>
+Presubmit-Verified+1: Treehugger Robot <treehugger-gerrit@google.com>
+Autosubmit+1: David Lin <dtwlin@google.com>
+Verified+1: David Lin <dtwlin@google.com>
+Submitted-by: Treehugger Robot <treehugger-gerrit@google.com>
+Submitted-at: Sat, 11 Mar 2017 01:23:17 +0000
+Reviewed-on: https://android-review.googlesource.com/349560
+Project: platform/hardware/libhardware
+Branch: refs/heads/master
