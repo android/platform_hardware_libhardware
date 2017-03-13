@@ -34,17 +34,24 @@ struct AdvertiseParameters {
   uint8_t scan_request_notification_enable;
 };
 
+struct PeriodicAdvertisingParameters {
+  uint8_t enable;
+  uint16_t min_interval;
+  uint16_t max_interval;
+  uint16_t periodic_advertising_properties;
+};
+
 class BleAdvertiserInterface {
  public:
   virtual ~BleAdvertiserInterface() = default;
 
   /** Callback invoked when multi-adv operation has completed */
   using Callback = base::Callback<void(uint8_t /* status */)>;
+  using RegisterCallback =
+      base::Callback<void(uint8_t /* advertiser_id */, uint8_t /* status */)>;
 
   /** Registers an advertiser with the stack */
-  virtual void RegisterAdvertiser(
-      base::Callback<void(uint8_t /* advertiser_id */,
-                          uint8_t /* status */)>) = 0;
+  virtual void RegisterAdvertiser(RegisterCallback) = 0;
 
   /* Set the parameters as per spec, user manual specified values */
   virtual void SetParameters(
@@ -69,6 +76,14 @@ class BleAdvertiserInterface {
                                 std::vector<uint8_t> advertise_data,
                                 std::vector<uint8_t> scan_response_data,
                                 int timeout_s, Callback timeout_cb) = 0;
+
+  virtual void StartAdvertisingSet(
+      RegisterCallback cb, AdvertiseParameters params,
+      std::vector<uint8_t> advertise_data,
+      std::vector<uint8_t> scan_response_data,
+      PeriodicAdvertisingParameters periodic_params,
+      std::vector<uint8_t> periodic_data, int timeout_s,
+      RegisterCallback timeout_cb) = 0;
 };
 
 #endif /* ANDROID_INCLUDE_BLE_ADVERTISER_H */
