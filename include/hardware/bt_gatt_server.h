@@ -166,7 +166,7 @@ typedef struct {
     bt_status_t (*send_response)(int conn_id, int trans_id,
                                  int status, btgatt_response_t *response);
 
-    bt_status_t (*set_preferred_phy)(int conn_id, uint8_t tx_phy,
+    bt_status_t (*set_phy)(int conn_id, uint8_t tx_phy,
                                      uint8_t rx_phy, uint16_t phy_options);
 
     bt_status_t (*read_phy)(
