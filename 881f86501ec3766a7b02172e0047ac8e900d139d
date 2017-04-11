@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4ff37b11_3452eeff",
+        "filename": "modules/sensors/multihal.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 1032276
+      },
+      "writtenOn": "2017-04-11T16:19:45Z",
+      "side": 1,
+      "message": "merge conflict into internal master, simplify.",
+      "range": {
+        "startLine": 17,
+        "startChar": 0,
+        "endLine": 39,
+        "endChar": 29
+      },
+      "revId": "881f86501ec3766a7b02172e0047ac8e900d139d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
