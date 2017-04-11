@@ -14,30 +14,29 @@
  * limitations under the License.
  */
 
-#include <hardware/sensors.h>
-#include <fcntl.h>
-#include <errno.h>
 #include <dirent.h>
+#include <dlfcn.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <limits.h>
 #include <math.h>
 #include <poll.h>
 #include <pthread.h>
-#include <cutils/atomic.h>
+#include <stdio.h>
+#include <stdlib.h>
 
-#define LOG_NDEBUG 1
-#include <cutils/log.h>
-
-#include <vector>
-#include <string>
 #include <fstream>
 #include <map>
 #include <string>
+#include <vector>
 
-#include <stdio.h>
-#include <dlfcn.h>
+#include <cutils/atomic.h>
+#define LOG_NDEBUG 1
+#include <log/log.h>
+
+#include <hardware/sensors.h>
+
 #include <SensorEventQueue.h>
-
-#include <limits.h>
-#include <stdlib.h>
 
 static const char* CONFIG_FILENAME = "/system/etc/sensors/hals.conf";
 static const int MAX_CONF_LINE_LENGTH = 1024;
