@@ -24,7 +24,7 @@
 #include <cutils/atomic.h>
 
 #define LOG_NDEBUG 1
-#include <cutils/log.h>
+#include <log/log.h>
 
 #include <vector>
 #include <string>
