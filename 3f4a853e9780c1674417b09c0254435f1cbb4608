@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "395d31c7_1899003a",
+        "filename": "modules/fingerprint/fingerprint.c",
+        "patchSetId": 4
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1032276
+      },
+      "writtenOn": "2017-04-11T17:46:36Z",
+      "side": 1,
+      "message": "fingerprint.h fails to include hardware.h and thus has a forward reference.",
+      "range": {
+        "startLine": 25,
+        "startChar": 0,
+        "endLine": 26,
+        "endChar": 30
+      },
+      "revId": "3f4a853e9780c1674417b09c0254435f1cbb4608",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
