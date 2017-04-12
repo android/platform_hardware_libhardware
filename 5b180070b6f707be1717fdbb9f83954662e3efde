@@ -1,0 +1,9 @@
+Verified+1: Steven Moreland <smoreland@google.com>
+Autosubmit+1: Steven Moreland <smoreland@google.com>
+Presubmit-Verified+1: Treehugger Robot <treehugger-gerrit@google.com>
+Code-Review+2: Iliyan Malchev <malchev@google.com>
+Submitted-by: Treehugger Robot <treehugger-gerrit@google.com>
+Submitted-at: Wed, 12 Apr 2017 20:02:05 +0000
+Reviewed-on: https://android-review.googlesource.com/369995
+Project: platform/hardware/libhardware
+Branch: refs/heads/master
