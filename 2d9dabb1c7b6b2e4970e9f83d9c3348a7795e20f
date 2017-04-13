@@ -22,6 +22,30 @@
       "revId": "2d9dabb1c7b6b2e4970e9f83d9c3348a7795e20f",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "6598cf87_4605681f",
+        "filename": "modules/radio/radio_hw.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 409,
+      "author": {
+        "id": 1086824
+      },
+      "writtenOn": "2017-04-13T17:09:36Z",
+      "side": 1,
+      "message": "Thx for your suggestion. I want to keep the original usage.\nReason:\n1) If we follow the suggestion and add some other command, then we may need new function for it. I\u0027m not sure this is good way to deal with it.\n2) The thread_cmd_delay_ms is default command delay. If there\u0027re some other requirements, it\u0027s easy to directly change the delay through send_command_l interface.",
+      "parentUuid": "7987b246_849c73a5",
+      "range": {
+        "startLine": 409,
+        "startChar": 24,
+        "endLine": 409,
+        "endChar": 111
+      },
+      "revId": "2d9dabb1c7b6b2e4970e9f83d9c3348a7795e20f",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
