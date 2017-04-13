@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7987b246_849c73a5",
+        "filename": "modules/radio/radio_hw.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 409,
+      "author": {
+        "id": 1129213
+      },
+      "writtenOn": "2017-04-13T17:01:50Z",
+      "side": 1,
+      "message": "I suggest creating a function that takes 3 arguments (tuner, CMD, NULL) that calls send_comman_l with the correct command and delay. That way you don\u0027t have to make sure the command matches i.e. it is less error prone.",
+      "range": {
+        "startLine": 409,
+        "startChar": 24,
+        "endLine": 409,
+        "endChar": 111
+      },
+      "revId": "2d9dabb1c7b6b2e4970e9f83d9c3348a7795e20f",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
