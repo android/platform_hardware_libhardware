@@ -22,6 +22,30 @@
       "revId": "4d2491836c519d7599f231457d3a851adadc24b5",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "187ab459_9e46bb92",
+        "filename": "include/hardware/bluetooth.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 563,
+      "author": {
+        "id": 1077498
+      },
+      "writtenOn": "2017-04-18T21:25:46Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "832b723a_992e99e1",
+      "range": {
+        "startLine": 563,
+        "startChar": 24,
+        "endLine": 563,
+        "endChar": 29
+      },
+      "revId": "4d2491836c519d7599f231457d3a851adadc24b5",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
