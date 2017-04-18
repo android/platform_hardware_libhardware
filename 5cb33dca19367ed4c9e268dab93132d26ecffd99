@@ -1,0 +1,9 @@
+Code-Review+2: Tomasz Wasilczyk <twasilczyk@google.com>
+Verified+1: David Benjamin <davidben@google.com>
+Autosubmit+1: Rob Sloan <varomodt@google.com>
+Presubmit-Verified+1: Treehugger Robot <treehugger-gerrit@google.com>
+Submitted-by: Treehugger Robot <treehugger-gerrit@google.com>
+Submitted-at: Tue, 18 Apr 2017 18:44:08 +0000
+Reviewed-on: https://android-review.googlesource.com/337290
+Project: platform/hardware/libhardware
+Branch: refs/heads/master
