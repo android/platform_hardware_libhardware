@@ -560,8 +560,8 @@ typedef struct {
     /* opcode MUST be one of: LE_Receiver_Test, LE_Transmitter_Test, LE_Test_End */
     int (*le_test_mode)(uint16_t opcode, uint8_t *buf, uint8_t len);
 
-    /* enable or disable bluetooth HCI snoop log */
-    int (*config_hci_snoop_log)(uint8_t enable);
+    /* Update snoop log state from system preference */
+    int (*update_hci_snoop_log)();
 
     /** Sets the OS call-out functions that bluedroid needs for alarms and wake locks.
       * This should be called immediately after a successful |init|.
