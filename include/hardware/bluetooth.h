@@ -400,6 +400,14 @@ typedef void (*le_test_mode_callback)(bt_status_t status, uint16_t num_packets);
 typedef void (*energy_info_callback)(bt_activity_energy_info *energy_info,
                                      bt_uid_traffic_t *uid_data);
 
+/** To read the active PHYs for the specified connection */
+typedef void (*le_read_phy_callback)(uint8_t status, bt_bdaddr_t *remote_bd_addr, uint8_t tx_phy,
+                                     uint8_t rx_phy);
+
+/** To set the preferrence of PHYs for the specified connection */
+typedef void (*le_phy_update_callback)(uint8_t status, bt_bdaddr_t *remote_bd_addr, uint8_t tx_phy,
+                                       uint8_t rx_phy);
+
 /** TODO: Add callbacks for Link Up/Down and other generic
   *  notifications/callbacks */
 
@@ -420,6 +428,8 @@ typedef struct {
     dut_mode_recv_callback dut_mode_recv_cb;
     le_test_mode_callback le_test_mode_cb;
     energy_info_callback energy_info_cb;
+    le_read_phy_callback le_read_phy_cb;
+    le_phy_update_callback le_phy_update_cb;
 } bt_callbacks_t;
 
 typedef void (*alarm_cb)(void *data);
@@ -556,6 +566,15 @@ typedef struct {
 
     /* Send any test HCI (vendor-specific) command to the controller. Must be in DUT Mode */
     int (*dut_mode_send)(uint16_t opcode, uint8_t *buf, uint8_t len);
+
+    /** LE2M APIs */
+    /** To read the active PHYs for the specified connection */
+    int (*le_read_phy)(bt_bdaddr_t *bd_addr);
+
+    /** To set the preferrence of PHYs for the specified connection */
+    int (*le_set_phy)(bt_bdaddr_t *bd_addr, uint8_t tx_phys, uint8_t rx_phys,
+                      uint16_t phy_options);
+
     /** BLE Test Mode APIs */
     /* opcode MUST be one of: LE_Receiver_Test, LE_Transmitter_Test, LE_Test_End */
     int (*le_test_mode)(uint16_t opcode, uint8_t *buf, uint8_t len);
