@@ -1,0 +1,8 @@
+Code-Review+2: Martijn Coenen <maco@google.com>
+Verified+1: Steven Moreland <smoreland@google.com>
+Presubmit-Verified+1: Treehugger Robot <treehugger-gerrit@google.com>
+Submitted-by: Treehugger Robot <treehugger-gerrit@google.com>
+Submitted-at: Thu, 20 Apr 2017 01:39:21 +0000
+Reviewed-on: https://android-review.googlesource.com/375934
+Project: platform/hardware/libhardware
+Branch: refs/heads/master
