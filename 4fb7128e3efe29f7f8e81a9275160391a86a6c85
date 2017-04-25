@@ -16,6 +16,24 @@
       "revId": "4fb7128e3efe29f7f8e81a9275160391a86a6c85",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "32033792_ee34773f",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1096713
+      },
+      "writtenOn": "2017-04-25T21:06:29Z",
+      "side": 1,
+      "message": "This isn\u0027t a pure cherry pick (the commit message is different, and the CL I\u0027m taking from wouldn\u0027t cleanly cherry-pick into here).  Having said that, this CL is still basically a cherry-pick, in taking functionality already implemented in one branch, and moving it to another.  So should I still add the \"cherry-picked from...\" line?",
+      "parentUuid": "e10212ab_00a41197",
+      "revId": "4fb7128e3efe29f7f8e81a9275160391a86a6c85",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
