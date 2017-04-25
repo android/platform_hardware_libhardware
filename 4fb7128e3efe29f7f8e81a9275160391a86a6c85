@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e10212ab_00a41197",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1010056
+      },
+      "writtenOn": "2017-04-25T20:52:38Z",
+      "side": 1,
+      "message": "We usually use \"git cherry-pick -x ...\" to make sure that it has a line like \"(cherry-picked from commit ...)\" at the end of the cherry-pick. This makes it easier to tell that it went into master first (or aosp first, and then a release branch or something like that).",
+      "revId": "4fb7128e3efe29f7f8e81a9275160391a86a6c85",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
