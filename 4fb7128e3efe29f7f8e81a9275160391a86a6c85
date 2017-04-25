@@ -34,6 +34,24 @@
       "revId": "4fb7128e3efe29f7f8e81a9275160391a86a6c85",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "2f5f45a9_148311d5",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1032276
+      },
+      "writtenOn": "2017-04-25T21:24:02Z",
+      "side": 1,
+      "message": "Add it anyways, generically and pedantically, the (cherry picked from commit \u003csha\u003e) line helps us with its history across repositories if we end up looking back at this. I expect when the grand merge occurs from internal back to aosp occurs on each release, this information might be useful for the merge conflict resolution, they can look at both and figure out how to resolve it rather than punting to the original author.",
+      "parentUuid": "32033792_ee34773f",
+      "revId": "4fb7128e3efe29f7f8e81a9275160391a86a6c85",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
