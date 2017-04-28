@@ -22,6 +22,30 @@
       "revId": "b1d0bd8945dc32488b21a80b535646e3d02baa33",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "fede3702_7a71fb4a",
+        "filename": "modules/radio/Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1135107
+      },
+      "writtenOn": "2017-04-28T20:58:23Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "cb41955b_cc1e8497",
+      "range": {
+        "startLine": 17,
+        "startChar": 0,
+        "endLine": 18,
+        "endChar": 32
+      },
+      "revId": "b1d0bd8945dc32488b21a80b535646e3d02baa33",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
     }
   ]
 }
