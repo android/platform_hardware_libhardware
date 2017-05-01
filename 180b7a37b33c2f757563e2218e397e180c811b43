@@ -1,0 +1,8 @@
+Code-Review+2: Colin Cross <ccross@android.com>
+Presubmit-Verified+1: Treehugger Robot <treehugger-gerrit@google.com>
+Verified+1: Tomasz Wasilczyk <twasilczyk@google.com>
+Submitted-by: Tomasz Wasilczyk <twasilczyk@google.com>
+Submitted-at: Mon, 01 May 2017 23:17:45 +0000
+Reviewed-on: https://android-review.googlesource.com/379422
+Project: platform/hardware/libhardware
+Branch: refs/heads/master
