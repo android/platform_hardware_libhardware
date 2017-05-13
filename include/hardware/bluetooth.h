@@ -35,7 +35,7 @@ __BEGIN_DECLS
 #define BT_STACK_TEST_MODULE_ID "bluetooth_test"
 
 
-/* Bluetooth profile interface IDs */
+/** Bluetooth profile interface IDs */
 
 #define BT_PROFILE_HANDSFREE_ID "handsfree"
 #define BT_PROFILE_HANDSFREE_CLIENT_ID "handsfree_client"
@@ -51,6 +51,9 @@ __BEGIN_DECLS
 #define BT_PROFILE_GATT_ID "gatt"
 #define BT_PROFILE_AV_RC_ID "avrcp"
 #define BT_PROFILE_AV_RC_CTRL_ID "avrcp_ctrl"
+
+/** Bluetooth test interface IDs */
+#define BT_TEST_INTERFACE_MCAP_ID "mcap_test"
 
 /** Bluetooth Address */
 typedef struct {
@@ -549,6 +552,9 @@ typedef struct {
 
     /** Get Bluetooth profile interface */
     const void* (*get_profile_interface) (const char *profile_id);
+
+    /** Get Bluetooth test application interface */
+    const void* (*get_test_interface) (const char *test_interface_id);
 
     /** Bluetooth Test Mode APIs - Bluetooth must be enabled for these APIs */
     /* Configure DUT Mode - Use this mode to enter/exit DUT mode */
