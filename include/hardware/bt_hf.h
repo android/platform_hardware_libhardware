@@ -312,7 +312,7 @@ typedef struct {
      *    3. number & type: valid only for incoming & waiting call
     */
     bt_status_t (*phone_state_change) (int num_active, int num_held, bthf_call_state_t call_setup_state,
-                                       const char *number, bthf_call_addrtype_t type);
+                                       const char *number, bthf_call_addrtype_t type, const char *name);
 
     /** Closes the interface. */
     void  (*cleanup)( void );
