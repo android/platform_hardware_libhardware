@@ -315,8 +315,8 @@ typedef void (* btrc_get_player_app_attrs_text_callback) (uint8_t num_attr,
 /** Callback for getting the player application settings values' text
 **  num_attr: specifies the number of value ids contained in p_vals
 */
-typedef void (* btrc_get_player_app_values_text_callback) (uint8_t attr_id, uint8_t num_val,
-    uint8_t *p_vals, bt_bdaddr_t *bd_addr);
+typedef void (* btrc_get_player_app_values_text_callback) (uint8_t attr_id,
+    uint8_t num_val, uint8_t *p_vals, bt_bdaddr_t *bd_addr);
 
 /** Callback for setting the player application settings values */
 typedef void (* btrc_set_player_app_value_callback) (btrc_player_settings_t *p_vals,
@@ -428,13 +428,13 @@ typedef struct {
     /** Lists the support player application attributes (Shuffle/Repeat/...)
     **  num_attr: Specifies the number of attributes contained in the pointer p_attrs
     */
-    bt_status_t (*list_player_app_attr_rsp)( bt_bdaddr_t *bd_addr, int num_attr,
+    bt_status_t (*list_player_app_attr_rsp)( bt_bdaddr_t *bd_addr, uint8_t num_attr,
         btrc_player_attr_t *p_attrs);
 
     /** Lists the support player application attributes (Shuffle Off/On/Group)
     **  num_val: Specifies the number of values contained in the pointer p_vals
     */
-    bt_status_t (*list_player_app_value_rsp)( bt_bdaddr_t *bd_addr, int num_val, uint8_t *p_vals);
+    bt_status_t (*list_player_app_value_rsp)( bt_bdaddr_t *bd_addr, uint8_t num_val, uint8_t *p_vals);
 
     /** Returns the current application attribute values for each of the specified attr_id */
     bt_status_t (*get_player_app_value_rsp)( bt_bdaddr_t *bd_addr, btrc_player_settings_t *p_vals);
@@ -442,13 +442,13 @@ typedef struct {
     /** Returns the application attributes text ("Shuffle"/"Repeat"/...)
     **  num_attr: Specifies the number of attributes' text contained in the pointer p_attrs
     */
-    bt_status_t (*get_player_app_attr_text_rsp)( bt_bdaddr_t *bd_addr, int num_attr,
+    bt_status_t (*get_player_app_attr_text_rsp)( bt_bdaddr_t *bd_addr, uint8_t num_attr,
         btrc_player_setting_text_t *p_attrs);
 
     /** Returns the application attributes text ("Shuffle"/"Repeat"/...)
     **  num_attr: Specifies the number of attribute values' text contained in the pointer p_vals
     */
-    bt_status_t (*get_player_app_value_text_rsp)( bt_bdaddr_t *bd_addr, int num_val,
+    bt_status_t (*get_player_app_value_text_rsp)( bt_bdaddr_t *bd_addr, uint8_t num_val,
         btrc_player_setting_text_t *p_vals);
 
     /** Returns the current songs' element attributes text ("Title"/"Album"/"Artist")
