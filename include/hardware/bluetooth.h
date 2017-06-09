@@ -17,6 +17,7 @@
 #ifndef ANDROID_INCLUDE_BLUETOOTH_H
 #define ANDROID_INCLUDE_BLUETOOTH_H
 
+#include <base/strings/stringprintf.h>
 #include <stdbool.h>
 #include <stdint.h>
 #include <sys/cdefs.h>
@@ -56,9 +57,25 @@ __BEGIN_DECLS
 #define BT_TEST_INTERFACE_MCAP_ID "mcap_test"
 
 /** Bluetooth Address */
-typedef struct {
-    uint8_t address[6];
-} __attribute__((packed))bt_bdaddr_t;
+struct bt_bdaddr_t{
+  uint8_t address[6];
+
+  bool operator==(const bt_bdaddr_t &rhs) const {
+    return memcmp(address, rhs.address, 6) == 0;
+  }
+
+  bool operator!=(const bt_bdaddr_t &rhs) const {
+    return memcmp(address, rhs.address, 6) != 0;
+  }
+
+  std::string ToString() const {
+    return base::StringPrintf("%02x:%02x:%02x:%02x:%02x:%02x", address[0],
+                              address[1], address[2], address[3], address[4],
+                              address[5]);
+  }
+} __attribute__((packed)) ;
+
+static_assert (sizeof(bt_bdaddr_t) == 6, "bt_bdaddr_t should hold just address. Invalid size.");
 
 /** Bluetooth Device Name */
 typedef struct {
@@ -612,5 +629,10 @@ typedef bluetooth_device_t bluetooth_module_t;
 
 
 __END_DECLS
+
+inline std::ostream &operator<<(std::ostream &os, const bt_bdaddr_t &a) {
+  os << a.ToString();
+  return os;
+}
 
 #endif /* ANDROID_INCLUDE_BLUETOOTH_H */
