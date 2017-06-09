@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "89cfb6cf_5ba122a8",
+        "filename": "include/hardware/bluetooth.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 1087037
+      },
+      "writtenOn": "2017-06-09T18:22:38Z",
+      "side": 1,
+      "message": "I think \"struct\" keyword better reflect the fact that this is still just 6 bytes, only on steroids.\n\nAlso I think this structure still falls into category described in the mentioned style guide:\n\n\"structs should be used for passive objects that carry data, and may have associated constants, but lack any functionality other than access/setting the data members. The accessing/setting of fields is done by directly accessing the fields rather than through method invocations. Methods should not provide behavior but should only be used to set up the data members, e.g., constructor, destructor, Initialize(), Reset(), Validate().\"",
+      "parentUuid": "137faece_f180d27e",
+      "range": {
+        "startLine": 60,
+        "startChar": 0,
+        "endLine": 60,
+        "endChar": 7
+      },
+      "revId": "1ba97fba24f4ad3a309d5a292aaca0a896ebaec0",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "adc5cf96_e59e2d0b",
         "filename": "include/hardware/bluetooth.h",
         "patchSetId": 1
@@ -36,6 +60,30 @@
       "writtenOn": "2017-06-09T18:12:51Z",
       "side": 1,
       "message": "Serialize() and DeSerialize() should be explicit methods, instead of implicit casing that requires a class/struct to be \"packed\"",
+      "range": {
+        "startLine": 76,
+        "startChar": 1,
+        "endLine": 76,
+        "endChar": 25
+      },
+      "revId": "1ba97fba24f4ad3a309d5a292aaca0a896ebaec0",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "2b1108ac_c687650d",
+        "filename": "include/hardware/bluetooth.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 76,
+      "author": {
+        "id": 1087037
+      },
+      "writtenOn": "2017-06-09T18:22:38Z",
+      "side": 1,
+      "message": "I would like to have same memory footprint as the BD_ADDR, only much easier to handle in code, at least until we get rid of BD_ADDR completly.\n\nRight now there are many places where BD_ADDR is casted to bt_bdaddr_t, and removing this will break this code.",
+      "parentUuid": "adc5cf96_e59e2d0b",
       "range": {
         "startLine": 76,
         "startChar": 1,
