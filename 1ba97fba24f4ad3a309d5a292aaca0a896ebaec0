@@ -97,6 +97,30 @@
     },
     {
       "key": {
+        "uuid": "7b96defb_0c9abc27",
+        "filename": "include/hardware/bluetooth.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 1121403
+      },
+      "writtenOn": "2017-06-09T18:57:29Z",
+      "side": 1,
+      "message": "I meant regardless of the memory representation, this object should interact with other objects/methods only through public methods. No matter what the memory representation is, external users of this object should be expecting consistent return values from these public methods. \n\nFor example, when filling this into an HCI packet:\n\nBluetoothAddress bluetoothAddress(\"XX:XX:XX:XX:XX:XX\");\nhci_packet-\u003ebd_addr \u003d bluetoothAddress.Serialize();\n\nWhen getting Bluetooth address from an HCI packet:\n\nBluetoothAddress bluetoothAddress \u003d BluetoothAddress::DeSerialize(hci_packet-\u003ebd_addr);",
+      "parentUuid": "27e40d11_c9981f40",
+      "range": {
+        "startLine": 60,
+        "startChar": 0,
+        "endLine": 60,
+        "endChar": 7
+      },
+      "revId": "1ba97fba24f4ad3a309d5a292aaca0a896ebaec0",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "adc5cf96_e59e2d0b",
         "filename": "include/hardware/bluetooth.h",
         "patchSetId": 1
