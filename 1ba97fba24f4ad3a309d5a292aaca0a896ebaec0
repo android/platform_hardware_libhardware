@@ -73,6 +73,30 @@
     },
     {
       "key": {
+        "uuid": "27e40d11_c9981f40",
+        "filename": "include/hardware/bluetooth.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 1087037
+      },
+      "writtenOn": "2017-06-09T18:39:11Z",
+      "side": 1,
+      "message": "How can you not rely on memory representation for the correctnes ?!",
+      "parentUuid": "0fe6ef36_781abb56",
+      "range": {
+        "startLine": 60,
+        "startChar": 0,
+        "endLine": 60,
+        "endChar": 7
+      },
+      "revId": "1ba97fba24f4ad3a309d5a292aaca0a896ebaec0",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "adc5cf96_e59e2d0b",
         "filename": "include/hardware/bluetooth.h",
         "patchSetId": 1
@@ -132,6 +156,30 @@
       "side": 1,
       "message": "Please see my comments above. \n\nIf we could replace all usages of BD_ADDR to bt_addr_t casting in one CL, that would be great. If not, I would not mind using bt_addr_t as a struct for now. However, eventually, this should be a class with legitimate Serialize and DeSerialize methods.",
       "parentUuid": "2b1108ac_c687650d",
+      "range": {
+        "startLine": 76,
+        "startChar": 1,
+        "endLine": 76,
+        "endChar": 25
+      },
+      "revId": "1ba97fba24f4ad3a309d5a292aaca0a896ebaec0",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "85ba2f25_3ca3fb1a",
+        "filename": "include/hardware/bluetooth.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 76,
+      "author": {
+        "id": 1087037
+      },
+      "writtenOn": "2017-06-09T18:39:11Z",
+      "side": 1,
+      "message": "What is the point in serialize and deserialize method, if you internally use exactly same data type for representation ? What would such serialize method do ? What sort of additional data you want to keep in bt_bdaddr_t ?\n\nAs we go further, there will be a need for method that will convert the address into little endian, and from little endian representation, but I would not call this serialization.",
+      "parentUuid": "5860a9bf_d16dd43a",
       "range": {
         "startLine": 76,
         "startChar": 1,
