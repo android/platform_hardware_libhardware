@@ -49,6 +49,30 @@
     },
     {
       "key": {
+        "uuid": "0fe6ef36_781abb56",
+        "filename": "include/hardware/bluetooth.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 1121403
+      },
+      "writtenOn": "2017-06-09T18:27:47Z",
+      "side": 1,
+      "message": "In the short run, this is a good transitioning trade-off, but in the long run, this should still be made into classes as we should not rely on memory representation for the correctness of the functionality.",
+      "parentUuid": "89cfb6cf_5ba122a8",
+      "range": {
+        "startLine": 60,
+        "startChar": 0,
+        "endLine": 60,
+        "endChar": 7
+      },
+      "revId": "1ba97fba24f4ad3a309d5a292aaca0a896ebaec0",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "adc5cf96_e59e2d0b",
         "filename": "include/hardware/bluetooth.h",
         "patchSetId": 1
@@ -84,6 +108,30 @@
       "side": 1,
       "message": "I would like to have same memory footprint as the BD_ADDR, only much easier to handle in code, at least until we get rid of BD_ADDR completly.\n\nRight now there are many places where BD_ADDR is casted to bt_bdaddr_t, and removing this will break this code.",
       "parentUuid": "adc5cf96_e59e2d0b",
+      "range": {
+        "startLine": 76,
+        "startChar": 1,
+        "endLine": 76,
+        "endChar": 25
+      },
+      "revId": "1ba97fba24f4ad3a309d5a292aaca0a896ebaec0",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5860a9bf_d16dd43a",
+        "filename": "include/hardware/bluetooth.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 76,
+      "author": {
+        "id": 1121403
+      },
+      "writtenOn": "2017-06-09T18:27:47Z",
+      "side": 1,
+      "message": "Please see my comments above. \n\nIf we could replace all usages of BD_ADDR to bt_addr_t casting in one CL, that would be great. If not, I would not mind using bt_addr_t as a struct for now. However, eventually, this should be a class with legitimate Serialize and DeSerialize methods.",
+      "parentUuid": "2b1108ac_c687650d",
       "range": {
         "startLine": 76,
         "startChar": 1,
