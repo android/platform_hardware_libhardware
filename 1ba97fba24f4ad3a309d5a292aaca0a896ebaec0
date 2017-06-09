@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "137faece_f180d27e",
+        "filename": "include/hardware/bluetooth.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 1121403
+      },
+      "writtenOn": "2017-06-09T18:12:51Z",
+      "side": 1,
+      "message": "Why not making this a class? \n\nBy https://google.github.io/styleguide/cppguide.html#Structs_vs._Classes\n\n\"Use a struct only for passive objects that carry data; everything else is a class.\"",
+      "range": {
+        "startLine": 60,
+        "startChar": 0,
+        "endLine": 60,
+        "endChar": 7
+      },
+      "revId": "1ba97fba24f4ad3a309d5a292aaca0a896ebaec0",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "adc5cf96_e59e2d0b",
+        "filename": "include/hardware/bluetooth.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 76,
+      "author": {
+        "id": 1121403
+      },
+      "writtenOn": "2017-06-09T18:12:51Z",
+      "side": 1,
+      "message": "Serialize() and DeSerialize() should be explicit methods, instead of implicit casing that requires a class/struct to be \"packed\"",
+      "range": {
+        "startLine": 76,
+        "startChar": 1,
+        "endLine": 76,
+        "endChar": 25
+      },
+      "revId": "1ba97fba24f4ad3a309d5a292aaca0a896ebaec0",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
