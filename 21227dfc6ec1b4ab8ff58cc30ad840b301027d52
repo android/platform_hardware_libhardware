@@ -1,0 +1,9 @@
+Presubmit-Verified+1: Treehugger Robot <treehugger-gerrit@google.com>
+Code-Review+1: Avish Shah <avish.shah@broadcom.com>
+Code-Review+2: Jakub Pawlowski <jpawlowski@google.com>
+Verified+1: Jakub Pawlowski <jpawlowski@google.com>
+Submitted-by: Treehugger Robot <treehugger-gerrit@google.com>
+Submitted-at: Thu, 15 Jun 2017 17:50:28 +0000
+Reviewed-on: https://android-review.googlesource.com/400192
+Project: platform/hardware/libhardware
+Branch: refs/heads/master
