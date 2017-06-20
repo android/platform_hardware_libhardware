@@ -61,6 +61,7 @@ typedef enum {
 
   // Add an entry for each sink codec here
   BTAV_A2DP_CODEC_INDEX_SINK_SBC = BTAV_A2DP_CODEC_INDEX_SINK_MIN,
+  BTAV_A2DP_CODEC_INDEX_SINK_AAC,
 
   BTAV_A2DP_CODEC_INDEX_SINK_MAX,
 
