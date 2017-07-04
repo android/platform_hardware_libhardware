@@ -221,6 +221,10 @@ enum {
      * English(eng), for example, is converted to 0x656e67.
      */
     HDMI_OPTION_SET_LANG = 5,
+
+    /* Pass if system support multichannels or not for ARC devices.
+     */
+    HDMI_OPTION_SUPPORT_MULTICHANNELS = 6,
 };
 
 /*
