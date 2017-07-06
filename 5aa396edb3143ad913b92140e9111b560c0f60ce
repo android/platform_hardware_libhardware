@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4e37d25a_4a57b89b",
+        "filename": "include/hardware/bluetooth.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1071489
+      },
+      "writtenOn": "2017-07-06T18:47:41Z",
+      "side": 1,
+      "message": "#include \"foo.h\" is typically used for including files that are local\nto this project.\nHere you are referring to files in another project, so you should use\n\n#include \u003craw_address.h\u003e",
+      "range": {
+        "startLine": 27,
+        "startChar": 0,
+        "endLine": 27,
+        "endChar": 24
+      },
+      "revId": "5aa396edb3143ad913b92140e9111b560c0f60ce",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
