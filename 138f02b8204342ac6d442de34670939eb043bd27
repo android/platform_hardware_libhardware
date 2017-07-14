@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "6ce3eb6d_7e3ca580",
+        "filename": "modules/input/evdev/Android.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 1120458
+      },
+      "writtenOn": "2017-07-14T22:30:02Z",
+      "side": 1,
+      "message": "will need owners for moving it over. This module is different.",
+      "range": {
+        "startLine": 44,
+        "startChar": 28,
+        "endLine": 44,
+        "endChar": 32
+      },
+      "revId": "138f02b8204342ac6d442de34670939eb043bd27",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "beff9838_b94ed9ec",
+        "filename": "modules/input/evdev/Android.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 1120458
+      },
+      "writtenOn": "2017-07-14T22:30:02Z",
+      "side": 1,
+      "message": "I think you can delete this and just replace the import with log/log.h",
+      "range": {
+        "startLine": 60,
+        "startChar": 4,
+        "endLine": 60,
+        "endChar": 20
+      },
+      "revId": "138f02b8204342ac6d442de34670939eb043bd27",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
