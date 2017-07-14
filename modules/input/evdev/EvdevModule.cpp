@@ -25,7 +25,7 @@
 #include <hardware/hardware.h>
 #include <hardware/input.h>
 
-#include <utils/Log.h>
+#include <log/log.h>
 
 #include "InputHub.h"
 #include "InputDeviceManager.h"

@@ -27,6 +27,16 @@ LOCAL_SRC_FILES := \
     MouseInputMapper.cpp \
     SwitchInputMapper.cpp
 
+LOCAL_HEADER_LIBRARIES := \
+    libandroid_input_headers \
+    libhardware_headers \
+
+LOCAL_EXPORT_HEADER_LIBRARY_HEADERS := \
+    libhardware_headers \
+
+LOCAL_EXPORT_SHARED_LIBRARY_HEADERS := \
+    libutils \
+
 LOCAL_SHARED_LIBRARIES := \
     libhardware_legacy \
     liblog \
@@ -37,6 +47,7 @@ LOCAL_CPPFLAGS += -std=c++14 -Wno-unused-parameter
 
 LOCAL_MODULE := libinput_evdev
 LOCAL_MODULE_TAGS := optional
+LOCAL_PROPRIETARY_MODULE := true
 
 include $(BUILD_SHARED_LIBRARY)
 
@@ -45,6 +56,7 @@ include $(CLEAR_VARS)
 
 LOCAL_MODULE := input.evdev.default
 LOCAL_MODULE_RELATIVE_PATH := hw
+LOCAL_PROPRIETARY_MODULE := true
 
 LOCAL_SRC_FILES := \
     EvdevModule.cpp
