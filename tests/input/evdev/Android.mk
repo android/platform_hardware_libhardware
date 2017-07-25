@@ -19,7 +19,6 @@ LOCAL_SHARED_LIBRARIES := \
     liblog \
     libutils
 
-LOCAL_CLANG := true
 LOCAL_CFLAGS += -Wall -Wextra -Wno-unused-parameter
 
 # TestHelpers uses mktemp. As the path is given to TempFile, we can't do too much

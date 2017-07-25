@@ -32,7 +32,7 @@ LOCAL_SHARED_LIBRARIES := \
     liblog \
     libutils
 
-LOCAL_CLANG := true
+
 LOCAL_CPPFLAGS += -Wno-unused-parameter
 
 LOCAL_MODULE := libinput_evdev
@@ -54,7 +54,6 @@ LOCAL_SHARED_LIBRARIES := \
     libinput_evdev \
     liblog
 
-LOCAL_CLANG := true
 LOCAL_CPPFLAGS += -Wno-unused-parameter
 
 LOCAL_MODULE_TAGS := optional
