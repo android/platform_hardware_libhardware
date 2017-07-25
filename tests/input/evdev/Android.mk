@@ -19,7 +19,6 @@ LOCAL_SHARED_LIBRARIES := \
     liblog \
     libutils
 
-LOCAL_CLANG := true
 LOCAL_CFLAGS += -Wall -Wextra -Wno-unused-parameter
 LOCAL_CPPFLAGS += -std=c++14
 
