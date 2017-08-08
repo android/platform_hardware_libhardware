@@ -655,6 +655,11 @@ static int module__get_sensors_list(__unused struct sensors_module_t* module,
     return global_sensors_count;
 }
 
+static int set_operation_mode(unsigned int mode) {
+    ALOGI("set_operation_mode");
+    return (mode) ? -EINVAL : 0;
+}
+
 static struct hw_module_methods_t sensors_module_methods = {
     .open = open_sensors
 };
@@ -671,12 +676,15 @@ struct sensors_module_t HAL_MODULE_INFO_SYM = {
         .dso = NULL,
         .reserved = {0},
     },
-    .get_sensors_list = module__get_sensors_list
+    .get_sensors_list = module__get_sensors_list,
+    .set_operation_mode = set_operation_mode,
 };
+
 
 struct sensors_module_t *get_multi_hal_module_info() {
     return (&HAL_MODULE_INFO_SYM);
 }
+
 
 static int open_sensors(const struct hw_module_t* hw_module, const char* name,
         struct hw_device_t** hw_device_out) {
