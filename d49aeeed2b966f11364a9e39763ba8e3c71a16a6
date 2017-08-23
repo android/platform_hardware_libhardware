@@ -1,0 +1,8 @@
+Presubmit-Verified+1: Treehugger Robot <treehugger-gerrit@google.com>
+Code-Review+2: Andrew Hsieh <andrewhsieh@google.com>
+Verified+1: Justin Yun <justinyun@google.com>
+Submitted-by: Treehugger Robot <treehugger-gerrit@google.com>
+Submitted-at: Wed, 23 Aug 2017 23:11:30 +0000
+Reviewed-on: https://android-review.googlesource.com/450857
+Project: platform/hardware/libhardware
+Branch: refs/heads/master
