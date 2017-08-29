@@ -1,0 +1,10 @@
+Presubmit-Verified+1: Treehugger Robot <treehugger-gerrit@google.com>
+Code-Review+1: Aniroop Mathur <a.mathur@samsung.com>
+Code-Review+1: ashutoshj <ashutoshj@google.com>
+Code-Review+2: Peng Xu <pengxu@google.com>
+Verified+1: Peng Xu <pengxu@google.com>
+Submitted-by: Peng Xu <pengxu@google.com>
+Submitted-at: Tue, 29 Aug 2017 20:36:07 +0000
+Reviewed-on: https://android-review.googlesource.com/432379
+Project: platform/hardware/libhardware
+Branch: refs/heads/master
