@@ -86,6 +86,10 @@ static int fingerprint_open(const hw_module_t* module, const char __unused *id,
     }
 
     fingerprint_device_t *dev = malloc(sizeof(fingerprint_device_t));
+    if (dev == NULL) {
+        ALOGE("fingerprint dev malloc failed");
+        return -ENOMEM;
+    }
     memset(dev, 0, sizeof(fingerprint_device_t));
 
     dev->common.tag = HARDWARE_DEVICE_TAG;
