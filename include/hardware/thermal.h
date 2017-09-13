@@ -136,6 +136,14 @@ typedef struct thermal_module {
     struct hw_module_t common;
 
     /*
+     * (*init)() performs thermal management setup actions at runtime
+     * startup, such as to start server binder service.  This is
+     * called only by the Thermal HAL instance loaded by
+     * HardwarePropertiesManagerService.
+     */
+    void (*init)(struct thermal_module *module);
+
+    /*
      * (*getTemperatures) is called to get temperatures in Celsius.
      *
      * @param list If NULL, this method only returns number of temperatures
