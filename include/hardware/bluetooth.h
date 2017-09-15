@@ -478,6 +478,9 @@ typedef struct {
     /** Closes the interface. */
     void (*cleanup)(void);
 
+    /** Clean up BR/EDR part of the stack */
+    void (*cleanup_classic)(void);
+
     /** Get all Bluetooth Adapter properties at init */
     int (*get_adapter_properties)(void);
 
