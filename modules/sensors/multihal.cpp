@@ -513,7 +513,7 @@ static int device__close(struct hw_device_t *dev) {
     pthread_mutex_lock(&init_modules_mutex);
     sensors_poll_context_t* ctx = (sensors_poll_context_t*) dev;
     if (ctx != NULL) {
-        int retval = ctx->close();
+        (void) ctx->close();
         delete ctx;
     }
 
@@ -585,15 +585,6 @@ static int device__config_direct_report(struct sensors_poll_device_1 *dev,
 
 static int open_sensors(const struct hw_module_t* module, const char* name,
         struct hw_device_t** device);
-
-static bool starts_with(const char* s, const char* prefix) {
-    if (s == NULL || prefix == NULL) {
-        return false;
-    }
-    size_t s_size = strlen(s);
-    size_t prefix_size = strlen(prefix);
-    return s_size >= prefix_size && strncmp(s, prefix, prefix_size) == 0;
-}
 
 /*
  * Adds valid paths from the config file to the vector passed in.
