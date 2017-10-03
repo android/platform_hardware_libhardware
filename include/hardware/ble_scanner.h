@@ -86,14 +86,9 @@ class BleScannerInterface {
       FilterParamSetupCallback cb) = 0;
 
   /** Configure a scan filter condition  */
-  virtual void ScanFilterAddRemove(int action, int filt_type, int filt_index,
-                                   int company_id, int company_id_mask,
-                                   const bluetooth::Uuid *p_uuid,
-                                   const bluetooth::Uuid *p_uuid_mask,
-                                   const RawAddress *bd_addr, char addr_type,
-                                   std::vector<uint8_t> data,
-                                   std::vector<uint8_t> p_mask,
-                                   FilterConfigCallback cb) = 0;
+  virtual void ScanFilterAdd(int filter_index,
+                             std::vector<APCF_Command> filters,
+                             FilterConfigCallback cb) = 0;
 
   /** Clear all scan filter conditions for specific filter index*/
   virtual void ScanFilterClear(int filt_index, FilterConfigCallback cb) = 0;
