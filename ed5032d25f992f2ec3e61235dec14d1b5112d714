@@ -22,6 +22,30 @@
       "revId": "ed5032d25f992f2ec3e61235dec14d1b5112d714",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "0d240659_e0539a80",
+        "filename": "modules/sensors/multihal.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 516,
+      "author": {
+        "id": 1120458
+      },
+      "writtenOn": "2017-10-03T23:02:31Z",
+      "side": 1,
+      "message": "Also, probably \u0027dev \u003d nullptr\u0027 after deleting ctx",
+      "parentUuid": "48f647cd_b10e9071",
+      "range": {
+        "startLine": 516,
+        "startChar": 8,
+        "endLine": 516,
+        "endChar": 28
+      },
+      "revId": "ed5032d25f992f2ec3e61235dec14d1b5112d714",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
