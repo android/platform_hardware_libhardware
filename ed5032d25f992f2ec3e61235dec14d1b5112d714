@@ -46,6 +46,54 @@
       "revId": "ed5032d25f992f2ec3e61235dec14d1b5112d714",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5122d745_b146bc47",
+        "filename": "modules/sensors/multihal.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 516,
+      "author": {
+        "id": 1052399
+      },
+      "writtenOn": "2017-10-04T18:11:09Z",
+      "side": 1,
+      "message": "Done. Old code worked as both close and device__close always return 0.",
+      "parentUuid": "48f647cd_b10e9071",
+      "range": {
+        "startLine": 516,
+        "startChar": 8,
+        "endLine": 516,
+        "endChar": 28
+      },
+      "revId": "ed5032d25f992f2ec3e61235dec14d1b5112d714",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ab998ece_474418b7",
+        "filename": "modules/sensors/multihal.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 516,
+      "author": {
+        "id": 1052399
+      },
+      "writtenOn": "2017-10-04T18:11:09Z",
+      "side": 1,
+      "message": "dev is local and not used after this line. should the callers do something after device__close? where are the callers?",
+      "parentUuid": "0d240659_e0539a80",
+      "range": {
+        "startLine": 516,
+        "startChar": 8,
+        "endLine": 516,
+        "endChar": 28
+      },
+      "revId": "ed5032d25f992f2ec3e61235dec14d1b5112d714",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
