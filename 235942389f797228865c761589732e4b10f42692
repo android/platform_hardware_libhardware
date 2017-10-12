@@ -1,0 +1,9 @@
+Verified+1: Chih-hung Hsieh <chh@google.com>
+Code-Review+1: Nick Vaccaro <nvaccaro@google.com>
+Code-Review+2: Steven Moreland <smoreland@google.com>
+Presubmit-Verified+1: Treehugger Robot <treehugger-gerrit@google.com>
+Submitted-by: Chih-hung Hsieh <chh@google.com>
+Submitted-at: Thu, 12 Oct 2017 00:53:23 +0000
+Reviewed-on: https://android-review.googlesource.com/501266
+Project: platform/hardware/libhardware
+Branch: refs/heads/master
