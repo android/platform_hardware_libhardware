@@ -35,7 +35,7 @@ __BEGIN_DECLS
 
 #define BT_HARDWARE_MODULE_ID "bluetooth"
 #define BT_STACK_MODULE_ID "bluetooth"
-
+#define BLUETOOTH_INTERFACE_STRING "bluetoothInterface"
 
 /** Bluetooth profile interface IDs */
 
@@ -591,18 +591,6 @@ typedef struct {
      */
     void (*interop_database_add)(uint16_t feature, const RawAddress *addr, size_t len);
 } bt_interface_t;
-
-/** TODO: Need to add APIs for Service Discovery, Service authorization and
-  *       connection management. Also need to add APIs for configuring
-  *       properties of remote bonded devices such as name, UUID etc. */
-
-typedef struct {
-    struct hw_device_t common;
-    const bt_interface_t* (*get_bluetooth_interface)();
-} bluetooth_device_t;
-
-typedef bluetooth_device_t bluetooth_module_t;
-
 
 __END_DECLS
 
