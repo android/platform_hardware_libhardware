@@ -363,7 +363,6 @@ static int out_set_parameters(struct audio_stream *stream, const char *kvpairs)
 
     struct stream_out *out = (struct stream_out *)stream;
 
-    int routing = 0;
     int ret_value = 0;
     int card = -1;
     int device = -1;
@@ -656,7 +655,7 @@ static int adev_open_output_stream(struct audio_hw_device *hw_dev,
 
     return ret;
 
-err_open:
+// err_open: // unreachable code?
     free(out);
     *stream_out = NULL;
     return -ENOSYS;
@@ -771,9 +770,6 @@ static int in_set_parameters(struct audio_stream *stream, const char *kvpairs)
 
     struct stream_in *in = (struct stream_in *)stream;
 
-    char value[32];
-    int param_val;
-    int routing = 0;
     int ret_value = 0;
     int card = -1;
     int device = -1;
@@ -867,8 +863,6 @@ static ssize_t in_read(struct audio_stream_in *stream, void* buffer, size_t byte
         }
         in->standby = false;
     }
-
-    alsa_device_profile * profile = in->profile;
 
     /*
      * OK, we need to figure out how much data to read to be able to output the requested
@@ -1198,7 +1192,6 @@ static int adev_dump(const struct audio_hw_device *device, int fd)
 
 static int adev_close(hw_device_t *device)
 {
-    struct audio_device *adev = (struct audio_device *)device;
     free(device);
 
     return 0;

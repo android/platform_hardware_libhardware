@@ -463,8 +463,8 @@ static int vdev_subscribe(vehicle_hw_device_t* device, int32_t prop, float sampl
         pthread_mutex_unlock(&lock_);
         return 0;
     }
-    int ret_code = pthread_create(
-                                  &sub->thread, NULL, (void *(*)(void*))fake_event_thread, sub);
+    // check pthread_create return value?
+    pthread_create(&sub->thread, NULL, (void *(*)(void*))fake_event_thread, sub);
     print_subscribe_info(impl);
     pthread_mutex_unlock(&lock_);
     return 0;

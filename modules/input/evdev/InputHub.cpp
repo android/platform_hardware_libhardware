@@ -66,6 +66,7 @@ static void getLinuxRelease(int* major, int* minor) {
     }
 }
 
+#if 0
 static bool processHasCapability(int capability) {
     LOG_ALWAYS_FATAL_IF(!cap_valid(capability), "invalid linux capability: %d", capability);
     struct __user_cap_header_struct cap_header_data;
@@ -79,6 +80,7 @@ static bool processHasCapability(int capability) {
     int idx = CAP_TO_INDEX(capability);
     return capdata[idx].effective & CAP_TO_MASK(capability);
 }
+#endif
 
 class EvdevDeviceNode : public InputDeviceNode {
 public:
@@ -445,6 +447,8 @@ InputHub::InputHub(const std::shared_ptr<InputCallbackInterface>& cb) :
     // requires an fd from an evdev node, which cannot be done in the InputHub
     // constructor. So we assume (3) unless (1) is true, and we can verify
     // whether (2) is true once we have an evdev fd (and we're not in (1)).
+    (void)mWakeReadPipeFd; // not used private member?
+    (void)mWakeWritePipeFd; // not used private member?
     int major, minor;
     getLinuxRelease(&major, &minor);
     if (major > 3 || (major == 3 && minor >= 5)) {
@@ -691,7 +695,7 @@ status_t InputHub::readNotify() {
     }
 
     size_t event_pos = 0;
-    nsecs_t now = systemTime(SYSTEM_TIME_MONOTONIC);
+    // nsecs_t now = systemTime(SYSTEM_TIME_MONOTONIC);
     while (res >= static_cast<int>(sizeof(*event))) {
         event = reinterpret_cast<struct inotify_event*>(event_buf + event_pos);
         if (event->len) {
