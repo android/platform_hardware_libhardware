@@ -1,0 +1,96 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f139c01b_48601a4c",
+        "filename": "modules/gralloc/framebuffer.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 331,
+      "author": {
+        "id": 1120458
+      },
+      "writtenOn": "2017-10-26T21:40:50Z",
+      "side": 1,
+      "message": "bug? hmmm",
+      "range": {
+        "startLine": 331,
+        "startChar": 36,
+        "endLine": 331,
+        "endChar": 37
+      },
+      "revId": "b9a6852c6300fae85c62cc3d5c0a81723e96126e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b7ec5daf_928296c3",
+        "filename": "modules/usbaudio/audio_hal.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 661,
+      "author": {
+        "id": 1120458
+      },
+      "writtenOn": "2017-10-26T21:40:50Z",
+      "side": 1,
+      "message": "looks like it\u0027s legacy. Just delete?",
+      "range": {
+        "startLine": 658,
+        "startChar": 0,
+        "endLine": 661,
+        "endChar": 19
+      },
+      "revId": "b9a6852c6300fae85c62cc3d5c0a81723e96126e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "82c05829_05b20f89",
+        "filename": "modules/vehicle/vehicle.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 467,
+      "author": {
+        "id": 1120458
+      },
+      "writtenOn": "2017-10-26T21:40:50Z",
+      "side": 1,
+      "message": "if (ret_code !\u003d 0) {\n    return -ret_code;\n}\n\n?",
+      "range": {
+        "startLine": 467,
+        "startChar": 4,
+        "endLine": 467,
+        "endChar": 18
+      },
+      "revId": "b9a6852c6300fae85c62cc3d5c0a81723e96126e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c3fa1f5a_141ced1d",
+        "filename": "tests/hardware/Android.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1120458
+      },
+      "writtenOn": "2017-10-26T21:40:50Z",
+      "side": 1,
+      "message": "this static library isn\u0027t used anywhere. Likely just don\u0027t comment here since it\u0027s intended to be used as a whole_static_lib.\n\nSomeone on camera? maybe? should consider deleting the lib",
+      "range": {
+        "startLine": 8,
+        "startChar": 2,
+        "endLine": 8,
+        "endChar": 17
+      },
+      "revId": "b9a6852c6300fae85c62cc3d5c0a81723e96126e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
