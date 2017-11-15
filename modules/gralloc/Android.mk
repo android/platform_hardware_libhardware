@@ -35,5 +35,6 @@ LOCAL_CFLAGS:= -DLOG_TAG=\"gralloc\" -Wno-missing-field-initializers
 ifeq ($(TARGET_USE_PAN_DISPLAY),true)
 LOCAL_CFLAGS += -DUSE_PAN_DISPLAY=1
 endif
+LOCAL_CFLAGS += -Wall -Werror
 
 include $(BUILD_SHARED_LIBRARY)

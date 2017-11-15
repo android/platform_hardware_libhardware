@@ -52,6 +52,8 @@ bool MouseInputMapper::configureInputReport(InputDeviceNode* devNode,
         InputReportDefinition* report) {
     setInputReportDefinition(report);
     getInputReportDefinition()->addCollection(INPUT_COLLECTION_ID_MOUSE, 1);
+    (void)mHaveRelWheel; // unused private member?
+    (void)mHaveRelHWheel; // unused private member?
 
     // Configure mouse axes
     if (!devNode->hasRelativeAxis(REL_X) || !devNode->hasRelativeAxis(REL_Y)) {
