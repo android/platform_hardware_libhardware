@@ -22,6 +22,30 @@
       "revId": "de21d24f051877505eef49c7c658e489e213ce18",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ddf7fb13_caac9951",
+        "filename": "tests/hwc/util.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 1052399
+      },
+      "writtenOn": "2017-11-15T00:18:40Z",
+      "side": 0,
+      "message": "Will move the tests/* changes to another CL.",
+      "parentUuid": "678121f2_5e32f272",
+      "range": {
+        "startLine": 39,
+        "startChar": 1,
+        "endLine": 39,
+        "endChar": 12
+      },
+      "revId": "de21d24f051877505eef49c7c658e489e213ce18",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
