@@ -1,0 +1,96 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "6c9ac104_3108607e",
+        "filename": "modules/gralloc/framebuffer.cpp",
+        "patchSetId": 2
+      },
+      "lineNbr": 72,
+      "author": {
+        "id": 1120458
+      },
+      "writtenOn": "2017-11-27T20:39:52Z",
+      "side": 1,
+      "message": "this one seems wrong (should just be used below)",
+      "range": {
+        "startLine": 72,
+        "startChar": 3,
+        "endLine": 72,
+        "endChar": 4
+      },
+      "revId": "72aa1850c9fb4be23b8679b634292337bf032944",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e976c67b_47b5b46c",
+        "filename": "modules/gralloc/framebuffer.cpp",
+        "patchSetId": 2
+      },
+      "lineNbr": 331,
+      "author": {
+        "id": 1120458
+      },
+      "writtenOn": "2017-11-27T20:39:52Z",
+      "side": 1,
+      "message": "specifically here",
+      "range": {
+        "startLine": 331,
+        "startChar": 36,
+        "endLine": 331,
+        "endChar": 37
+      },
+      "revId": "72aa1850c9fb4be23b8679b634292337bf032944",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "6f9ce64d_6e78584a",
+        "filename": "modules/input/evdev/InputDevice.cpp",
+        "patchSetId": 2
+      },
+      "lineNbr": 111,
+      "author": {
+        "id": 1120458
+      },
+      "writtenOn": "2017-11-27T20:39:52Z",
+      "side": 1,
+      "message": "just delete this, it should be a method on InputProperty anyway \"InputProperty::getBool\" or similar",
+      "range": {
+        "startLine": 97,
+        "startChar": 0,
+        "endLine": 111,
+        "endChar": 6
+      },
+      "revId": "72aa1850c9fb4be23b8679b634292337bf032944",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "73772c87_095200be",
+        "filename": "modules/input/evdev/InputHub.cpp",
+        "patchSetId": 2
+      },
+      "lineNbr": 451,
+      "author": {
+        "id": 1120458
+      },
+      "writtenOn": "2017-11-27T20:39:52Z",
+      "side": 1,
+      "message": "seems like a bug, they should probably be closed. Assign to OWNER?",
+      "range": {
+        "startLine": 450,
+        "startChar": 4,
+        "endLine": 451,
+        "endChar": 55
+      },
+      "revId": "72aa1850c9fb4be23b8679b634292337bf032944",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}
