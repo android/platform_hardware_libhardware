@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "a92e461e_f584a465",
+        "filename": "hardware.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 85,
+      "author": {
+        "id": 1132673
+      },
+      "writtenOn": "2017-11-30T07:59:46Z",
+      "side": 1,
+      "message": "why just not use _ANDROID_VNDK_?",
+      "range": {
+        "startLine": 85,
+        "startChar": 8,
+        "endLine": 85,
+        "endChar": 18
+      },
+      "revId": "c8d63ef45040ddf84485a1cf96e73444c19a1c43",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "fcb92e10_95a4031e",
+        "filename": "hardware.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 93,
+      "author": {
+        "id": 1132673
+      },
+      "writtenOn": "2017-11-30T07:59:46Z",
+      "side": 1,
+      "message": "This doesn\u0027t look nice as it breaks the style guideline.\nhow about\n\n#ifdef _ANDROID_VNDK_\nbool try_system \u003d false;\n#else\nbool try_system \u003d true;\n#endif\n\nif (try_system \u0026\u0026 strncmp...) {\n  ...\n} else {\n  ...\n}",
+      "range": {
+        "startLine": 91,
+        "startChar": 0,
+        "endLine": 93,
+        "endChar": 5
+      },
+      "revId": "c8d63ef45040ddf84485a1cf96e73444c19a1c43",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}
