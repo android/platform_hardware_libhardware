@@ -82,12 +82,15 @@ static int load(const char *id,
      * dlopen returns. Since RTLD_GLOBAL is not or'd in with
      * RTLD_NOW the external symbols will not be global
      */
-    if (strncmp(path, "/system/", 8) == 0) {
+#ifndef FOR_VENDOR
+    if (strncmp(path, HAL_LIBRARY_PATH1, strlen(HAL_LIBRARY_PATH1)) == 0) {
         /* If the library is in system partition, no need to check
          * sphal namespace. Open it with dlopen.
          */
         handle = dlopen(path, RTLD_NOW);
-    } else {
+    } else
+#endif
+    {
         handle = android_load_sphal_library(path, RTLD_NOW);
     }
     if (handle == NULL) {
@@ -152,10 +155,12 @@ static int hw_module_exists(char *path, size_t path_len, const char *name,
     if (access(path, R_OK) == 0)
         return 0;
 
+#ifndef FOR_VENDOR
     snprintf(path, path_len, "%s/%s.%s.so",
              HAL_LIBRARY_PATH1, name, subname);
     if (access(path, R_OK) == 0)
         return 0;
+#endif
 
     return -ENOENT;
 }

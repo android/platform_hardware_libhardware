@@ -43,6 +43,11 @@ cc_library_shared {
         enabled: true,
         support_system_process: true,
     },
+    target: {
+        vendor: {
+            cflags: ["-DFOR_VENDOR"],
+        },
+    },
 }
 
 subdirs = [
