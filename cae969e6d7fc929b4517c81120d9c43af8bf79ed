@@ -46,6 +46,30 @@
       "revId": "cae969e6d7fc929b4517c81120d9c43af8bf79ed",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "354e3a89_5f626da0",
+        "filename": "hardware.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 161,
+      "author": {
+        "id": 1132673
+      },
+      "writtenOn": "2017-11-30T08:44:54Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "d1a17bfc_2facccf0",
+      "range": {
+        "startLine": 161,
+        "startChar": 0,
+        "endLine": 161,
+        "endChar": 24
+      },
+      "revId": "cae969e6d7fc929b4517c81120d9c43af8bf79ed",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
