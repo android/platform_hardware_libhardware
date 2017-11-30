@@ -22,6 +22,30 @@
       "revId": "cae969e6d7fc929b4517c81120d9c43af8bf79ed",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "d1a17bfc_2facccf0",
+        "filename": "hardware.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 161,
+      "author": {
+        "id": 1146974
+      },
+      "writtenOn": "2017-11-30T08:23:24Z",
+      "side": 1,
+      "message": "That will work and will be better to read the code, but this looks better for me, if it does not violate the style guide. Using another \u0027if\u0027 will add indentation for all lines here.",
+      "parentUuid": "25a1c1c9_74139e4f",
+      "range": {
+        "startLine": 161,
+        "startChar": 0,
+        "endLine": 161,
+        "endChar": 24
+      },
+      "revId": "cae969e6d7fc929b4517c81120d9c43af8bf79ed",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
     }
   ]
 }
