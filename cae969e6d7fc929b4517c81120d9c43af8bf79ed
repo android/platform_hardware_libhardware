@@ -2,6 +2,29 @@
   "comments": [
     {
       "key": {
+        "uuid": "687a183b_c09fff3a",
+        "filename": "hardware.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 80,
+      "author": {
+        "id": 1120458
+      },
+      "writtenOn": "2017-11-30T17:34:21Z",
+      "side": 1,
+      "message": "nit: constexpr so this will be guaranteed to be optimized out",
+      "range": {
+        "startLine": 80,
+        "startChar": 4,
+        "endLine": 80,
+        "endChar": 14
+      },
+      "revId": "cae969e6d7fc929b4517c81120d9c43af8bf79ed",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "25a1c1c9_74139e4f",
         "filename": "hardware.c",
         "patchSetId": 2
