@@ -111,7 +111,7 @@ fail_frag:
 
 int select_config_for_window(EGLDisplay dpy, EGLint *attr,
 	unsigned format, EGLConfig *config) {
-	EGLint R,G,B,A,r,g,b,a;
+	EGLint R,G,B,A;
 	EGLint i, n, max;
 	EGLConfig *cfg;
 
