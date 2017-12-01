@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "a005f9d0_4e470e7e",
+        "filename": "tests/hwc/Android.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1120458
+      },
+      "writtenOn": "2017-12-01T23:00:51Z",
+      "side": 1,
+      "message": "just fix it?",
+      "range": {
+        "startLine": 6,
+        "startChar": 0,
+        "endLine": 6,
+        "endChar": 42
+      },
+      "revId": "313f0b028c7caae526f8d400ab1163847fe4f69a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}
