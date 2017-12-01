@@ -22,6 +22,30 @@
       "revId": "313f0b028c7caae526f8d400ab1163847fe4f69a",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "74802afe_a80b8ca0",
+        "filename": "tests/hwc/Android.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1052399
+      },
+      "writtenOn": "2017-12-01T23:13:28Z",
+      "side": 1,
+      "message": "It\u0027s util.c:39 .  m[10] -1.0;\nI don\u0027t know the correct fix or how to verify the test result.",
+      "parentUuid": "a005f9d0_4e470e7e",
+      "range": {
+        "startLine": 6,
+        "startChar": 0,
+        "endLine": 6,
+        "endChar": 42
+      },
+      "revId": "313f0b028c7caae526f8d400ab1163847fe4f69a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
     }
   ]
 }
