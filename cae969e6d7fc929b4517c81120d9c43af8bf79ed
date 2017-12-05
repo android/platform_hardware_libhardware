@@ -73,6 +73,30 @@
     },
     {
       "key": {
+        "uuid": "033ecd14_37027ff5",
+        "filename": "hardware.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 80,
+      "author": {
+        "id": 1146974
+      },
+      "writtenOn": "2017-12-05T00:47:52Z",
+      "side": 1,
+      "message": "I tried that, but it reported an error that it cannot goto \"done\" because the jump bypassed the variable initialization (*sym at line#107). Easy fix but I didn\u0027t want to make the fix with this CL.",
+      "parentUuid": "e5b5fa0d_53531841",
+      "range": {
+        "startLine": 80,
+        "startChar": 4,
+        "endLine": 80,
+        "endChar": 14
+      },
+      "revId": "cae969e6d7fc929b4517c81120d9c43af8bf79ed",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "25a1c1c9_74139e4f",
         "filename": "hardware.c",
         "patchSetId": 2
