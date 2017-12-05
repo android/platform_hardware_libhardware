@@ -1,0 +1,8 @@
+Code-Review+2: Steven Moreland <smoreland@google.com>
+Presubmit-Verified+1: Treehugger Robot <treehugger-gerrit@google.com>
+Verified+1: Glenn Kasten <gkasten@android.com>
+Submitted-by: Glenn Kasten <gkasten@android.com>
+Submitted-at: Tue, 05 Dec 2017 16:57:26 +0000
+Reviewed-on: https://android-review.googlesource.com/555127
+Project: platform/hardware/libhardware
+Branch: refs/heads/master
