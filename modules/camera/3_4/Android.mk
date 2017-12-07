@@ -32,7 +32,8 @@ v4l2_shared_libs := \
 
 v4l2_static_libs :=
 
-v4l2_cflags := -fno-short-enums -Wall -Wextra -Werror -fvisibility=hidden
+# common.h has redefinition warning for LOG_TAG
+v4l2_cflags := -fno-short-enums -Wall -Wextra -fvisibility=hidden
 
 v4l2_c_includes := $(call include-path-for, camera)
 
