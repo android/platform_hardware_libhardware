@@ -213,8 +213,8 @@ private:
     int mEpollFd;
     int mINotifyFd;
     int mWakeEventFd;
-    int mWakeReadPipeFd;
-    int mWakeWritePipeFd;
+    int mWakeReadPipeFd __unused;
+    int mWakeWritePipeFd __unused;
 
     // Callback for input events
     std::shared_ptr<InputCallbackInterface> mInputCallback;
