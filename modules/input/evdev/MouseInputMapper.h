@@ -45,8 +45,8 @@ private:
     int32_t mRelX = 0;
     int32_t mRelY = 0;
 
-    bool mHaveRelWheel = false;
-    bool mHaveRelHWheel = false;
+    __unused bool mHaveRelWheel = false;
+    __unused bool mHaveRelHWheel = false;
     int32_t mRelWheel = 0;
     int32_t mRelHWheel = 0;
 };
