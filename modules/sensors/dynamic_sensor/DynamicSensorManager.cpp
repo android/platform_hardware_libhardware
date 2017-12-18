@@ -18,6 +18,7 @@
 #include "BaseSensorObject.h"
 #include "DummyDynamicAccelDaemon.h"
 #include "HidRawSensorDaemon.h"
+#include "EvdevSensorDaemon.h"
 #include "DynamicSensorManager.h"
 
 #include <utils/Log.h>
@@ -33,6 +34,7 @@ DynamicSensorManager* DynamicSensorManager::createInstance(
     auto m = new DynamicSensorManager(handleBase, handleBase + handleCount - 1, callback);
     m->mDaemonVector.push_back(new DummyDynamicAccelDaemon(*m));
     m->mDaemonVector.push_back(new HidRawSensorDaemon(*m));
+    m->mDaemonVector.push_back(new EvdevSensorDaemon(*m));
     return m;
 }
 

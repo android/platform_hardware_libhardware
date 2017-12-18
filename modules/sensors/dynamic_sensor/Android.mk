@@ -21,6 +21,10 @@ dynamic_sensor_src := \
     ConnectionDetector.cpp \
     DummyDynamicAccelDaemon.cpp \
     DynamicSensorManager.cpp \
+    EvdevDevice.cpp \
+    EvdevSensor.cpp \
+    EvdevSensorDaemon.cpp \
+    EvdevSensorDevice.cpp \
     HidRawDevice.cpp \
     HidRawSensor.cpp \
     HidRawSensorDaemon.cpp \
