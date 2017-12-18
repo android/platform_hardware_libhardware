@@ -81,6 +81,7 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := camera.v4l2
 LOCAL_MODULE_RELATIVE_PATH := hw
 LOCAL_CFLAGS += $(v4l2_cflags)
+LOCAL_CPPFLAGS += -Wno-narrowing
 LOCAL_SHARED_LIBRARIES := $(v4l2_shared_libs)
 LOCAL_STATIC_LIBRARIES := \
   libgtest_prod \
