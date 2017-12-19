@@ -1,0 +1,320 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "b2f2728e_4449255a",
+        "filename": "modules/sensors/dynamic_sensor/Android.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1074523
+      },
+      "writtenOn": "2017-12-19T02:58:57Z",
+      "side": 1,
+      "message": "Would you please put this behind a build flag?",
+      "range": {
+        "startLine": 24,
+        "startChar": 0,
+        "endLine": 27,
+        "endChar": 27
+      },
+      "revId": "c873cdac4e4ffb18d2fbfd57662f3cfc246e751c",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "69ebbbc1_6f49a8b4",
+        "filename": "modules/sensors/dynamic_sensor/DynamicSensorManager.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 1074523
+      },
+      "writtenOn": "2017-12-19T02:58:57Z",
+      "side": 1,
+      "message": "Would you please put this behind a compile flag? Since",
+      "range": {
+        "startLine": 37,
+        "startChar": 0,
+        "endLine": 37,
+        "endChar": 58
+      },
+      "revId": "c873cdac4e4ffb18d2fbfd57662f3cfc246e751c",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3002d88b_d3560cd9",
+        "filename": "modules/sensors/dynamic_sensor/EvdevDevice.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1074523
+      },
+      "writtenOn": "2017-12-19T02:58:57Z",
+      "side": 1,
+      "message": "MACRO_NAME_SHOULD_BE_ALL_CAPITAL",
+      "range": {
+        "startLine": 30,
+        "startChar": 8,
+        "endLine": 30,
+        "endChar": 16
+      },
+      "revId": "c873cdac4e4ffb18d2fbfd57662f3cfc246e751c",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e9a05617_c26439de",
+        "filename": "modules/sensors/dynamic_sensor/EvdevDevice.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 78,
+      "author": {
+        "id": 1074523
+      },
+      "writtenOn": "2017-12-19T02:58:57Z",
+      "side": 1,
+      "message": "EvdevDeviceInfo info \u003d {}; will do the proper zero init for you. So no memset needed.",
+      "range": {
+        "startLine": 78,
+        "startChar": 4,
+        "endLine": 78,
+        "endChar": 25
+      },
+      "revId": "c873cdac4e4ffb18d2fbfd57662f3cfc246e751c",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "58ec30b7_4f2fcc5e",
+        "filename": "modules/sensors/dynamic_sensor/EvdevDevice.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 120,
+      "author": {
+        "id": 1074523
+      },
+      "writtenOn": "2017-12-19T02:58:57Z",
+      "side": 1,
+      "message": "nit: maybe extract this to a function.",
+      "range": {
+        "startLine": 120,
+        "startChar": 0,
+        "endLine": 120,
+        "endChar": 30
+      },
+      "revId": "c873cdac4e4ffb18d2fbfd57662f3cfc246e751c",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "33db2f4d_93aa9451",
+        "filename": "modules/sensors/dynamic_sensor/EvdevDevice.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 212,
+      "author": {
+        "id": 1074523
+      },
+      "writtenOn": "2017-12-19T02:58:57Z",
+      "side": 1,
+      "message": "Would you please rename this timeoutMs so that is clear what unit is being used here.",
+      "range": {
+        "startLine": 212,
+        "startChar": 35,
+        "endLine": 212,
+        "endChar": 42
+      },
+      "revId": "c873cdac4e4ffb18d2fbfd57662f3cfc246e751c",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "6d02c6fa_50e741b0",
+        "filename": "modules/sensors/dynamic_sensor/EvdevDevice.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 220,
+      "author": {
+        "id": 1074523
+      },
+      "writtenOn": "2017-12-19T02:58:57Z",
+      "side": 1,
+      "message": "Not necessary. tv_sec \u003d 0 is just a special case.",
+      "range": {
+        "startLine": 220,
+        "startChar": 4,
+        "endLine": 220,
+        "endChar": 22
+      },
+      "revId": "c873cdac4e4ffb18d2fbfd57662f3cfc246e751c",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3570710a_3ed1fea6",
+        "filename": "modules/sensors/dynamic_sensor/EvdevDevice.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 242,
+      "author": {
+        "id": 1074523
+      },
+      "writtenOn": "2017-12-19T02:58:57Z",
+      "side": 1,
+      "message": "Why 17ms? Would you please document the rationale behind this number?",
+      "range": {
+        "startLine": 242,
+        "startChar": 33,
+        "endLine": 242,
+        "endChar": 35
+      },
+      "revId": "c873cdac4e4ffb18d2fbfd57662f3cfc246e751c",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "2b138ff3_126b1da5",
+        "filename": "modules/sensors/dynamic_sensor/EvdevDevice.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 248,
+      "author": {
+        "id": 1074523
+      },
+      "writtenOn": "2017-12-19T02:58:57Z",
+      "side": 1,
+      "message": "remove else since it is not necessary. It is cleaner to have\n\n  if (someCondition) {\n    return ...;\n  }\n\n  restOfCode(inElse);",
+      "range": {
+        "startLine": 248,
+        "startChar": 6,
+        "endLine": 248,
+        "endChar": 12
+      },
+      "revId": "c873cdac4e4ffb18d2fbfd57662f3cfc246e751c",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "38dd4c5a_f941570d",
+        "filename": "modules/sensors/dynamic_sensor/EvdevDevice.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 1074523
+      },
+      "writtenOn": "2017-12-19T02:58:57Z",
+      "side": 1,
+      "message": "Would you please add a short (a few lines) describing what is evdev? Summary of what is implemented and links to standard docs will serve the purpose.",
+      "revId": "c873cdac4e4ffb18d2fbfd57662f3cfc246e751c",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "83552c91_40fc6c52",
+        "filename": "modules/sensors/dynamic_sensor/EvdevSensor.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1074523
+      },
+      "writtenOn": "2017-12-19T02:58:57Z",
+      "side": 1,
+      "message": "is this ever used?",
+      "range": {
+        "startLine": 31,
+        "startChar": 18,
+        "endLine": 31,
+        "endChar": 36
+      },
+      "revId": "c873cdac4e4ffb18d2fbfd57662f3cfc246e751c",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d1dd8b68_0962e907",
+        "filename": "modules/sensors/dynamic_sensor/EvdevSensorDaemon.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 1074523
+      },
+      "writtenOn": "2017-12-19T02:58:57Z",
+      "side": 1,
+      "message": "FileConnectionDetector uses inotify. From what I heard, it is not encouraged anymore. It is recommended to directly listen to ueventd (see https://android.googlesource.com/platform/system/core/+/master/init/uevent_listener.cpp for details).",
+      "range": {
+        "startLine": 40,
+        "startChar": 20,
+        "endLine": 40,
+        "endChar": 42
+      },
+      "revId": "c873cdac4e4ffb18d2fbfd57662f3cfc246e751c",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "8f477eb2_54768e60",
+        "filename": "modules/sensors/dynamic_sensor/EvdevSensorDevice.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 137,
+      "author": {
+        "id": 1074523
+      },
+      "writtenOn": "2017-12-19T02:58:57Z",
+      "side": 1,
+      "message": "over 100 char/line",
+      "range": {
+        "startLine": 137,
+        "startChar": 100,
+        "endLine": 137,
+        "endChar": 104
+      },
+      "revId": "c873cdac4e4ffb18d2fbfd57662f3cfc246e751c",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "675afbf9_1af1ff7a",
+        "filename": "modules/sensors/dynamic_sensor/EvdevSensorDevice.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 150,
+      "author": {
+        "id": 1074523
+      },
+      "writtenOn": "2017-12-19T02:58:57Z",
+      "side": 1,
+      "message": "same here.",
+      "range": {
+        "startLine": 150,
+        "startChar": 100,
+        "endLine": 150,
+        "endChar": 104
+      },
+      "revId": "c873cdac4e4ffb18d2fbfd57662f3cfc246e751c",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
