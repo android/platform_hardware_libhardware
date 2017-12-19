@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f9668c39_73a5e991",
+        "filename": "modules/input/evdev/InputHub.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 216,
+      "author": {
+        "id": 1120458
+      },
+      "writtenOn": "2017-12-19T21:29:54Z",
+      "side": 1,
+      "message": "just delete? This shouldn\u0027t have an ABI issue.",
+      "range": {
+        "startLine": 216,
+        "startChar": 0,
+        "endLine": 216,
+        "endChar": 33
+      },
+      "revId": "4e27563b9867a2631b37024ee5d968dd643226f7",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "0b495cae_587a4c42",
+        "filename": "modules/input/evdev/MouseInputMapper.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 1120458
+      },
+      "writtenOn": "2017-12-19T21:29:54Z",
+      "side": 1,
+      "message": "just delete?",
+      "range": {
+        "startLine": 48,
+        "startChar": 27,
+        "endLine": 49,
+        "endChar": 27
+      },
+      "revId": "4e27563b9867a2631b37024ee5d968dd643226f7",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}
