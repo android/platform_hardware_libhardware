@@ -377,6 +377,30 @@
     },
     {
       "key": {
+        "uuid": "78e389b4_6f3ecea8",
+        "filename": "modules/sensors/dynamic_sensor/EvdevDevice.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 1152828
+      },
+      "writtenOn": "2017-12-21T22:41:30Z",
+      "side": 1,
+      "message": "Ah... I see. You are right. It has been corrected.",
+      "parentUuid": "b6a0b828_2d834b54",
+      "range": {
+        "startLine": 77,
+        "startChar": 28,
+        "endLine": 77,
+        "endChar": 52
+      },
+      "revId": "7721b28d535d1848508865c789e68af28a70a6b5",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "f30f5bf8_cc815675",
         "filename": "modules/sensors/dynamic_sensor/EvdevDevice.h",
         "patchSetId": 2
