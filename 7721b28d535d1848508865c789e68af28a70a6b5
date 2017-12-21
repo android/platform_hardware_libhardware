@@ -71,6 +71,30 @@
     },
     {
       "key": {
+        "uuid": "d48c4c05_423511e6",
+        "filename": "modules/sensors/dynamic_sensor/EvdevDevice.cpp",
+        "patchSetId": 2
+      },
+      "lineNbr": 79,
+      "author": {
+        "id": 1152828
+      },
+      "writtenOn": "2017-12-21T19:41:42Z",
+      "side": 1,
+      "message": "Added comment.",
+      "parentUuid": "c7412aab_fb7810e1",
+      "range": {
+        "startLine": 79,
+        "startChar": 16,
+        "endLine": 79,
+        "endChar": 18
+      },
+      "revId": "7721b28d535d1848508865c789e68af28a70a6b5",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "11918587_99b48b43",
         "filename": "modules/sensors/dynamic_sensor/EvdevDevice.cpp",
         "patchSetId": 2
@@ -94,6 +118,30 @@
     },
     {
       "key": {
+        "uuid": "d8705d5c_db54329d",
+        "filename": "modules/sensors/dynamic_sensor/EvdevDevice.cpp",
+        "patchSetId": 2
+      },
+      "lineNbr": 98,
+      "author": {
+        "id": 1152828
+      },
+      "writtenOn": "2017-12-21T19:41:42Z",
+      "side": 1,
+      "message": "INPUT_PROP_ACCELEROMETER is the only property bit for sensors right now.",
+      "parentUuid": "11918587_99b48b43",
+      "range": {
+        "startLine": 98,
+        "startChar": 29,
+        "endLine": 98,
+        "endChar": 47
+      },
+      "revId": "7721b28d535d1848508865c789e68af28a70a6b5",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "6ace7671_a947f5f1",
         "filename": "modules/sensors/dynamic_sensor/EvdevDevice.cpp",
         "patchSetId": 2
@@ -105,6 +153,30 @@
       "writtenOn": "2017-12-21T02:18:09Z",
       "side": 1,
       "message": "here INPUT_PROP_ACCELEROMETER is used to represent general sensor (since it can also give angular velocity). Is it a legacy naming convention in kernel? Add a comment either way to avoid confuse people.",
+      "range": {
+        "startLine": 99,
+        "startChar": 18,
+        "endLine": 99,
+        "endChar": 42
+      },
+      "revId": "7721b28d535d1848508865c789e68af28a70a6b5",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a6c8aca_2a165064",
+        "filename": "modules/sensors/dynamic_sensor/EvdevDevice.cpp",
+        "patchSetId": 2
+      },
+      "lineNbr": 99,
+      "author": {
+        "id": 1152828
+      },
+      "writtenOn": "2017-12-21T19:41:42Z",
+      "side": 1,
+      "message": "Added comment.",
+      "parentUuid": "6ace7671_a947f5f1",
       "range": {
         "startLine": 99,
         "startChar": 18,
@@ -186,6 +258,30 @@
     },
     {
       "key": {
+        "uuid": "a326c9cd_4f51f305",
+        "filename": "modules/sensors/dynamic_sensor/EvdevDevice.cpp",
+        "patchSetId": 2
+      },
+      "lineNbr": 231,
+      "author": {
+        "id": 1152828
+      },
+      "writtenOn": "2017-12-21T19:41:42Z",
+      "side": 1,
+      "message": "This is a timeout value waiting for sensors data. We want to exit the poll every so often, in case the thread gets killed (see Thread::exitPending() in EvdevSensorDevice.cpp).\n\nSensors should have much higher rate than 60hz, and so the idea is that if we don\u0027t receive any data within 1 frame, it is likely disconnected.",
+      "parentUuid": "4707b57b_e5a8265f",
+      "range": {
+        "startLine": 231,
+        "startChar": 56,
+        "endLine": 231,
+        "endChar": 66
+      },
+      "revId": "7721b28d535d1848508865c789e68af28a70a6b5",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "54239e71_6ee70fb1",
         "filename": "modules/sensors/dynamic_sensor/EvdevDevice.h",
         "patchSetId": 2
@@ -197,6 +293,30 @@
       "writtenOn": "2017-12-21T02:18:09Z",
       "side": 1,
       "message": "x/8 + 1 ?",
+      "range": {
+        "startLine": 77,
+        "startChar": 28,
+        "endLine": 77,
+        "endChar": 52
+      },
+      "revId": "7721b28d535d1848508865c789e68af28a70a6b5",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "0fe8cf9c_fdec728d",
+        "filename": "modules/sensors/dynamic_sensor/EvdevDevice.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 1152828
+      },
+      "writtenOn": "2017-12-21T19:41:42Z",
+      "side": 1,
+      "message": "It should be \"(x+1) / 8\", the total number of bits divided by 8.",
+      "parentUuid": "54239e71_6ee70fb1",
       "range": {
         "startLine": 77,
         "startChar": 28,
@@ -255,6 +375,30 @@
     },
     {
       "key": {
+        "uuid": "0a863bb5_0a794905",
+        "filename": "modules/sensors/dynamic_sensor/EvdevSensor.cpp",
+        "patchSetId": 2
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 1152828
+      },
+      "writtenOn": "2017-12-21T19:41:42Z",
+      "side": 1,
+      "message": "For consistency, Linux specs define accelerometer unit as G, and gyroscope unit as degree/s, the same as HID_SENSOR.",
+      "parentUuid": "ce733f82_c09b9b45",
+      "range": {
+        "startLine": 47,
+        "startChar": 15,
+        "endLine": 47,
+        "endChar": 18
+      },
+      "revId": "7721b28d535d1848508865c789e68af28a70a6b5",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ba78b729_c087ed6f",
         "filename": "modules/sensors/dynamic_sensor/EvdevSensor.cpp",
         "patchSetId": 2
@@ -289,6 +433,30 @@
       "writtenOn": "2017-12-21T02:18:09Z",
       "side": 1,
       "message": "The same data structure is shared in HidRawSensor but it is copied here. Would be nice to create a common utility class for it. A few functions, such as validateFeatureValueAndBuildSensor() or the print out in dump() can be folded into the new class.",
+      "range": {
+        "startLine": 68,
+        "startChar": 11,
+        "endLine": 68,
+        "endChar": 23
+      },
+      "revId": "7721b28d535d1848508865c789e68af28a70a6b5",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "974914c1_f74124dc",
+        "filename": "modules/sensors/dynamic_sensor/EvdevSensor.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 1152828
+      },
+      "writtenOn": "2017-12-21T19:41:42Z",
+      "side": 1,
+      "message": "I was thinking about doing this in two steps. First the functionality patch, and after it is merged, we submit a refactoring patch. Or would you prefer a single patch?",
+      "parentUuid": "260a5811_9f785432",
       "range": {
         "startLine": 68,
         "startChar": 11,
