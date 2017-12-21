@@ -1,0 +1,303 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4cc17fc5_e39bfeb6",
+        "filename": "modules/sensors/dynamic_sensor/EvdevDevice.cpp",
+        "patchSetId": 2
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 1074523
+      },
+      "writtenOn": "2017-12-21T02:18:09Z",
+      "side": 1,
+      "message": "::ioctl and same for all other places that uses function from global namespace in this CL.",
+      "range": {
+        "startLine": 57,
+        "startChar": 18,
+        "endLine": 57,
+        "endChar": 23
+      },
+      "revId": "7721b28d535d1848508865c789e68af28a70a6b5",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "4fa09322_509ea7fc",
+        "filename": "modules/sensors/dynamic_sensor/EvdevDevice.cpp",
+        "patchSetId": 2
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 1074523
+      },
+      "writtenOn": "2017-12-21T02:18:09Z",
+      "side": 1,
+      "message": "nit: nullptr",
+      "range": {
+        "startLine": 59,
+        "startChar": 33,
+        "endLine": 59,
+        "endChar": 37
+      },
+      "revId": "7721b28d535d1848508865c789e68af28a70a6b5",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c7412aab_fb7810e1",
+        "filename": "modules/sensors/dynamic_sensor/EvdevDevice.cpp",
+        "patchSetId": 2
+      },
+      "lineNbr": 79,
+      "author": {
+        "id": 1074523
+      },
+      "writtenOn": "2017-12-21T02:18:09Z",
+      "side": 1,
+      "message": "I cannot find the definition of max name in input_dev. In case you know a source that justifies this number please add a comment.",
+      "range": {
+        "startLine": 79,
+        "startChar": 16,
+        "endLine": 79,
+        "endChar": 18
+      },
+      "revId": "7721b28d535d1848508865c789e68af28a70a6b5",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "11918587_99b48b43",
+        "filename": "modules/sensors/dynamic_sensor/EvdevDevice.cpp",
+        "patchSetId": 2
+      },
+      "lineNbr": 98,
+      "author": {
+        "id": 1074523
+      },
+      "writtenOn": "2017-12-21T02:18:09Z",
+      "side": 1,
+      "message": "Any other INPUT_PROP can be viewed as a sensor? Since you are going to publish this code to entire Android, it worth to be more specific which do you mean and what do you want to do here.",
+      "range": {
+        "startLine": 98,
+        "startChar": 29,
+        "endLine": 98,
+        "endChar": 47
+      },
+      "revId": "7721b28d535d1848508865c789e68af28a70a6b5",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "6ace7671_a947f5f1",
+        "filename": "modules/sensors/dynamic_sensor/EvdevDevice.cpp",
+        "patchSetId": 2
+      },
+      "lineNbr": 99,
+      "author": {
+        "id": 1074523
+      },
+      "writtenOn": "2017-12-21T02:18:09Z",
+      "side": 1,
+      "message": "here INPUT_PROP_ACCELEROMETER is used to represent general sensor (since it can also give angular velocity). Is it a legacy naming convention in kernel? Add a comment either way to avoid confuse people.",
+      "range": {
+        "startLine": 99,
+        "startChar": 18,
+        "endLine": 99,
+        "endChar": 42
+      },
+      "revId": "7721b28d535d1848508865c789e68af28a70a6b5",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5daf1432_8fb79658",
+        "filename": "modules/sensors/dynamic_sensor/EvdevDevice.cpp",
+        "patchSetId": 2
+      },
+      "lineNbr": 199,
+      "author": {
+        "id": 1074523
+      },
+      "writtenOn": "2017-12-21T02:18:09Z",
+      "side": 1,
+      "message": "Please use this style below for better readability.\n\n  if (errorCondition) {\n    return false;\n  }\n  \n  if (anotherErrorCondition) {\n    return false;\n  }\n\n  doSomethingUseful();\n\n  return true;",
+      "range": {
+        "startLine": 199,
+        "startChar": 0,
+        "endLine": 199,
+        "endChar": 39
+      },
+      "revId": "7721b28d535d1848508865c789e68af28a70a6b5",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3f1ea438_670dd437",
+        "filename": "modules/sensors/dynamic_sensor/EvdevDevice.cpp",
+        "patchSetId": 2
+      },
+      "lineNbr": 201,
+      "author": {
+        "id": 1074523
+      },
+      "writtenOn": "2017-12-21T02:18:09Z",
+      "side": 1,
+      "message": "Over 100",
+      "range": {
+        "startLine": 201,
+        "startChar": 100,
+        "endLine": 201,
+        "endChar": 101
+      },
+      "revId": "7721b28d535d1848508865c789e68af28a70a6b5",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "4707b57b_e5a8265f",
+        "filename": "modules/sensors/dynamic_sensor/EvdevDevice.cpp",
+        "patchSetId": 2
+      },
+      "lineNbr": 231,
+      "author": {
+        "id": 1074523
+      },
+      "writtenOn": "2017-12-21T02:18:09Z",
+      "side": 1,
+      "message": "I probably missed something but why input device need to be matched to screen refresh rate? Is the specific device you use happen to output data at 60Hz?",
+      "range": {
+        "startLine": 231,
+        "startChar": 56,
+        "endLine": 231,
+        "endChar": 66
+      },
+      "revId": "7721b28d535d1848508865c789e68af28a70a6b5",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "54239e71_6ee70fb1",
+        "filename": "modules/sensors/dynamic_sensor/EvdevDevice.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 1074523
+      },
+      "writtenOn": "2017-12-21T02:18:09Z",
+      "side": 1,
+      "message": "x/8 + 1 ?",
+      "range": {
+        "startLine": 77,
+        "startChar": 28,
+        "endLine": 77,
+        "endChar": 52
+      },
+      "revId": "7721b28d535d1848508865c789e68af28a70a6b5",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "f30f5bf8_cc815675",
+        "filename": "modules/sensors/dynamic_sensor/EvdevDevice.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 78,
+      "author": {
+        "id": 1074523
+      },
+      "writtenOn": "2017-12-21T02:18:09Z",
+      "side": 1,
+      "message": "same here",
+      "range": {
+        "startLine": 78,
+        "startChar": 27,
+        "endLine": 78,
+        "endChar": 44
+      },
+      "revId": "7721b28d535d1848508865c789e68af28a70a6b5",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ce733f82_c09b9b45",
+        "filename": "modules/sensors/dynamic_sensor/EvdevSensor.cpp",
+        "patchSetId": 2
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 1074523
+      },
+      "writtenOn": "2017-12-21T02:18:09Z",
+      "side": 1,
+      "message": "Does event device uses the same definition as HID?",
+      "range": {
+        "startLine": 47,
+        "startChar": 15,
+        "endLine": 47,
+        "endChar": 18
+      },
+      "revId": "7721b28d535d1848508865c789e68af28a70a6b5",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba78b729_c087ed6f",
+        "filename": "modules/sensors/dynamic_sensor/EvdevSensor.cpp",
+        "patchSetId": 2
+      },
+      "lineNbr": 253,
+      "author": {
+        "id": 1074523
+      },
+      "writtenOn": "2017-12-21T02:18:09Z",
+      "side": 1,
+      "message": "NO_ERROR",
+      "range": {
+        "startLine": 253,
+        "startChar": 11,
+        "endLine": 253,
+        "endChar": 12
+      },
+      "revId": "7721b28d535d1848508865c789e68af28a70a6b5",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "260a5811_9f785432",
+        "filename": "modules/sensors/dynamic_sensor/EvdevSensor.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 1074523
+      },
+      "writtenOn": "2017-12-21T02:18:09Z",
+      "side": 1,
+      "message": "The same data structure is shared in HidRawSensor but it is copied here. Would be nice to create a common utility class for it. A few functions, such as validateFeatureValueAndBuildSensor() or the print out in dump() can be folded into the new class.",
+      "range": {
+        "startLine": 68,
+        "startChar": 11,
+        "endLine": 68,
+        "endChar": 23
+      },
+      "revId": "7721b28d535d1848508865c789e68af28a70a6b5",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
