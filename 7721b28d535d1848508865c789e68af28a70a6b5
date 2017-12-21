@@ -282,6 +282,30 @@
     },
     {
       "key": {
+        "uuid": "9a8b0f04_89469423",
+        "filename": "modules/sensors/dynamic_sensor/EvdevDevice.cpp",
+        "patchSetId": 2
+      },
+      "lineNbr": 231,
+      "author": {
+        "id": 1074523
+      },
+      "writtenOn": "2017-12-21T20:33:54Z",
+      "side": 1,
+      "message": "I see, thanks for explanation.",
+      "parentUuid": "a326c9cd_4f51f305",
+      "range": {
+        "startLine": 231,
+        "startChar": 56,
+        "endLine": 231,
+        "endChar": 66
+      },
+      "revId": "7721b28d535d1848508865c789e68af28a70a6b5",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "54239e71_6ee70fb1",
         "filename": "modules/sensors/dynamic_sensor/EvdevDevice.h",
         "patchSetId": 2
@@ -317,6 +341,30 @@
       "side": 1,
       "message": "It should be \"(x+1) / 8\", the total number of bits divided by 8.",
       "parentUuid": "54239e71_6ee70fb1",
+      "range": {
+        "startLine": 77,
+        "startChar": 28,
+        "endLine": 77,
+        "endChar": 52
+      },
+      "revId": "7721b28d535d1848508865c789e68af28a70a6b5",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b6a0b828_2d834b54",
+        "filename": "modules/sensors/dynamic_sensor/EvdevDevice.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 1074523
+      },
+      "writtenOn": "2017-12-21T20:33:54Z",
+      "side": 1,
+      "message": "But what if the number of bits is 3? (3+1)/8 \u003d\u003d 0 and actually you need one, right? On the other hand, 3/8 + 1 give you 1 which is minimal number of bytes to store so many bits.",
+      "parentUuid": "0fe8cf9c_fdec728d",
       "range": {
         "startLine": 77,
         "startChar": 28,
