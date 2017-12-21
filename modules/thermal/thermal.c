@@ -154,6 +154,25 @@ static ssize_t get_cpu_usages(thermal_module_t *module, cpu_usage_t *list) {
         size++;
     }
 
+    while(1){
+        snprintf(file_name, MAX_LENGTH, CPU_ONLINE_FILE_FORMAT, size);
+        cpu_file = fopen(file_name, "r");
+        if (cpu_file == NULL) {
+            break;
+        }
+        fclose(cpu_file);
+        if (list != NULL) {
+            ALOGI("cpu%d is offline, fill data!", size);
+            list[size] = (cpu_usage_t) {
+                .name = CPU_LABEL,
+                .active = 0,
+                .total = 0,
+                .is_online = 0,
+            };
+        };
+        size++;
+    }
+
     fclose(file);
     return size;
 }
