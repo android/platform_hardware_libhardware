@@ -16,6 +16,24 @@
       "revId": "533a62343675667a771e1259b222d7858cc1e697",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "23c6636c_2d7a6d9b",
+        "filename": "modules/sensors/dynamic_sensor/HidUtils/Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1074628
+      },
+      "writtenOn": "2017-12-27T19:06:03Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "aa95e764_7893fe78",
+      "revId": "533a62343675667a771e1259b222d7858cc1e697",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }

@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ea9b3010_3d5bb69a",
+        "filename": "modules/soundtrigger/Android.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1074628
+      },
+      "writtenOn": "2017-12-27T19:06:03Z",
+      "side": 0,
+      "message": "This had never been included in the build, which is why it now needs cflags/header libraries.",
+      "revId": "1d832941903e2d9925887d3f5a0665613ac36e4d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}
