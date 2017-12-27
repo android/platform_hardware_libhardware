@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "aa95e764_7893fe78",
+        "filename": "modules/sensors/dynamic_sensor/HidUtils/Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1002751
+      },
+      "writtenOn": "2017-12-27T17:27:34Z",
+      "side": 1,
+      "message": "defaults?",
+      "revId": "533a62343675667a771e1259b222d7858cc1e697",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}
