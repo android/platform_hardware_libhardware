@@ -1,0 +1,9 @@
+Verified+1: Dan Willemsen <dwillemsen@google.com>
+Code-Review+2: Colin Cross <ccross@android.com>
+Code-Review+2: Steven Moreland <smoreland@google.com>
+Presubmit-Verified+1: Treehugger Robot <treehugger-gerrit@google.com>
+Submitted-by: Dan Willemsen <dwillemsen@google.com>
+Submitted-at: Thu, 28 Dec 2017 19:30:02 +0000
+Reviewed-on: https://android-review.googlesource.com/577508
+Project: platform/hardware/libhardware
+Branch: refs/heads/master
