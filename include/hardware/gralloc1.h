@@ -83,8 +83,8 @@ typedef enum {
     GRALLOC1_CONSUMER_USAGE_FOREIGN_BUFFERS = 1ULL << 21,
 
     /* 1ULL << 22 */
-    GRALLOC1_CONSUMER_USAGE_GPU_DATA_BUFFER = 1ULL << 23,
-    /* 1ULL << 24 */
+    /* 1ULL << 23 */
+    GRALLOC1_CONSUMER_USAGE_GPU_DATA_BUFFER = 1ULL << 24,
     /* 1ULL << 25 */
     /* 1ULL << 26 */
     /* 1ULL << 27 */
