@@ -20,6 +20,7 @@
 #include <map>
 #include <memory>
 #include <set>
+#include <mutex>
 
 #include <hardware/camera3.h>
 #include <android-base/macros.h>
@@ -56,15 +57,17 @@ class RequestTracker {
   // Accessors to check availability.
   // Check that a request isn't already in flight, and won't overflow any
   // streams.
-  virtual bool CanAddRequest(const CaptureRequest& request) const;
+  virtual bool CanAddRequest(const CaptureRequest& request);
   // True if the given stream is already at max capacity.
-  virtual bool StreamFull(const camera3_stream_t* handle) const;
+  virtual bool StreamFull(const camera3_stream_t* handle);
   // True if a request is being tracked for the given frame number.
-  virtual bool InFlight(uint32_t frame_number) const;
+  virtual bool InFlight(uint32_t frame_number);
   // True if no requests being tracked.
-  virtual bool Empty() const;
+  virtual bool Empty();
 
  private:
+  // Lock for buffers_if_flight_ and frames_in_flight_;
+  std::mutex in_flight_lock_;
   // Track for each stream, how many buffers are in flight.
   std::map<const camera3_stream_t*, size_t> buffers_in_flight_;
   // Track the frames in flight.

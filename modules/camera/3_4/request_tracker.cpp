@@ -32,6 +32,7 @@ void RequestTracker::SetStreamConfiguration(
   // Clear the old configuration.
   ClearStreamConfiguration();
   // Add an entry to the buffer tracking map for each configured stream.
+  std::lock_guard<std::mutex> lock(in_flight_lock_);
   for (size_t i = 0; i < config.num_streams; ++i) {
     buffers_in_flight_.emplace(config.streams[i], 0);
   }
@@ -39,6 +40,7 @@ void RequestTracker::SetStreamConfiguration(
 
 void RequestTracker::ClearStreamConfiguration() {
   // The keys of the in flight buffer map are the configured streams.
+  std::lock_guard<std::mutex> lock(in_flight_lock_);
   buffers_in_flight_.clear();
 }
 
@@ -59,6 +61,7 @@ bool RequestTracker::Add(std::shared_ptr<CaptureRequest> request) {
     return false;
   }
 
+  std::lock_guard<std::mutex> lock(in_flight_lock_);
   // Add to the count for each stream used.
   for (const auto stream : RequestStreams(*request)) {
     ++buffers_in_flight_[stream];
@@ -76,6 +79,7 @@ bool RequestTracker::Remove(std::shared_ptr<CaptureRequest> request) {
   }
 
   // Get the request.
+  std::lock_guard<std::mutex> lock(in_flight_lock_);
   const auto frame_number_request =
       frames_in_flight_.find(request->frame_number);
   if (frame_number_request == frames_in_flight_.end()) {
@@ -103,6 +107,7 @@ bool RequestTracker::Remove(std::shared_ptr<CaptureRequest> request) {
 void RequestTracker::Clear(
     std::set<std::shared_ptr<CaptureRequest>>* requests) {
   // If desired, extract all the currently in-flight requests.
+  std::lock_guard<std::mutex> lock(in_flight_lock_);
   if (requests) {
     for (auto& frame_number_request : frames_in_flight_) {
       requests->insert(frame_number_request.second);
@@ -117,13 +122,16 @@ void RequestTracker::Clear(
   }
 }
 
-bool RequestTracker::CanAddRequest(const CaptureRequest& request) const {
+bool RequestTracker::CanAddRequest(const CaptureRequest& request) {
   // Check that it's not a duplicate.
-  if (frames_in_flight_.count(request.frame_number) > 0) {
-    ALOGE("%s: Already tracking a request with frame number %d.",
-          __func__,
-          request.frame_number);
-    return false;
+  {
+    std::lock_guard<std::mutex> lock(in_flight_lock_);
+    if (frames_in_flight_.count(request.frame_number) > 0) {
+      ALOGE("%s: Already tracking a request with frame number %d.",
+            __func__,
+            request.frame_number);
+      return false;
+    }
   }
 
   // Check that each stream has space
@@ -137,7 +145,8 @@ bool RequestTracker::CanAddRequest(const CaptureRequest& request) const {
   return true;
 }
 
-bool RequestTracker::StreamFull(const camera3_stream_t* handle) const {
+bool RequestTracker::StreamFull(const camera3_stream_t* handle) {
+  std::lock_guard<std::mutex> lock(in_flight_lock_);
   const auto it = buffers_in_flight_.find(handle);
   if (it == buffers_in_flight_.end()) {
     // Unconfigured streams are implicitly full.
@@ -148,11 +157,13 @@ bool RequestTracker::StreamFull(const camera3_stream_t* handle) const {
   }
 }
 
-bool RequestTracker::InFlight(uint32_t frame_number) const {
+bool RequestTracker::InFlight(uint32_t frame_number) {
+  std::lock_guard<std::mutex> lock(in_flight_lock_);
   return frames_in_flight_.count(frame_number) > 0;
 }
 
-bool RequestTracker::Empty() const {
+bool RequestTracker::Empty() {
+  std::lock_guard<std::mutex> lock(in_flight_lock_);
   return frames_in_flight_.empty();
 }
 
