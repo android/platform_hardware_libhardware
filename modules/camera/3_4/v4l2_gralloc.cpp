@@ -232,7 +232,7 @@ int V4L2Gralloc::unlock(const v4l2_buffer* device_buffer) {
       // Data should match exactly.
       memcpy(yuv_data->y, data, y_len);
     } else {
-      HAL_LOGV("Changing padding on Y plane from %u to %u.",
+      HAL_LOGV("Changing padding on Y plane from %u to %zu.",
                bytes_per_line,
                yuv_data->ystride);
       // Wrong padding from V4L2.
@@ -257,7 +257,7 @@ int V4L2Gralloc::unlock(const v4l2_buffer* device_buffer) {
         memcpy(yuv_data->cb, cb_device, c_len);
         memcpy(yuv_data->cr, cr_device, c_len);
       } else {
-        HAL_LOGV("Changing padding on C plane from %u to %u.",
+        HAL_LOGV("Changing padding on C plane from %u to %zu.",
                  c_bytes_per_line,
                  yuv_data->cstride);
         // Wrong padding from V4L2.
@@ -274,7 +274,7 @@ int V4L2Gralloc::unlock(const v4l2_buffer* device_buffer) {
       }
     } else {
       // Desire semiplanar (cb and cr interleaved).
-      HAL_LOGV("Interleaving cb and cr. Padding going from %u to %u.",
+      HAL_LOGV("Interleaving cb and cr. Padding going from %u to %zu.",
                c_bytes_per_line,
                yuv_data->cstride);
       uint32_t c_height = height / 2;

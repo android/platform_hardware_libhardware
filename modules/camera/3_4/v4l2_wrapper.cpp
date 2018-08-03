@@ -105,7 +105,8 @@ void V4L2Wrapper::Disconnect() {
   --connection_count_;
   if (connection_count_ > 0) {
     HAL_LOGV("Disconnected from camera device %s. %d connections remain.",
-             device_path_.c_str());
+             device_path_.c_str(),
+             connection_count_);
     return;
   }
 
