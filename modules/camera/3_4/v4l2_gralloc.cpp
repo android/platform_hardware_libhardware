@@ -14,6 +14,9 @@
  * limitations under the License.
  */
 
+//#define LOG_NDEBUG 0
+#define LOG_TAG "V4L2Gralloc"
+
 #include "v4l2_gralloc.h"
 
 #include <linux/videodev2.h>

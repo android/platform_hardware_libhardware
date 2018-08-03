@@ -17,10 +17,7 @@
 #ifndef V4L2_CAMERA_HAL_COMMON_H_
 #define V4L2_CAMERA_HAL_COMMON_H_
 
-// #define LOG_NDEBUG 0
 #include <cutils/log.h>
-
-#define LOG_TAG "V4L2CameraHAL"
 
 // Helpers of logging (showing function name and line number).
 #define HAL_LOGE(fmt, args...) do { \
