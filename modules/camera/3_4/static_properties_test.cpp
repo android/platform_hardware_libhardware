@@ -94,10 +94,12 @@ class StaticPropertiesTest : public Test {
     } else if (input) {
       type = CAMERA3_STREAM_INPUT;
     }
-    return {static_cast<int>(type),
-            static_cast<uint32_t>(width),
-            static_cast<uint32_t>(height),
-            static_cast<int>(format)};
+    camera3_stream_t stream;
+    stream.stream_type = type;
+    stream.width = width;
+    stream.height = height;
+    stream.format = format;
+    return stream;
   }
 
   void ExpectConfigurationSupported(std::vector<camera3_stream_t>& streams,
