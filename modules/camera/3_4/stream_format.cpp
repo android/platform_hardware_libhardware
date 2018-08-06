@@ -33,8 +33,7 @@ StreamFormat::StreamFormat(int format, uint32_t width, uint32_t height)
       v4l2_pixel_format_(StreamFormat::HalToV4L2PixelFormat(format)),
       width_(width),
       height_(height),
-      bytes_per_line_(0),
-      min_buffer_size_(0) {}
+      bytes_per_line_(0) {}
 
 StreamFormat::StreamFormat(const v4l2_format& format)
     : type_(format.type),
@@ -42,8 +41,7 @@ StreamFormat::StreamFormat(const v4l2_format& format)
       v4l2_pixel_format_(format.fmt.pix.pixelformat),
       width_(format.fmt.pix.width),
       height_(format.fmt.pix.height),
-      bytes_per_line_(format.fmt.pix.bytesperline),
-      min_buffer_size_(format.fmt.pix.sizeimage) {}
+      bytes_per_line_(format.fmt.pix.bytesperline) {}
 
 void StreamFormat::FillFormatRequest(v4l2_format* format) const {
   memset(format, 0, sizeof(*format));
