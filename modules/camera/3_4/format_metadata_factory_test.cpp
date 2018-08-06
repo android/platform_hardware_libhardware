@@ -94,7 +94,7 @@ TEST_F(FormatMetadataFactoryTest, GetFormatMetadata) {
   for (auto& component : components) {
     android::CameraMetadata metadata;
     component->PopulateStaticFields(&metadata);
-    ASSERT_EQ(metadata.entryCount(), 1);
+    ASSERT_EQ(metadata.entryCount(), 1u);
     int32_t tag = component->StaticTags()[0];
     switch (tag) {
       case ANDROID_SCALER_AVAILABLE_STREAM_CONFIGURATIONS:  // Fall through.

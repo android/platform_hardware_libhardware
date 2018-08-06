@@ -537,7 +537,7 @@ int V4L2Wrapper::EnqueueBuffer(const camera3_stream_buffer_t* camera_buffer,
   int index = -1;
   {
     std::lock_guard<std::mutex> guard(buffer_queue_lock_);
-    for (int i = 0; i < buffers_.size(); ++i) {
+    for (size_t i = 0; i < buffers_.size(); ++i) {
       if (!buffers_[i]) {
         index = i;
         break;
