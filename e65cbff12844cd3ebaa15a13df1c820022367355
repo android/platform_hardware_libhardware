@@ -109,6 +109,24 @@
     },
     {
       "key": {
+        "uuid": "fd367599_01dcaeee",
+        "filename": "Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1120612
+      },
+      "writtenOn": "2018-08-10T16:09:14Z",
+      "side": 1,
+      "message": "Looks like Exclude_header_libs was added for vendor just yesterday! I will add the same for recovery today :)",
+      "parentUuid": "303cfcb6_72e2680d",
+      "revId": "e65cbff12844cd3ebaa15a13df1c820022367355",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "8a027320_98dbe3a9",
         "filename": "Android.bp",
         "patchSetId": 1
