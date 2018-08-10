@@ -16,6 +16,24 @@
       "revId": "e65cbff12844cd3ebaa15a13df1c820022367355",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "7faed985_ac228d1d",
+        "filename": "Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1136369
+      },
+      "writtenOn": "2018-08-10T00:17:31Z",
+      "side": 1,
+      "message": "I meant \"recovery\" not \"boot\" in my previous comment.",
+      "parentUuid": "2c8c52d5_f0142fc8",
+      "revId": "e65cbff12844cd3ebaa15a13df1c820022367355",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
     }
   ]
 }
