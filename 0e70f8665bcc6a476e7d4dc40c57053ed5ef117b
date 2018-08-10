@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1e393f93_09d664ed",
+        "filename": "modules/camera/3_4/camera.cpp",
+        "patchSetId": 2
+      },
+      "lineNbr": 508,
+      "author": {
+        "id": 1077847
+      },
+      "writtenOn": "2018-08-10T00:10:43Z",
+      "side": 1,
+      "message": "nit: for style consistency, put each of these on its own line",
+      "range": {
+        "startLine": 508,
+        "startChar": 8,
+        "endLine": 508,
+        "endChar": 27
+      },
+      "revId": "0e70f8665bcc6a476e7d4dc40c57053ed5ef117b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "4421381b_2f4a7086",
+        "filename": "modules/camera/3_4/request_tracker_test.cpp",
+        "patchSetId": 2
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 1077847
+      },
+      "writtenOn": "2018-08-10T00:10:43Z",
+      "side": 1,
+      "message": "nit: line length (should have been caught in the past too)",
+      "range": {
+        "startLine": 38,
+        "startChar": 5,
+        "endLine": 38,
+        "endChar": 111
+      },
+      "revId": "0e70f8665bcc6a476e7d4dc40c57053ed5ef117b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "04d647a1_0024f2c4",
+        "filename": "modules/camera/3_4/static_properties_test.cpp",
+        "patchSetId": 2
+      },
+      "lineNbr": 449,
+      "author": {
+        "id": 1077847
+      },
+      "writtenOn": "2018-08-10T00:10:43Z",
+      "side": 1,
+      "message": "nit: please reformat this for line length.",
+      "range": {
+        "startLine": 449,
+        "startChar": 6,
+        "endLine": 449,
+        "endChar": 112
+      },
+      "revId": "0e70f8665bcc6a476e7d4dc40c57053ed5ef117b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}
