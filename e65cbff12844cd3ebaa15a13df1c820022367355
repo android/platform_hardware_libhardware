@@ -37,6 +37,24 @@
     },
     {
       "key": {
+        "uuid": "24787326_e47dd1f2",
+        "filename": "Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1136369
+      },
+      "writtenOn": "2018-08-10T00:21:37Z",
+      "side": 1,
+      "message": "Pulling libhardware in recovery means its dependencies (audio and bluetooth headers) also have to be available in recovery (see dependent patches).",
+      "parentUuid": "7faed985_ac228d1d",
+      "revId": "e65cbff12844cd3ebaa15a13df1c820022367355",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "bc27459f_92cc4024",
         "filename": "hardware.c",
         "patchSetId": 1
