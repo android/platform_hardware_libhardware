@@ -1,0 +1,9 @@
+Code-Review+2: Steven Moreland <smoreland@google.com>
+Verified+1: Hridya Valsaraju <hridya@google.com>
+Autosubmit+1: Hridya Valsaraju <hridya@google.com>
+Presubmit-Verified+1: Treehugger Robot <treehugger-gerrit@google.com>
+Submitted-by: Treehugger Robot <treehugger-gerrit@google.com>
+Submitted-at: Fri, 10 Aug 2018 22:48:18 +0000
+Reviewed-on: https://android-review.googlesource.com/707965
+Project: platform/hardware/libhardware
+Branch: refs/heads/master
