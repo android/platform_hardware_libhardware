@@ -73,6 +73,41 @@
     },
     {
       "key": {
+        "uuid": "85648764_c0e986de",
+        "filename": "Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1136369
+      },
+      "writtenOn": "2018-08-10T15:29:12Z",
+      "side": 1,
+      "message": "My original proposal is bellow, but I just saw that there is a \"Exclude_header_libs\" in linker.go.\nWould that not solve our problems ? Add here exclude_header_libs libaudio_system_headers and libbluetooth-types-header (and any other unused headers) for recovery target ?\n\n___\n\nMy original proposal was that you create a libhardware_recovery that only has the minimal code and dependency for the recovery OS:\n\ncc_library_shared {\n    name: \"libhardware_recovery\",\n\n    srcs: [\"hardware.c\"],\n    shared_libs: [\n        \"libcutils\",\n        \"liblog\",\n        \"libdl\",\n    ],\n    cflags: [\n        \"-DQEMU_HARDWARE\",\n        \"-Wall\",\n        \"-Werror\",\n    ],\n\n    recovery_available: true,\n    vendor_available: true,\n}\nOf course to avoid code duplication, you would post most of that in a shared \"cc_defaults\".",
+      "parentUuid": "6b808dbb_4e1400f3",
+      "revId": "e65cbff12844cd3ebaa15a13df1c820022367355",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "8a027320_98dbe3a9",
+        "filename": "Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 1136369
+      },
+      "writtenOn": "2018-08-10T15:29:12Z",
+      "side": 1,
+      "message": "It seems to exist in linker.go but it is not present in go/Android.bp. Strange. Was it just added ?",
+      "revId": "e65cbff12844cd3ebaa15a13df1c820022367355",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "bc27459f_92cc4024",
         "filename": "hardware.c",
         "patchSetId": 1
