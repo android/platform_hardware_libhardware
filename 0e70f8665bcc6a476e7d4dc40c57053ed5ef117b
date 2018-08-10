@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "98a3d2b7_36b69661",
+        "filename": "modules/camera/3_4/camera.cpp",
+        "patchSetId": 2
+      },
+      "lineNbr": 508,
+      "author": {
+        "id": 1182749
+      },
+      "writtenOn": "2018-08-10T06:24:54Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1e393f93_09d664ed",
+      "range": {
+        "startLine": 508,
+        "startChar": 8,
+        "endLine": 508,
+        "endChar": 27
+      },
+      "revId": "0e70f8665bcc6a476e7d4dc40c57053ed5ef117b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "4421381b_2f4a7086",
         "filename": "modules/camera/3_4/request_tracker_test.cpp",
         "patchSetId": 2
@@ -48,6 +72,30 @@
     },
     {
       "key": {
+        "uuid": "7abe0b40_d0a080a9",
+        "filename": "modules/camera/3_4/request_tracker_test.cpp",
+        "patchSetId": 2
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 1182749
+      },
+      "writtenOn": "2018-08-10T06:24:54Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "4421381b_2f4a7086",
+      "range": {
+        "startLine": 38,
+        "startChar": 5,
+        "endLine": 38,
+        "endChar": 111
+      },
+      "revId": "0e70f8665bcc6a476e7d4dc40c57053ed5ef117b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "04d647a1_0024f2c4",
         "filename": "modules/camera/3_4/static_properties_test.cpp",
         "patchSetId": 2
@@ -68,6 +116,30 @@
       "revId": "0e70f8665bcc6a476e7d4dc40c57053ed5ef117b",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "1a9c440c_adfb05da",
+        "filename": "modules/camera/3_4/static_properties_test.cpp",
+        "patchSetId": 2
+      },
+      "lineNbr": 449,
+      "author": {
+        "id": 1182749
+      },
+      "writtenOn": "2018-08-10T06:24:54Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "04d647a1_0024f2c4",
+      "range": {
+        "startLine": 449,
+        "startChar": 6,
+        "endLine": 449,
+        "endChar": 112
+      },
+      "revId": "0e70f8665bcc6a476e7d4dc40c57053ed5ef117b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
