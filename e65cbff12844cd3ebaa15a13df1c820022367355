@@ -91,6 +91,24 @@
     },
     {
       "key": {
+        "uuid": "303cfcb6_72e2680d",
+        "filename": "Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1132673
+      },
+      "writtenOn": "2018-08-10T15:44:22Z",
+      "side": 1,
+      "message": "Exclude_header_libs is currently only for vendor: {...}, but not for recovery: {...}, though there is no reason to not support the property for recovery.\n\nYes, I think that\u0027s much better.\n\nHridya, would you touch Soong for the property? I could but not today.. (it is Friday night here...)",
+      "parentUuid": "85648764_c0e986de",
+      "revId": "e65cbff12844cd3ebaa15a13df1c820022367355",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "8a027320_98dbe3a9",
         "filename": "Android.bp",
         "patchSetId": 1
