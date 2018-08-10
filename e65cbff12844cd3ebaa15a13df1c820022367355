@@ -55,6 +55,24 @@
     },
     {
       "key": {
+        "uuid": "6b808dbb_4e1400f3",
+        "filename": "Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1132673
+      },
+      "writtenOn": "2018-08-10T00:42:22Z",
+      "side": 1,
+      "message": "When I removed the dependency to libhardware and built the hal, I got this error:\n\n/usr/local/google/home/jiyong/android/aosp/prebuilts/clang/host/linux-x86/clang-r328903/bin/ld.lld: error: undefined symbol: hw_get_module\n\u003e\u003e\u003e referenced by BootControl.cpp:100 (hardware/interfaces/boot/1.0/default/BootControl.cpp:100)\n\n\nThe transitive dependency to the audio and bluetooth headers are definitely unfortunate and we can fix the problem by ...\n\n1) removing the audio/bt headers from libhardware_headers\n\n2) fixing other modules that have been using the audio/bt headers via libhardware_headers (i.e. explicitly depending on audio and bt headers)\n\n\n1) is easy, but 2) might be massive.",
+      "parentUuid": "24787326_e47dd1f2",
+      "revId": "e65cbff12844cd3ebaa15a13df1c820022367355",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "bc27459f_92cc4024",
         "filename": "hardware.c",
         "patchSetId": 1
