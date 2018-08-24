@@ -236,6 +236,30 @@
     },
     {
       "key": {
+        "uuid": "27d20509_181e444c",
+        "filename": "modules/sensors/dynamic_sensor/EvdevSensorDevice.cpp",
+        "patchSetId": 8
+      },
+      "lineNbr": 209,
+      "author": {
+        "id": 1006497
+      },
+      "writtenOn": "2018-08-24T19:47:44Z",
+      "side": 1,
+      "message": "Note that not all evdev devices are necessarily HID devices.",
+      "parentUuid": "501defb3_46897065",
+      "range": {
+        "startLine": 209,
+        "startChar": 0,
+        "endLine": 209,
+        "endChar": 82
+      },
+      "revId": "8e97194325a5b753c718f07fe07d27ad352a6a28",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "4eccee58_c77aac5f",
         "filename": "modules/sensors/dynamic_sensor/EvdevSensorDevice.cpp",
         "patchSetId": 8
