@@ -71,6 +71,30 @@
     },
     {
       "key": {
+        "uuid": "720b1ae6_bcfc391c",
+        "filename": "modules/sensors/dynamic_sensor/EvdevDevice.cpp",
+        "patchSetId": 8
+      },
+      "lineNbr": 146,
+      "author": {
+        "id": 1152828
+      },
+      "writtenOn": "2018-08-24T19:39:51Z",
+      "side": 1,
+      "message": "PHYS is limited to 64 characters. Don\u0027t think it\u0027s necessary to limit it to 64 specifically.",
+      "parentUuid": "45a22193_a26b25bb",
+      "range": {
+        "startLine": 146,
+        "startChar": 0,
+        "endLine": 146,
+        "endChar": 70
+      },
+      "revId": "8e97194325a5b753c718f07fe07d27ad352a6a28",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "3a8d4bc6_5ec2dcab",
         "filename": "modules/sensors/dynamic_sensor/EvdevDevice.cpp",
         "patchSetId": 8
@@ -82,6 +106,30 @@
       "writtenOn": "2018-08-21T22:21:19Z",
       "side": 1,
       "message": "sizeof(input_absinfo) if the intent is to set the entire struct to zero; otherwise, only the first n bytes will be set to zero, where n is the size of a pointer on the system (4 or 8 bytes usually).",
+      "range": {
+        "startLine": 203,
+        "startChar": 0,
+        "endLine": 203,
+        "endChar": 48
+      },
+      "revId": "8e97194325a5b753c718f07fe07d27ad352a6a28",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "0f294ce8_75ccecc1",
+        "filename": "modules/sensors/dynamic_sensor/EvdevDevice.cpp",
+        "patchSetId": 8
+      },
+      "lineNbr": 203,
+      "author": {
+        "id": 1152828
+      },
+      "writtenOn": "2018-08-24T19:39:51Z",
+      "side": 1,
+      "message": "Thanks! Will fix.",
+      "parentUuid": "3a8d4bc6_5ec2dcab",
       "range": {
         "startLine": 203,
         "startChar": 0,
@@ -117,6 +165,30 @@
     },
     {
       "key": {
+        "uuid": "c4fe92a5_1ee5e9ff",
+        "filename": "modules/sensors/dynamic_sensor/EvdevDevice.cpp",
+        "patchSetId": 8
+      },
+      "lineNbr": 219,
+      "author": {
+        "id": 1152828
+      },
+      "writtenOn": "2018-08-24T19:39:51Z",
+      "side": 1,
+      "message": "Don\u0027t think so. Realistically, system won\u0027t need to poll more than the screen refresh rate. Even at 240Hz, that\u0027s 4ms.",
+      "parentUuid": "bc14b8d3_fa0ba6c6",
+      "range": {
+        "startLine": 219,
+        "startChar": 0,
+        "endLine": 219,
+        "endChar": 45
+      },
+      "revId": "8e97194325a5b753c718f07fe07d27ad352a6a28",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "c7f6eb7f_4a831496",
         "filename": "modules/sensors/dynamic_sensor/EvdevSensorDevice.cpp",
         "patchSetId": 8
@@ -140,6 +212,30 @@
     },
     {
       "key": {
+        "uuid": "501defb3_46897065",
+        "filename": "modules/sensors/dynamic_sensor/EvdevSensorDevice.cpp",
+        "patchSetId": 8
+      },
+      "lineNbr": 209,
+      "author": {
+        "id": 1152828
+      },
+      "writtenOn": "2018-08-24T19:39:51Z",
+      "side": 1,
+      "message": "This follows the HID sensor specs that specify only one min/max/resolution for each sensor.",
+      "parentUuid": "c7f6eb7f_4a831496",
+      "range": {
+        "startLine": 209,
+        "startChar": 0,
+        "endLine": 209,
+        "endChar": 82
+      },
+      "revId": "8e97194325a5b753c718f07fe07d27ad352a6a28",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "4eccee58_c77aac5f",
         "filename": "modules/sensors/dynamic_sensor/EvdevSensorDevice.cpp",
         "patchSetId": 8
@@ -151,6 +247,30 @@
       "writtenOn": "2018-08-21T22:21:19Z",
       "side": 1,
       "message": "Would it make sense to extract a function that compares the resolution, minimum, and maximum values to reduce code duplication?",
+      "range": {
+        "startLine": 219,
+        "startChar": 0,
+        "endLine": 232,
+        "endChar": 5
+      },
+      "revId": "8e97194325a5b753c718f07fe07d27ad352a6a28",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b4869ee2_c5158e26",
+        "filename": "modules/sensors/dynamic_sensor/EvdevSensorDevice.cpp",
+        "patchSetId": 8
+      },
+      "lineNbr": 232,
+      "author": {
+        "id": 1152828
+      },
+      "writtenOn": "2018-08-24T19:39:51Z",
+      "side": 1,
+      "message": "I can make it a little more concise. Will fix.",
+      "parentUuid": "4eccee58_c77aac5f",
       "range": {
         "startLine": 219,
         "startChar": 0,
