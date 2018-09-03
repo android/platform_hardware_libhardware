@@ -19,8 +19,6 @@
 
 #include "request_tracker.h"
 
-#include <cutils/log.h>
-
 namespace default_camera_hal {
 
 RequestTracker::RequestTracker() {}

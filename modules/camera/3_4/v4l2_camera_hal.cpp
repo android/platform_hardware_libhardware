@@ -20,23 +20,12 @@
 #define LOG_TAG "V4L2CameraHAL"
 
 #include "v4l2_camera_hal.h"
-
-#include <dirent.h>
-#include <fcntl.h>
-#include <linux/videodev2.h>
-#include <sys/ioctl.h>
-#include <sys/stat.h>
-#include <sys/types.h>
-#include <unistd.h>
-
-#include <algorithm>
-#include <cstdlib>
-#include <unordered_set>
+#include "v4l2_camera.h"
 
 #include <android-base/parseint.h>
 
-#include "common.h"
-#include "v4l2_camera.h"
+#include <dirent.h>
+#include <unordered_set>
 
 /*
  * This file serves as the entry point to the HAL. It is modified from the

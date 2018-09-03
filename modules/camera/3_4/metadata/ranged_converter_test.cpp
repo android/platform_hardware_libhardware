@@ -16,10 +16,9 @@
 
 #include "ranged_converter.h"
 
-#include <gmock/gmock.h>
-#include <gtest/gtest.h>
-
 #include "converter_interface_mock.h"
+
+#include <gtest/gtest.h>
 
 using testing::Return;
 using testing::SetArgPointee;

@@ -16,13 +16,8 @@
 
 #include "control.h"
 
-#include <camera/CameraMetadata.h>
-#include <gmock/gmock.h>
-#include <gtest/gtest.h>
-
 #include "control_delegate_interface_mock.h"
 #include "control_options_interface_mock.h"
-#include "metadata_common.h"
 #include "test_common.h"
 
 using testing::AtMost;

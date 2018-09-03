@@ -19,20 +19,8 @@
 
 #include "v4l2_wrapper.h"
 
-#include <algorithm>
-#include <array>
-#include <limits>
-#include <mutex>
-#include <vector>
-
-#include <fcntl.h>
-#include <linux/videodev2.h>
-#include <sys/stat.h>
-#include <sys/types.h>
-
-#include <android-base/unique_fd.h>
-
 #include "arc/cached_frame.h"
+#include "common.h"
 
 namespace v4l2_camera_hal {
 

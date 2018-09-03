@@ -17,11 +17,11 @@
 #ifndef DEFAULT_CAMERA_HAL_METADATA_TYPES_H_
 #define DEFAULT_CAMERA_HAL_METADATA_TYPES_H_
 
+#include <hardware/camera3.h>
+
 #include <array>
 #include <map>
 #include <set>
-
-#include <hardware/camera3.h>
 
 namespace default_camera_hal {
 

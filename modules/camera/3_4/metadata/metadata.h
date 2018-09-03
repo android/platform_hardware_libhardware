@@ -17,13 +17,9 @@
 #ifndef V4L2_CAMERA_HAL_METADATA_H_
 #define V4L2_CAMERA_HAL_METADATA_H_
 
-#include <set>
+#include "metadata_common.h"
 
 #include <android-base/macros.h>
-#include <camera/CameraMetadata.h>
-#include <hardware/camera3.h>
-
-#include "metadata_common.h"
 
 namespace v4l2_camera_hal {
 class Metadata {

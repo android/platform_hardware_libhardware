@@ -17,9 +17,9 @@
 #ifndef V4L2_CAMERA_HAL_METADATA_TAGGED_CONTROL_DELEGATE_H_
 #define V4L2_CAMERA_HAL_METADATA_TAGGED_CONTROL_DELEGATE_H_
 
-#include <memory>
-
 #include "control_delegate_interface.h"
+
+#include <memory>
 
 namespace v4l2_camera_hal {
 

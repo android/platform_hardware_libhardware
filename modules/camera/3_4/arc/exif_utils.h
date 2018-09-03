@@ -7,17 +7,11 @@
 #ifndef INCLUDE_ARC_EXIF_UTILS_H_
 #define INCLUDE_ARC_EXIF_UTILS_H_
 
-#include <cstddef>
-#include <memory>
-#include <string>
-#include <utility>
-#include <vector>
+#include "arc/jpeg_compressor.h"
 
 extern "C" {
 #include <libexif/exif-data.h>
 }
-
-#include "arc/jpeg_compressor.h"
 
 namespace arc {
 

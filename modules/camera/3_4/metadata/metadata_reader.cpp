@@ -18,10 +18,6 @@
 #define LOG_TAG "MetadataReader"
 
 #include "metadata_reader.h"
-
-#include <cutils/log.h>
-#include <system/camera.h>
-
 #include "metadata_common.h"
 
 namespace default_camera_hal {

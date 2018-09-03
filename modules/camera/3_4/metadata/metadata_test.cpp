@@ -16,16 +16,9 @@
 
 #include "metadata.h"
 
-#include <memory>
-#include <set>
-#include <vector>
-
-#include <camera/CameraMetadata.h>
-#include <gmock/gmock.h>
-#include <gtest/gtest.h>
-
-#include "metadata_common.h"
 #include "partial_metadata_interface_mock.h"
+
+#include <gtest/gtest.h>
 
 using testing::AtMost;
 using testing::Return;

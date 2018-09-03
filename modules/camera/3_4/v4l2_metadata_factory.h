@@ -17,10 +17,8 @@
 #ifndef V4L2_CAMERA_HAL_V4L2_METADATA_FACTORY_H_
 #define V4L2_CAMERA_HAL_V4L2_METADATA_FACTORY_H_
 
-#include <memory>
-
-#include "metadata/metadata.h"
 #include "v4l2_wrapper.h"
+#include "metadata/metadata.h"
 
 namespace v4l2_camera_hal {
 

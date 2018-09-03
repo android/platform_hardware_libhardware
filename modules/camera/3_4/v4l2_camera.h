@@ -19,20 +19,15 @@
 #ifndef V4L2_CAMERA_HAL_V4L2_CAMERA_H_
 #define V4L2_CAMERA_HAL_V4L2_CAMERA_H_
 
-#include <array>
-#include <condition_variable>
-#include <map>
-#include <queue>
-#include <string>
+#include "camera.h"
+#include "metadata/metadata.h"
+#include "v4l2_wrapper.h"
 
-#include <camera/CameraMetadata.h>
 #include <utils/StrongPointer.h>
 #include <utils/Thread.h>
 
-#include "camera.h"
-#include "common.h"
-#include "metadata/metadata.h"
-#include "v4l2_wrapper.h"
+#include <condition_variable>
+#include <queue>
 
 namespace v4l2_camera_hal {
 // V4L2Camera is a specific V4L2-supported camera device. The Camera object

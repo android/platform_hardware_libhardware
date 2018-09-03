@@ -17,11 +17,10 @@
 #ifndef DEFAULT_CAMERA_HAL_CAPTURE_REQUEST_H_
 #define DEFAULT_CAMERA_HAL_CAPTURE_REQUEST_H_
 
-#include <memory>
-#include <vector>
-
 #include <camera/CameraMetadata.h>
 #include <hardware/camera3.h>
+
+#include <vector>
 
 namespace default_camera_hal {
 

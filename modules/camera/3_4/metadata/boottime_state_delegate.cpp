@@ -17,10 +17,11 @@
 //#define LOG_NDEBUG 0
 #define LOG_TAG "BoottimeStateDelegate"
 
-#include <errno.h>
-#include <string.h>
-
 #include "boottime_state_delegate.h"
+#include "common.h"
+
+#include <cerrno>
+#include <cstring>
 
 namespace v4l2_camera_hal {
 

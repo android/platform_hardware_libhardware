@@ -18,12 +18,9 @@
 #define LOG_TAG "Metadata"
 
 #include "metadata.h"
+#include "common.h"
 
-#include <camera/CameraMetadata.h>
 #include <hardware/camera3.h>
-
-#include "../common.h"
-#include "metadata_common.h"
 
 namespace v4l2_camera_hal {
 

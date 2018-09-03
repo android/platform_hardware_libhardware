@@ -16,13 +16,11 @@
 
 #include "state.h"
 
-#include <camera/CameraMetadata.h>
-#include <gmock/gmock.h>
-#include <gtest/gtest.h>
-
-#include "metadata_common.h"
 #include "state_delegate_interface_mock.h"
 #include "test_common.h"
+
+#include <gmock/gmock.h>
+#include <gtest/gtest.h>
 
 using testing::AtMost;
 using testing::Expectation;

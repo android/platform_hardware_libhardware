@@ -6,10 +6,6 @@
 
 #include "arc/jpeg_compressor.h"
 
-#include <memory>
-
-#include <errno.h>
-
 #include "arc/common.h"
 
 namespace arc {
