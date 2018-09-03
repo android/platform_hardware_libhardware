@@ -17,14 +17,11 @@
 #ifndef V4L2_CAMERA_HAL_FORMAT_METADATA_FACTORY_H_
 #define V4L2_CAMERA_HAL_FORMAT_METADATA_FACTORY_H_
 
-#include <algorithm>
-#include <iterator>
-#include <memory>
-#include <set>
-
-#include "common.h"
 #include "metadata/metadata_common.h"
 #include "v4l2_wrapper.h"
+
+#include <iterator>
+#include <memory>
 
 namespace v4l2_camera_hal {
 

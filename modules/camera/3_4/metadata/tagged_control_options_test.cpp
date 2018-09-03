@@ -16,10 +16,10 @@
 
 #include "tagged_control_options.h"
 
+#include "control_options_interface_mock.h"
+
 #include <gmock/gmock.h>
 #include <gtest/gtest.h>
-
-#include "control_options_interface_mock.h"
 
 using testing::Return;
 using testing::SetArgPointee;

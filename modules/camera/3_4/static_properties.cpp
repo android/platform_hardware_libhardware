@@ -19,12 +19,6 @@
 
 #include "static_properties.h"
 
-#include <cutils/log.h>
-#include <hardware/camera3.h>
-#include <system/camera.h>
-
-#include "metadata/metadata_reader.h"
-
 namespace default_camera_hal {
 
 // Build stream capabilities from configs + stall durations.

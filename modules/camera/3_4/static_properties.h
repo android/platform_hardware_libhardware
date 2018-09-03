@@ -17,14 +17,7 @@
 #ifndef DEFAULT_CAMERA_HAL_STATIC_PROPERTIES_H_
 #define DEFAULT_CAMERA_HAL_STATIC_PROPERTIES_H_
 
-#include <memory>
-#include <set>
-
-#include <hardware/camera3.h>
-
-#include "common.h"
 #include "metadata/metadata_reader.h"
-#include "metadata/types.h"
 
 namespace default_camera_hal {
 

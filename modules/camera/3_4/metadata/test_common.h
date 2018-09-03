@@ -17,14 +17,9 @@
 #ifndef V4L2_CAMERA_HAL_METADATA_TEST_COMMON_H_
 #define V4L2_CAMERA_HAL_METADATA_TEST_COMMON_H_
 
-#include <array>
-#include <vector>
-
-#include <camera/CameraMetadata.h>
-#include <gtest/gtest.h>
-
 #include "array_vector.h"
-#include "metadata_common.h"
+
+#include <gtest/gtest.h>
 
 namespace v4l2_camera_hal {
 

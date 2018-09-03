@@ -4,12 +4,9 @@
  */
 
 #include "arc/cached_frame.h"
-
-#include <errno.h>
-#include <libyuv.h>
-
 #include "arc/common.h"
-#include "arc/common_types.h"
+
+#include <libyuv.h>
 
 namespace arc {
 

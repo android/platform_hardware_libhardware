@@ -14,10 +14,6 @@
  * limitations under the License.
  */
 
-#include <camera/CameraMetadata.h>
-#include <gmock/gmock.h>
-#include <gtest/gtest.h>
-
 #include "format_metadata_factory.h"
 #include "metadata/test_common.h"
 #include "v4l2_wrapper_mock.h"

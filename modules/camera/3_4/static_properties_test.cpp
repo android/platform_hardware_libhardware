@@ -16,12 +16,9 @@
 
 #include "static_properties.h"
 
-#include <gmock/gmock.h>
-#include <gtest/gtest.h>
-#include <hardware/camera3.h>
-#include <system/camera.h>
-
 #include "metadata/metadata_reader_mock.h"
+
+#include <gtest/gtest.h>
 
 using testing::AtMost;
 using testing::Expectation;

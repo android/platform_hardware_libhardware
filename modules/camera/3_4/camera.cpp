@@ -19,25 +19,13 @@
 //#define LOG_NDEBUG 0
 #define LOG_TAG "Camera"
 
-#include <cstdlib>
-#include <memory>
-#include <vector>
-#include <stdio.h>
-#include <hardware/camera3.h>
-#include <sync/sync.h>
-#include <system/camera_metadata.h>
-#include <system/graphics.h>
-#include <utils/Mutex.h>
-
+#include "camera.h"
 #include "metadata/metadata_common.h"
-
-#include <cutils/log.h>
 
 #define ATRACE_TAG (ATRACE_TAG_CAMERA | ATRACE_TAG_HAL)
 #include <utils/Trace.h>
 
-#include "camera.h"
-
+#include <sync/sync.h>
 #define CAMERA_SYNC_TIMEOUT 5000 // in msecs
 
 namespace default_camera_hal {

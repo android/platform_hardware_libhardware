@@ -18,10 +18,9 @@
 #define LOG_TAG "EnumConverter"
 
 #include "enum_converter.h"
+#include "common.h"
 
-#include <errno.h>
-
-#include "../common.h"
+#include <cerrno>
 
 namespace v4l2_camera_hal {
 

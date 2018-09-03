@@ -9,11 +9,9 @@
 
 // We must include cstdio before jpeglib.h. It is a requirement of libjpeg.
 #include <cstdio>
-#include <string>
 #include <vector>
 
 extern "C" {
-#include <jerror.h>
 #include <jpeglib.h>
 }
 

@@ -19,13 +19,7 @@
 #ifndef V4L2_CAMERA_HAL_V4L2_CAMERA_HAL_H_
 #define V4L2_CAMERA_HAL_V4L2_CAMERA_HAL_H_
 
-#include <vector>
-
-#include <hardware/camera_common.h>
-#include <hardware/hardware.h>
-
 #include "camera.h"
-#include "common.h"
 
 namespace v4l2_camera_hal {
 /*

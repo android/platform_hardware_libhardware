@@ -6,8 +6,6 @@
 #ifndef HAL_USB_IMAGE_PROCESSOR_H_
 #define HAL_USB_IMAGE_PROCESSOR_H_
 
-#include <string>
-
 // FourCC pixel formats (defined as V4L2_PIX_FMT_*).
 #include <linux/videodev2.h>
 // Declarations of HAL_PIXEL_FORMAT_XXX.

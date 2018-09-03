@@ -20,7 +20,6 @@
 #include "format_metadata_factory.h"
 
 #include "arc/image_processor.h"
-#include "metadata/array_vector.h"
 #include "metadata/partial_metadata_factory.h"
 #include "metadata/property.h"
 

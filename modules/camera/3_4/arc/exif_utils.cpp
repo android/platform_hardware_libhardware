@@ -5,13 +5,9 @@
  */
 
 #include "arc/exif_utils.h"
-
-#include <cstdlib>
-#include <ctime>
+#include "arc/common.h"
 
 #include <libyuv.h>
-
-#include "arc/common.h"
 
 namespace std {
 

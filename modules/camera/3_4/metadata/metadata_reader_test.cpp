@@ -15,18 +15,10 @@
  */
 
 #include "metadata_reader.h"
-
-#include <camera/CameraMetadata.h>
-#include <gmock/gmock.h>
-#include <gtest/gtest.h>
-#include <system/camera.h>
-
-#include "array_vector.h"
 #include "metadata_common.h"
 
-using testing::AtMost;
-using testing::Expectation;
-using testing::Return;
+#include <gtest/gtest.h>
+
 using testing::Test;
 
 namespace default_camera_hal {

@@ -17,11 +17,11 @@
 #ifndef V4L2_CAMERA_HAL_METADATA_ENUM_CONVERTER_H_
 #define V4L2_CAMERA_HAL_METADATA_ENUM_CONVERTER_H_
 
-#include <map>
+#include "converter_interface.h"
 
 #include <android-base/macros.h>
 
-#include "converter_interface.h"
+#include <map>
 
 namespace v4l2_camera_hal {
 

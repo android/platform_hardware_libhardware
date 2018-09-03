@@ -17,14 +17,12 @@
 #ifndef DEFAULT_CAMERA_HAL_REQUEST_TRACKER_H_
 #define DEFAULT_CAMERA_HAL_REQUEST_TRACKER_H_
 
-#include <map>
-#include <memory>
-#include <set>
+#include "capture_request.h"
 
-#include <hardware/camera3.h>
 #include <android-base/macros.h>
 
-#include "capture_request.h"
+#include <map>
+#include <set>
 
 namespace default_camera_hal {
 

@@ -19,15 +19,11 @@
 #ifndef DEFAULT_CAMERA_HAL_CAMERA_H_
 #define DEFAULT_CAMERA_HAL_CAMERA_H_
 
-#include <camera/CameraMetadata.h>
-#include <hardware/hardware.h>
+#include "static_properties.h"
+#include "request_tracker.h"
+
 #include <hardware/camera3.h>
 #include <utils/Mutex.h>
-
-#include "capture_request.h"
-#include "metadata/metadata.h"
-#include "request_tracker.h"
-#include "static_properties.h"
 
 namespace default_camera_hal {
 // Camera represents a physical camera on a device.

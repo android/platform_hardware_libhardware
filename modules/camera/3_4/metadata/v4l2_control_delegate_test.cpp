@@ -16,11 +16,11 @@
 
 #include "v4l2_control_delegate.h"
 
+#include "v4l2_wrapper_mock.h"
+#include "converter_interface_mock.h"
+
 #include <gmock/gmock.h>
 #include <gtest/gtest.h>
-
-#include "../v4l2_wrapper_mock.h"
-#include "converter_interface_mock.h"
 
 using testing::Return;
 using testing::SetArgPointee;

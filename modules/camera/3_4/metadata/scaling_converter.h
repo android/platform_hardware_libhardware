@@ -17,8 +17,8 @@
 #ifndef V4L2_CAMERA_HAL_METADATA_SCALING_CONVERTER_H_
 #define V4L2_CAMERA_HAL_METADATA_SCALING_CONVERTER_H_
 
-#include "../common.h"
 #include "converter_interface.h"
+#include "common.h"
 
 namespace v4l2_camera_hal {
 

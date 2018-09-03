@@ -19,20 +19,7 @@
 
 #include "v4l2_camera.h"
 
-#include <fcntl.h>
-#include <linux/videodev2.h>
-#include <sys/stat.h>
-#include <sys/types.h>
-
-#include <cstdlib>
-
-#include <camera/CameraMetadata.h>
-#include <hardware/camera3.h>
-
-#include "common.h"
 #include "function_thread.h"
-#include "metadata/metadata_common.h"
-#include "stream_format.h"
 #include "v4l2_metadata_factory.h"
 
 #define ARRAY_SIZE(a) (sizeof(a) / sizeof(*(a)))

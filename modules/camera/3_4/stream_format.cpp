@@ -19,10 +19,6 @@
 
 #include "stream_format.h"
 
-#include <linux/videodev2.h>
-
-#include <system/graphics.h>
-
 #include "arc/image_processor.h"
 #include "common.h"
 

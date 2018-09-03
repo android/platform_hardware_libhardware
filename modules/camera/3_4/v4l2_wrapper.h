@@ -17,20 +17,14 @@
 #ifndef V4L2_CAMERA_HAL_V4L2_WRAPPER_H_
 #define V4L2_CAMERA_HAL_V4L2_WRAPPER_H_
 
-#include <array>
-#include <memory>
-#include <mutex>
-#include <set>
-#include <string>
-#include <vector>
+#include "capture_request.h"
+#include "stream_format.h"
+#include "arc/frame_buffer.h"
 
 #include <android-base/unique_fd.h>
 
-#include "arc/common_types.h"
-#include "arc/frame_buffer.h"
-#include "capture_request.h"
-#include "common.h"
-#include "stream_format.h"
+#include <array>
+#include <set>
 
 namespace v4l2_camera_hal {
 
