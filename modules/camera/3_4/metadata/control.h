@@ -17,9 +17,8 @@
 #ifndef V4L2_CAMERA_HAL_METADATA_CONTROL_H_
 #define V4L2_CAMERA_HAL_METADATA_CONTROL_H_
 
-#include <vector>
-
 #include <android-base/macros.h>
+#include <vector>
 #include <system/camera_metadata.h>
 
 #include "metadata_common.h"

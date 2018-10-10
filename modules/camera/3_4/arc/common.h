@@ -6,9 +6,8 @@
 #ifndef INCLUDE_ARC_COMMON_H_
 #define INCLUDE_ARC_COMMON_H_
 
-#include <string>
-
 #include <base/logging.h>
+#include <string>
 
 #define LOGF(level) LOG(level) << __FUNCTION__ << "(): "
 #define LOGFID(level, id) LOG(level) << __FUNCTION__ << "(): id: " << id << ": "

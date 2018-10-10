@@ -6,9 +6,8 @@
 #ifndef HAL_USB_CACHED_FRAME_H_
 #define HAL_USB_CACHED_FRAME_H_
 
-#include <memory>
-
 #include <camera/CameraMetadata.h>
+#include <memory>
 
 #include "arc/image_processor.h"
 

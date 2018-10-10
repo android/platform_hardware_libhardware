@@ -17,13 +17,11 @@
 #ifndef DEFAULT_CAMERA_HAL_METADATA_METADATA_READER_H_
 #define DEFAULT_CAMERA_HAL_METADATA_METADATA_READER_H_
 
-#include <map>
+#include <android-base/macros.h>
+#include <camera/CameraMetadata.h>
 #include <memory>
 #include <set>
 #include <vector>
-
-#include <android-base/macros.h>
-#include <camera/CameraMetadata.h>
 
 #include "types.h"
 

@@ -16,11 +16,10 @@
 
 #include "slider_control_options.h"
 
-#include <memory>
-
 #include <gmock/gmock.h>
 #include <gtest/gtest.h>
 #include <hardware/camera3.h>
+#include <memory>
 
 #include "default_option_delegate_mock.h"
 

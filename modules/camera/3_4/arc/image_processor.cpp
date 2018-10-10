@@ -5,12 +5,12 @@
 
 #include "arc/image_processor.h"
 
-#include <errno.h>
+#include <cerrno>
+#include <ctime>
 #include <libyuv.h>
-#include <time.h>
+#include <string>
 
 #include "arc/common.h"
-#include "arc/common_types.h"
 #include "arc/exif_utils.h"
 #include "arc/jpeg_compressor.h"
 

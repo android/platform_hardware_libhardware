@@ -17,10 +17,10 @@
 #ifndef V4L2_CAMERA_HAL_METADATA_RANGED_CONVERTER_H_
 #define V4L2_CAMERA_HAL_METADATA_RANGED_CONVERTER_H_
 
+#include <android-base/macros.h>
 #include <memory>
 
-#include <android-base/macros.h>
-
+#include "common.h"
 #include "converter_interface.h"
 
 namespace v4l2_camera_hal {

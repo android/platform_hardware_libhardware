@@ -16,10 +16,9 @@
 
 #include "default_option_delegate.h"
 
-#include <memory>
-
 #include <gtest/gtest.h>
 #include <hardware/camera3.h>
+#include <memory>
 
 using testing::Test;
 

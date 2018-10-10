@@ -18,10 +18,7 @@
 #define V4L2_CAMERA_HAL_FUNCTION_THREAD_H_
 
 #include <functional>
-
 #include <utils/Thread.h>
-
-#include "common.h"
 
 namespace v4l2_camera_hal {
 

@@ -6,7 +6,6 @@
 #include "arc/frame_buffer.h"
 
 #include <sys/mman.h>
-
 #include <utility>
 
 #include "arc/common.h"

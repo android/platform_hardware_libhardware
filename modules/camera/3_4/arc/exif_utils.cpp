@@ -8,7 +8,6 @@
 
 #include <cstdlib>
 #include <ctime>
-
 #include <libyuv.h>
 
 #include "arc/common.h"

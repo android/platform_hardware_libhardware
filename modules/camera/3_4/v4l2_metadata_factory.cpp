@@ -26,7 +26,6 @@
 #include "metadata/boottime_state_delegate.h"
 #include "metadata/control.h"
 #include "metadata/enum_converter.h"
-#include "metadata/metadata_common.h"
 #include "metadata/partial_metadata_factory.h"
 #include "metadata/property.h"
 #include "metadata/scaling_converter.h"

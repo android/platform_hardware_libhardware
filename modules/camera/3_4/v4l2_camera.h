@@ -20,12 +20,10 @@
 #define V4L2_CAMERA_HAL_V4L2_CAMERA_H_
 
 #include <array>
+#include <camera/CameraMetadata.h>
 #include <condition_variable>
-#include <map>
 #include <queue>
 #include <string>
-
-#include <camera/CameraMetadata.h>
 #include <utils/StrongPointer.h>
 #include <utils/Thread.h>
 

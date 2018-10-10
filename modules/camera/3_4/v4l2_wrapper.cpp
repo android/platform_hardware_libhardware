@@ -20,17 +20,12 @@
 #include "v4l2_wrapper.h"
 
 #include <algorithm>
-#include <array>
-#include <limits>
-#include <mutex>
-#include <vector>
-
+#include <android-base/unique_fd.h>
 #include <fcntl.h>
 #include <linux/videodev2.h>
+#include <limits>
 #include <sys/stat.h>
 #include <sys/types.h>
-
-#include <android-base/unique_fd.h>
 
 #include "arc/cached_frame.h"
 
