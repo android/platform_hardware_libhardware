@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "12b81612_0cecff45",
+        "filename": "modules/camera/3_4/request_tracker.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 1077847
+      },
+      "writtenOn": "2018-10-11T18:29:29Z",
+      "side": 1,
+      "message": "We\u0027d really like this to be atomic if we\u0027re locking it; The way to do this would be to add a private ClearStreamConfigurationLocked() method used by both this and ClearStreamConfiguration() (with a comment along the lines of \"Should only be called with in_flight_lock_ held.\").",
+      "range": {
+        "startLine": 29,
+        "startChar": 0,
+        "endLine": 39,
+        "endChar": 1
+      },
+      "revId": "8b175418a0f8cdfa485605c5387360940ea03fff",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c28fb867_a9ff3b5d",
+        "filename": "modules/camera/3_4/request_tracker.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 63,
+      "author": {
+        "id": 1077847
+      },
+      "writtenOn": "2018-10-11T18:29:29Z",
+      "side": 1,
+      "message": "similar to above; this should be with the lock held otherwise it could change between when this is called and when the item is actually being added; we need CanAddRequestLocked.",
+      "range": {
+        "startLine": 60,
+        "startChar": 2,
+        "endLine": 63,
+        "endChar": 0
+      },
+      "revId": "8b175418a0f8cdfa485605c5387360940ea03fff",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "35c82963_73d74906",
+        "filename": "modules/camera/3_4/request_tracker.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 145,
+      "author": {
+        "id": 1077847
+      },
+      "writtenOn": "2018-10-11T18:29:29Z",
+      "side": 1,
+      "message": "same issue; should be atomic part of method.",
+      "range": {
+        "startLine": 138,
+        "startChar": 2,
+        "endLine": 145,
+        "endChar": 14
+      },
+      "revId": "8b175418a0f8cdfa485605c5387360940ea03fff",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}
