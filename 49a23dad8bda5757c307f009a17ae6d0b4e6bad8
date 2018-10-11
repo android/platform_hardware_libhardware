@@ -1,0 +1,533 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "604ccc30_ced6c487",
+        "filename": "modules/camera/3_4/arc/cached_frame.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1077847
+      },
+      "writtenOn": "2018-10-11T00:16:57Z",
+      "side": 1,
+      "message": "C++ system files (memory) should come before other libraries\u0027 .h files (CameraMetadata)",
+      "range": {
+        "startLine": 9,
+        "startChar": 0,
+        "endLine": 10,
+        "endChar": 17
+      },
+      "revId": "49a23dad8bda5757c307f009a17ae6d0b4e6bad8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "15412b00_e171a267",
+        "filename": "modules/camera/3_4/arc/common.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1077847
+      },
+      "writtenOn": "2018-10-11T00:16:57Z",
+      "side": 1,
+      "message": "C++ before Android libs",
+      "range": {
+        "startLine": 9,
+        "startChar": 0,
+        "endLine": 10,
+        "endChar": 17
+      },
+      "revId": "49a23dad8bda5757c307f009a17ae6d0b4e6bad8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "d8de6025_3661c270",
+        "filename": "modules/camera/3_4/arc/exif_utils.cpp",
+        "patchSetId": 3
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1077847
+      },
+      "writtenOn": "2018-10-11T00:16:57Z",
+      "side": 1,
+      "message": "nit, but I like leaving the blank line separating C++ headers from Android headers",
+      "range": {
+        "startLine": 10,
+        "startChar": 0,
+        "endLine": 11,
+        "endChar": 19
+      },
+      "revId": "49a23dad8bda5757c307f009a17ae6d0b4e6bad8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "fa377230_731174e8",
+        "filename": "modules/camera/3_4/arc/frame_buffer.cpp",
+        "patchSetId": 3
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1077847
+      },
+      "writtenOn": "2018-10-11T00:16:57Z",
+      "side": 1,
+      "message": "reorder to put C++ first, leave space",
+      "range": {
+        "startLine": 8,
+        "startChar": 0,
+        "endLine": 9,
+        "endChar": 18
+      },
+      "revId": "49a23dad8bda5757c307f009a17ae6d0b4e6bad8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "02e3c026_42413400",
+        "filename": "modules/camera/3_4/arc/frame_buffer.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1077847
+      },
+      "writtenOn": "2018-10-11T00:16:57Z",
+      "side": 1,
+      "message": "C++ before Android libs",
+      "range": {
+        "startLine": 11,
+        "startChar": 0,
+        "endLine": 13,
+        "endChar": 17
+      },
+      "revId": "49a23dad8bda5757c307f009a17ae6d0b4e6bad8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3ef89e6c_0b93f0dc",
+        "filename": "modules/camera/3_4/arc/image_processor.cpp",
+        "patchSetId": 3
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1077847
+      },
+      "writtenOn": "2018-10-11T00:16:57Z",
+      "side": 1,
+      "message": "Android headers after C++ headers",
+      "range": {
+        "startLine": 10,
+        "startChar": 0,
+        "endLine": 10,
+        "endChar": 19
+      },
+      "revId": "49a23dad8bda5757c307f009a17ae6d0b4e6bad8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "93eadb1b_e9ef41c7",
+        "filename": "modules/camera/3_4/capture_request.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1077847
+      },
+      "writtenOn": "2018-10-11T00:16:57Z",
+      "side": 1,
+      "message": "C++ before Android libs, leave space",
+      "range": {
+        "startLine": 20,
+        "startChar": 0,
+        "endLine": 23,
+        "endChar": 17
+      },
+      "revId": "49a23dad8bda5757c307f009a17ae6d0b4e6bad8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ca2c9f07_9800c3a2",
+        "filename": "modules/camera/3_4/function_thread.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1077847
+      },
+      "writtenOn": "2018-10-11T00:16:57Z",
+      "side": 1,
+      "message": "nit: leave space",
+      "range": {
+        "startLine": 19,
+        "startChar": 0,
+        "endLine": 21,
+        "endChar": 25
+      },
+      "revId": "49a23dad8bda5757c307f009a17ae6d0b4e6bad8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "0323ddca_6660d8c3",
+        "filename": "modules/camera/3_4/metadata/boottime_state_delegate.cpp",
+        "patchSetId": 3
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1077847
+      },
+      "writtenOn": "2018-10-11T00:16:57Z",
+      "side": 1,
+      "message": "These should still come before the local header boottime_*.h",
+      "range": {
+        "startLine": 22,
+        "startChar": 0,
+        "endLine": 23,
+        "endChar": 18
+      },
+      "revId": "49a23dad8bda5757c307f009a17ae6d0b4e6bad8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "22e2fff3_a02cc6f5",
+        "filename": "modules/camera/3_4/metadata/control.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1077847
+      },
+      "writtenOn": "2018-10-11T00:16:57Z",
+      "side": 1,
+      "message": "C++ before Android libs, leave space",
+      "range": {
+        "startLine": 20,
+        "startChar": 0,
+        "endLine": 21,
+        "endChar": 17
+      },
+      "revId": "49a23dad8bda5757c307f009a17ae6d0b4e6bad8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "07b57d5f_efe0fde6",
+        "filename": "modules/camera/3_4/metadata/default_option_delegate.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1077847
+      },
+      "writtenOn": "2018-10-11T00:16:57Z",
+      "side": 1,
+      "message": "C++ before Android libs, leave space",
+      "range": {
+        "startLine": 20,
+        "startChar": 0,
+        "endLine": 21,
+        "endChar": 14
+      },
+      "revId": "49a23dad8bda5757c307f009a17ae6d0b4e6bad8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f7debf75_d88549a6",
+        "filename": "modules/camera/3_4/metadata/default_option_delegate_test.cpp",
+        "patchSetId": 3
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1077847
+      },
+      "writtenOn": "2018-10-11T00:16:57Z",
+      "side": 1,
+      "message": "C++ before Android libs, leave space",
+      "range": {
+        "startLine": 19,
+        "startChar": 0,
+        "endLine": 21,
+        "endChar": 17
+      },
+      "revId": "49a23dad8bda5757c307f009a17ae6d0b4e6bad8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "77365569_5089f634",
+        "filename": "modules/camera/3_4/metadata/enum_converter.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1077847
+      },
+      "writtenOn": "2018-10-11T00:16:57Z",
+      "side": 1,
+      "message": "C++ before Android libs, leave space",
+      "range": {
+        "startLine": 19,
+        "startChar": 0,
+        "endLine": 21,
+        "endChar": 14
+      },
+      "revId": "49a23dad8bda5757c307f009a17ae6d0b4e6bad8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "511425a2_5edac27f",
+        "filename": "modules/camera/3_4/metadata/map_converter.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1077847
+      },
+      "writtenOn": "2018-10-11T00:16:57Z",
+      "side": 1,
+      "message": "C++ before Android libs, leave space",
+      "range": {
+        "startLine": 19,
+        "startChar": 0,
+        "endLine": 23,
+        "endChar": 17
+      },
+      "revId": "49a23dad8bda5757c307f009a17ae6d0b4e6bad8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a1e67c9e_feb7820d",
+        "filename": "modules/camera/3_4/metadata/menu_control_options_test.cpp",
+        "patchSetId": 3
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1077847
+      },
+      "writtenOn": "2018-10-11T00:16:57Z",
+      "side": 1,
+      "message": "C++ before Android libs, leave space",
+      "range": {
+        "startLine": 19,
+        "startChar": 0,
+        "endLine": 22,
+        "endChar": 17
+      },
+      "revId": "49a23dad8bda5757c307f009a17ae6d0b4e6bad8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "7b2aef25_f62740f3",
+        "filename": "modules/camera/3_4/metadata/metadata_common.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 1077847
+      },
+      "writtenOn": "2018-10-11T00:16:57Z",
+      "side": 1,
+      "message": "C++ before Android libs, leave space",
+      "range": {
+        "startLine": 19,
+        "startChar": 0,
+        "endLine": 25,
+        "endChar": 0
+      },
+      "revId": "49a23dad8bda5757c307f009a17ae6d0b4e6bad8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "41557dea_efa40e71",
+        "filename": "modules/camera/3_4/metadata/metadata_reader.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1077847
+      },
+      "writtenOn": "2018-10-11T00:16:57Z",
+      "side": 1,
+      "message": "C++ before Android libs, leave space",
+      "range": {
+        "startLine": 20,
+        "startChar": 0,
+        "endLine": 24,
+        "endChar": 17
+      },
+      "revId": "49a23dad8bda5757c307f009a17ae6d0b4e6bad8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "98993292_9248dc41",
+        "filename": "modules/camera/3_4/metadata/metadata_test.cpp",
+        "patchSetId": 3
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 1077847
+      },
+      "writtenOn": "2018-10-11T00:16:57Z",
+      "side": 1,
+      "message": "C++ before Android libs, leave space",
+      "range": {
+        "startLine": 19,
+        "startChar": 0,
+        "endLine": 25,
+        "endChar": 0
+      },
+      "revId": "49a23dad8bda5757c307f009a17ae6d0b4e6bad8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "130198a0_c150eaae",
+        "filename": "modules/camera/3_4/metadata/partial_metadata_interface.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1077847
+      },
+      "writtenOn": "2018-10-11T00:16:57Z",
+      "side": 1,
+      "message": "C++ before Android libs, leave space",
+      "range": {
+        "startLine": 20,
+        "startChar": 1,
+        "endLine": 21,
+        "endChar": 17
+      },
+      "revId": "49a23dad8bda5757c307f009a17ae6d0b4e6bad8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e8176058_c8ab4930",
+        "filename": "modules/camera/3_4/metadata/property_test.cpp",
+        "patchSetId": 3
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1077847
+      },
+      "writtenOn": "2018-10-11T00:16:57Z",
+      "side": 1,
+      "message": "C++ before Android libs, leave space",
+      "range": {
+        "startLine": 21,
+        "startChar": 1,
+        "endLine": 23,
+        "endChar": 17
+      },
+      "revId": "49a23dad8bda5757c307f009a17ae6d0b4e6bad8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a8e28100_9e5e6884",
+        "filename": "modules/camera/3_4/metadata/ranged_converter.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1077847
+      },
+      "writtenOn": "2018-10-11T00:16:57Z",
+      "side": 1,
+      "message": "C++ before Android libs, leave space",
+      "range": {
+        "startLine": 20,
+        "startChar": 1,
+        "endLine": 21,
+        "endChar": 17
+      },
+      "revId": "49a23dad8bda5757c307f009a17ae6d0b4e6bad8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5492f2f6_89cf1a6c",
+        "filename": "modules/camera/3_4/metadata/slider_control_options_test.cpp",
+        "patchSetId": 3
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1077847
+      },
+      "writtenOn": "2018-10-11T00:16:57Z",
+      "side": 1,
+      "message": "C++ before Android libs, leave space",
+      "range": {
+        "startLine": 19,
+        "startChar": 0,
+        "endLine": 22,
+        "endChar": 17
+      },
+      "revId": "49a23dad8bda5757c307f009a17ae6d0b4e6bad8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "06d8bc92_e5e7cd85",
+        "filename": "modules/camera/3_4/metadata/test_common.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1077847
+      },
+      "writtenOn": "2018-10-11T00:16:57Z",
+      "side": 1,
+      "message": "C++ before Android libs, leave space",
+      "range": {
+        "startLine": 21,
+        "startChar": 0,
+        "endLine": 24,
+        "endChar": 0
+      },
+      "revId": "49a23dad8bda5757c307f009a17ae6d0b4e6bad8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}
