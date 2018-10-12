@@ -1,0 +1,9 @@
+Code-Review+2: Ari Hausman-Cohen <arihc@google.com>
+Code-Review+1: Steven Moreland <smoreland@google.com>
+Presubmit-Verified+1: Treehugger Robot <treehugger-gerrit@google.com>
+Verified+1: Ari Hausman-Cohen <arihc@google.com>
+Submitted-by: Ari Hausman-Cohen <arihc@google.com>
+Submitted-at: Fri, 12 Oct 2018 00:45:20 +0000
+Reviewed-on: https://android-review.googlesource.com/784656
+Project: platform/hardware/libhardware
+Branch: refs/heads/master
