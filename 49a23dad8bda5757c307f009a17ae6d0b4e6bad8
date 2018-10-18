@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "deaeb0d1_9d6184e7",
+        "filename": "modules/camera/3_4/arc/cached_frame.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1182749
+      },
+      "writtenOn": "2018-10-18T10:47:20Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "604ccc30_ced6c487",
+      "range": {
+        "startLine": 9,
+        "startChar": 0,
+        "endLine": 10,
+        "endChar": 17
+      },
+      "revId": "49a23dad8bda5757c307f009a17ae6d0b4e6bad8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "15412b00_e171a267",
         "filename": "modules/camera/3_4/arc/common.h",
         "patchSetId": 3
@@ -45,6 +69,30 @@
       "revId": "49a23dad8bda5757c307f009a17ae6d0b4e6bad8",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a08ada5b_be7244e4",
+        "filename": "modules/camera/3_4/arc/common.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1182749
+      },
+      "writtenOn": "2018-10-18T10:47:20Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "15412b00_e171a267",
+      "range": {
+        "startLine": 9,
+        "startChar": 0,
+        "endLine": 10,
+        "endChar": 17
+      },
+      "revId": "49a23dad8bda5757c307f009a17ae6d0b4e6bad8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     },
     {
       "key": {
@@ -71,6 +119,30 @@
     },
     {
       "key": {
+        "uuid": "6bad748a_43c2de1e",
+        "filename": "modules/camera/3_4/arc/exif_utils.cpp",
+        "patchSetId": 3
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1182749
+      },
+      "writtenOn": "2018-10-18T10:47:20Z",
+      "side": 1,
+      "message": "Done.\nRemoved blank line between \u003clibyuv.h\u003e and \"arc/common.h\".",
+      "parentUuid": "d8de6025_3661c270",
+      "range": {
+        "startLine": 10,
+        "startChar": 0,
+        "endLine": 11,
+        "endChar": 19
+      },
+      "revId": "49a23dad8bda5757c307f009a17ae6d0b4e6bad8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "fa377230_731174e8",
         "filename": "modules/camera/3_4/arc/frame_buffer.cpp",
         "patchSetId": 3
@@ -91,6 +163,30 @@
       "revId": "49a23dad8bda5757c307f009a17ae6d0b4e6bad8",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "7e109223_29a0d894",
+        "filename": "modules/camera/3_4/arc/frame_buffer.cpp",
+        "patchSetId": 3
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1182749
+      },
+      "writtenOn": "2018-10-18T10:47:20Z",
+      "side": 1,
+      "message": "Done.\nRemoved blank line between \u003csys/mman.h\u003e and \"arc/common.h\".",
+      "parentUuid": "fa377230_731174e8",
+      "range": {
+        "startLine": 8,
+        "startChar": 0,
+        "endLine": 9,
+        "endChar": 18
+      },
+      "revId": "49a23dad8bda5757c307f009a17ae6d0b4e6bad8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     },
     {
       "key": {
@@ -117,6 +213,30 @@
     },
     {
       "key": {
+        "uuid": "ba75ccaa_dc25fe4b",
+        "filename": "modules/camera/3_4/arc/frame_buffer.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1182749
+      },
+      "writtenOn": "2018-10-18T10:47:20Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "02e3c026_42413400",
+      "range": {
+        "startLine": 11,
+        "startChar": 0,
+        "endLine": 13,
+        "endChar": 17
+      },
+      "revId": "49a23dad8bda5757c307f009a17ae6d0b4e6bad8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3ef89e6c_0b93f0dc",
         "filename": "modules/camera/3_4/arc/image_processor.cpp",
         "patchSetId": 3
@@ -137,6 +257,47 @@
       "revId": "49a23dad8bda5757c307f009a17ae6d0b4e6bad8",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "52f3a320_98ccac76",
+        "filename": "modules/camera/3_4/arc/image_processor.cpp",
+        "patchSetId": 3
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1182749
+      },
+      "writtenOn": "2018-10-18T10:47:20Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3ef89e6c_0b93f0dc",
+      "range": {
+        "startLine": 10,
+        "startChar": 0,
+        "endLine": 10,
+        "endChar": 19
+      },
+      "revId": "49a23dad8bda5757c307f009a17ae6d0b4e6bad8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "2c26388e_713a756c",
+        "filename": "modules/camera/3_4/camera.cpp",
+        "patchSetId": 3
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 1182749
+      },
+      "writtenOn": "2018-10-18T10:47:20Z",
+      "side": 1,
+      "message": "Added a blank line to separate Android and C++ headers.",
+      "revId": "49a23dad8bda5757c307f009a17ae6d0b4e6bad8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     },
     {
       "key": {
@@ -163,6 +324,30 @@
     },
     {
       "key": {
+        "uuid": "aba6390c_28fec21f",
+        "filename": "modules/camera/3_4/capture_request.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1182749
+      },
+      "writtenOn": "2018-10-18T10:47:20Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "93eadb1b_e9ef41c7",
+      "range": {
+        "startLine": 20,
+        "startChar": 0,
+        "endLine": 23,
+        "endChar": 17
+      },
+      "revId": "49a23dad8bda5757c307f009a17ae6d0b4e6bad8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ca2c9f07_9800c3a2",
         "filename": "modules/camera/3_4/function_thread.h",
         "patchSetId": 3
@@ -186,6 +371,30 @@
     },
     {
       "key": {
+        "uuid": "aadc6c98_8f6749a7",
+        "filename": "modules/camera/3_4/function_thread.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1182749
+      },
+      "writtenOn": "2018-10-18T10:47:20Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ca2c9f07_9800c3a2",
+      "range": {
+        "startLine": 19,
+        "startChar": 0,
+        "endLine": 21,
+        "endChar": 25
+      },
+      "revId": "49a23dad8bda5757c307f009a17ae6d0b4e6bad8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "0323ddca_6660d8c3",
         "filename": "modules/camera/3_4/metadata/boottime_state_delegate.cpp",
         "patchSetId": 3
@@ -197,6 +406,30 @@
       "writtenOn": "2018-10-11T00:16:57Z",
       "side": 1,
       "message": "These should still come before the local header boottime_*.h",
+      "range": {
+        "startLine": 22,
+        "startChar": 0,
+        "endLine": 23,
+        "endChar": 18
+      },
+      "revId": "49a23dad8bda5757c307f009a17ae6d0b4e6bad8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "496571f2_ca378353",
+        "filename": "modules/camera/3_4/metadata/boottime_state_delegate.cpp",
+        "patchSetId": 3
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1182749
+      },
+      "writtenOn": "2018-10-18T10:47:20Z",
+      "side": 1,
+      "message": "I\u0027m not sure. Because of the \"boottime_state_delegate.h\" is 1) but not 7) according to the \"Google C++ style guide\". Please feel free to correct me.",
+      "parentUuid": "0323ddca_6660d8c3",
       "range": {
         "startLine": 22,
         "startChar": 0,
@@ -232,6 +465,30 @@
     },
     {
       "key": {
+        "uuid": "429af098_7325f3dc",
+        "filename": "modules/camera/3_4/metadata/control.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1182749
+      },
+      "writtenOn": "2018-10-18T10:47:20Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "22e2fff3_a02cc6f5",
+      "range": {
+        "startLine": 20,
+        "startChar": 0,
+        "endLine": 21,
+        "endChar": 17
+      },
+      "revId": "49a23dad8bda5757c307f009a17ae6d0b4e6bad8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "07b57d5f_efe0fde6",
         "filename": "modules/camera/3_4/metadata/default_option_delegate.h",
         "patchSetId": 3
@@ -252,6 +509,30 @@
       "revId": "49a23dad8bda5757c307f009a17ae6d0b4e6bad8",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "904cc1b5_c71838bc",
+        "filename": "modules/camera/3_4/metadata/default_option_delegate.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1182749
+      },
+      "writtenOn": "2018-10-18T10:47:20Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "07b57d5f_efe0fde6",
+      "range": {
+        "startLine": 20,
+        "startChar": 0,
+        "endLine": 21,
+        "endChar": 14
+      },
+      "revId": "49a23dad8bda5757c307f009a17ae6d0b4e6bad8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     },
     {
       "key": {
@@ -278,6 +559,30 @@
     },
     {
       "key": {
+        "uuid": "085728b3_e7b4d993",
+        "filename": "modules/camera/3_4/metadata/default_option_delegate_test.cpp",
+        "patchSetId": 3
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1182749
+      },
+      "writtenOn": "2018-10-18T10:47:20Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f7debf75_d88549a6",
+      "range": {
+        "startLine": 19,
+        "startChar": 0,
+        "endLine": 21,
+        "endChar": 17
+      },
+      "revId": "49a23dad8bda5757c307f009a17ae6d0b4e6bad8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "77365569_5089f634",
         "filename": "modules/camera/3_4/metadata/enum_converter.h",
         "patchSetId": 3
@@ -298,6 +603,30 @@
       "revId": "49a23dad8bda5757c307f009a17ae6d0b4e6bad8",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "6147dfa8_dfcaa524",
+        "filename": "modules/camera/3_4/metadata/enum_converter.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1182749
+      },
+      "writtenOn": "2018-10-18T10:47:20Z",
+      "side": 1,
+      "message": "Done.\nRemoved a blank line between \u003candroid-base/macros.h\u003e and \"converter_interface.h\".",
+      "parentUuid": "77365569_5089f634",
+      "range": {
+        "startLine": 19,
+        "startChar": 0,
+        "endLine": 21,
+        "endChar": 14
+      },
+      "revId": "49a23dad8bda5757c307f009a17ae6d0b4e6bad8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     },
     {
       "key": {
@@ -324,6 +653,30 @@
     },
     {
       "key": {
+        "uuid": "8b6de964_ec1c0c0c",
+        "filename": "modules/camera/3_4/metadata/map_converter.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1182749
+      },
+      "writtenOn": "2018-10-18T10:47:20Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "511425a2_5edac27f",
+      "range": {
+        "startLine": 19,
+        "startChar": 0,
+        "endLine": 23,
+        "endChar": 17
+      },
+      "revId": "49a23dad8bda5757c307f009a17ae6d0b4e6bad8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "a1e67c9e_feb7820d",
         "filename": "modules/camera/3_4/metadata/menu_control_options_test.cpp",
         "patchSetId": 3
@@ -344,6 +697,30 @@
       "revId": "49a23dad8bda5757c307f009a17ae6d0b4e6bad8",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "0824e74d_51eb5d9f",
+        "filename": "modules/camera/3_4/metadata/menu_control_options_test.cpp",
+        "patchSetId": 3
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1182749
+      },
+      "writtenOn": "2018-10-18T10:47:20Z",
+      "side": 1,
+      "message": "Done.\nRemoved a blank line before \"default_option_delegate_mock.h\".",
+      "parentUuid": "a1e67c9e_feb7820d",
+      "range": {
+        "startLine": 19,
+        "startChar": 0,
+        "endLine": 22,
+        "endChar": 17
+      },
+      "revId": "49a23dad8bda5757c307f009a17ae6d0b4e6bad8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     },
     {
       "key": {
@@ -370,6 +747,30 @@
     },
     {
       "key": {
+        "uuid": "a7908dc6_6fd973ed",
+        "filename": "modules/camera/3_4/metadata/metadata_common.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 1182749
+      },
+      "writtenOn": "2018-10-18T10:47:20Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7b2aef25_f62740f3",
+      "range": {
+        "startLine": 19,
+        "startChar": 0,
+        "endLine": 25,
+        "endChar": 0
+      },
+      "revId": "49a23dad8bda5757c307f009a17ae6d0b4e6bad8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "41557dea_efa40e71",
         "filename": "modules/camera/3_4/metadata/metadata_reader.h",
         "patchSetId": 3
@@ -390,6 +791,30 @@
       "revId": "49a23dad8bda5757c307f009a17ae6d0b4e6bad8",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b143a6c6_e376b068",
+        "filename": "modules/camera/3_4/metadata/metadata_reader.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1182749
+      },
+      "writtenOn": "2018-10-18T10:47:20Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "41557dea_efa40e71",
+      "range": {
+        "startLine": 20,
+        "startChar": 0,
+        "endLine": 24,
+        "endChar": 17
+      },
+      "revId": "49a23dad8bda5757c307f009a17ae6d0b4e6bad8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     },
     {
       "key": {
@@ -416,6 +841,30 @@
     },
     {
       "key": {
+        "uuid": "d58d3abd_05c02504",
+        "filename": "modules/camera/3_4/metadata/metadata_test.cpp",
+        "patchSetId": 3
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 1182749
+      },
+      "writtenOn": "2018-10-18T10:47:20Z",
+      "side": 1,
+      "message": "Done.\nRemoved a blank line before \"metadata_common.h\".",
+      "parentUuid": "98993292_9248dc41",
+      "range": {
+        "startLine": 19,
+        "startChar": 0,
+        "endLine": 25,
+        "endChar": 0
+      },
+      "revId": "49a23dad8bda5757c307f009a17ae6d0b4e6bad8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "130198a0_c150eaae",
         "filename": "modules/camera/3_4/metadata/partial_metadata_interface.h",
         "patchSetId": 3
@@ -436,6 +885,30 @@
       "revId": "49a23dad8bda5757c307f009a17ae6d0b4e6bad8",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "1b55c24b_f3f57eaa",
+        "filename": "modules/camera/3_4/metadata/partial_metadata_interface.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1182749
+      },
+      "writtenOn": "2018-10-18T10:47:20Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "130198a0_c150eaae",
+      "range": {
+        "startLine": 20,
+        "startChar": 1,
+        "endLine": 21,
+        "endChar": 17
+      },
+      "revId": "49a23dad8bda5757c307f009a17ae6d0b4e6bad8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     },
     {
       "key": {
@@ -462,6 +935,30 @@
     },
     {
       "key": {
+        "uuid": "9ddb9981_9acce1a2",
+        "filename": "modules/camera/3_4/metadata/property_test.cpp",
+        "patchSetId": 3
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1182749
+      },
+      "writtenOn": "2018-10-18T10:47:20Z",
+      "side": 1,
+      "message": "Done.\nRemoved a blank line before \"array_vector.h\".",
+      "parentUuid": "e8176058_c8ab4930",
+      "range": {
+        "startLine": 21,
+        "startChar": 1,
+        "endLine": 23,
+        "endChar": 17
+      },
+      "revId": "49a23dad8bda5757c307f009a17ae6d0b4e6bad8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "a8e28100_9e5e6884",
         "filename": "modules/camera/3_4/metadata/ranged_converter.h",
         "patchSetId": 3
@@ -482,6 +979,30 @@
       "revId": "49a23dad8bda5757c307f009a17ae6d0b4e6bad8",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "67a281a9_121ce3a8",
+        "filename": "modules/camera/3_4/metadata/ranged_converter.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1182749
+      },
+      "writtenOn": "2018-10-18T10:47:20Z",
+      "side": 1,
+      "message": "Done.\nRemoved a blank line before \"common.h\".",
+      "parentUuid": "a8e28100_9e5e6884",
+      "range": {
+        "startLine": 20,
+        "startChar": 1,
+        "endLine": 21,
+        "endChar": 17
+      },
+      "revId": "49a23dad8bda5757c307f009a17ae6d0b4e6bad8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     },
     {
       "key": {
@@ -508,6 +1029,30 @@
     },
     {
       "key": {
+        "uuid": "f863ac93_f17e19fa",
+        "filename": "modules/camera/3_4/metadata/slider_control_options_test.cpp",
+        "patchSetId": 3
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1182749
+      },
+      "writtenOn": "2018-10-18T10:47:20Z",
+      "side": 1,
+      "message": "Done.\nRemoved a blank line before \"default_option_delegate_mock.h\".",
+      "parentUuid": "5492f2f6_89cf1a6c",
+      "range": {
+        "startLine": 19,
+        "startChar": 0,
+        "endLine": 22,
+        "endChar": 17
+      },
+      "revId": "49a23dad8bda5757c307f009a17ae6d0b4e6bad8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "06d8bc92_e5e7cd85",
         "filename": "modules/camera/3_4/metadata/test_common.h",
         "patchSetId": 3
@@ -528,6 +1073,271 @@
       "revId": "49a23dad8bda5757c307f009a17ae6d0b4e6bad8",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e7f09ade_1623b57c",
+        "filename": "modules/camera/3_4/metadata/test_common.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1182749
+      },
+      "writtenOn": "2018-10-18T10:47:20Z",
+      "side": 1,
+      "message": "Done.\nRemoved a blank line before \"array_vector.h\".",
+      "parentUuid": "06d8bc92_e5e7cd85",
+      "range": {
+        "startLine": 21,
+        "startChar": 0,
+        "endLine": 24,
+        "endChar": 0
+      },
+      "revId": "49a23dad8bda5757c307f009a17ae6d0b4e6bad8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7be9394d_8aa1aa2b",
+        "filename": "modules/camera/3_4/metadata/types.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1182749
+      },
+      "writtenOn": "2018-10-18T10:47:20Z",
+      "side": 1,
+      "message": "Moved \u003chardware/camera3.h\u003e after C++ headers. Added a blank line.",
+      "range": {
+        "startLine": 20,
+        "startChar": 0,
+        "endLine": 23,
+        "endChar": 14
+      },
+      "revId": "49a23dad8bda5757c307f009a17ae6d0b4e6bad8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9c9f9d88_ab9064e2",
+        "filename": "modules/camera/3_4/metadata/v4l2_control_delegate_test.cpp",
+        "patchSetId": 3
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1182749
+      },
+      "writtenOn": "2018-10-18T10:47:20Z",
+      "side": 1,
+      "message": "Removed a blank line.",
+      "range": {
+        "startLine": 20,
+        "startChar": 0,
+        "endLine": 22,
+        "endChar": 37
+      },
+      "revId": "49a23dad8bda5757c307f009a17ae6d0b4e6bad8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "0fe3d805_0ee00a35",
+        "filename": "modules/camera/3_4/request_tracker.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1182749
+      },
+      "writtenOn": "2018-10-18T10:47:20Z",
+      "side": 1,
+      "message": "Moved Android headers after C++ ones.",
+      "range": {
+        "startLine": 20,
+        "startChar": 0,
+        "endLine": 26,
+        "endChar": 28
+      },
+      "revId": "49a23dad8bda5757c307f009a17ae6d0b4e6bad8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "42d4ba33_becd3b53",
+        "filename": "modules/camera/3_4/static_properties.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1182749
+      },
+      "writtenOn": "2018-10-18T10:47:20Z",
+      "side": 1,
+      "message": "Moved Android headers after C++. Removed a blank line before \"common.h\".",
+      "range": {
+        "startLine": 20,
+        "startChar": 0,
+        "endLine": 24,
+        "endChar": 19
+      },
+      "revId": "49a23dad8bda5757c307f009a17ae6d0b4e6bad8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9079d387_a1e3ee1c",
+        "filename": "modules/camera/3_4/stream_format.cpp",
+        "patchSetId": 3
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1182749
+      },
+      "writtenOn": "2018-10-18T10:47:20Z",
+      "side": 1,
+      "message": "Removed a blank line.",
+      "revId": "49a23dad8bda5757c307f009a17ae6d0b4e6bad8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "98e43057_b17a8cf0",
+        "filename": "modules/camera/3_4/stream_format.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1182749
+      },
+      "writtenOn": "2018-10-18T10:47:20Z",
+      "side": 1,
+      "message": "Move a blank line.",
+      "range": {
+        "startLine": 20,
+        "startChar": 0,
+        "endLine": 23,
+        "endChar": 29
+      },
+      "revId": "49a23dad8bda5757c307f009a17ae6d0b4e6bad8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "a3cdf397_685d6612",
+        "filename": "modules/camera/3_4/v4l2_camera.cpp",
+        "patchSetId": 3
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1182749
+      },
+      "writtenOn": "2018-10-18T10:47:20Z",
+      "side": 1,
+      "message": "Moved C and C++ headers before the Android ones.",
+      "range": {
+        "startLine": 22,
+        "startChar": 0,
+        "endLine": 28,
+        "endChar": 22
+      },
+      "revId": "49a23dad8bda5757c307f009a17ae6d0b4e6bad8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "86c986df_1b4cff7f",
+        "filename": "modules/camera/3_4/v4l2_camera.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1182749
+      },
+      "writtenOn": "2018-10-18T10:47:20Z",
+      "side": 1,
+      "message": "Moved Android headers after C++ ones.",
+      "range": {
+        "startLine": 23,
+        "startChar": 0,
+        "endLine": 23,
+        "endChar": 34
+      },
+      "revId": "49a23dad8bda5757c307f009a17ae6d0b4e6bad8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "0a22f09f_e76beecd",
+        "filename": "modules/camera/3_4/v4l2_metadata_factory.cpp",
+        "patchSetId": 3
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1182749
+      },
+      "writtenOn": "2018-10-18T10:47:20Z",
+      "side": 1,
+      "message": "Removed a blank line.",
+      "revId": "49a23dad8bda5757c307f009a17ae6d0b4e6bad8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "aa263f3c_232a4d9c",
+        "filename": "modules/camera/3_4/v4l2_wrapper.cpp",
+        "patchSetId": 3
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1182749
+      },
+      "writtenOn": "2018-10-18T10:47:20Z",
+      "side": 1,
+      "message": "Moved Android headers after C and C++ ones.",
+      "range": {
+        "startLine": 22,
+        "startChar": 0,
+        "endLine": 28,
+        "endChar": 22
+      },
+      "revId": "49a23dad8bda5757c307f009a17ae6d0b4e6bad8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "a29d49df_ba3da600",
+        "filename": "modules/camera/3_4/v4l2_wrapper.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1182749
+      },
+      "writtenOn": "2018-10-18T10:47:20Z",
+      "side": 1,
+      "message": "Moved before \"arc/common_types.h\".",
+      "range": {
+        "startLine": 20,
+        "startChar": 0,
+        "endLine": 20,
+        "endChar": 35
+      },
+      "revId": "49a23dad8bda5757c307f009a17ae6d0b4e6bad8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
