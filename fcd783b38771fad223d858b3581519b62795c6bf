@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "389aa0eb_3007a104",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 7
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1002751
+      },
+      "writtenOn": "2018-12-31T05:44:35Z",
+      "side": 1,
+      "message": "This change ID is wrong, it was ignored by gerrit because it is not in the last paragraph due to the blank line on line 26.  Can you remove the unnecessary Conflicts section below, and then either replace the change-id with the one Gerrit picked (Change-Id: I833221c6f08b423d76b3e7a15a7737fc4c2ce049), or if you want it to stay the same to match something already submitted in another tree, reupload the patch so gerrit creates a new change with the correct change id?",
+      "revId": "fcd783b38771fad223d858b3581519b62795c6bf",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}
