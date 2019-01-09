@@ -53,6 +53,7 @@ cc_library_shared {
     vndk: {
         enabled: true,
         support_system_process: true,
+        must_use_vendor_variant: true,
     },
     target: {
         recovery: {
