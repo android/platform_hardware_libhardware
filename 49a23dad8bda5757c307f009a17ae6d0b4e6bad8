@@ -442,6 +442,30 @@
     },
     {
       "key": {
+        "uuid": "ad485281_f2941007",
+        "filename": "modules/camera/3_4/metadata/boottime_state_delegate.cpp",
+        "patchSetId": 3
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1077847
+      },
+      "writtenOn": "2019-01-10T00:38:56Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "496571f2_ca378353",
+      "range": {
+        "startLine": 22,
+        "startChar": 0,
+        "endLine": 23,
+        "endChar": 18
+      },
+      "revId": "49a23dad8bda5757c307f009a17ae6d0b4e6bad8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "22e2fff3_a02cc6f5",
         "filename": "modules/camera/3_4/metadata/control.h",
         "patchSetId": 3
@@ -1209,6 +1233,24 @@
     },
     {
       "key": {
+        "uuid": "f6364761_26b02b53",
+        "filename": "modules/camera/3_4/stream_format.cpp",
+        "patchSetId": 3
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1077847
+      },
+      "writtenOn": "2019-01-10T00:38:56Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "9079d387_a1e3ee1c",
+      "revId": "49a23dad8bda5757c307f009a17ae6d0b4e6bad8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "98e43057_b17a8cf0",
         "filename": "modules/camera/3_4/stream_format.h",
         "patchSetId": 3
@@ -1275,6 +1317,30 @@
       "revId": "49a23dad8bda5757c307f009a17ae6d0b4e6bad8",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "213b64bc_1560597e",
+        "filename": "modules/camera/3_4/v4l2_camera.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1077847
+      },
+      "writtenOn": "2019-01-10T00:38:56Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "86c986df_1b4cff7f",
+      "range": {
+        "startLine": 23,
+        "startChar": 0,
+        "endLine": 23,
+        "endChar": 34
+      },
+      "revId": "49a23dad8bda5757c307f009a17ae6d0b4e6bad8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     },
     {
       "key": {
