@@ -371,6 +371,12 @@ typedef enum {
     KM_SECURITY_LEVEL_TRUSTED_ENVIRONMENT = 1,
 } keymaster_security_level_t;
 
+typedef enum {
+    KM_CERTIFICATION_LEVEL_UNCERTIFIED = 0,
+    KM_CERTIFICATION_LEVEL_CC_EAL_4_PLUS = 20,
+    KM_CERTIFICATION_LEVEL_CC_EAL_5_PLUS = 30,
+} keymaster_certification_level_t;
+
 /**
  * Formats for key import and export.
  */
