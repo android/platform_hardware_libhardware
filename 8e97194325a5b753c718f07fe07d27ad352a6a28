@@ -238,6 +238,30 @@
     },
     {
       "key": {
+        "uuid": "c25d2ebb_53a72be6",
+        "filename": "modules/sensors/dynamic_sensor/EvdevDevice.cpp",
+        "patchSetId": 8
+      },
+      "lineNbr": 203,
+      "author": {
+        "id": 1355916
+      },
+      "writtenOn": "2019-02-04T21:23:26Z",
+      "side": 1,
+      "message": "Sorry for the back and forth on this one. Should actually be sizeof(*outAxisInfo) to protect against the type of outAxisInfo changing and this not being updated.",
+      "parentUuid": "f8497dcc_045c640d",
+      "range": {
+        "startLine": 203,
+        "startChar": 0,
+        "endLine": 203,
+        "endChar": 48
+      },
+      "revId": "8e97194325a5b753c718f07fe07d27ad352a6a28",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "bc14b8d3_fa0ba6c6",
         "filename": "modules/sensors/dynamic_sensor/EvdevDevice.cpp",
         "patchSetId": 8
