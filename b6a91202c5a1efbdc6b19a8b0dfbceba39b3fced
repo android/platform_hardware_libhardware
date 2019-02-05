@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "b289a49f_05c06b66",
+        "filename": "modules/sensors/dynamic_sensor/EvdevDevice.cpp",
+        "patchSetId": 10
+      },
+      "lineNbr": 229,
+      "author": {
+        "id": 1152828
+      },
+      "writtenOn": "2019-02-05T17:32:43Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "8e871877_399b155b",
+      "range": {
+        "startLine": 229,
+        "startChar": 35,
+        "endLine": 229,
+        "endChar": 36
+      },
+      "revId": "b6a91202c5a1efbdc6b19a8b0dfbceba39b3fced",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "b593ef92_2b5ff88c",
         "filename": "modules/sensors/dynamic_sensor/EvdevDevice.cpp",
         "patchSetId": 10
@@ -45,6 +69,30 @@
       "revId": "b6a91202c5a1efbdc6b19a8b0dfbceba39b3fced",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "8063aef3_e57bb2fe",
+        "filename": "modules/sensors/dynamic_sensor/EvdevDevice.cpp",
+        "patchSetId": 10
+      },
+      "lineNbr": 249,
+      "author": {
+        "id": 1152828
+      },
+      "writtenOn": "2019-02-05T17:32:43Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "b593ef92_2b5ff88c",
+      "range": {
+        "startLine": 249,
+        "startChar": 4,
+        "endLine": 249,
+        "endChar": 7
+      },
+      "revId": "b6a91202c5a1efbdc6b19a8b0dfbceba39b3fced",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     },
     {
       "key": {
@@ -71,6 +119,30 @@
     },
     {
       "key": {
+        "uuid": "8dd23bc6_3bcaf33a",
+        "filename": "modules/sensors/dynamic_sensor/EvdevSensor.cpp",
+        "patchSetId": 10
+      },
+      "lineNbr": 81,
+      "author": {
+        "id": 1152828
+      },
+      "writtenOn": "2019-02-05T17:32:43Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "8d71de6d_af3bd854",
+      "range": {
+        "startLine": 81,
+        "startChar": 17,
+        "endLine": 81,
+        "endChar": 27
+      },
+      "revId": "b6a91202c5a1efbdc6b19a8b0dfbceba39b3fced",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "c1f6b66b_3803a3cb",
         "filename": "modules/sensors/dynamic_sensor/EvdevSensor.cpp",
         "patchSetId": 10
@@ -94,6 +166,30 @@
     },
     {
       "key": {
+        "uuid": "c7515792_8f1e0c87",
+        "filename": "modules/sensors/dynamic_sensor/EvdevSensor.cpp",
+        "patchSetId": 10
+      },
+      "lineNbr": 139,
+      "author": {
+        "id": 1152828
+      },
+      "writtenOn": "2019-02-05T17:32:43Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c1f6b66b_3803a3cb",
+      "range": {
+        "startLine": 139,
+        "startChar": 31,
+        "endLine": 139,
+        "endChar": 62
+      },
+      "revId": "b6a91202c5a1efbdc6b19a8b0dfbceba39b3fced",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "c665dd68_f661de64",
         "filename": "modules/sensors/dynamic_sensor/EvdevSensor.cpp",
         "patchSetId": 10
@@ -105,6 +201,30 @@
       "writtenOn": "2019-02-04T21:23:26Z",
       "side": 1,
       "message": "I don\u0027t see min/maxDelay ever being set. Are these values available through Evdev?",
+      "range": {
+        "startLine": 142,
+        "startChar": 4,
+        "endLine": 143,
+        "endChar": 31
+      },
+      "revId": "b6a91202c5a1efbdc6b19a8b0dfbceba39b3fced",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "bd7fbfe3_fb1fa2a6",
+        "filename": "modules/sensors/dynamic_sensor/EvdevSensor.cpp",
+        "patchSetId": 10
+      },
+      "lineNbr": 143,
+      "author": {
+        "id": 1152828
+      },
+      "writtenOn": "2019-02-05T17:32:43Z",
+      "side": 1,
+      "message": "It\u0027s not. The reason these are kept is to make it consistent with HidRawSensor, so we can easily refactor into sharing a base class.",
+      "parentUuid": "c665dd68_f661de64",
       "range": {
         "startLine": 142,
         "startChar": 4,
@@ -140,6 +260,30 @@
     },
     {
       "key": {
+        "uuid": "e75e4743_eba2d9ff",
+        "filename": "modules/sensors/dynamic_sensor/EvdevSensor.cpp",
+        "patchSetId": 10
+      },
+      "lineNbr": 149,
+      "author": {
+        "id": 1152828
+      },
+      "writtenOn": "2019-02-05T17:32:43Z",
+      "side": 1,
+      "message": "Will change the default to false. It is already set to false for the motion sensors.",
+      "parentUuid": "0e27d016_18699120",
+      "range": {
+        "startLine": 149,
+        "startChar": 29,
+        "endLine": 149,
+        "endChar": 33
+      },
+      "revId": "b6a91202c5a1efbdc6b19a8b0dfbceba39b3fced",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "fa4f0396_937e8410",
         "filename": "modules/sensors/dynamic_sensor/EvdevSensor.cpp",
         "patchSetId": 10
@@ -151,6 +295,30 @@
       "writtenOn": "2019-02-04T21:23:26Z",
       "side": 1,
       "message": "Where is this used?",
+      "range": {
+        "startLine": 247,
+        "startChar": 4,
+        "endLine": 247,
+        "endChar": 12
+      },
+      "revId": "b6a91202c5a1efbdc6b19a8b0dfbceba39b3fced",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "fa006fad_d78a71d3",
+        "filename": "modules/sensors/dynamic_sensor/EvdevSensor.cpp",
+        "patchSetId": 10
+      },
+      "lineNbr": 247,
+      "author": {
+        "id": 1152828
+      },
+      "writtenOn": "2019-02-05T17:32:43Z",
+      "side": 1,
+      "message": "It is not. It was kept to be consistent with HidRawSensor to make it easier to refactor into sharing a base class.",
+      "parentUuid": "fa4f0396_937e8410",
       "range": {
         "startLine": 247,
         "startChar": 4,
@@ -186,6 +354,30 @@
     },
     {
       "key": {
+        "uuid": "2312d2ae_9f545083",
+        "filename": "modules/sensors/dynamic_sensor/EvdevSensor.h",
+        "patchSetId": 10
+      },
+      "lineNbr": 67,
+      "author": {
+        "id": 1152828
+      },
+      "writtenOn": "2019-02-05T17:32:43Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3e0e6bb7_be1fab24",
+      "range": {
+        "startLine": 67,
+        "startChar": 46,
+        "endLine": 67,
+        "endChar": 49
+      },
+      "revId": "b6a91202c5a1efbdc6b19a8b0dfbceba39b3fced",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1f5216b4_a5fc3778",
         "filename": "modules/sensors/dynamic_sensor/EvdevSensor.h",
         "patchSetId": 10
@@ -206,6 +398,30 @@
       "revId": "b6a91202c5a1efbdc6b19a8b0dfbceba39b3fced",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "49c39c50_f21ab44d",
+        "filename": "modules/sensors/dynamic_sensor/EvdevSensor.h",
+        "patchSetId": 10
+      },
+      "lineNbr": 118,
+      "author": {
+        "id": 1152828
+      },
+      "writtenOn": "2019-02-05T17:32:43Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1f5216b4_a5fc3778",
+      "range": {
+        "startLine": 118,
+        "startChar": 17,
+        "endLine": 118,
+        "endChar": 29
+      },
+      "revId": "b6a91202c5a1efbdc6b19a8b0dfbceba39b3fced",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     },
     {
       "key": {
@@ -232,6 +448,30 @@
     },
     {
       "key": {
+        "uuid": "2f6d206c_73afd138",
+        "filename": "modules/sensors/dynamic_sensor/EvdevSensorDaemon.cpp",
+        "patchSetId": 10
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1152828
+      },
+      "writtenOn": "2019-02-05T17:32:43Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5c6c6ac6_7c246622",
+      "range": {
+        "startLine": 22,
+        "startChar": 0,
+        "endLine": 30,
+        "endChar": 18
+      },
+      "revId": "b6a91202c5a1efbdc6b19a8b0dfbceba39b3fced",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7d0a6e9f_7f7ad20f",
         "filename": "modules/sensors/dynamic_sensor/EvdevSensorDaemon.cpp",
         "patchSetId": 10
@@ -243,6 +483,24 @@
       "writtenOn": "2019-02-04T21:23:26Z",
       "side": 1,
       "message": "This file seems like a direct copy of HidRawSensorDaemon.cpp. Does it make sense to create a base class that HidRaw and Evdev both extend?\n\nIt also seems like there is quite a bit of duplicate code between HidRaw and Evdev in the other files as well that could warrant a refactor into base classes.",
+      "revId": "b6a91202c5a1efbdc6b19a8b0dfbceba39b3fced",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ea1ef1bd_a7eefc23",
+        "filename": "modules/sensors/dynamic_sensor/EvdevSensorDaemon.cpp",
+        "patchSetId": 10
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 1152828
+      },
+      "writtenOn": "2019-02-05T17:32:43Z",
+      "side": 1,
+      "message": "Will have a separate refactor patch.",
+      "parentUuid": "7d0a6e9f_7f7ad20f",
       "revId": "b6a91202c5a1efbdc6b19a8b0dfbceba39b3fced",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
@@ -272,6 +530,30 @@
     },
     {
       "key": {
+        "uuid": "b0465fb2_1ba700f3",
+        "filename": "modules/sensors/dynamic_sensor/EvdevSensorDaemon.h",
+        "patchSetId": 10
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 1152828
+      },
+      "writtenOn": "2019-02-05T17:32:43Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "0559d970_9cb3cf48",
+      "range": {
+        "startLine": 23,
+        "startChar": 0,
+        "endLine": 25,
+        "endChar": 17
+      },
+      "revId": "b6a91202c5a1efbdc6b19a8b0dfbceba39b3fced",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "dea4234a_a1699871",
         "filename": "modules/sensors/dynamic_sensor/EvdevSensorDaemon.h",
         "patchSetId": 10
@@ -292,6 +574,30 @@
       "revId": "b6a91202c5a1efbdc6b19a8b0dfbceba39b3fced",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "d28917a0_e4869246",
+        "filename": "modules/sensors/dynamic_sensor/EvdevSensorDaemon.h",
+        "patchSetId": 10
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 1152828
+      },
+      "writtenOn": "2019-02-05T17:32:43Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "dea4234a_a1699871",
+      "range": {
+        "startLine": 28,
+        "startChar": 0,
+        "endLine": 29,
+        "endChar": 17
+      },
+      "revId": "b6a91202c5a1efbdc6b19a8b0dfbceba39b3fced",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     },
     {
       "key": {
@@ -318,6 +624,30 @@
     },
     {
       "key": {
+        "uuid": "55b86b69_69a4dd13",
+        "filename": "modules/sensors/dynamic_sensor/EvdevSensorDaemon.h",
+        "patchSetId": 10
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 1152828
+      },
+      "writtenOn": "2019-02-05T17:32:43Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "0ddf5bb4_e9f9916d",
+      "range": {
+        "startLine": 36,
+        "startChar": 0,
+        "endLine": 36,
+        "endChar": 25
+      },
+      "revId": "b6a91202c5a1efbdc6b19a8b0dfbceba39b3fced",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ece31a8b_49567a96",
         "filename": "modules/sensors/dynamic_sensor/EvdevSensorDaemon.h",
         "patchSetId": 10
@@ -338,6 +668,30 @@
       "revId": "b6a91202c5a1efbdc6b19a8b0dfbceba39b3fced",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "99ddab83_b00d4de6",
+        "filename": "modules/sensors/dynamic_sensor/EvdevSensorDaemon.h",
+        "patchSetId": 10
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 1152828
+      },
+      "writtenOn": "2019-02-05T17:32:43Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ece31a8b_49567a96",
+      "range": {
+        "startLine": 47,
+        "startChar": 0,
+        "endLine": 47,
+        "endChar": 22
+      },
+      "revId": "b6a91202c5a1efbdc6b19a8b0dfbceba39b3fced",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     },
     {
       "key": {
@@ -364,6 +718,30 @@
     },
     {
       "key": {
+        "uuid": "fdf3f95d_5a0afc2f",
+        "filename": "modules/sensors/dynamic_sensor/EvdevSensorDevice.cpp",
+        "patchSetId": 10
+      },
+      "lineNbr": 124,
+      "author": {
+        "id": 1152828
+      },
+      "writtenOn": "2019-02-05T17:32:43Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "36942571_1a7df996",
+      "range": {
+        "startLine": 124,
+        "startChar": 20,
+        "endLine": 124,
+        "endChar": 21
+      },
+      "revId": "b6a91202c5a1efbdc6b19a8b0dfbceba39b3fced",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "f5dfab92_26cdda34",
         "filename": "modules/sensors/dynamic_sensor/EvdevSensorDevice.cpp",
         "patchSetId": 10
@@ -384,6 +762,30 @@
       "revId": "b6a91202c5a1efbdc6b19a8b0dfbceba39b3fced",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b0b844ee_119d1a9e",
+        "filename": "modules/sensors/dynamic_sensor/EvdevSensorDevice.cpp",
+        "patchSetId": 10
+      },
+      "lineNbr": 173,
+      "author": {
+        "id": 1152828
+      },
+      "writtenOn": "2019-02-05T17:32:43Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f5dfab92_26cdda34",
+      "range": {
+        "startLine": 173,
+        "startChar": 35,
+        "endLine": 173,
+        "endChar": 36
+      },
+      "revId": "b6a91202c5a1efbdc6b19a8b0dfbceba39b3fced",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
