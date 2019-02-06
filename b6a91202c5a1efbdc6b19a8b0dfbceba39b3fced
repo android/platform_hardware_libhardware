@@ -237,6 +237,30 @@
     },
     {
       "key": {
+        "uuid": "55b7c9b7_7ab1349e",
+        "filename": "modules/sensors/dynamic_sensor/EvdevSensor.cpp",
+        "patchSetId": 10
+      },
+      "lineNbr": 143,
+      "author": {
+        "id": 1355916
+      },
+      "writtenOn": "2019-02-06T18:13:43Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "bd7fbfe3_fb1fa2a6",
+      "range": {
+        "startLine": 142,
+        "startChar": 4,
+        "endLine": 143,
+        "endChar": 31
+      },
+      "revId": "b6a91202c5a1efbdc6b19a8b0dfbceba39b3fced",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "0e27d016_18699120",
         "filename": "modules/sensors/dynamic_sensor/EvdevSensor.cpp",
         "patchSetId": 10
@@ -328,6 +352,30 @@
       "revId": "b6a91202c5a1efbdc6b19a8b0dfbceba39b3fced",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ab34c5ad_1e9fb0d9",
+        "filename": "modules/sensors/dynamic_sensor/EvdevSensor.cpp",
+        "patchSetId": 10
+      },
+      "lineNbr": 247,
+      "author": {
+        "id": 1355916
+      },
+      "writtenOn": "2019-02-06T18:13:43Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "fa006fad_d78a71d3",
+      "range": {
+        "startLine": 247,
+        "startChar": 4,
+        "endLine": 247,
+        "endChar": 12
+      },
+      "revId": "b6a91202c5a1efbdc6b19a8b0dfbceba39b3fced",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     },
     {
       "key": {
@@ -504,6 +552,24 @@
       "revId": "b6a91202c5a1efbdc6b19a8b0dfbceba39b3fced",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "792234f2_e1872424",
+        "filename": "modules/sensors/dynamic_sensor/EvdevSensorDaemon.cpp",
+        "patchSetId": 10
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 1355916
+      },
+      "writtenOn": "2019-02-06T18:13:43Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "ea1ef1bd_a7eefc23",
+      "revId": "b6a91202c5a1efbdc6b19a8b0dfbceba39b3fced",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     },
     {
       "key": {
