@@ -1,0 +1,119 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d29adac8_949b8e99",
+        "filename": "modules/sensors/multihal.cpp",
+        "patchSetId": 8
+      },
+      "lineNbr": 764,
+      "author": {
+        "id": 1355916
+      },
+      "writtenOn": "2019-03-12T16:34:24Z",
+      "side": 1,
+      "message": "Please rename to module__set_operation_mode to be consistent with module__get_sensors_list and to make it clear that this function is implemented as part of the sensors_module_t and not the sensors_poll_device_t",
+      "range": {
+        "startLine": 764,
+        "startChar": 11,
+        "endLine": 764,
+        "endChar": 29
+      },
+      "revId": "66cbfb53b1f645c7a72cb63ab308ba21d0d2e820",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "99e35d0a_c6dc1bcb",
+        "filename": "modules/sensors/multihal.cpp",
+        "patchSetId": 8
+      },
+      "lineNbr": 765,
+      "author": {
+        "id": 1355916
+      },
+      "writtenOn": "2019-03-12T16:34:24Z",
+      "side": 1,
+      "message": "Does this need to be info level? All other functions are using ALOGV.",
+      "range": {
+        "startLine": 765,
+        "startChar": 4,
+        "endLine": 765,
+        "endChar": 9
+      },
+      "revId": "66cbfb53b1f645c7a72cb63ab308ba21d0d2e820",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "502af647_d5e559c3",
+        "filename": "modules/sensors/multihal.cpp",
+        "patchSetId": 8
+      },
+      "lineNbr": 766,
+      "author": {
+        "id": 1355916
+      },
+      "writtenOn": "2019-03-12T16:34:24Z",
+      "side": 1,
+      "message": "Any reason to not add full support for set_operation_mode to the multihal?",
+      "range": {
+        "startLine": 766,
+        "startChar": 4,
+        "endLine": 766,
+        "endChar": 32
+      },
+      "revId": "66cbfb53b1f645c7a72cb63ab308ba21d0d2e820",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "777b0c74_56bc5b7f",
+        "filename": "modules/sensors/multihal.cpp",
+        "patchSetId": 8
+      },
+      "lineNbr": 789,
+      "author": {
+        "id": 1355916
+      },
+      "writtenOn": "2019-03-12T16:34:24Z",
+      "side": 1,
+      "message": "Please remove extra whitespace",
+      "range": {
+        "startLine": 789,
+        "startChar": 0,
+        "endLine": 789,
+        "endChar": 0
+      },
+      "revId": "66cbfb53b1f645c7a72cb63ab308ba21d0d2e820",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5604dd9f_1b903e2b",
+        "filename": "modules/sensors/multihal.cpp",
+        "patchSetId": 8
+      },
+      "lineNbr": 794,
+      "author": {
+        "id": 1355916
+      },
+      "writtenOn": "2019-03-12T16:34:24Z",
+      "side": 1,
+      "message": "Please remove extra whitespace",
+      "range": {
+        "startLine": 794,
+        "startChar": 0,
+        "endLine": 794,
+        "endChar": 0
+      },
+      "revId": "66cbfb53b1f645c7a72cb63ab308ba21d0d2e820",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}
