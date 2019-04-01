@@ -260,6 +260,12 @@ typedef struct fingerprint_device {
      */
     int (*authenticate)(struct fingerprint_device *dev, uint64_t operation_id, uint32_t gid);
 
+   /*[BSP]add XLELHLES-11 by qiaoqiao.pan on 20181217 start*/
+#ifdef FINGER_PRINT_SUPPORT_ENHANCE
+   int (*send_command)(struct fingerprint_device *dev, uint32_t cmd, uint32_t extras);
+#endif
+   /*[BSP]add XLELHLES-11 by qiaoqiao.pan on 20181217 end*/
+
     /* Reserved for backward binary compatibility */
     void *reserved[4];
 } fingerprint_device_t;
