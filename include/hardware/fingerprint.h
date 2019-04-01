@@ -260,6 +260,19 @@ typedef struct fingerprint_device {
      */
     int (*authenticate)(struct fingerprint_device *dev, uint64_t operation_id, uint32_t gid);
 
+   /*
+    * sendCommand:
+    * send customized command with extras to hal vendor
+    * @param command the command early agreement with vendor
+    * @param extras the param early agreement with vendor
+    *
+    * @return ret is a value of vendor defined.*
+    * Function return: 0 on success
+    *     or a negative number in case of error, generally from the errno.h set.
+   */
+
+   int (*send_command)(struct fingerprint_device *dev, uint32_t cmd, uint32_t extras);
+
     /* Reserved for backward binary compatibility */
     void *reserved[4];
 } fingerprint_device_t;
