@@ -50,6 +50,11 @@ typedef enum {
      * the device may return -1 instead */
     HWC2_ATTRIBUTE_DPI_X = 4,
     HWC2_ATTRIBUTE_DPI_Y = 5,
+
+    /* Indicates whether the configuration is interlaced. Values > 0 will be
+     * interpreted as interlaced, values <= 0 will be treated as non-
+     * interlaced/progressive */
+    HWC2_ATTRIBUTE_INTERLACED = 6,
 } hwc2_attribute_t;
 
 /* Blend modes, settable per layer */
@@ -361,6 +366,7 @@ static inline const char* getAttributeName(hwc2_attribute_t attribute) {
         case HWC2_ATTRIBUTE_VSYNC_PERIOD: return "VsyncPeriod";
         case HWC2_ATTRIBUTE_DPI_X: return "DpiX";
         case HWC2_ATTRIBUTE_DPI_Y: return "DpiY";
+	case HWC2_ATTRIBUTE_INTERLACED: return "interlaced";
         default: return "Unknown";
     }
 }
@@ -596,6 +602,7 @@ enum class Attribute : int32_t {
     VsyncPeriod = HWC2_ATTRIBUTE_VSYNC_PERIOD,
     DpiX = HWC2_ATTRIBUTE_DPI_X,
     DpiY = HWC2_ATTRIBUTE_DPI_Y,
+    Interlaced = HWC2_ATTRIBUTE_INTERLACED,
 };
 TO_STRING(hwc2_attribute_t, Attribute, getAttributeName)
 
