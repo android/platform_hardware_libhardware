@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "279bec42_bb08226e",
+        "filename": "modules/audio_remote_submix/Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 1120458
+      },
+      "writtenOn": "2019-08-02T03:26:33Z",
+      "side": 1,
+      "message": "none of the code here references libaudioutils headers directly. I assume they are being used by headers that libnbaio_mono provides? and we should use export_shared_lib_headers of libaudioutils there instead (the only change to this file would be removing the include_dirs)",
+      "range": {
+        "startLine": 25,
+        "startChar": 9,
+        "endLine": 25,
+        "endChar": 22
+      },
+      "revId": "5ca34f1d2f5fa6f2dd750da253a2a3e1ebb395c0",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}
