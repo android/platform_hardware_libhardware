@@ -61,3 +61,20 @@ cc_library_shared {
     ],
     cflags: ["-Wall", "-Werror", "-Wno-unused-parameter"],
 }
+
+// The audio HAL module shared across PCM-supporting devices, relying on ALSA.
+// Initially used as common audio HAL implementation for virtual devices.
+cc_library_shared {
+    name: "audio.primary.pcm",
+    relative_install_path: "hw",
+    proprietary: true,
+    srcs: ["audio_alsa.c"],
+    header_libs: ["libhardware_headers"],
+    shared_libs: [
+        "libcutils",
+        "libhardware",
+        "liblog",
+        "libtinyalsa",
+    ],
+    cflags: ["-Wall", "-Werror", "-Wno-unused-parameter"],
+}
