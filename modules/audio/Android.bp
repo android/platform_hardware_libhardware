@@ -12,14 +12,36 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-// The default audio HAL module, which is a stub, that is loaded if no other
-// device specific modules are present. The exact load order can be seen in
-// libhardware/hardware.c
+// The default audio HAL module, which assumes PCM support,
+// and is suitable for cuttlefish/goldfish virtual devices.
+// It is loaded if no other device specific modules are present.
+// The exact load order can be seen in libhardware/hardware.c.
 //
 // The format of the name is audio.<type>.<hardware/etc>.so where the only
 // required type is 'primary'. Other possibilites are 'a2dp', 'usb', etc.
 cc_library_shared {
     name: "audio.primary.default",
+    relative_install_path: "hw",
+    proprietary: true,
+    srcs: ["audio_alsa.c"],
+    header_libs: ["libhardware_headers"],
+    shared_libs: [
+        "libcutils",
+        "libhardware",
+        "liblog",
+        "libtinyalsa",
+    ],
+    cflags: ["-Wall", "-Werror", "-Wno-unused-parameter"],
+}
+
+// A minimal mic-only audio device capable also of dynamic configuration
+// changes. This is used for devices without PCM support or that have no
+// speakers, such as the VR device.
+//
+// The format of the name is audio.<type>.<hardware/etc>.so where the only
+// required type is 'primary'. Other possibilites are 'a2dp', 'usb', etc.
+cc_library_shared {
+    name: "audio.primary.miconly",
     relative_install_path: "hw",
     proprietary: true,
     srcs: ["audio_hw.c"],
@@ -30,7 +52,7 @@ cc_library_shared {
     cflags: ["-Wall", "-Werror", "-Wno-unused-parameter"],
 }
 
-// The stub audio HAL module, identical to the default audio hal, but with
+// The stub audio HAL module, identical to the mic-only audio hal, but with
 // different name to be loaded concurrently with other audio HALs if necessary.
 // This can also be used as skeleton for new implementations
 //
