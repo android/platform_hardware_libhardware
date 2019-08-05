@@ -22,6 +22,30 @@
       "revId": "7b1e2c199e74d8345483e69ba6cae7b26a09ff1c",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "697b02dc_a91e4d64",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 4
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1082465
+      },
+      "writtenOn": "2019-08-05T21:57:28Z",
+      "side": 1,
+      "message": "Got it. So that could be, but are dynamic config changes needed as part of C/G/V TS? In that case, we\u0027ll eventually need it. We want virtual devices to clear the same bar as real ones as far as these tests suites go.",
+      "parentUuid": "afea5095_ef4e10c7",
+      "range": {
+        "startLine": 16,
+        "startChar": 0,
+        "endLine": 17,
+        "endChar": 61
+      },
+      "revId": "7b1e2c199e74d8345483e69ba6cae7b26a09ff1c",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
     }
   ]
 }
