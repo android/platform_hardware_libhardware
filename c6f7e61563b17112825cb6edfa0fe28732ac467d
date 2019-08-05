@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e39c47e4_586844a6",
+        "filename": "modules/audio/audio_alsa.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 182,
+      "author": {
+        "id": 1082465
+      },
+      "writtenOn": "2019-08-05T17:59:05Z",
+      "side": 1,
+      "message": "This is constant after init; it seems nontrivial to allow changes in config from the set_(sample_rate|format) API, perhaps involving a teardown/setup again of the context",
+      "range": {
+        "startLine": 182,
+        "startChar": 4,
+        "endLine": 182,
+        "endChar": 60
+      },
+      "revId": "c6f7e61563b17112825cb6edfa0fe28732ac467d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}
