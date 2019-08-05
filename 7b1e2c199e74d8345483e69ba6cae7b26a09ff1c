@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "afea5095_ef4e10c7",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 4
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1122301
+      },
+      "writtenOn": "2019-08-05T21:55:05Z",
+      "side": 1,
+      "message": "Since you\u0027re not changing the stub implementation, you may not need to allow dynamic config changes.",
+      "range": {
+        "startLine": 16,
+        "startChar": 0,
+        "endLine": 17,
+        "endChar": 61
+      },
+      "revId": "7b1e2c199e74d8345483e69ba6cae7b26a09ff1c",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}
