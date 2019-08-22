@@ -1,0 +1,326 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4b157776_1e9ed732",
+        "filename": "modules/audio/Android.bp",
+        "patchSetId": 5
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 1003259
+      },
+      "writtenOn": "2019-08-22T10:27:02Z",
+      "side": 1,
+      "message": "I don\u0027t think this naming works with how the HAL libraries are loaded:\nThe suffix is either default or board or product name.\nOr you need to rename it when copying to the target.",
+      "range": {
+        "startLine": 44,
+        "startChar": 11,
+        "endLine": 44,
+        "endChar": 32
+      },
+      "revId": "f846f6a478060f0edb8e027778ee2e0930c7de35",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ebd6548c_21c8dfec",
+        "filename": "modules/audio/audio_alsa.c",
+        "patchSetId": 5
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 1003259
+      },
+      "writtenOn": "2019-08-22T10:27:02Z",
+      "side": 1,
+      "message": "These comments are obsolete",
+      "range": {
+        "startLine": 64,
+        "startChar": 0,
+        "endLine": 66,
+        "endChar": 35
+      },
+      "revId": "f846f6a478060f0edb8e027778ee2e0930c7de35",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "acfb5e01_aaeb7271",
+        "filename": "modules/audio/audio_alsa.c",
+        "patchSetId": 5
+      },
+      "lineNbr": 92,
+      "author": {
+        "id": 1003259
+      },
+      "writtenOn": "2019-08-22T10:27:02Z",
+      "side": 1,
+      "message": "would maybe be better to allocate on frame boundary. I know calloc is usually aligned on blocks but with some channel mask / bit per sample combinations the alignment can be off (e.g 5.1, 24bit)",
+      "range": {
+        "startLine": 92,
+        "startChar": 26,
+        "endLine": 92,
+        "endChar": 32
+      },
+      "revId": "f846f6a478060f0edb8e027778ee2e0930c7de35",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "46d24b93_4be3a7d4",
+        "filename": "modules/audio/audio_alsa.c",
+        "patchSetId": 5
+      },
+      "lineNbr": 344,
+      "author": {
+        "id": 1003259
+      },
+      "writtenOn": "2019-08-22T10:27:02Z",
+      "side": 1,
+      "message": "seems not to be used, if we consider out_get_parameters AUDIO_PARAMETER_STREAM_ROUTING is never called",
+      "range": {
+        "startLine": 344,
+        "startChar": 13,
+        "endLine": 344,
+        "endChar": 19
+      },
+      "revId": "f846f6a478060f0edb8e027778ee2e0930c7de35",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "52ec4599_128f444f",
+        "filename": "modules/audio/audio_alsa.c",
+        "patchSetId": 5
+      },
+      "lineNbr": 360,
+      "author": {
+        "id": 1003259
+      },
+      "writtenOn": "2019-08-22T10:27:02Z",
+      "side": 1,
+      "message": "this is never queried by the framework",
+      "range": {
+        "startLine": 360,
+        "startChar": 0,
+        "endLine": 360,
+        "endChar": 89
+      },
+      "revId": "f846f6a478060f0edb8e027778ee2e0930c7de35",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "0ce50c14_b866015c",
+        "filename": "modules/audio/audio_alsa.c",
+        "patchSetId": 5
+      },
+      "lineNbr": 368,
+      "author": {
+        "id": 1003259
+      },
+      "writtenOn": "2019-08-22T10:27:02Z",
+      "side": 1,
+      "message": "if AUDIO_PARAMETER_STREAM_SUP_FORMATS is implemented then AUDIO_PARAMETER_STREAM_SUP_CHANNELS and AUDIO_PARAMETER_STREAM_SUP_SAMPLING_RATES should be implemented",
+      "range": {
+        "startLine": 368,
+        "startChar": 33,
+        "endLine": 368,
+        "endChar": 67
+      },
+      "revId": "f846f6a478060f0edb8e027778ee2e0930c7de35",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "8a717a31_184ce320",
+        "filename": "modules/audio/audio_alsa.c",
+        "patchSetId": 5
+      },
+      "lineNbr": 397,
+      "author": {
+        "id": 1003259
+      },
+      "writtenOn": "2019-08-22T10:27:02Z",
+      "side": 1,
+      "message": "the latency is normally the total latency: period_size * period_count\nThe audio buffer capacity should also be accounted for.",
+      "range": {
+        "startLine": 397,
+        "startChar": 28,
+        "endLine": 397,
+        "endChar": 39
+      },
+      "revId": "f846f6a478060f0edb8e027778ee2e0930c7de35",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "2d9085a4_c9c06219",
+        "filename": "modules/audio/audio_alsa.c",
+        "patchSetId": 5
+      },
+      "lineNbr": 601,
+      "author": {
+        "id": 1003259
+      },
+      "writtenOn": "2019-08-22T10:27:02Z",
+      "side": 1,
+      "message": "we should use pcm_get_htimestamp() from tinyalsa",
+      "range": {
+        "startLine": 601,
+        "startChar": 4,
+        "endLine": 601,
+        "endChar": 31
+      },
+      "revId": "f846f6a478060f0edb8e027778ee2e0930c7de35",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "15e11098_fd4b7bef",
+        "filename": "modules/audio/audio_alsa.c",
+        "patchSetId": 5
+      },
+      "lineNbr": 640,
+      "author": {
+        "id": 1003259
+      },
+      "writtenOn": "2019-08-22T10:27:02Z",
+      "side": 1,
+      "message": "that\u0027s kind of flaky. \nWe should rely on the worker thread to drain the buffer and not on a delay",
+      "range": {
+        "startLine": 640,
+        "startChar": 15,
+        "endLine": 640,
+        "endChar": 28
+      },
+      "revId": "f846f6a478060f0edb8e027778ee2e0930c7de35",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f0ade7a5_d2a04ca4",
+        "filename": "modules/audio/audio_alsa.c",
+        "patchSetId": 5
+      },
+      "lineNbr": 688,
+      "author": {
+        "id": 1003259
+      },
+      "writtenOn": "2019-08-22T10:27:02Z",
+      "side": 1,
+      "message": "we should be able to read this from the ALSA card info",
+      "range": {
+        "startLine": 687,
+        "startChar": 45,
+        "endLine": 688,
+        "endChar": 55
+      },
+      "revId": "f846f6a478060f0edb8e027778ee2e0930c7de35",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "aa2acd2c_adaca22f",
+        "filename": "modules/audio/audio_alsa.c",
+        "patchSetId": 5
+      },
+      "lineNbr": 698,
+      "author": {
+        "id": 1003259
+      },
+      "writtenOn": "2019-08-22T10:27:02Z",
+      "side": 1,
+      "message": "AUDIO_CHANNEL_OUT_STEREO",
+      "range": {
+        "startLine": 698,
+        "startChar": 24,
+        "endLine": 698,
+        "endChar": 47
+      },
+      "revId": "f846f6a478060f0edb8e027778ee2e0930c7de35",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "67173e60_b7515fef",
+        "filename": "modules/audio/audio_alsa.c",
+        "patchSetId": 5
+      },
+      "lineNbr": 725,
+      "author": {
+        "id": 1003259
+      },
+      "writtenOn": "2019-08-22T10:27:02Z",
+      "side": 1,
+      "message": "very similar to refine_output_parameters(): should be factored in",
+      "range": {
+        "startLine": 725,
+        "startChar": 11,
+        "endLine": 725,
+        "endChar": 34
+      },
+      "revId": "f846f6a478060f0edb8e027778ee2e0930c7de35",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9248349b_05a409db",
+        "filename": "modules/audio/audio_alsa.c",
+        "patchSetId": 5
+      },
+      "lineNbr": 854,
+      "author": {
+        "id": 1003259
+      },
+      "writtenOn": "2019-08-22T10:27:02Z",
+      "side": 1,
+      "message": "same remarks as for output set_parameters and get_parameters",
+      "range": {
+        "startLine": 854,
+        "startChar": 0,
+        "endLine": 854,
+        "endChar": 70
+      },
+      "revId": "f846f6a478060f0edb8e027778ee2e0930c7de35",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5a4991f5_c928e849",
+        "filename": "modules/audio/audio_alsa.c",
+        "patchSetId": 5
+      },
+      "lineNbr": 1160,
+      "author": {
+        "id": 1003259
+      },
+      "writtenOn": "2019-08-22T10:27:02Z",
+      "side": 1,
+      "message": "use pcm_get_htimestamp()",
+      "range": {
+        "startLine": 1160,
+        "startChar": 4,
+        "endLine": 1160,
+        "endChar": 30
+      },
+      "revId": "f846f6a478060f0edb8e027778ee2e0930c7de35",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}
