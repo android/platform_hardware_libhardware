@@ -49,6 +49,30 @@
     },
     {
       "key": {
+        "uuid": "6003eebc_4d89547a",
+        "filename": "modules/audio/Android.bp",
+        "patchSetId": 5
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 1122301
+      },
+      "writtenOn": "2019-08-23T18:47:23Z",
+      "side": 1,
+      "message": "We don\u0027t need the miconly audio device since there is stub below which is identical. When the device does not have speakers it should use the stub.\n\nFrom my device\u0027s audio_policy_configuration.xml:\n        \u003cmodule name\u003d\"stub\" halVersion\u003d\"2.0\"\u003e\n            \u003cattachedDevices\u003e\n                \u003citem\u003eDefault Out\u003c/item\u003e\n            \u003c/attachedDevices\u003e\n            \u003cdefaultOutputDevice\u003eDefault Out\u003c/defaultOutputDevice\u003e\n            \u003cmixPorts\u003e\n                \u003cmixPort name\u003d\"stub output\" role\u003d\"source\"\n                         flags\u003d\"AUDIO_OUTPUT_FLAG_PRIMARY|AUDIO_OUTPUT_FLAG_FAST\"\u003e\n                    \u003cprofile name\u003d\"\" format\u003d\"AUDIO_FORMAT_PCM_16_BIT\"\n                             samplingRates\u003d\"44100,48000\"\n                             channelMasks\u003d\"AUDIO_CHANNEL_OUT_STEREO\"/\u003e\n                \u003c/mixPort\u003e\n            \u003c/mixPorts\u003e\n            \u003cdevicePorts\u003e\n                \u003cdevicePort tagName\u003d\"Default Out\" type\u003d\"AUDIO_DEVICE_OUT_STUB\"\n                            role\u003d\"sink\"\u003e\n                \u003c/devicePort\u003e\n            \u003c/devicePorts\u003e\n            \u003croutes\u003e\n                \u003croute type\u003d\"mix\" sink\u003d\"Default Out\" sources\u003d\"stub output\"/\u003e\n            \u003c/routes\u003e\n        \u003c/module\u003e",
+      "parentUuid": "17fa0d4c_662446fa",
+      "range": {
+        "startLine": 44,
+        "startChar": 11,
+        "endLine": 44,
+        "endChar": 32
+      },
+      "revId": "f846f6a478060f0edb8e027778ee2e0930c7de35",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "ebd6548c_21c8dfec",
         "filename": "modules/audio/audio_alsa.c",
         "patchSetId": 5
