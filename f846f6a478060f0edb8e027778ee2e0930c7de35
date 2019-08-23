@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "17fa0d4c_662446fa",
+        "filename": "modules/audio/Android.bp",
+        "patchSetId": 5
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 1293738
+      },
+      "writtenOn": "2019-08-23T00:02:54Z",
+      "side": 1,
+      "message": "I suggested this on the email thread, but here again: if we have a miconly target somewhere (AOSP or elsewhere) can\u0027t we move that file into that device project, and just remove it from here? Honestly it\u0027s more useful for the AOSP reference HAL to support speakers too.",
+      "parentUuid": "4b157776_1e9ed732",
+      "range": {
+        "startLine": 44,
+        "startChar": 11,
+        "endLine": 44,
+        "endChar": 32
+      },
+      "revId": "f846f6a478060f0edb8e027778ee2e0930c7de35",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "ebd6548c_21c8dfec",
         "filename": "modules/audio/audio_alsa.c",
         "patchSetId": 5
