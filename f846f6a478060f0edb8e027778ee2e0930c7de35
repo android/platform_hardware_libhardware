@@ -96,6 +96,30 @@
     },
     {
       "key": {
+        "uuid": "58eb7c15_574cae8c",
+        "filename": "modules/audio/audio_alsa.c",
+        "patchSetId": 5
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 1082465
+      },
+      "writtenOn": "2019-08-24T00:02:59Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ebd6548c_21c8dfec",
+      "range": {
+        "startLine": 64,
+        "startChar": 0,
+        "endLine": 66,
+        "endChar": 35
+      },
+      "revId": "f846f6a478060f0edb8e027778ee2e0930c7de35",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "acfb5e01_aaeb7271",
         "filename": "modules/audio/audio_alsa.c",
         "patchSetId": 5
@@ -107,6 +131,30 @@
       "writtenOn": "2019-08-22T10:27:02Z",
       "side": 1,
       "message": "would maybe be better to allocate on frame boundary. I know calloc is usually aligned on blocks but with some channel mask / bit per sample combinations the alignment can be off (e.g 5.1, 24bit)",
+      "range": {
+        "startLine": 92,
+        "startChar": 26,
+        "endLine": 92,
+        "endChar": 32
+      },
+      "revId": "f846f6a478060f0edb8e027778ee2e0930c7de35",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b7932b55_4a5b0de9",
+        "filename": "modules/audio/audio_alsa.c",
+        "patchSetId": 5
+      },
+      "lineNbr": 92,
+      "author": {
+        "id": 1082465
+      },
+      "writtenOn": "2019-08-24T00:02:59Z",
+      "side": 1,
+      "message": "how about aligning to the least power of 2 \u003e\u003d the frame size?",
+      "parentUuid": "acfb5e01_aaeb7271",
       "range": {
         "startLine": 92,
         "startChar": 26,
@@ -142,6 +190,30 @@
     },
     {
       "key": {
+        "uuid": "e0b11227_5b202c3b",
+        "filename": "modules/audio/audio_alsa.c",
+        "patchSetId": 5
+      },
+      "lineNbr": 344,
+      "author": {
+        "id": 1082465
+      },
+      "writtenOn": "2019-08-24T00:02:59Z",
+      "side": 1,
+      "message": "https://android.googlesource.com/device/google/cuttlefish_common/+/88e9d78c389ce5c3355e9f4d4de1f7f6ad5d0f62%5E%21/#F0 mentions \"Allow device change\"; implicitly doesn\u0027t that mean device changes are a thing that is needed by someone at least, if not fwk?",
+      "parentUuid": "46d24b93_4be3a7d4",
+      "range": {
+        "startLine": 344,
+        "startChar": 13,
+        "endLine": 344,
+        "endChar": 19
+      },
+      "revId": "f846f6a478060f0edb8e027778ee2e0930c7de35",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "52ec4599_128f444f",
         "filename": "modules/audio/audio_alsa.c",
         "patchSetId": 5
@@ -153,6 +225,30 @@
       "writtenOn": "2019-08-22T10:27:02Z",
       "side": 1,
       "message": "this is never queried by the framework",
+      "range": {
+        "startLine": 360,
+        "startChar": 0,
+        "endLine": 360,
+        "endChar": 89
+      },
+      "revId": "f846f6a478060f0edb8e027778ee2e0930c7de35",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "7bb34824_ca7e152c",
+        "filename": "modules/audio/audio_alsa.c",
+        "patchSetId": 5
+      },
+      "lineNbr": 360,
+      "author": {
+        "id": 1082465
+      },
+      "writtenOn": "2019-08-24T00:02:59Z",
+      "side": 1,
+      "message": "See previous comment",
+      "parentUuid": "52ec4599_128f444f",
       "range": {
         "startLine": 360,
         "startChar": 0,
@@ -188,6 +284,30 @@
     },
     {
       "key": {
+        "uuid": "8f6ec743_7421e917",
+        "filename": "modules/audio/audio_alsa.c",
+        "patchSetId": 5
+      },
+      "lineNbr": 368,
+      "author": {
+        "id": 1082465
+      },
+      "writtenOn": "2019-08-24T00:02:59Z",
+      "side": 1,
+      "message": "Thanks, will look into adding",
+      "parentUuid": "0ce50c14_b866015c",
+      "range": {
+        "startLine": 368,
+        "startChar": 33,
+        "endLine": 368,
+        "endChar": 67
+      },
+      "revId": "f846f6a478060f0edb8e027778ee2e0930c7de35",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "8a717a31_184ce320",
         "filename": "modules/audio/audio_alsa.c",
         "patchSetId": 5
@@ -211,6 +331,30 @@
     },
     {
       "key": {
+        "uuid": "6d4736f6_cf5fff7b",
+        "filename": "modules/audio/audio_alsa.c",
+        "patchSetId": 5
+      },
+      "lineNbr": 397,
+      "author": {
+        "id": 1082465
+      },
+      "writtenOn": "2019-08-24T00:02:59Z",
+      "side": 1,
+      "message": "ack, wip",
+      "parentUuid": "8a717a31_184ce320",
+      "range": {
+        "startLine": 397,
+        "startChar": 28,
+        "endLine": 397,
+        "endChar": 39
+      },
+      "revId": "f846f6a478060f0edb8e027778ee2e0930c7de35",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "2d9085a4_c9c06219",
         "filename": "modules/audio/audio_alsa.c",
         "patchSetId": 5
@@ -222,6 +366,30 @@
       "writtenOn": "2019-08-22T10:27:02Z",
       "side": 1,
       "message": "we should use pcm_get_htimestamp() from tinyalsa",
+      "range": {
+        "startLine": 601,
+        "startChar": 4,
+        "endLine": 601,
+        "endChar": 31
+      },
+      "revId": "f846f6a478060f0edb8e027778ee2e0930c7de35",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "21439c2c_92c81d99",
+        "filename": "modules/audio/audio_alsa.c",
+        "patchSetId": 5
+      },
+      "lineNbr": 601,
+      "author": {
+        "id": 1082465
+      },
+      "writtenOn": "2019-08-24T00:02:59Z",
+      "side": 1,
+      "message": "hm, that requires a struct pcm* around; are we guaranteed to have this called inside the liftime of the struct pcm* ? (which itself is created in the worker thread)",
+      "parentUuid": "2d9085a4_c9c06219",
       "range": {
         "startLine": 601,
         "startChar": 4,
