@@ -214,6 +214,30 @@
     },
     {
       "key": {
+        "uuid": "1594d86e_8b697f87",
+        "filename": "modules/audio/audio_alsa.c",
+        "patchSetId": 5
+      },
+      "lineNbr": 344,
+      "author": {
+        "id": 1003259
+      },
+      "writtenOn": "2019-08-26T08:06:36Z",
+      "side": 1,
+      "message": "IU mean that in this implementation, the routing information is never used (you never select speaker over headset for instance). If this is the case and as the framework never calls the getter out_get_parameters(AUDIO_PARAMETER_STREAM_ROUTING) it is not needed to process this setter or store current selection in a field. just accept the change with no error.",
+      "parentUuid": "e0b11227_5b202c3b",
+      "range": {
+        "startLine": 344,
+        "startChar": 13,
+        "endLine": 344,
+        "endChar": 19
+      },
+      "revId": "f846f6a478060f0edb8e027778ee2e0930c7de35",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "52ec4599_128f444f",
         "filename": "modules/audio/audio_alsa.c",
         "patchSetId": 5
