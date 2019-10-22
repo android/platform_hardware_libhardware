@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "741c27f3_0663e957",
+        "filename": "modules/gralloc/framebuffer.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 175,
+      "author": {
+        "id": 1120458
+      },
+      "writtenOn": "2019-10-22T20:17:41Z",
+      "side": 1,
+      "message": "I\u0027m assuming other formats have these values set elsewhere? Will this spam logs?",
+      "range": {
+        "startLine": 175,
+        "startChar": 0,
+        "endLine": 175,
+        "endChar": 44
+      },
+      "revId": "f2ed293b9be68db45a6d2dc3fed5d2f504a6f861",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a41d2352_77bcf30a",
+        "filename": "modules/gralloc/framebuffer.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 177,
+      "author": {
+        "id": 1120458
+      },
+      "writtenOn": "2019-10-22T20:17:41Z",
+      "side": 1,
+      "message": "is this the right place to do this? It looks kind of out of place",
+      "range": {
+        "startLine": 164,
+        "startChar": 0,
+        "endLine": 177,
+        "endChar": 5
+      },
+      "revId": "f2ed293b9be68db45a6d2dc3fed5d2f504a6f861",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}
