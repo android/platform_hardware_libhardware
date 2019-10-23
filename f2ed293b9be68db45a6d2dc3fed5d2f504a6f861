@@ -161,6 +161,24 @@
     },
     {
       "key": {
+        "uuid": "b67b06dc_b9a7bc56",
+        "filename": "modules/gralloc/framebuffer.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 184,
+      "author": {
+        "id": 1067098
+      },
+      "writtenOn": "2019-10-23T18:43:57Z",
+      "side": 1,
+      "message": "I doubt it will be an issue. hikey seems to be the only in-tree target that uses FBIOPAN_DISPLAY and that target has its own gralloc implementation anyway so it shouldn\u0027t reach this code. (Maybe we can separately delete the FBIOPAN_DISPLAY code path here, then.) As for out-of-tree targets, they also ought to have their own gralloc implementation so they shouldn\u0027t be affected either.",
+      "parentUuid": "90cfa507_36d1478d",
+      "revId": "f2ed293b9be68db45a6d2dc3fed5d2f504a6f861",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "95912dcd_fe765e8f",
         "filename": "modules/gralloc/framebuffer.cpp",
         "patchSetId": 1
@@ -172,6 +190,24 @@
       "writtenOn": "2019-10-23T16:10:09Z",
       "side": 1,
       "message": "Is it worth having an additional check to confirm the driver really has switched to an RGBX_8888 configuration?",
+      "revId": "f2ed293b9be68db45a6d2dc3fed5d2f504a6f861",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ed8c82bf_b1a18a5a",
+        "filename": "modules/gralloc/framebuffer.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 199,
+      "author": {
+        "id": 1067098
+      },
+      "writtenOn": "2019-10-23T18:43:57Z",
+      "side": 1,
+      "message": "I think the code below that dumps the display config is probably sufficient for debugging issues with this.",
+      "parentUuid": "95912dcd_fe765e8f",
       "revId": "f2ed293b9be68db45a6d2dc3fed5d2f504a6f861",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
