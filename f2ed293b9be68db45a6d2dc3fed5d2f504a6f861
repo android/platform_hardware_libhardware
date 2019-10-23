@@ -141,6 +141,40 @@
       "revId": "f2ed293b9be68db45a6d2dc3fed5d2f504a6f861",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "90cfa507_36d1478d",
+        "filename": "modules/gralloc/framebuffer.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 184,
+      "author": {
+        "id": 1584038
+      },
+      "writtenOn": "2019-10-23T16:10:09Z",
+      "side": 1,
+      "message": "It looks like the new RGBX_8888 settings from \u0027info\u0027  will only take effect in the #else branch that calls FBIOPUT_VSCREENINFO (From a quick look at the kernel driver FBIOPAN_DISPLAY does not look at those value) - not sure if this is an issue.",
+      "revId": "f2ed293b9be68db45a6d2dc3fed5d2f504a6f861",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "95912dcd_fe765e8f",
+        "filename": "modules/gralloc/framebuffer.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 199,
+      "author": {
+        "id": 1584038
+      },
+      "writtenOn": "2019-10-23T16:10:09Z",
+      "side": 1,
+      "message": "Is it worth having an additional check to confirm the driver really has switched to an RGBX_8888 configuration?",
+      "revId": "f2ed293b9be68db45a6d2dc3fed5d2f504a6f861",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
     }
   ]
 }
