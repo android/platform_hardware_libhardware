@@ -1,0 +1,5 @@
+Build-Cop-Override+1: Xin Li <delphij@google.com>
+Presubmit-Verified-1: Treehugger Robot <treehugger-gerrit@google.com>
+Reviewed-on: https://android-review.googlesource.com/c/platform/hardware/libhardware/+/1151821
+Project: platform/hardware/libhardware
+Branch: refs/heads/master
