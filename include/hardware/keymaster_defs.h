@@ -75,6 +75,8 @@ typedef enum {
     /* Other hardware-enforced. */
     KM_TAG_BLOB_USAGE_REQUIREMENTS = KM_ENUM | 301, /* keymaster_key_blob_usage_requirements_t */
     KM_TAG_BOOTLOADER_ONLY = KM_BOOL | 302,         /* Usable only by bootloader */
+    KM_TAG_ROLLBACK_RESISTANCE = KM_BOOL | 303,     /* Hardware enforced deletion with deleteKey
+                                                     * or deleteAllKeys is supported */
 
     /*
      * Tags that should be semantically enforced by hardware if possible and will otherwise be
