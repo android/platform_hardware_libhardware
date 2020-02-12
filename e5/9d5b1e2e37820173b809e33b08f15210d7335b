@@ -1,0 +1,10 @@
+Verified+1: Shawn Willden <swillden@google.com>
+Code-Review+2: David Zeuthen <zeuthen@google.com>
+Lint+1: Lint 🤖 <android-build-prod-ayeaye@system.gserviceaccount.com>
+Autosubmit+1: Shawn Willden <swillden@google.com>
+Presubmit-Ready+1: Shawn Willden <swillden@google.com>
+Submitted-by: Treehugger Robot <treehugger-gerrit@google.com>
+Submitted-at: Wed, 12 Feb 2020 00:56:17 +0000
+Reviewed-on: https://android-review.googlesource.com/c/platform/hardware/libhardware/+/1209496
+Project: platform/hardware/libhardware
+Branch: refs/heads/master
