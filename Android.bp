@@ -18,12 +18,16 @@ cc_library_headers {
     export_include_dirs: ["include"],
     recovery_available: true,
     vendor_available: true,
+    host_supported: true,
     target: {
         recovery: {
             exclude_header_libs: [
                 "libaudio_system_headers",
                 "libbluetooth-types-header",
             ],
+        },
+        darwin: {
+            enabled: false,
         },
     },
 
