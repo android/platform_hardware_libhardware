@@ -1,0 +1,9 @@
+Code-Review+2: Jean-Michel Trivi <jmtrivi@google.com>
+Lint+1: Lint 🤖 <android-build-prod-ayeaye@system.gserviceaccount.com>
+Autosubmit+1: Eric Laurent <elaurent@google.com>
+Presubmit-Verified+1: Treehugger Robot <treehugger-gerrit@google.com>
+Submitted-by: Treehugger Robot <treehugger-gerrit@google.com>
+Submitted-at: Sun, 29 Mar 2020 01:34:56 +0000
+Reviewed-on: https://android-review.googlesource.com/c/platform/hardware/libhardware/+/1266529
+Project: platform/hardware/libhardware
+Branch: refs/heads/master
