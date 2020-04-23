@@ -1,0 +1,8 @@
+Presubmit-Verified+1: Treehugger Robot <treehugger-gerrit@google.com>
+Lint+1: Lint 🤖 <android-build-prod-ayeaye@system.gserviceaccount.com>
+Code-Review+2: Steven Moreland <smoreland@google.com>
+Submitted-by: Jooyung Han <jooyung@google.com>
+Submitted-at: Thu, 23 Apr 2020 03:22:22 +0000
+Reviewed-on: https://android-review.googlesource.com/c/platform/hardware/libhardware/+/1287256
+Project: platform/hardware/libhardware
+Branch: refs/heads/master
