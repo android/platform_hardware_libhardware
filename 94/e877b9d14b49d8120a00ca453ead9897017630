@@ -1,0 +1,9 @@
+Autosubmit+1: Bob Badour <bbadour@google.com>
+Lint+1: Lint 🤖 <android-build-prod-ayeaye@system.gserviceaccount.com>
+Presubmit-Verified+1: Treehugger Robot <treehugger-gerrit@google.com>
+Code-Review+2: Andre Eisenbach <eisenbach@google.com>
+Submitted-by: Treehugger Robot <treehugger-gerrit@google.com>
+Submitted-at: Mon, 04 May 2020 16:59:02 +0000
+Reviewed-on: https://android-review.googlesource.com/c/platform/hardware/libhardware/+/1296751
+Project: platform/hardware/libhardware
+Branch: refs/heads/master
