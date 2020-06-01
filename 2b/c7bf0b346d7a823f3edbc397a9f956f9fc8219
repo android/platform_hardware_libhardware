@@ -1,0 +1,8 @@
+Lint+1: Lint 🤖 <android-build-prod-ayeaye@system.gserviceaccount.com>
+Code-Review+2: Roland Levillain <rpl@google.com>
+Presubmit-Verified+1: Treehugger Robot <treehugger-gerrit@google.com>
+Submitted-by: Orion Hodson <oth@google.com>
+Submitted-at: Mon, 01 Jun 2020 09:20:08 +0000
+Reviewed-on: https://android-review.googlesource.com/c/platform/hardware/libhardware/+/1318895
+Project: platform/hardware/libhardware
+Branch: refs/heads/master
