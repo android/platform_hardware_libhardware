@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "372b7a29_8d46f558",
+        "filename": "include/hardware/audio_alsaops.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 63,
+      "author": {
+        "id": 1136369
+      },
+      "writtenOn": "2020-06-04T13:52:41Z",
+      "side": 1,
+      "message": "Andy, this code seems erroneous:\n0 \u003d\u003d PCM_FORMAT_S16_LE not PCM_FORMAT_INVALID, which is -1!\nhttps://cs.android.com/android/platform/superproject/+/master:external/tinyalsa/include/tinyalsa/asoundlib.h;l\u003d75?q\u003dPCM_FORMAT_INVALID\n\nAs I\u0027m no longer in the team, I will let you decide if the patch should be merged as is (it\u0027s not introducing the bug), or if this should be fixed instead.",
+      "revId": "14bb04141eda139f861724f7a64b959b2dc55299",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}
