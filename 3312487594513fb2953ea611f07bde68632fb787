@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f565667b_62c03400",
+        "filename": "include/hardware/audio_alsaops.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 63,
+      "author": {
+        "id": 1040213
+      },
+      "writtenOn": "2020-06-05T03:05:34Z",
+      "side": 1,
+      "message": "still wondering if folks will be checking for this, perhaps add a comment\n\nreturn PCM_FORMAT_INVALID; // doesn\u0027t get here, assert called above.",
+      "range": {
+        "startLine": 63,
+        "startChar": 33,
+        "endLine": 63,
+        "endChar": 34
+      },
+      "revId": "3312487594513fb2953ea611f07bde68632fb787",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}
