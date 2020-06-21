@@ -1,0 +1,48 @@
+{
+  "comments": [
+    {
+      "robotId": "ayeaye",
+      "robotRunId": "AR00000000000003546309",
+      "url": "https://android-build.googleplex.com/builds/treetop/android-review/185841?revision\u003d2",
+      "fixSuggestions": [
+        {
+          "fixId": "6bd39a98_84444a0a",
+          "description": "Change to \"include/hardware/boot_control.h\"",
+          "replacements": [
+            {
+              "path": "include/hardware/boot_control.h",
+              "range": {
+                "startLine": 121,
+                "startChar": 21,
+                "endLine": 121,
+                "endChar": 30
+              },
+              "replacement": "Successful"
+            }
+          ]
+        }
+      ],
+      "key": {
+        "uuid": "beb47b28_48670619",
+        "filename": "include/hardware/boot_control.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 121,
+      "author": {
+        "id": 1550585
+      },
+      "writtenOn": "2020-06-21T01:04:22Z",
+      "side": 1,
+      "message": "Common typo found: \"Sucessful\" -- should it be \"Successful\"?\nNote: a line containing \"common_typos_disable\" or \"common_typos_enable\" will turn off or on (respectively) the linter for subsequent lines in the file. Alternatively include the token \"NOTYPO\" within a line to skip typo linting that line.",
+      "range": {
+        "startLine": 121,
+        "startChar": 21,
+        "endLine": 121,
+        "endChar": 30
+      },
+      "revId": "72c88c915d957bf2eba73950e7f0407b220d1ef4",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
