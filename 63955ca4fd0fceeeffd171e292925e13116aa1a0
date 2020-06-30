@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "36847fda_d6c3e233",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1120458
+      },
+      "writtenOn": "2020-06-30T21:42:30Z",
+      "side": 1,
+      "message": "\u003e Patch Set 1:\n\u003e \n\u003e any reason for this?\n\nping. Please justify or abandon. I greatly appreciate contributions, but this is seen as a slight step backwards, since we are trying to remove cutils Log.h everywhere.",
+      "revId": "63955ca4fd0fceeeffd171e292925e13116aa1a0",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
