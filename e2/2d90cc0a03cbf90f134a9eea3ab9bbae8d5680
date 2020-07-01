@@ -1,0 +1,9 @@
+Verified+1: Victor Khimenko <khim@google.com>
+Presubmit-Verified+1: Treehugger Robot <treehugger-gerrit@google.com>
+Lint+1: Lint 🤖 <android-build-prod-ayeaye@system.gserviceaccount.com>
+Code-Review+2: Steven Moreland <smoreland@google.com>
+Submitted-by: Victor Khimenko <khim@google.com>
+Submitted-at: Wed, 01 Jul 2020 00:16:14 +0000
+Reviewed-on: https://android-review.googlesource.com/c/platform/hardware/libhardware/+/1353604
+Project: platform/hardware/libhardware
+Branch: refs/heads/master
