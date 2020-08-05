@@ -46,6 +46,30 @@
       "revId": "1a2d761efea10abe4f00f09f1b0a54c29ccff25c",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "02361857_6add2175",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1019050
+      },
+      "writtenOn": "2020-08-05T20:37:49Z",
+      "side": 1,
+      "message": "I can\u0027t tell exactly what the code is doing, but the new code would black hole the input codes from the v5.4 kernels. So I\u0027ve modified this to allow those old codes.\n\nI didn\u0027t use just the numbers since some of the values are different based on the code name. Also, if they do change the values, we might need to change the that other value. I also left the static assert so that if new values are added, we can make sure that the usage value is still correct.\n\nFinally, embarrassingly, I didn\u0027t notice I can\u0027t count in hex, and screwed up the previous change. This one does actually have all of the entries up to and including 32.",
+      "parentUuid": "f3d8c3cd_b1a5765b",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 7,
+        "endChar": 38
+      },
+      "revId": "1a2d761efea10abe4f00f09f1b0a54c29ccff25c",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
