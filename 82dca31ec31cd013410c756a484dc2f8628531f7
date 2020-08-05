@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e1747798_bc01fc4e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1120458
+      },
+      "writtenOn": "2020-08-05T20:44:00Z",
+      "side": 1,
+      "message": "+1 for owners, unfortunately, I don\u0027t know the details here",
+      "revId": "82dca31ec31cd013410c756a484dc2f8628531f7",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
