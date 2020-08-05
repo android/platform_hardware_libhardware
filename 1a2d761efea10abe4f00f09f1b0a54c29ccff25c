@@ -22,6 +22,30 @@
       "revId": "1a2d761efea10abe4f00f09f1b0a54c29ccff25c",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f3d8c3cd_b1a5765b",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1003224
+      },
+      "writtenOn": "2020-08-05T19:50:22Z",
+      "side": 1,
+      "message": "the great news is that they reused a code (and will presumably reuse some of the others later): https://android-review.googlesource.com/c/platform/external/kernel-headers/+/1389244/1/original/uapi/linux/input-event-codes.h\n\n\ni\u0027m not sure what the goal of this code is, but i do wonder whether you should just _not_ use the named constants and just use the numbers instead? it\u0027s not like you\u0027re actually translating these into names anyway, afacit.",
+      "parentUuid": "f2e366e9_a654558a",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 7,
+        "endChar": 38
+      },
+      "revId": "1a2d761efea10abe4f00f09f1b0a54c29ccff25c",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
     }
   ]
 }
