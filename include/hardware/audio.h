@@ -643,6 +643,20 @@ static inline size_t audio_stream_in_frame_size(const struct audio_stream_in *s)
 /**********************************************************************/
 
 /**
+ * audio gain callback function prototype used to report audio port gain changes.
+ *
+ * @param reasons bitfield to identify one or more reasons of gain change (e.g. ducking reason).
+ * @param ports pointer to audio port configuration array that changed due to reasons field.
+ * @param num_ports number of audio port configuration that changed
+ * @param cookie used to identify the client.
+ * @return retval operation completion status.
+ */
+typedef int (*audio_gain_callback_t)(unsigned int reasons,
+                                     const struct audio_port_config *ports,
+                                     unsigned int num_ports,
+                                     void *cookie);
+
+/**
  * Every hardware module must have a data structure named HAL_MODULE_INFO_SYM
  * and the fields of this data structure must begin with hw_module_t
  * followed by module specific information.
@@ -851,6 +865,32 @@ struct audio_hw_device {
      */
     int (*remove_device_effect)(struct audio_hw_device *dev,
                         audio_port_handle_t device, effect_handle_t effect);
+
+    /**
+     * Registers an AudioGainCallback function to an audio device for notifying of all audio port
+     * gain changes. Gains not only can change from set_audio_port_config at the initiative
+     * of upper layer but also can may be changed at the initiative of AudioHAL when it is
+     * responsible for ducking for example.
+     *
+     * @param dev the audio HAL device context.
+     * @param callback pointer to the audio gain callback.
+     * @param cookie is used to identify the associated callback client.
+     * @return retval operation completion status.
+     */
+    int (*set_audio_gain_callback)(struct audio_hw_device *dev,
+                             audio_gain_callback_t callback, void *cookie);
+
+    /**
+     * Unregisters an AudioGainCallback function to an audio device for stopping notification of
+     * all audio port gain changes.
+     *
+     * @param dev the audio HAL device context.
+     * @param callback pointer to the audio gain callback.
+     * @param cookie is used to identify the associated callback client.
+     * @return retval operation completion status.
+     */
+    int (*reset_audio_gain_callback)(struct audio_hw_device *dev, audio_gain_callback_t callback,
+                               void *cookie);
 };
 typedef struct audio_hw_device audio_hw_device_t;
 
