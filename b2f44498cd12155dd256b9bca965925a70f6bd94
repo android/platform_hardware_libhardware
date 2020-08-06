@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "2f6db94b_fbac8b96",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1491204
+      },
+      "writtenOn": "2020-08-06T08:56:12Z",
+      "side": 1,
+      "message": "Eric, as discussed during last sync, I wanted to expose you the audio gain callback related aosp patches.",
+      "revId": "b2f44498cd12155dd256b9bca965925a70f6bd94",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
