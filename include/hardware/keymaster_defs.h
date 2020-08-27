@@ -189,6 +189,14 @@ typedef enum {
     KM_TAG_CONFIRMATION_TOKEN = KM_BYTES | 1005,     /* used to deliver a cryptographic token
                                                         proving that the user confirmed a signing
                                                         request. */
+
+    KM_TAG_ATTESTATION_CERTIFICATE_SERIAL = KM_UINT | 1006, /* the serial number that should be
+                                                               set to the attestation certificate
+                                                               to be generated */
+
+    KM_TAG_ATTESTATION_CERTIFICATE_SUBJECT = KM_BYTES | 1007, /* the subject that should be
+                                                                 set to the attestation certificate
+                                                                 to be generated */
 } keymaster_tag_t;
 
 /**
