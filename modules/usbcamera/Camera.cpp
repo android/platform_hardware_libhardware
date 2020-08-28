@@ -323,7 +323,7 @@ void Camera::setupStreamsLocked(android::Vector<Stream *> &streams) {
      * conditions, so it must find a successful configuration for this stream
      * array.  The HAL may not return an error from this point.
      *
-     * TODO: we just set all streams to be the same dummy values;
+     * TODO: we just set all streams to be the same placeholder values;
      * real implementations will want to avoid USAGE_SW_{READ|WRITE}_OFTEN.
      */
     for (size_t i = 0; i < streams.size(); i++) {
