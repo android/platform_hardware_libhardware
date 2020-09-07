@@ -328,6 +328,7 @@ typedef enum {
     KM_PURPOSE_VERIFY = 3,     /* Usable with RSA, EC and HMAC keys. */
     KM_PURPOSE_DERIVE_KEY = 4, /* Usable with EC keys. */
     KM_PURPOSE_WRAP = 5,       /* Usable with wrapped keys. */
+    KM_PURPOSE_ATTEST_KEY = 6, /* used with RSA, EC to attest another key */
 
 } keymaster_purpose_t;
 
@@ -489,6 +490,11 @@ typedef enum {
     KM_ERROR_EARLY_BOOT_ENDED = -73,
     KM_ERROR_ATTESTATION_KEYS_NOT_PROVISIONED = -74,
     KM_ERROR_ATTESTATION_IDS_NOT_PROVISIONED = -75,
+    KM_ERROR_INVALID_OPERATION = -76,
+    KM_ERROR_STORAGE_KEY_UNSUPPORTED = -77,
+    KM_ERROR_INCOMPATIBLE_ATTESTATION_ALGORITHM = -78,
+    KM_ERROR_FAIL_TO_LOAD_ATTESTATION_KEY = -79,
+    KM_ERROR_NOT_AN_ATTESTATION_KEY = -80,
 
     KM_ERROR_UNIMPLEMENTED = -100,
     KM_ERROR_VERSION_MISMATCH = -101,
