@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d7586469_b24c9cc5",
+        "filename": "include/hardware/keymaster_defs.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 197,
+      "author": {
+        "id": 1043663
+      },
+      "writtenOn": "2020-10-23T22:49:28Z",
+      "side": 1,
+      "message": "Formatting is off; should be indented.  I\u0027m surprised clang-format allowed this.",
+      "range": {
+        "startLine": 197,
+        "startChar": 64,
+        "endLine": 197,
+        "endChar": 71
+      },
+      "revId": "85a1b3e056e4edefb273dd076d1db930a689a0f6",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
