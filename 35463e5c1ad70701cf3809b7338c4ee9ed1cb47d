@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4703df48_5093a96b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010050
+      },
+      "writtenOn": "2020-10-26T16:48:51Z",
+      "side": 1,
+      "message": "Unfortunately, we cannot change this definition without breaking binary compatibility with existing legacy HAL modules.\n\nWe do not recommend using the legacy camera HAL headers at this point; instead, use the HIDL interfaces directly, which support 64-bit usage.  The legacy headers are frozen and won\u0027t be receiving any updates for new features.\n\n",
+      "revId": "35463e5c1ad70701cf3809b7338c4ee9ed1cb47d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
