@@ -34,6 +34,24 @@
       "parentUuid": "4703df48_5093a96b",
       "revId": "35463e5c1ad70701cf3809b7338c4ee9ed1cb47d",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d7b89f42_33ceb125",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010050
+      },
+      "writtenOn": "2020-10-27T17:27:08Z",
+      "side": 1,
+      "message": "The default module does, yes, since it was built to be a compatibility wrapper between the legacy HAL and the new HIDL HAL.  We don\u0027t recommend using it in new devices, and instead using the HIDL interfaces directly. \n\nFor example, the Android emulator camera HAL uses the Google Camera HAL as the top layer:  https://cs.android.com/android/platform/superproject/+/master:hardware/google/camera/common/hal/\n\nand we do maintain that and add new features so that they can supported by the emulator. \n\nIf you need to keep using the legacy HAL files for now, you can simply copy them and modify them for your own project - we are not updating them any more, so doing that will not cause you future compatibility issues.",
+      "parentUuid": "ff76d3d7_9968d917",
+      "revId": "35463e5c1ad70701cf3809b7338c4ee9ed1cb47d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
