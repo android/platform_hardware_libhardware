@@ -22,6 +22,30 @@
       },
       "revId": "85a1b3e056e4edefb273dd076d1db930a689a0f6",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f97813ce_aa5a6d97",
+        "filename": "include/hardware/keymaster_defs.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 197,
+      "author": {
+        "id": 1589008
+      },
+      "writtenOn": "2020-10-27T05:48:34Z",
+      "side": 1,
+      "message": "funny I specifically rerun clangformat on these lines, and it still keeps the indent alignment errors, just moving all comments to another line.  manually corrected.",
+      "parentUuid": "d7586469_b24c9cc5",
+      "range": {
+        "startLine": 197,
+        "startChar": 64,
+        "endLine": 197,
+        "endChar": 71
+      },
+      "revId": "85a1b3e056e4edefb273dd076d1db930a689a0f6",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
