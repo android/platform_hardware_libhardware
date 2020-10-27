@@ -16,6 +16,24 @@
       "message": "Unfortunately, we cannot change this definition without breaking binary compatibility with existing legacy HAL modules.\n\nWe do not recommend using the legacy camera HAL headers at this point; instead, use the HIDL interfaces directly, which support 64-bit usage.  The legacy headers are frozen and won\u0027t be receiving any updates for new features.\n\n",
       "revId": "35463e5c1ad70701cf3809b7338c4ee9ed1cb47d",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ff76d3d7_9968d917",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1595395
+      },
+      "writtenOn": "2020-10-27T01:21:53Z",
+      "side": 1,
+      "message": "The HIDL HAL module also depends on camera3.h.\n\nFor example, the HIDL call `configureStreams()` will can into `configure_streams()`, and finally use the `camera3_stream_t` in camera3.h.\nhttps://cs.android.com/android/platform/superproject/+/master:hardware/interfaces/camera/device/3.2/default/CameraDeviceSession.cpp;l\u003d1073\n\nThe camera3.h defines some functions which both the legacy and the HIDL HAL module need to implement.",
+      "parentUuid": "4703df48_5093a96b",
+      "revId": "35463e5c1ad70701cf3809b7338c4ee9ed1cb47d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
