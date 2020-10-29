@@ -52,6 +52,24 @@
       "parentUuid": "ff76d3d7_9968d917",
       "revId": "35463e5c1ad70701cf3809b7338c4ee9ed1cb47d",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a2ea1e79_00fb1dd8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1595395
+      },
+      "writtenOn": "2020-10-29T04:51:45Z",
+      "side": 1,
+      "message": "Thanks, I got your point.\n\nAbandon this patch.",
+      "parentUuid": "d7b89f42_33ceb125",
+      "revId": "35463e5c1ad70701cf3809b7338c4ee9ed1cb47d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
