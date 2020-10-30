@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "03cb500b_a73c0fdf",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1092085
+      },
+      "writtenOn": "2020-10-30T14:41:54Z",
+      "side": 1,
+      "message": "Add Merged-In stanza.",
+      "revId": "a3481541a51832b14dae7bc256a4fc5014069c77",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
