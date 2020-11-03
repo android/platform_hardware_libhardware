@@ -16,6 +16,24 @@
       "message": "Add Merged-In stanza.",
       "revId": "a3481541a51832b14dae7bc256a4fc5014069c77",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ade28102_26b1b7d7",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1092085
+      },
+      "writtenOn": "2020-11-03T15:34:55Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "03cb500b_a73c0fdf",
+      "revId": "a3481541a51832b14dae7bc256a4fc5014069c77",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
