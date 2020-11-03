@@ -1,0 +1,9 @@
+Presubmit-Verified+1: Treehugger Robot <treehugger-gerrit@google.com>
+Lint+1: Lint 🤖 <ayeaye-gerrit@google.com>
+Autosubmit+1: Janis Danisevskis <jdanis@google.com>
+Code-Review+2: Shawn Willden <swillden@google.com>
+Submitted-by: Treehugger Robot <treehugger-gerrit@google.com>
+Submitted-at: Tue, 03 Nov 2020 15:35:06 +0000
+Reviewed-on: https://android-review.googlesource.com/c/platform/hardware/libhardware/+/1480396
+Project: platform/hardware/libhardware
+Branch: refs/heads/master
