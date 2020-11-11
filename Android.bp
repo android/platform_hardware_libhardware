@@ -18,6 +18,7 @@ cc_library_headers {
     export_include_dirs: ["include"],
     recovery_available: true,
     vendor_available: true,
+    product_available: true,
     // TODO(b/153609531): remove when no longer needed.
     native_bridge_supported: true,
     target: {
@@ -54,6 +55,7 @@ cc_library_shared {
 
     recovery_available: true,
     vendor_available: true,
+    product_available: true,
     vndk: {
         enabled: true,
         support_system_process: true,
