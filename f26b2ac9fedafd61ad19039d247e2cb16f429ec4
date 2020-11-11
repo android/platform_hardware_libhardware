@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b50e1bbb_a05620f0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1120458
+      },
+      "writtenOn": "2020-11-11T16:40:45Z",
+      "side": 1,
+      "message": "what on product still uses this? Can we avoid creating product variants of these? Nothing really ever should use it.",
+      "revId": "f26b2ac9fedafd61ad19039d247e2cb16f429ec4",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
