@@ -3,6 +3,52 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "c1c8ce3e_7edb95ee",
+        "filename": "include/hardware/keymaster_defs.h",
+        "patchSetId": 4
+      },
+      "lineNbr": 193,
+      "author": {
+        "id": 1092085
+      },
+      "writtenOn": "2020-11-13T16:17:04Z",
+      "side": 1,
+      "message": "should be called KM_TAG_CERTIFICATE_SERIAL.",
+      "range": {
+        "startLine": 193,
+        "startChar": 3,
+        "endLine": 193,
+        "endChar": 41
+      },
+      "revId": "946a831aa5f807d47e83fa2881cc63f60c24f53a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9d4ab325_e9493ec7",
+        "filename": "include/hardware/keymaster_defs.h",
+        "patchSetId": 4
+      },
+      "lineNbr": 197,
+      "author": {
+        "id": 1092085
+      },
+      "writtenOn": "2020-11-13T16:17:04Z",
+      "side": 1,
+      "message": "Should be called KM_TAG_CERTIFICATE_SUBJECT.",
+      "range": {
+        "startLine": 197,
+        "startChar": 4,
+        "endLine": 197,
+        "endChar": 42
+      },
+      "revId": "946a831aa5f807d47e83fa2881cc63f60c24f53a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "85d5693d_eb8a1854",
         "filename": "include/hardware/keymaster_defs.h",
         "patchSetId": 4
