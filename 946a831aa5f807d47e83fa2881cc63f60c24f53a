@@ -24,6 +24,30 @@
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "e9eb42e4_f8f16452",
+        "filename": "include/hardware/keymaster_defs.h",
+        "patchSetId": 4
+      },
+      "lineNbr": 193,
+      "author": {
+        "id": 1589008
+      },
+      "writtenOn": "2020-11-14T09:48:56Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c1c8ce3e_7edb95ee",
+      "range": {
+        "startLine": 193,
+        "startChar": 3,
+        "endLine": 193,
+        "endChar": 41
+      },
+      "revId": "946a831aa5f807d47e83fa2881cc63f60c24f53a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "9d4ab325_e9493ec7",
@@ -47,6 +71,30 @@
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "833db047_c8dbe35b",
+        "filename": "include/hardware/keymaster_defs.h",
+        "patchSetId": 4
+      },
+      "lineNbr": 197,
+      "author": {
+        "id": 1589008
+      },
+      "writtenOn": "2020-11-14T09:48:56Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9d4ab325_e9493ec7",
+      "range": {
+        "startLine": 197,
+        "startChar": 4,
+        "endLine": 197,
+        "endChar": 42
+      },
+      "revId": "946a831aa5f807d47e83fa2881cc63f60c24f53a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "85d5693d_eb8a1854",
@@ -60,6 +108,30 @@
       "writtenOn": "2020-11-12T14:34:15Z",
       "side": 1,
       "message": "I think this should specify that the content is a DER-encoded X.500 subject.",
+      "range": {
+        "startLine": 197,
+        "startChar": 65,
+        "endLine": 199,
+        "endChar": 80
+      },
+      "revId": "946a831aa5f807d47e83fa2881cc63f60c24f53a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1d418deb_6f713d68",
+        "filename": "include/hardware/keymaster_defs.h",
+        "patchSetId": 4
+      },
+      "lineNbr": 199,
+      "author": {
+        "id": 1589008
+      },
+      "writtenOn": "2020-11-14T09:48:56Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "85d5693d_eb8a1854",
       "range": {
         "startLine": 197,
         "startChar": 65,
