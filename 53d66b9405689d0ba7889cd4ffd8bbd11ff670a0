@@ -1,0 +1,136 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "12cb282a_0ba51015",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1043663
+      },
+      "writtenOn": "2020-11-17T14:01:41Z",
+      "side": 1,
+      "message": "Just some nits.",
+      "revId": "53d66b9405689d0ba7889cd4ffd8bbd11ff670a0",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e93fc538_a497cbd3",
+        "filename": "include/hardware/keymaster_defs.h",
+        "patchSetId": 5
+      },
+      "lineNbr": 193,
+      "author": {
+        "id": 1043663
+      },
+      "writtenOn": "2020-11-17T14:01:41Z",
+      "side": 1,
+      "message": "The (capitalize).",
+      "range": {
+        "startLine": 193,
+        "startChar": 56,
+        "endLine": 193,
+        "endChar": 59
+      },
+      "revId": "53d66b9405689d0ba7889cd4ffd8bbd11ff670a0",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9c69dcaa_fab41af5",
+        "filename": "include/hardware/keymaster_defs.h",
+        "patchSetId": 5
+      },
+      "lineNbr": 194,
+      "author": {
+        "id": 1043663
+      },
+      "writtenOn": "2020-11-17T14:01:41Z",
+      "side": 1,
+      "message": "in",
+      "range": {
+        "startLine": 194,
+        "startChar": 60,
+        "endLine": 194,
+        "endChar": 62
+      },
+      "revId": "53d66b9405689d0ba7889cd4ffd8bbd11ff670a0",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5e963058_16225a56",
+        "filename": "include/hardware/keymaster_defs.h",
+        "patchSetId": 5
+      },
+      "lineNbr": 195,
+      "author": {
+        "id": 1043663
+      },
+      "writtenOn": "2020-11-17T14:01:41Z",
+      "side": 1,
+      "message": "Add a period at the end of the sentence.",
+      "range": {
+        "startLine": 195,
+        "startChar": 62,
+        "endLine": 195,
+        "endChar": 71
+      },
+      "revId": "53d66b9405689d0ba7889cd4ffd8bbd11ff670a0",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "98b76524_5778b92d",
+        "filename": "include/hardware/keymaster_defs.h",
+        "patchSetId": 5
+      },
+      "lineNbr": 198,
+      "author": {
+        "id": 1043663
+      },
+      "writtenOn": "2020-11-17T14:01:41Z",
+      "side": 1,
+      "message": "in",
+      "range": {
+        "startLine": 198,
+        "startChar": 60,
+        "endLine": 198,
+        "endChar": 62
+      },
+      "revId": "53d66b9405689d0ba7889cd4ffd8bbd11ff670a0",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1e63382a_392f5ec2",
+        "filename": "include/hardware/keymaster_defs.h",
+        "patchSetId": 5
+      },
+      "lineNbr": 199,
+      "author": {
+        "id": 1043663
+      },
+      "writtenOn": "2020-11-17T14:01:41Z",
+      "side": 1,
+      "message": "Add a period.",
+      "range": {
+        "startLine": 199,
+        "startChar": 62,
+        "endLine": 199,
+        "endChar": 71
+      },
+      "revId": "53d66b9405689d0ba7889cd4ffd8bbd11ff670a0",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
