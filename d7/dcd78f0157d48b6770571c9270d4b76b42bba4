@@ -1,0 +1,10 @@
+Autosubmit+1: Selene Huang <seleneh@google.com>
+Code-Review+2: Shawn Willden <swillden@google.com>
+Lint+1: Lint 🤖 <ayeaye-gerrit@google.com>
+Presubmit-Verified-Together+1: Treehugger Robot <treehugger-gerrit@google.com>
+Presubmit-Verified+1: Treehugger Robot <treehugger-gerrit@google.com>
+Submitted-by: Treehugger Robot <treehugger-gerrit@google.com>
+Submitted-at: Thu, 19 Nov 2020 13:43:48 +0000
+Reviewed-on: https://android-review.googlesource.com/c/platform/hardware/libhardware/+/1412868
+Project: platform/hardware/libhardware
+Branch: refs/heads/master
