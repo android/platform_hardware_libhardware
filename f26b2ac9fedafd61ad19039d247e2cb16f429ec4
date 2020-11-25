@@ -16,6 +16,24 @@
       "message": "what on product still uses this? Can we avoid creating product variants of these? Nothing really ever should use it.",
       "revId": "f26b2ac9fedafd61ad19039d247e2cb16f429ec4",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "df3ef120_8f7ee2ae",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1146974
+      },
+      "writtenOn": "2020-11-25T11:26:37Z",
+      "side": 1,
+      "message": "Filed b/174220360, but the proxy could be allowed if we make libhardware_headers available to product. But I request them to move it to the vendor partition as they are the only blocker for this.",
+      "parentUuid": "b50e1bbb_a05620f0",
+      "revId": "f26b2ac9fedafd61ad19039d247e2cb16f429ec4",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
