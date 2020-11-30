@@ -83,6 +83,9 @@ typedef struct boot_control_module {
      */
     int (*markBootSuccessful)(struct boot_control_module *module);
 
+
+    unsigned (*getActiveBootSlot)(struct boot_control_module *module);
+
     /*
      * (*setActiveBootSlot)() marks the slot passed in parameter as
      * the active boot slot (see getCurrentSlot for an explanation
