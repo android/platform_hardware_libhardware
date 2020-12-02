@@ -1,6 +1,23 @@
 {
   "comments": [
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "58c14d6e_408c588e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1647128
+      },
+      "writtenOn": "2020-12-02T22:18:48Z",
+      "side": 1,
+      "message": "Fixed changes.",
+      "revId": "5103d6d24c0cb74291ef1d0ad8f9a9b624bf644c",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "c448a0cd_3cde7d6a",
@@ -25,6 +42,30 @@
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "3fec322d_2ef49d27",
+        "filename": "include/hardware/keymaster_defs.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 1647128
+      },
+      "writtenOn": "2020-12-02T22:18:48Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c448a0cd_3cde7d6a",
+      "range": {
+        "startLine": 74,
+        "startChar": 81,
+        "endLine": 74,
+        "endChar": 122
+      },
+      "revId": "5103d6d24c0cb74291ef1d0ad8f9a9b624bf644c",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "b9d2ce71_2757c177",
@@ -39,6 +80,30 @@
       "side": 1,
       "message": "\u003e Please remove the trailing whitespace.\n\nPlease fix.",
       "parentUuid": "15046bd9_47f21c33",
+      "range": {
+        "startLine": 485,
+        "startChar": 0,
+        "endLine": 485,
+        "endChar": 3
+      },
+      "revId": "5103d6d24c0cb74291ef1d0ad8f9a9b624bf644c",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f3579792_f7d35c29",
+        "filename": "include/hardware/keymaster_defs.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 485,
+      "author": {
+        "id": 1647128
+      },
+      "writtenOn": "2020-12-02T22:18:48Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "b9d2ce71_2757c177",
       "range": {
         "startLine": 485,
         "startChar": 0,
