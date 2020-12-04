@@ -18,6 +18,23 @@
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "33654a1e_58038a47",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1043663
+      },
+      "writtenOn": "2020-12-04T23:34:55Z",
+      "side": 1,
+      "message": "Again, I think you need to upload the new patchset.",
+      "revId": "5103d6d24c0cb74291ef1d0ad8f9a9b624bf644c",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "c448a0cd_3cde7d6a",
