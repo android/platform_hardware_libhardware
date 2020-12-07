@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c5103e43_be371daf",
+        "filename": "include/hardware/boot_control.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 135,
+      "author": {
+        "id": 1120458
+      },
+      "writtenOn": "2020-12-07T21:58:09Z",
+      "side": 1,
+      "message": "should this be added at the end (avoid breaking API)? are there any prebuilts implementing this?",
+      "range": {
+        "startLine": 135,
+        "startChar": 0,
+        "endLine": 135,
+        "endChar": 23
+      },
+      "revId": "1bc1ad46ec4908e2d8e514ebe51fa075b9c6a100",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
