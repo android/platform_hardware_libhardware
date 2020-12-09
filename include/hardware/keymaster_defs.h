@@ -72,7 +72,6 @@ typedef enum {
                                                     * will contain an application-scoped and
                                                     * time-bounded device-unique ID. (keymaster2) */
     KM_TAG_RSA_OAEP_MGF_DIGEST = KM_ENUM_REP | 203, /* keymaster_digest_t. */
-        
     /* Other hardware-enforced. */
     KM_TAG_BLOB_USAGE_REQUIREMENTS = KM_ENUM | 301, /* keymaster_key_blob_usage_requirements_t */
     KM_TAG_BOOTLOADER_ONLY = KM_BOOL | 302,         /* Usable only by bootloader */
