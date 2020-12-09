@@ -23,6 +23,30 @@
       },
       "revId": "2b85dce30d373c006c98078a9e42c1e59df63b72",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4fb102a9_7e7195ae",
+        "filename": "include/hardware/keymaster_defs.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 75,
+      "author": {
+        "id": 1647128
+      },
+      "writtenOn": "2020-12-09T00:09:40Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "8dcfe3af_2e432e82",
+      "range": {
+        "startLine": 75,
+        "startChar": 0,
+        "endLine": 75,
+        "endChar": 8
+      },
+      "revId": "2b85dce30d373c006c98078a9e42c1e59df63b72",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
