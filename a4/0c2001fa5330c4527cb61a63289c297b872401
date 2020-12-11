@@ -1,0 +1,9 @@
+Lint+1: Lint 🤖 <ayeaye-gerrit@google.com>
+Code-Review+1: Steven Moreland <smoreland@google.com>
+Code-Review+2: David Anderson <dvander@google.com>
+Presubmit-Verified+1: Treehugger Robot <treehugger-gerrit@google.com>
+Submitted-by: Tianjie Xu <xunchang@google.com>
+Submitted-at: Fri, 11 Dec 2020 21:57:24 +0000
+Reviewed-on: https://android-review.googlesource.com/c/platform/hardware/libhardware/+/1514949
+Project: platform/hardware/libhardware
+Branch: refs/heads/master
