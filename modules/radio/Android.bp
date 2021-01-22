@@ -13,6 +13,10 @@
 // limitations under the License.
 
 // Stub radio HAL module, used for tests
+package {
+    default_applicable_licenses: ["hardware_libhardware_license"],
+}
+
 cc_library_shared {
     name: "radio.fm.default",
     relative_install_path: "hw",

@@ -12,6 +12,10 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+package {
+    default_applicable_licenses: ["hardware_libhardware_license"],
+}
+
 cc_library_shared {
     name: "consumerir.default",
     relative_install_path: "hw",

@@ -18,6 +18,10 @@
 //
 // The format of the name is audio.<type>.<hardware/etc>.so where the only
 // required type is 'primary'. Other possibilites are 'a2dp', 'usb', etc.
+package {
+    default_applicable_licenses: ["hardware_libhardware_license"],
+}
+
 cc_library_shared {
     name: "audio.primary.default",
     relative_install_path: "hw",

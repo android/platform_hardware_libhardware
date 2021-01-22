@@ -13,6 +13,10 @@
 // limitations under the License.
 
 // Evdev module implementation
+package {
+    default_applicable_licenses: ["hardware_libhardware_license"],
+}
+
 cc_library_shared {
     name: "libinput_evdev",
 

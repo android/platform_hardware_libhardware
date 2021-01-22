@@ -1,3 +1,7 @@
+package {
+    default_applicable_licenses: ["hardware_libhardware_license"],
+}
+
 cc_library_static {
     name: "static-hal-check",
     srcs: [

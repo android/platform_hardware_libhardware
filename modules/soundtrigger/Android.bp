@@ -13,6 +13,10 @@
 // limitations under the License.
 
 // Stub sound_trigger HAL module, used for tests
+package {
+    default_applicable_licenses: ["hardware_libhardware_license"],
+}
+
 cc_library_shared {
     name: "sound_trigger.stub.default",
     relative_install_path: "hw",
