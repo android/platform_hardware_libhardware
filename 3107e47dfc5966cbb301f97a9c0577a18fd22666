@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7f66b3f2_1b18db24",
+        "filename": "include/hardware/keymaster_defs.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 333,
+      "author": {
+        "id": 1043663
+      },
+      "writtenOn": "2021-01-25T22:05:48Z",
+      "side": 1,
+      "message": "DERIVE_KEY was created for key agreement... You should just take over 4.",
+      "range": {
+        "startLine": 333,
+        "startChar": 4,
+        "endLine": 333,
+        "endChar": 24
+      },
+      "revId": "3107e47dfc5966cbb301f97a9c0577a18fd22666",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
