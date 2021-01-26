@@ -22,6 +22,30 @@
       },
       "revId": "3107e47dfc5966cbb301f97a9c0577a18fd22666",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6d413ffe_ec7b44aa",
+        "filename": "include/hardware/keymaster_defs.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 333,
+      "author": {
+        "id": 1076971
+      },
+      "writtenOn": "2021-01-26T22:04:45Z",
+      "side": 1,
+      "message": "As discussed, punting this for now.",
+      "parentUuid": "7f66b3f2_1b18db24",
+      "range": {
+        "startLine": 333,
+        "startChar": 4,
+        "endLine": 333,
+        "endChar": 24
+      },
+      "revId": "3107e47dfc5966cbb301f97a9c0577a18fd22666",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
