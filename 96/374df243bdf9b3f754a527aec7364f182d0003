@@ -1,0 +1,10 @@
+Presubmit-Verified+2: Treehugger Robot <treehugger-gerrit@google.com>
+Lint+1: Lint 🤖 <ayeaye-gerrit@google.com>
+Code-Review+1: Kuowei Li <kuowei.li@mediatek.com>
+Code-Review+1: Henry Fang <quxiangfang@google.com>
+Code-Review+2: Eric Laurent <elaurent@google.com>
+Submitted-by: Andy Hung <hunga@google.com>
+Submitted-at: Thu, 28 Jan 2021 18:03:29 +0000
+Reviewed-on: https://android-review.googlesource.com/c/platform/hardware/libhardware/+/1562805
+Project: platform/hardware/libhardware
+Branch: refs/heads/master
