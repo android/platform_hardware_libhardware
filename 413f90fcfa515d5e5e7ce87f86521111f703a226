@@ -22,6 +22,30 @@
       },
       "revId": "413f90fcfa515d5e5e7ce87f86521111f703a226",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1928bed7_ebb3031e",
+        "filename": "include/hardware/audio.h",
+        "patchSetId": 6
+      },
+      "lineNbr": 668,
+      "author": {
+        "id": 1226222
+      },
+      "writtenOn": "2021-01-29T10:43:37Z",
+      "side": 1,
+      "message": "Agree, reason flags should be defined. Several reasons can be valid simultaneously.",
+      "parentUuid": "74460647_4977801e",
+      "range": {
+        "startLine": 668,
+        "startChar": 37,
+        "endLine": 668,
+        "endChar": 49
+      },
+      "revId": "413f90fcfa515d5e5e7ce87f86521111f703a226",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
