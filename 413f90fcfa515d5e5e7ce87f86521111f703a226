@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "74460647_4977801e",
+        "filename": "include/hardware/audio.h",
+        "patchSetId": 6
+      },
+      "lineNbr": 668,
+      "author": {
+        "id": 1003259
+      },
+      "writtenOn": "2021-01-29T10:22:38Z",
+      "side": 1,
+      "message": "the valid values for the change reason should be in en enum or type defined here or in system/audio.h",
+      "range": {
+        "startLine": 668,
+        "startChar": 37,
+        "endLine": 668,
+        "endChar": 49
+      },
+      "revId": "413f90fcfa515d5e5e7ce87f86521111f703a226",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
