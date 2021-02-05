@@ -1,0 +1,30 @@
+{
+  "comments": [
+    {
+      "robotId": "ayeaye",
+      "robotRunId": "AR00000000000007915879",
+      "url": "https://android-build.googleplex.com/builds/treetop/android-review/571762?revision\u003d7",
+      "fixSuggestions": [],
+      "key": {
+        "uuid": "4330b9b8_0591c371",
+        "filename": "modules/sensors/dynamic_sensor/EvdevSensor.cpp",
+        "patchSetId": 7
+      },
+      "lineNbr": 215,
+      "author": {
+        "id": 1757831
+      },
+      "writtenOn": "2021-02-05T00:22:23Z",
+      "side": 1,
+      "message": "Prefer to use inclusive terms like \u0027complex\u0027, \u0027unexpected\u0027, or \u0027placeholder\u0027; see https://developers.google.com/style/inclusive-documentation#ableist-language for more details. In the case of a false positive add BYPASS_INCLUSIVE_LANGUAGE_REASON\u003dmy_reason_here to your commit message to disable this check.",
+      "range": {
+        "startLine": 215,
+        "startChar": 62,
+        "endLine": 215,
+        "endChar": 67
+      },
+      "revId": "437ff6b48bab0f01adca5692ce16bd89514b893a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
