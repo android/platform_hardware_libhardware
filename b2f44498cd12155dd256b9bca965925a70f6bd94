@@ -1,6 +1,7 @@
 {
   "comments": [
     {
+      "unresolved": false,
       "key": {
         "uuid": "2f6db94b_fbac8b96",
         "filename": "/PATCHSET_LEVEL",
@@ -14,8 +15,30 @@
       "side": 1,
       "message": "Eric, as discussed during last sync, I wanted to expose you the audio gain callback related aosp patches.",
       "revId": "b2f44498cd12155dd256b9bca965925a70f6bd94",
-      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
-      "unresolved": false
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b19f86f7_97f24fcf",
+        "filename": "include/hardware/audio.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 649,
+      "author": {
+        "id": 1491204
+      },
+      "writtenOn": "2021-02-08T15:01:47Z",
+      "side": 1,
+      "message": "update",
+      "range": {
+        "startLine": 649,
+        "startChar": 27,
+        "endLine": 649,
+        "endChar": 66
+      },
+      "revId": "b2f44498cd12155dd256b9bca965925a70f6bd94",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
