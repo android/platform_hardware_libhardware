@@ -212,8 +212,19 @@ typedef enum {
                                                         The value should interpreted as too's
                                                         complement signed integer. Negative values
                                                         indicate dates before Jan 1970 */
+    KM_TAG_MAX_BOOT_LEVEL = KM_UINT | 1010, /* Specifies a maximum boot level at which a key
+                                               should function.
 
-
+                                               Earlier boot stages are harder to attack than later
+                                               ones, since less code has been run. During the init
+                                               process keystore will receive calls to
+                                               advanceBootLevel, passing it an integer value. If a
+                                               key is created with a MAX_BOOT_LEVEL of x, and
+                                               advanceBootLevel is called with a value greater than
+                                               x, that key can then not be used again until the
+                                               next boot. This is cryptographically enforced where
+                                               Keymaster 4.0 or greater is present, and can be used
+                                               to defend against persistence of attacks. */
 } keymaster_tag_t;
 
 /**
@@ -510,6 +521,7 @@ typedef enum {
     KM_ERROR_UNSUPPORTED_MGF_DIGEST = -79,
     KM_ERROR_MISSING_NOT_BEFORE = -80,
     KM_ERROR_MISSING_NOT_AFTER = -81,
+    KM_ERROR_BOOT_LEVEL_EXCEEDED = -82,
 
     KM_ERROR_UNIMPLEMENTED = -100,
     KM_ERROR_VERSION_MISMATCH = -101,
