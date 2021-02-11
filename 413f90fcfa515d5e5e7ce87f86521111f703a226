@@ -70,6 +70,75 @@
       },
       "revId": "413f90fcfa515d5e5e7ce87f86521111f703a226",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "deb5e758_56df5c72",
+        "filename": "include/hardware/audio.h",
+        "patchSetId": 6
+      },
+      "lineNbr": 894,
+      "author": {
+        "id": 1003259
+      },
+      "writtenOn": "2021-02-11T20:02:45Z",
+      "side": 1,
+      "message": "register",
+      "range": {
+        "startLine": 894,
+        "startChar": 10,
+        "endLine": 894,
+        "endChar": 13
+      },
+      "revId": "413f90fcfa515d5e5e7ce87f86521111f703a226",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9e786474_bed1d212",
+        "filename": "include/hardware/audio.h",
+        "patchSetId": 6
+      },
+      "lineNbr": 906,
+      "author": {
+        "id": 1003259
+      },
+      "writtenOn": "2021-02-11T20:02:45Z",
+      "side": 1,
+      "message": "unregister",
+      "range": {
+        "startLine": 906,
+        "startChar": 10,
+        "endLine": 906,
+        "endChar": 15
+      },
+      "revId": "413f90fcfa515d5e5e7ce87f86521111f703a226",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "74f948c1_d8ba9bee",
+        "filename": "include/hardware/audio.h",
+        "patchSetId": 6
+      },
+      "lineNbr": 907,
+      "author": {
+        "id": 1003259
+      },
+      "writtenOn": "2021-02-11T20:02:45Z",
+      "side": 1,
+      "message": "is it desirable to have the same callback registered several times with different cookies?\nI think it is more clear to just unregister by specifying the callback only to make it clear that just the callback is tracked, not the pair,\u003ccallback, cookie\u003e",
+      "range": {
+        "startLine": 907,
+        "startChar": 37,
+        "endLine": 907,
+        "endChar": 43
+      },
+      "revId": "413f90fcfa515d5e5e7ce87f86521111f703a226",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
