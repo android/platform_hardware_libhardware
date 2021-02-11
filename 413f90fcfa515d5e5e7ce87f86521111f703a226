@@ -74,6 +74,29 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "d339e59f_c283e2d0",
+        "filename": "include/hardware/audio.h",
+        "patchSetId": 6
+      },
+      "lineNbr": 668,
+      "author": {
+        "id": 1003259
+      },
+      "writtenOn": "2021-02-11T20:13:33Z",
+      "side": 1,
+      "message": "audio_gain_mask_t",
+      "range": {
+        "startLine": 668,
+        "startChar": 38,
+        "endLine": 668,
+        "endChar": 49
+      },
+      "revId": "413f90fcfa515d5e5e7ce87f86521111f703a226",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "deb5e758_56df5c72",
         "filename": "include/hardware/audio.h",
         "patchSetId": 6
