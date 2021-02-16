@@ -1,0 +1,9 @@
+Code-Review+2: Hung-ying Tyan <tyanh@google.com>
+DrNo-Review+1: Hung-ying Tyan <tyanh@google.com>
+Presubmit-Verified+2: Treehugger Robot <treehugger-gerrit@google.com>
+Lint+1: Lint 🤖 <ayeaye-gerrit@google.com>
+Submitted-by: Treehugger Robot <treehugger-gerrit@google.com>
+Submitted-at: Tue, 16 Feb 2021 21:11:46 +0000
+Reviewed-on: https://android-review.googlesource.com/c/platform/hardware/libhardware/+/1584426
+Project: platform/hardware/libhardware
+Branch: refs/heads/android11-gsi
