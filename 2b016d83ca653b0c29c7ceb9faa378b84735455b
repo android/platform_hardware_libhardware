@@ -1,0 +1,30 @@
+{
+  "comments": [
+    {
+      "robotId": "ayeaye",
+      "robotRunId": "AR00000000000008848335",
+      "url": "https://android-build.googleplex.com/builds/treetop/android-review/1393096?revision\u003d7",
+      "fixSuggestions": [],
+      "key": {
+        "uuid": "c0f69a28_14f08163",
+        "filename": "include/hardware/audio.h",
+        "patchSetId": 7
+      },
+      "lineNbr": 1002,
+      "author": {
+        "id": 1757831
+      },
+      "writtenOn": "2021-03-10T14:03:52Z",
+      "side": 1,
+      "message": "Please remove the trailing whitespace.",
+      "range": {
+        "startLine": 1002,
+        "startChar": 0,
+        "endLine": 1002,
+        "endChar": 5
+      },
+      "revId": "2b016d83ca653b0c29c7ceb9faa378b84735455b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
