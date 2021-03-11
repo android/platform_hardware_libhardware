@@ -1,0 +1,47 @@
+{
+  "comments": [
+    {
+      "robotId": "ayeaye",
+      "robotRunId": "AR00000000000008886519",
+      "url": "https://android-build.googleplex.com/builds/treetop/android-review/1628159?revision\u003d1",
+      "fixSuggestions": [
+        {
+          "fixId": "5fecafe0_70cc7596",
+          "description": "Change to \"include/hardware/hdmi_earc.h\"",
+          "replacements": [
+            {
+              "path": "include/hardware/hdmi_earc.h",
+              "range": {
+                "startLine": 209,
+                "startChar": 48,
+                "endLine": 209,
+                "endChar": 57
+              },
+              "replacement": "controlled"
+            }
+          ]
+        }
+      ],
+      "key": {
+        "uuid": "a66dc039_502ba2c2",
+        "filename": "include/hardware/hdmi_earc.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 209,
+      "author": {
+        "id": 1757831
+      },
+      "writtenOn": "2021-03-11T10:14:12Z",
+      "side": 1,
+      "message": "Common typo found: \"controled\" -- should it be \"controlled\"?\nNote: a line containing \"common_typos_disable\" or \"common_typos_enable\" will turn off or on (respectively) the linter for subsequent lines in the file. Alternatively include the token \"NOTYPO\" within a line to skip typo linting that line or include \u0027No-Typo-Check: \u003creason\u003e\u0027in the commit message.",
+      "range": {
+        "startLine": 209,
+        "startChar": 48,
+        "endLine": 209,
+        "endChar": 57
+      },
+      "revId": "6b64c970239f5cd4790e07c0b7c6919b7f94deaf",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
