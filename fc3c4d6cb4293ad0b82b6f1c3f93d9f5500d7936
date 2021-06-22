@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "bad13da3_e1c2cf6e",
+        "filename": "include/hardware/keymaster1.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1836235
+      },
+      "writtenOn": "2021-06-22T08:30:17Z",
+      "side": 0,
+      "message": "This looks like it\u0027s referenced at https://cs.android.com/android/platform/superproject/+/master:system/keymaster/ng/include/AndroidKeymaster3Device.h;l\u003d26-27?q\u003dAndroidKeymaster3Device.h\n\nCould that code be removed in aosp/1742893 too?",
+      "revId": "fc3c4d6cb4293ad0b82b6f1c3f93d9f5500d7936",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
